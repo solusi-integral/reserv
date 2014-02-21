@@ -22,7 +22,7 @@ class Report extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
         
-        public function record($date, $jump_date, $type, $runners, $number, $location, $results, $comment)
+        public function record($date, $jump_date, $type, $runners, $number, $location, $results, $name, $comment)
         {
             $this->load->model('report_model','',TRUE);
             $data['date']           = $date;
@@ -32,6 +32,7 @@ class Report extends CI_Controller {
             $data['number']         = $number;
             $data['location']       = $location;
             $data['results']        = $results;
+            $data['name']           = $name;
             $data['comment']        = $comment;
             $this->load->view('report_view',$data);
             $this->db->insert('result', $data);

@@ -10,6 +10,7 @@
     <h1><?php echo $number ?></h1><br>
     <h1><?php echo $location ?></h1><br>
     <h1><?php echo $results ?></h1><br>
+    <h1><?php echo $name ?></h1><br>
     <h1><?php echo $comment ?></h1><br>
 </body>
 </html>
