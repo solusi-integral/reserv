@@ -11,6 +11,7 @@
  *
  * @author indra
  */
+require APPPATH.'/libraries/REST_Controller.php';
 
 class Report_api extends REST_Controller {
     //put your code here
@@ -19,10 +20,11 @@ class Report_api extends REST_Controller {
         //Respond with information about a user
     }
     
-    function data_put()
+    function user_post()
     {
-        //Create new data and information with a status / errors
-        $data = array('returned: '. $this->put('id'));
-        $this->response($data);
+        //$this->some_model->updateUser( $this->get('id') );
+        $message = array('id' => $this->get('id'), 'name' => $this->post('name'), 'email' => $this->post('email'), 'message' => 'ADDED!');
+        
+        $this->response($message, 200); // 200 being the HTTP response code
     }
 }
