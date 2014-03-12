@@ -16,7 +16,33 @@
 					<p>This <strong>jQuery powered Table</strong> takes a standard html table and turns it into a <strong>sortable</strong>, <strong>filterable</strong> and <strong>searchable</strong>  table. The<strong> search is LIVE</strong> so doesn't require you to reload the page! Also, the items are <strong>automatically paginated</strong> into sets of 10, 20 or 50. </p><p>Try it out and you'll see how <strong>powerful yet easy to use</strong> it is.</p>
 				</div>
 				<div class="box grid_16 single_datatable">
-					<div id="dt1" class="no_margin"><?php include 'includes/content/datatables_data.php'?></div>
+                                    <div id="dt1" class="no_margin">
+                                        <table class=" datatable">
+                                            <thead>
+                                                    <tr>
+                                                            <th>Jump Time</th>
+                                                            <th>Type</th>
+                                                            <th>Runners</th>
+                                                            <th>Number</th>
+                                                            <th>Location</th>
+                                                            <th>Results</th>
+                                                            <th>Comments</th>
+                                                    </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?//php foreach ($data as $row){ ;?>
+                                                <tr class="gradeX">
+                                                        <td><?php echo $data ?></td>
+                                                        <td><?//php echo $row['usrID'];?></td>                                                                                   
+                                                        <td><?//php echo $row['usrID'];?></td>
+                                                        <td class="center"><?//php echo $row['usrID'];?></td>
+                                                        <td class="center"><?//php echo $row['usrID'];?></td>
+                                                        <td class="center"><?//php echo $row['usrID'];?></td>
+                                                        <td>none</td>
+                                                </tr>
+                                            </tbody>
+                                            </table> 
+                                   </div>
 				</div>
 				<div class="flat_area grid_16">
 					<h2>Tabbed table</h2>
@@ -34,7 +60,32 @@
 					</div>
 					<div class="toggle_container">
 						<div id="tabs-1" class="block">
-							<div id="dt2"><?php include 'includes/content/datatables_data.php'?></div>
+							<div id="dt2">
+                                                            <table class=" datatable">
+                                                                <thead>
+                                                                        <tr>
+                                                                                <th>Jump Time</th>
+                                                                                <th>Type</th>
+                                                                                <th>Runners</th>
+                                                                                <th>Number</th>
+                                                                                <th>Location</th>
+                                                                                <th>Results</th>
+                                                                                <th>Comments</th>
+                                                                        </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="gradeX">
+                                                                            <td>16:45</td>
+                                                                            <td>R</td>                                                                                   
+                                                                            <td>10</td>
+                                                                            <td class="center">4</td>
+                                                                            <td class="center">ALBION PARK</td>
+                                                                            <td class="center">10</td>
+                                                                            <td>none</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                </table>
+                                                        </div>
 						</div>
 						<div id="tabs-2" class="block">
 							<div id="dt3"><?php include 'includes/content/datatables_data.php'?></div>

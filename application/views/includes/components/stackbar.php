@@ -1,5 +1,5 @@
 <div id="stackbar" class="stackbar">	<div class="user_box dark_box clearfix">
-		<img src="images/interface/profile.jpg" width="55" alt="Profile Pic" />
+		<img src="../../images/interface/profile.jpg" width="55" alt="Profile Pic" />
 		<h2>Administrator</h2>
 		<h3><a href="#">John Smith</a></h3>
 		<ul>
@@ -9,7 +9,7 @@
 	</div>
 	<ul class="">
 		<li>
-			<a href="#"><img src="images/icons/large/grey/computer_imac.png"/><span>Dashboard</span></a>
+			<a href="#"><img src="../../images/icons/large/grey/computer_imac.png"/><span>Dashboard</span></a>
 			<ul>
 				<li><a href="index.php" class="pjax">Dashboard</a></li>
 				<li><a href="layout.php" class="pjax">Layout</a></li>
@@ -19,7 +19,7 @@
 			</ul>
 		</li>
 		<li>
-			<a href="#"><img src="images/icons/large/grey/mail.png"/><span>Widgets</span><div class="alert badge alert_green">1</div></a>
+			<a href="#"><img src="../../images/icons/large/grey/mail.png"/><span>Widgets</span><div class="alert badge alert_green">1</div></a>
 			<ul>
 				<li><a href="#">Widgets</a></li>
 				<li><a href="tabs.php" class="pjax">Tabs</a></li>
@@ -31,7 +31,7 @@
 			</ul>
 		</li>
 		<li>
-			<a href="#"><img src="images/icons/large/grey/users.png"/><span>Contacts</span><div class="alert badge alert_blue">2</div></a>
+			<a href="#"><img src="../../images/icons/large/grey/users.png"/><span>Contacts</span><div class="alert badge alert_blue">2</div></a>
 			<ul>
 				<li><a href="#">Contacts</a></li>
 				<li><a href="contacts.php" class="pjax">Profiles</a></li>
@@ -40,7 +40,7 @@
 			</ul>
 		</li>
 		<li>
-			<a href="#"><img src="images/icons/large/grey/graph.png"/><span>Reports</span></a>
+			<a href="#"><img src="../../images/icons/large/grey/graph.png"/><span>Reports</span></a>
 			<ul>
 				<li><a href="#" class="pjax">Reports</a></li>
 				<li><a href="charts.php" class="pjax">Graphs</a></li>

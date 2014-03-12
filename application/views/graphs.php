@@ -42,7 +42,7 @@
 									<div class="split one">
 										<div class="chart">
 											<span class="spark_pie large random_number_3">
-											26, 74, 105</span>
+											26, 745, 105</span>
 										</div>
 									</div>
 									<label>Resources</label>
@@ -76,7 +76,7 @@
 							<div class="col_20 no_border_top">
 								<div class="info_box">
 									<div class="split one">
-										<a href="#"><img src="images/icons/large/grey/alert.png" width="36" height="36" /></a>
+										<a href="#"><img src="../../images/icons/large/grey/alert.png" width="36" height="36" /></a>
 									</div>
 									<label>View Alerts</label>
 								</div>
@@ -185,7 +185,7 @@
 								<div class="col_20 no_border_top">
 									<div class="info_box">
 										<div class="split one">
-											<a href="#"><img src="images/icons/large/grey/alert.png" width="36" height="36" /></a>
+											<a href="#"><img src="../../images/icons/large/grey/alert.png" width="36" height="36" /></a>
 										</div>
 										<label>View Alerts</label>
 									</div>

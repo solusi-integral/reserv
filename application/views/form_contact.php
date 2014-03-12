@@ -72,7 +72,7 @@
 
 						<div class="button_bar clearfix">
 							<button class="dark" type="submit">
-								<img src="images/icons/small/white/mail.png">
+								<img src="../../images/icons/small/white/mail.png">
 								<span>Send</span>
 							</button>
 							<button class="light send_right" type="reset">

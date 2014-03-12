@@ -601,447 +601,447 @@
 							<div class="section clearfix stacked_buttons" style="padding: 15px 5px 15px 15px;">
 
 								<button>
-									<img src="images/icons/small/white/abacus.png">
+									<img src="../../images/icons/small/white/abacus.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/acces_denied_sign.png">
+									<img src="../../images/icons/small/white/acces_denied_sign.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/address_book.png">
+									<img src="../../images/icons/small/white/address_book.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/admin_user_2.png">
+									<img src="../../images/icons/small/white/admin_user_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/admin_user.png">
+									<img src="../../images/icons/small/white/admin_user.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/airplane.png">
+									<img src="../../images/icons/small/white/airplane.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/alarm_bell_2.png">
+									<img src="../../images/icons/small/white/alarm_bell_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/alarm_bell.png">
+									<img src="../../images/icons/small/white/alarm_bell.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/alarm_clock.png">
+									<img src="../../images/icons/small/white/alarm_clock.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/alert_2.png">
+									<img src="../../images/icons/small/white/alert_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/alert.png">
+									<img src="../../images/icons/small/white/alert.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/android.png">
+									<img src="../../images/icons/small/white/android.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/apartment_building.png">
+									<img src="../../images/icons/small/white/apartment_building.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/archive.png">
+									<img src="../../images/icons/small/white/archive.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/bag.png">
+									<img src="../../images/icons/small/white/bag.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/balloons.png">
+									<img src="../../images/icons/small/white/balloons.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/bandaid.png">
+									<img src="../../images/icons/small/white/bandaid.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/battery_almost_empty.png">
+									<img src="../../images/icons/small/white/battery_almost_empty.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/battery_almost_full.png">
+									<img src="../../images/icons/small/white/battery_almost_full.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/battery_empty.png">
+									<img src="../../images/icons/small/white/battery_empty.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/battery_full.png">
+									<img src="../../images/icons/small/white/battery_full.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/battery.png">
+									<img src="../../images/icons/small/white/battery.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/bended_arrow_down.png">
+									<img src="../../images/icons/small/white/bended_arrow_down.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/bended_arrow_left.png">
+									<img src="../../images/icons/small/white/bended_arrow_left.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/bended_arrow_right.png">
+									<img src="../../images/icons/small/white/bended_arrow_right.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/bended_arrow_up.png">
+									<img src="../../images/icons/small/white/bended_arrow_up.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/big_brush.png">
+									<img src="../../images/icons/small/white/big_brush.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/blackberry.png">
+									<img src="../../images/icons/small/white/blackberry.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/blocks_images.png">
+									<img src="../../images/icons/small/white/blocks_images.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/blu_ray.png">
+									<img src="../../images/icons/small/white/blu_ray.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/bluetooth_2.png">
+									<img src="../../images/icons/small/white/bluetooth_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/bluetooth.png">
+									<img src="../../images/icons/small/white/bluetooth.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/book_Large.png">
+									<img src="../../images/icons/small/white/book_Large.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/book.png">
+									<img src="../../images/icons/small/white/book.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/books.png">
+									<img src="../../images/icons/small/white/books.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/box_Incoming.png">
+									<img src="../../images/icons/small/white/box_Incoming.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/box_outgoing.png">
+									<img src="../../images/icons/small/white/box_outgoing.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/Bulls_eye.png">
+									<img src="../../images/icons/small/white/Bulls_eye.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/calculator.png">
+									<img src="../../images/icons/small/white/calculator.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/camera_2.png">
+									<img src="../../images/icons/small/white/camera_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/camera.png">
+									<img src="../../images/icons/small/white/camera.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/car.png">
+									<img src="../../images/icons/small/white/car.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cash_register.png">
+									<img src="../../images/icons/small/white/cash_register.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cassette.png">
+									<img src="../../images/icons/small/white/cassette.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cat.png">
+									<img src="../../images/icons/small/white/cat.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cd.png">
+									<img src="../../images/icons/small/white/cd.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chair.png">
+									<img src="../../images/icons/small/white/chair.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chart_2.png">
+									<img src="../../images/icons/small/white/chart_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chart_3.png">
+									<img src="../../images/icons/small/white/chart_3.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chart_4.png">
+									<img src="../../images/icons/small/white/chart_4.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chart_5.png">
+									<img src="../../images/icons/small/white/chart_5.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chart_6.png">
+									<img src="../../images/icons/small/white/chart_6.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chart_7.png">
+									<img src="../../images/icons/small/white/chart_7.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chart_8.png">
+									<img src="../../images/icons/small/white/chart_8.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chart.png">
+									<img src="../../images/icons/small/white/chart.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chemical.png">
+									<img src="../../images/icons/small/white/chemical.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/chrome.png">
+									<img src="../../images/icons/small/white/chrome.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/clipboard.png">
+									<img src="../../images/icons/small/white/clipboard.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/clock.png">
+									<img src="../../images/icons/small/white/clock.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cloud_download.png">
+									<img src="../../images/icons/small/white/cloud_download.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cloud_upload.png">
+									<img src="../../images/icons/small/white/cloud_upload.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cloud.png">
+									<img src="../../images/icons/small/white/cloud.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cog_2.png">
+									<img src="../../images/icons/small/white/cog_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cog_3.png">
+									<img src="../../images/icons/small/white/cog_3.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cog_4.png">
+									<img src="../../images/icons/small/white/cog_4.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cog.png">
+									<img src="../../images/icons/small/white/cog.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/companies.png">
+									<img src="../../images/icons/small/white/companies.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/computer_imac.png">
+									<img src="../../images/icons/small/white/computer_imac.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/coverflow.png">
+									<img src="../../images/icons/small/white/coverflow.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/create_write.png">
+									<img src="../../images/icons/small/white/create_write.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cup.png">
+									<img src="../../images/icons/small/white/cup.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/cut_scissors.png">
+									<img src="../../images/icons/small/white/cut_scissors.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/day_Calendar.png">
+									<img src="../../images/icons/small/white/day_Calendar.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/delicious.png">
+									<img src="../../images/icons/small/white/delicious.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/digg_2.png">
+									<img src="../../images/icons/small/white/digg_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/digg.png">
+									<img src="../../images/icons/small/white/digg.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/document.png">
+									<img src="../../images/icons/small/white/document.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/documents.png">
+									<img src="../../images/icons/small/white/documents.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/download_to_computer.png">
+									<img src="../../images/icons/small/white/download_to_computer.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/download.png">
+									<img src="../../images/icons/small/white/download.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/dress.png">
+									<img src="../../images/icons/small/white/dress.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/dribbble_2.png">
+									<img src="../../images/icons/small/white/dribbble_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/dribbble.png">
+									<img src="../../images/icons/small/white/dribbble.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/dropbox.png">
+									<img src="../../images/icons/small/white/dropbox.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/drupal.png">
+									<img src="../../images/icons/small/white/drupal.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/dVD.png">
+									<img src="../../images/icons/small/white/dVD.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/electricity_input.png">
+									<img src="../../images/icons/small/white/electricity_input.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/electricity_plug.png">
+									<img src="../../images/icons/small/white/electricity_plug.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/excel_document.png">
+									<img src="../../images/icons/small/white/excel_document.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/excel_documents.png">
+									<img src="../../images/icons/small/white/excel_documents.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/exit.png">
+									<img src="../../images/icons/small/white/exit.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/expose.png">
+									<img src="../../images/icons/small/white/expose.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/expression_engine.png">
+									<img src="../../images/icons/small/white/expression_engine.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/eyedropper.png">
+									<img src="../../images/icons/small/white/eyedropper.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/facebook_like.png">
+									<img src="../../images/icons/small/white/facebook_like.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/facebook.png">
+									<img src="../../images/icons/small/white/facebook.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/fax.png">
+									<img src="../../images/icons/small/white/fax.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/female_contour.png">
+									<img src="../../images/icons/small/white/female_contour.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/female_symbol.png">
+									<img src="../../images/icons/small/white/female_symbol.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/file_cabinet.png">
+									<img src="../../images/icons/small/white/file_cabinet.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/film_camera.png">
+									<img src="../../images/icons/small/white/film_camera.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/film_strip_2.png">
+									<img src="../../images/icons/small/white/film_strip_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/film_strip.png">
+									<img src="../../images/icons/small/white/film_strip.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/finish_flag.png">
+									<img src="../../images/icons/small/white/finish_flag.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/firefox.png">
+									<img src="../../images/icons/small/white/firefox.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/flag_2.png">
+									<img src="../../images/icons/small/white/flag_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/flag.png">
+									<img src="../../images/icons/small/white/flag.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/folder.png">
+									<img src="../../images/icons/small/white/folder.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/footprints.png">
+									<img src="../../images/icons/small/white/footprints.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/fountain_Pen.png">
+									<img src="../../images/icons/small/white/fountain_Pen.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/frames.png">
+									<img src="../../images/icons/small/white/frames.png">
 								</button>
 							</div>
 
@@ -1050,379 +1050,379 @@
 							<div class="section clearfix stacked_buttons" style="padding: 15px 5px 15px 15px;">
 
 								<button>
-									<img src="images/icons/small/white/globe_2.png">
+									<img src="../../images/icons/small/white/globe_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/globe.png">
+									<img src="../../images/icons/small/white/globe.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/go_back_from_full_screen.png">
+									<img src="../../images/icons/small/white/go_back_from_full_screen.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/go_back_from_screen.png">
+									<img src="../../images/icons/small/white/go_back_from_screen.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/go_full_screen.png">
+									<img src="../../images/icons/small/white/go_full_screen.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/google_buzz.png">
+									<img src="../../images/icons/small/white/google_buzz.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/google_maps.png">
+									<img src="../../images/icons/small/white/google_maps.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/graph.png">
+									<img src="../../images/icons/small/white/graph.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/hd_2.png">
+									<img src="../../images/icons/small/white/hd_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/hd_3.png">
+									<img src="../../images/icons/small/white/hd_3.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/hd.png">
+									<img src="../../images/icons/small/white/hd.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/headphones.png">
+									<img src="../../images/icons/small/white/headphones.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/help.png">
+									<img src="../../images/icons/small/white/help.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/home_2.png">
+									<img src="../../images/icons/small/white/home_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/home.png">
+									<img src="../../images/icons/small/white/home.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/ice_cream_2.png">
+									<img src="../../images/icons/small/white/ice_cream_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/ice_cream.png">
+									<img src="../../images/icons/small/white/ice_cream.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/ichat.png">
+									<img src="../../images/icons/small/white/ichat.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/image_2.png">
+									<img src="../../images/icons/small/white/image_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/image.png">
+									<img src="../../images/icons/small/white/image.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/image2_2.png">
+									<img src="../../images/icons/small/white/image2_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/images.png">
+									<img src="../../images/icons/small/white/images.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/inbox.png">
+									<img src="../../images/icons/small/white/inbox.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/info_about.png">
+									<img src="../../images/icons/small/white/info_about.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/iPad.png">
+									<img src="../../images/icons/small/white/iPad.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/iphone_3g.png">
+									<img src="../../images/icons/small/white/iphone_3g.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/iphone_4.png">
+									<img src="../../images/icons/small/white/iphone_4.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/iPod_classic.png">
+									<img src="../../images/icons/small/white/iPod_classic.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/iPod_nano.png">
+									<img src="../../images/icons/small/white/iPod_nano.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/joomla.png">
+									<img src="../../images/icons/small/white/joomla.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/key_2.png">
+									<img src="../../images/icons/small/white/key_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/key.png">
+									<img src="../../images/icons/small/white/key.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/ladies_purse.png">
+									<img src="../../images/icons/small/white/ladies_purse.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/lamp.png">
+									<img src="../../images/icons/small/white/lamp.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/laptop.png">
+									<img src="../../images/icons/small/white/laptop.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/lastfm_2.png">
+									<img src="../../images/icons/small/white/lastfm_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/lemonade_stand.png">
+									<img src="../../images/icons/small/white/lemonade_stand.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/light_bulb.png">
+									<img src="../../images/icons/small/white/light_bulb.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/link_2.png">
+									<img src="../../images/icons/small/white/link_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/link.png">
+									<img src="../../images/icons/small/white/link.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/linux.png">
+									<img src="../../images/icons/small/white/linux.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/list_w_image.png">
+									<img src="../../images/icons/small/white/list_w_image.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/list_w_images.png">
+									<img src="../../images/icons/small/white/list_w_images.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/list.png">
+									<img src="../../images/icons/small/white/list.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/loading_Bar.png">
+									<img src="../../images/icons/small/white/loading_Bar.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/locked_2.png">
+									<img src="../../images/icons/small/white/locked_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/locked.png">
+									<img src="../../images/icons/small/white/locked.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/macos.png">
+									<img src="../../images/icons/small/white/macos.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/magic_mouse.png">
+									<img src="../../images/icons/small/white/magic_mouse.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/magnifying_glass.png">
+									<img src="../../images/icons/small/white/magnifying_glass.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/mail.png">
+									<img src="../../images/icons/small/white/mail.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/male_contour.png">
+									<img src="../../images/icons/small/white/male_contour.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/male_symbol.png">
+									<img src="../../images/icons/small/white/male_symbol.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/map.png">
+									<img src="../../images/icons/small/white/map.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/marker.png">
+									<img src="../../images/icons/small/white/marker.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/medical_case.png">
+									<img src="../../images/icons/small/white/medical_case.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/megaphone.png">
+									<img src="../../images/icons/small/white/megaphone.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/microphone.png">
+									<img src="../../images/icons/small/white/microphone.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/mighty_mouse.png">
+									<img src="../../images/icons/small/white/mighty_mouse.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/mobile_phone.png">
+									<img src="../../images/icons/small/white/mobile_phone.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/mobypicture.png">
+									<img src="../../images/icons/small/white/mobypicture.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/money_2.png">
+									<img src="../../images/icons/small/white/money_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/money.png">
+									<img src="../../images/icons/small/white/money.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/monitor.png">
+									<img src="../../images/icons/small/white/monitor.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/month_calendar.png">
+									<img src="../../images/icons/small/white/month_calendar.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/mouse_wires.png">
+									<img src="../../images/icons/small/white/mouse_wires.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/myspace_2.png">
+									<img src="../../images/icons/small/white/myspace_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/note_book.png">
+									<img src="../../images/icons/small/white/note_book.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/pacman_ghost.png">
+									<img src="../../images/icons/small/white/pacman_ghost.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/pacman.png">
+									<img src="../../images/icons/small/white/pacman.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/paint_brush.png">
+									<img src="../../images/icons/small/white/paint_brush.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/pants.png">
+									<img src="../../images/icons/small/white/pants.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/paperclip.png">
+									<img src="../../images/icons/small/white/paperclip.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/paypal_2.png">
+									<img src="../../images/icons/small/white/paypal_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/paypal_3.png">
+									<img src="../../images/icons/small/white/paypal_3.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/paypal.png">
+									<img src="../../images/icons/small/white/paypal.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/pdf_document.png">
+									<img src="../../images/icons/small/white/pdf_document.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/pdf_documents.png">
+									<img src="../../images/icons/small/white/pdf_documents.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/pencil.png">
+									<img src="../../images/icons/small/white/pencil.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/phone_3.png">
+									<img src="../../images/icons/small/white/phone_3.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/phone_hook.png">
+									<img src="../../images/icons/small/white/phone_hook.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/phone.png">
+									<img src="../../images/icons/small/white/phone.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/piggy_bank.png">
+									<img src="../../images/icons/small/white/piggy_bank.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/plane_suitcase.png">
+									<img src="../../images/icons/small/white/plane_suitcase.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/plixi.png">
+									<img src="../../images/icons/small/white/plixi.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/post_card.png">
+									<img src="../../images/icons/small/white/post_card.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/power.png">
+									<img src="../../images/icons/small/white/power.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/powerpoint_document.png">
+									<img src="../../images/icons/small/white/powerpoint_document.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/powerpoint_documents.png">
+									<img src="../../images/icons/small/white/powerpoint_documents.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/presentation.png">
+									<img src="../../images/icons/small/white/presentation.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/preview.png">
+									<img src="../../images/icons/small/white/preview.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/price_tag.png">
+									<img src="../../images/icons/small/white/price_tag.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/price_tags.png">
+									<img src="../../images/icons/small/white/price_tags.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/printer.png">
+									<img src="../../images/icons/small/white/printer.png">
 								</button>
 							</div>
 						</div>
@@ -1430,351 +1430,351 @@
 							<div class="section clearfix stacked_buttons" style="padding: 15px 5px 15px 15px;">
 
 								<button>
-									<img src="images/icons/small/white/radio.png">
+									<img src="../../images/icons/small/white/radio.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/record.png">
+									<img src="../../images/icons/small/white/record.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/recycle_symbol.png">
+									<img src="../../images/icons/small/white/recycle_symbol.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/refresh_2.png">
+									<img src="../../images/icons/small/white/refresh_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/refresh_3.png">
+									<img src="../../images/icons/small/white/refresh_3.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/refresh_4.png">
+									<img src="../../images/icons/small/white/refresh_4.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/refresh.png">
+									<img src="../../images/icons/small/white/refresh.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/repeat.png">
+									<img src="../../images/icons/small/white/repeat.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/robot.png">
+									<img src="../../images/icons/small/white/robot.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/rss.png">
+									<img src="../../images/icons/small/white/rss.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/ruler_2.png">
+									<img src="../../images/icons/small/white/ruler_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/ruler.png">
+									<img src="../../images/icons/small/white/ruler.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/running_man.png">
+									<img src="../../images/icons/small/white/running_man.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/safari.png">
+									<img src="../../images/icons/small/white/safari.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/scan_label_2.png">
+									<img src="../../images/icons/small/white/scan_label_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/sD_2.png">
+									<img src="../../images/icons/small/white/sD_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/sd_3.png">
+									<img src="../../images/icons/small/white/sd_3.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/sd.png">
+									<img src="../../images/icons/small/white/sd.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/settings_2.png">
+									<img src="../../images/icons/small/white/settings_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/settings.png">
+									<img src="../../images/icons/small/white/settings.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/shopping_bag.png">
+									<img src="../../images/icons/small/white/shopping_bag.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/shopping_basket_1.png">
+									<img src="../../images/icons/small/white/shopping_basket_1.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/shopping_basket_2.png">
+									<img src="../../images/icons/small/white/shopping_basket_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/shopping_cart_2.png">
+									<img src="../../images/icons/small/white/shopping_cart_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/shopping_cart_3.png">
+									<img src="../../images/icons/small/white/shopping_cart_3.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/shopping_cart_4.png">
+									<img src="../../images/icons/small/white/shopping_cart_4.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/shopping_cart.png">
+									<img src="../../images/icons/small/white/shopping_cart.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/shuffle.png">
+									<img src="../../images/icons/small/white/shuffle.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/sign_post.png">
+									<img src="../../images/icons/small/white/sign_post.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/skype.png">
+									<img src="../../images/icons/small/white/skype.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/sleeveless_shirt.png">
+									<img src="../../images/icons/small/white/sleeveless_shirt.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/small_brush.png">
+									<img src="../../images/icons/small/white/small_brush.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/socks.png">
+									<img src="../../images/icons/small/white/socks.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/sound.png">
+									<img src="../../images/icons/small/white/sound.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/speech_bubble_2.png">
+									<img src="../../images/icons/small/white/speech_bubble_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/speech_bubble.png">
+									<img src="../../images/icons/small/white/speech_bubble.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/speech_bubbles_2.png">
+									<img src="../../images/icons/small/white/speech_bubbles_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/speech_bubbles.png">
+									<img src="../../images/icons/small/white/speech_bubbles.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/sport_shirt.png">
+									<img src="../../images/icons/small/white/sport_shirt.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/stop_watch.png">
+									<img src="../../images/icons/small/white/stop_watch.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/strategy_2.png">
+									<img src="../../images/icons/small/white/strategy_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/strategy.png">
+									<img src="../../images/icons/small/white/strategy.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/stubleupon.png">
+									<img src="../../images/icons/small/white/stubleupon.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/suitcase.png">
+									<img src="../../images/icons/small/white/suitcase.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/sweater.png">
+									<img src="../../images/icons/small/white/sweater.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/t_shirt.png">
+									<img src="../../images/icons/small/white/t_shirt.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/table.png">
+									<img src="../../images/icons/small/white/table.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/tag.png">
+									<img src="../../images/icons/small/white/tag.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/tags_2.png">
+									<img src="../../images/icons/small/white/tags_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/television.png">
+									<img src="../../images/icons/small/white/television.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/timer.png">
+									<img src="../../images/icons/small/white/timer.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/trashcan_2.png">
+									<img src="../../images/icons/small/white/trashcan_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/trashcan.png">
+									<img src="../../images/icons/small/white/trashcan.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/travel_suitcase.png">
+									<img src="../../images/icons/small/white/travel_suitcase.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/tree.png">
+									<img src="../../images/icons/small/white/tree.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/trolly.png">
+									<img src="../../images/icons/small/white/trolly.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/truck.png">
+									<img src="../../images/icons/small/white/truck.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/tumbler.png">
+									<img src="../../images/icons/small/white/tumbler.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/twitter_2.png">
+									<img src="../../images/icons/small/white/twitter_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/twitter.png">
+									<img src="../../images/icons/small/white/twitter.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/umbrella.png">
+									<img src="../../images/icons/small/white/umbrella.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/under_construction.png">
+									<img src="../../images/icons/small/white/under_construction.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/unlocked.png">
+									<img src="../../images/icons/small/white/unlocked.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/upload.png">
+									<img src="../../images/icons/small/white/upload.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/user_2.png">
+									<img src="../../images/icons/small/white/user_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/user_comment.png">
+									<img src="../../images/icons/small/white/user_comment.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/user.png">
+									<img src="../../images/icons/small/white/user.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/users_2.png">
+									<img src="../../images/icons/small/white/users_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/users.png">
+									<img src="../../images/icons/small/white/users.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/v_card_2.png">
+									<img src="../../images/icons/small/white/v_card_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/v_card.png">
+									<img src="../../images/icons/small/white/v_card.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/vault.png">
+									<img src="../../images/icons/small/white/vault.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/vimeo_2.png">
+									<img src="../../images/icons/small/white/vimeo_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/vimeo.png">
+									<img src="../../images/icons/small/white/vimeo.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/walking_man.png">
+									<img src="../../images/icons/small/white/walking_man.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/wifi_signal_2.png">
+									<img src="../../images/icons/small/white/wifi_signal_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/wifi_signal.png">
+									<img src="../../images/icons/small/white/wifi_signal.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/windows.png">
+									<img src="../../images/icons/small/white/windows.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/winner_podium.png">
+									<img src="../../images/icons/small/white/winner_podium.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/word_document.png">
+									<img src="../../images/icons/small/white/word_document.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/word_documents.png">
+									<img src="../../images/icons/small/white/word_documents.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/wordpress_2.png">
+									<img src="../../images/icons/small/white/wordpress_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/wordpress.png">
+									<img src="../../images/icons/small/white/wordpress.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/youtube_2.png">
+									<img src="../../images/icons/small/white/youtube_2.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/youtube.png">
+									<img src="../../images/icons/small/white/youtube.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/zip_file.png">
+									<img src="../../images/icons/small/white/zip_file.png">
 								</button>
 
 								<button>
-									<img src="images/icons/small/white/zip_files.png">
+									<img src="../../images/icons/small/white/zip_files.png">
 								</button>
 							</div>
 						</div>
@@ -1807,10 +1807,10 @@
 												<span>Tiny</span>
 											</button>
 											<button class="light  tiny">
-												<img src="images/icons/small/grey/speech_bubble.png">
+												<img src="../../images/icons/small/grey/speech_bubble.png">
 											</button>
 											<button class="light tiny">
-												<img src="images/icons/small/grey/speech_bubble.png">
+												<img src="../../images/icons/small/grey/speech_bubble.png">
 												<span>Tiny</span>
 											</button>
 										</div>
@@ -1831,10 +1831,10 @@
 												<span>Small</span>
 											</button>
 											<button class="light  small">
-												<img src="images/icons/small/grey/file_cabinet.png">
+												<img src="../../images/icons/small/grey/file_cabinet.png">
 											</button>
 											<button class="light small">
-												<img src="images/icons/small/grey/file_cabinet.png">
+												<img src="../../images/icons/small/grey/file_cabinet.png">
 												<span>Small</span>
 											</button>
 										</div>
@@ -1855,10 +1855,10 @@
 												<span>Regular</span>
 											</button>
 											<button class="light ">
-												<img src="images/icons/small/grey/file_cabinet.png">
+												<img src="../../images/icons/small/grey/file_cabinet.png">
 											</button>
 											<button class="light">
-												<img src="images/icons/small/grey/file_cabinet.png">
+												<img src="../../images/icons/small/grey/file_cabinet.png">
 												<span>Regular</span>
 											</button>
 										</div>
@@ -1879,10 +1879,10 @@
 												<span>Large</span>
 											</button>
 											<button class="light  large">
-												<img src="images/icons/small/grey/file_cabinet.png">
+												<img src="../../images/icons/small/grey/file_cabinet.png">
 											</button>
 											<button class="light large">
-												<img src="images/icons/small/grey/file_cabinet.png">
+												<img src="../../images/icons/small/grey/file_cabinet.png">
 												<span>Large</span>
 											</button>
 										</div>
@@ -1897,21 +1897,21 @@
 												<span>Large Icon Top</span>
 											</button>
 											<button class="light large_icon icon_top">
-												<img src="images/icons/large/grey/file_cabinet.png">
+												<img src="../../images/icons/large/grey/file_cabinet.png">
 												<span>Large Icon Top</span>
 											</button>
 											<button class="light large_icon display_none">
 												<div class="ui-icon ui-icon-grip-diagonal-se"></div>
 											</button>
 											<button class="light large_icon">
-												<img src="images/icons/large/grey/file_cabinet.png">
+												<img src="../../images/icons/large/grey/file_cabinet.png">
 											</button>
 											<button class="light large_icon display_none">
 												<div class="ui-icon ui-icon-grip-diagonal-se"></div>
 												<span>Large Icon</span>
 											</button>
 											<button class="light large_icon">
-												<img src="images/icons/large/grey/file_cabinet.png">
+												<img src="../../images/icons/large/grey/file_cabinet.png">
 												<span>Large Icon</span>
 											</button>
 										</div>
@@ -2020,35 +2020,35 @@
 								<div class="col_20">
 									<div class="section clearfix">
 										<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_welcome">
-											<img src="images/icons/large/grey/speech_bubble_2.png">
+											<img src="../../images/icons/large/grey/speech_bubble_2.png">
 										</button>
 									</div>
 								</div>
 								<div class="col_20">
 									<div class="section clearfix">
 										<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_form">
-											<img src="images/icons/large/grey/create_write.png">
+											<img src="../../images/icons/large/grey/create_write.png">
 										</button>
 									</div>
 								</div>
 								<div class="col_20">
 									<div class="section clearfix">
 										<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_register">
-											<img src="images/icons/large/grey/pencil.png">
+											<img src="../../images/icons/large/grey/pencil.png">
 										</button>
 									</div>
 								</div>
 								<div class="col_20">
 									<div class="section clearfix">
 										<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_delete">
-											<img src="images/icons/large/grey/trashcan_2.png">
+											<img src="../../images/icons/large/grey/trashcan_2.png">
 										</button>
 									</div>
 								</div>
 								<div class="col_20">
 									<div class="section clearfix">
 										<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_logout">
-											<img src="images/icons/large/grey/locked_2.png">
+											<img src="../../images/icons/large/grey/locked_2.png">
 										</button>
 									</div>
 								</div>

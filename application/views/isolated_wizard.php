@@ -93,7 +93,7 @@
 
 											<div class="button_bar clearfix">
 												<button class="next_step forward send_right" data-goto="step_2" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/white/bended_arrow_right.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/white/bended_arrow_right.png">
 													<span>Next Step</span>
 												</button>
 											</div>
@@ -133,11 +133,11 @@
 
 											<div class="button_bar clearfix">
 												<button class="next_step back light" data-goto="step_1" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/grey/bended_arrow_left.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/grey/bended_arrow_left.png">
 													<span>Prev Step</span>
 												</button>
 												<button class="next_step forward send_right" data-goto="step_3" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/white/bended_arrow_right.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/white/bended_arrow_right.png">
 													<span>Next Step</span>
 												</button>
 											</div>
@@ -165,11 +165,11 @@
 
 											<div class="button_bar clearfix">
 												<button class="next_step back light" data-goto="step_2" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/grey/bended_arrow_left.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/grey/bended_arrow_left.png">
 													<span>Prev Step</span>
 												</button>
 												<button class="next_step forward send_right" data-goto="step_4" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/white/bended_arrow_right.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/white/bended_arrow_right.png">
 													<span>Next Step</span>
 												</button>
 											</div>
@@ -199,11 +199,11 @@
 
 											<div class="button_bar clearfix">
 												<button class="next_step back light" data-goto="step_3" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/grey/bended_arrow_left.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/grey/bended_arrow_left.png">
 													<span>Prev Step</span>
 												</button>
 												<button class="next_step green send_right submit_button" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/white/bended_arrow_right.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/white/bended_arrow_right.png">
 													<span>Complete</span>
 												</button>
 											</div>

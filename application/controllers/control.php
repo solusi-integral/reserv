@@ -19,9 +19,81 @@ class Control extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+            $this->load->model('report_model','',TRUE);
+            $data['sumrace']    = $this->sumrace();
+            $data['red']        = $this->redrace();
+            $data['perce']      = $this->green_percentage();
+            $data['gtype']      = $this->GType();
+            $data['ttype']      = $this->TType();
+            $data['rtype']      = $this->RType();
+            $this->load->view('index', $data);
 	}
         
+        function sumrace()
+        {
+            $this->load->helper('date');
+            $this->load->model('report_model','',TRUE);
+            $data    = $this->db->count_all_results('result');
+            return $data;
+        }
+        
+        function redrace()
+        {
+            $this->load->helper('date');
+            $this->load->model('report_model','',TRUE);
+            $now                = time();
+            $UL                 = 0;
+            $DL                 = 15;  
+            $this->db->where('Results <', $UL);
+            $this->db->or_where('Results >', $DL);
+            $this->db->from('result');
+            $red                = $this->db->count_all_results();
+            $data               = $red/2;
+            return $data;
+        }
+        
+        function green_percentage()
+        {
+            $all        = $this->sumrace();
+            $red        = $this->redrace();
+            $green      = $all-$red;
+            $perce1     = round(($green/$all*100),2);
+            return $perce1;
+        }
+        
+        function GType()
+        {
+            $this->load->helper('date');
+            $this->load->model('report_model','',TRUE);
+            $Gtype      = 'G';
+            $this->db->where('Type =', $Gtype);
+            $this->db->from('result');
+            $Gtyper                = $this->db->count_all_results();
+            return $Gtyper;          
+        }
+        
+        function TType()
+        {
+            $this->load->helper('date');
+            $this->load->model('report_model','',TRUE);
+            $Ttype      = 'T';
+            $this->db->where('Type =', $Ttype);
+            $this->db->from('result');
+            $Ttyper                = $this->db->count_all_results();
+            return $Ttyper;
+        }
+        
+        function RType()
+        {
+            $this->load->helper('date');
+            $this->load->model('report_model','',TRUE);
+            $Rtype      = 'R';
+            $this->db->where('Type =', $Rtype);
+            $this->db->from('result');
+            $Rtyper                = $this->db->count_all_results();
+            return $Rtyper;
+        }
+      
 }
 
 /* End of file welcome.php */

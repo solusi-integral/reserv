@@ -20,35 +20,35 @@
 							<div class="col_20">
 								<div class="section clearfix">
 									<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_welcome">
-										<img src="images/icons/large/grey/speech_bubble_2.png">
+										<img src="../../images/icons/large/grey/speech_bubble_2.png">
 									</button>
 								</div>
 							</div>
 							<div class="col_20">
 								<div class="section clearfix">
 									<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_form">
-										<img src="images/icons/large/grey/create_write.png">
+										<img src="../../images/icons/large/grey/create_write.png">
 									</button>
 								</div>
 							</div>
 							<div class="col_20">
 								<div class="section clearfix">
 									<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_register">
-										<img src="images/icons/large/grey/pencil.png">
+										<img src="../../images/icons/large/grey/pencil.png">
 									</button>
 								</div>
 							</div>
 							<div class="col_20">
 								<div class="section clearfix">
 									<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_delete">
-										<img src="images/icons/large/grey/trashcan_2.png">
+										<img src="../../images/icons/large/grey/trashcan_2.png">
 									</button>
 								</div>
 							</div>
 							<div class="col_20">
 								<div class="section clearfix">
 									<button class="full_width light large_icon icon_top on_dark dialog_button circle" data-dialog="dialog_logout">
-										<img src="images/icons/large/grey/locked_2.png">
+										<img src="../../images/icons/large/grey/locked_2.png">
 									</button>
 								</div>
 							</div>

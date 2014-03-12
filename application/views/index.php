@@ -17,7 +17,7 @@
 				</div>
 				<div class="box grid_16 tabs">
 					<ul class="tab_header clearfix">
-						<li><a href="#tabs-1">System Stats</a></li>
+						<li><a href="#tabs-1">All Time Stats</a></li>
 						<li><a href="#tabs-2">Server Stats</a></li>
 					</ul>
 					<div class="controls">
@@ -62,8 +62,7 @@
 									<div class="info_box">
 										<div class="split one">
 											<div class="chart">
-												<span class="spark_pie large random_number_3">
-												26, 74, 105</span>
+												<span class="spark_pie large"><?php echo $gtype ?>, <?php echo $ttype ?>, <?php echo $rtype ?>
 											</div>
 										</div>
 										<label>Resources</label>
@@ -71,8 +70,8 @@
 								</div>
 								<div class="col_20 no_border_top no_border_right">
 									<div class="info_box">
-										<div class="split two">3,122 <small>ext</small></div>
-										<div class="split two red">253 <small>int</small></div>
+										<div class="split two"><?php echo $sumrace ?> <small>records</small></div>
+										<div class="split two red"><?php echo $red ?> <small>records</small></div>
 										<label>Connections</label>
 									</div>
 								</div>
@@ -140,7 +139,7 @@
 						<div class="col_20 no_border_top">
 							<div class="info_box">
 								<div class="split one">
-									<a href="#"><img src="images/icons/large/white/alert.png" width="36" height="36" /></a>
+									<a href="#"><img src="../../images/icons/large/white/alert.png" width="36" height="36" /></a>
 								</div>
 								<label>View Alerts</label>
 							</div>
@@ -162,7 +161,7 @@
 						<div class="col_20 no_border_top">
 							<div class="info_box">
 								<div class="split one">
-									<div class="big_letter red">30%</div>
+									<div class="big_letter red"><?php echo $perce ?> %</div>
 								</div>
 								<label>Server Health</label>
 							</div>
@@ -238,7 +237,7 @@
 						</fieldset>
 						<div class="button_bar clearfix">
 							<button class="small dark" type="submit">
-								<img src="images/icons/small/white/speech_bubble.png">
+								<img src="../../images/icons/small/white/speech_bubble.png">
 								<span>Contact</span>
 							</button>
 							<button class="small light send_right" type="reset">
@@ -278,15 +277,15 @@
 					</div>
 					<div class="col_70">
 						<ul class="picture_tiles clearfix send_right">
-							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="images/content/profiles/mangatar-0.png"></a><div class="alert badge grad_yellow">★</div></li>
-							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="images/content/profiles/mangatar-1.png"></a></li>
-							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="images/content/profiles/mangatar-2.png"></a><div class="alert badge grad_green">↑</div></li>
-							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="images/content/profiles/mangatar-3.png"></a></li>
-							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="images/content/profiles/mangatar-4.png"></a></li>
-							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="images/content/profiles/mangatar-5.png"></a></li>
-							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="images/content/profiles/mangatar-6.png"></a></li>
-							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="images/content/profiles/mangatar-7.png"></a><div class="alert badge grad_red">↓</div></li>
-							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="images/content/profiles/mangatar-8.png"></a></li>
+							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="../../images/content/profiles/mangatar-0.png"></a><div class="alert badge grad_yellow">★</div></li>
+							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="../../images/content/profiles/mangatar-1.png"></a></li>
+							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="../../images/content/profiles/mangatar-2.png"></a><div class="alert badge grad_green">↑</div></li>
+							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="../../images/content/profiles/mangatar-3.png"></a></li>
+							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="../../images/content/profiles/mangatar-4.png"></a></li>
+							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="../../images/content/profiles/mangatar-5.png"></a></li>
+							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="../../images/content/profiles/mangatar-6.png"></a></li>
+							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="../../images/content/profiles/mangatar-7.png"></a><div class="alert badge grad_red">↓</div></li>
+							<li><a href="contacts.php" class="pjax"><img width="45" alt="Profile Pic" src="../../images/content/profiles/mangatar-8.png"></a></li>
 						</ul>
 
 					</div>
@@ -331,9 +330,11 @@
 		<?php include 'includes/dialogs/dialog_register.php'?>
 		<?php include 'includes/dialogs/dialog_welcome.php'?>
 		<?php include 'includes/dialogs/dialog_logout.php'?>
-		<script type="text/javascript">
+		<!-- 
+                <script type="text/javascript">
 		$(document).ready(function() {
 			$("#dialog_welcome").dialog("open");
 		});
 		</script>
+                -->
 <?php include 'includes/core/document_foot.php'?>

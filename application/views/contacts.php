@@ -237,7 +237,7 @@
 							<div class="columns clearfix">
 								<div class="col_25">
 									<div class="section">
-										<img id="contactImage" width="55" alt="Profile Pic" src="images/content/profiles/mangatar-0.png">
+										<img id="contactImage" width="55" alt="Profile Pic" src="../../images/content/profiles/mangatar-0.png">
 									</div>
 								</div>
 								<div class="col_75">
@@ -283,12 +283,12 @@
 							</div>
 							<div class="button_bar clearfix">
 								<button class="dark">
-									<img src="images/icons/small/white/bended_arrow_right.png">
+									<img src="../../images/icons/small/white/bended_arrow_right.png">
 									<span>Save</span>
 								</button>
 
 								<button class="dialog_button red send_right" data-dialog="delete">
-									<img src="images/icons/small/white/trashcan.png">
+									<img src="../../images/icons/small/white/trashcan.png">
 									<span>Delete</span>
 								</button>
 							</div>

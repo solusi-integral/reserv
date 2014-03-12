@@ -17,7 +17,7 @@
 				</div>
 				<div class="grid_16 clearfix">
 					<div class="alert dismissible alert_green">
-						<img width="24" height="24" src="images/icons/small/white/alert_2.png">
+						<img width="24" height="24" src="../../images/icons/small/white/alert_2.png">
 						<strong>Cool feature</strong>, you can rearrange the bars by grabbing the dotted area to the right of the bar. <strong>Go ahead and try it out</strong>.
 					</div>
 				</div>

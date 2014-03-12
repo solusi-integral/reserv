@@ -92,7 +92,7 @@
 				</div>
 				<div class="grid_16 clearfix">
 					<div class="alert dismissible alert_blue">
-						<img width="24" height="24" src="images/icons/small/white/alert_2.png">
+						<img width="24" height="24" src="../../images/icons/small/white/alert_2.png">
 						<strong>Brand new feature:</strong> Adminica now has a flexible column system for use within content boxes.
 					</div>
 				</div>

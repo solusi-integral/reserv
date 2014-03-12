@@ -40,7 +40,7 @@
 
 							<div class="button_bar clearfix">
 								<button class="green" type="submit">
-									<img height="24" width="24" alt="Bended Arrow Right" src="images/icons/small/white/bended_arrow_right.png">
+									<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/white/bended_arrow_right.png">
 									<span>Submit</span>
 								</button>
 							</div>

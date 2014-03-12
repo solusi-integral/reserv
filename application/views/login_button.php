@@ -8,7 +8,7 @@
 							<div class="block">
 								<div class="section">
 									<div class="alert dismissible alert_light">
-										<img width="24" height="24" src="images/icons/small/grey/locked.png">
+										<img width="24" height="24" src="../../images/icons/small/grey/locked.png">
 										<strong>Welcome to Adminica.</strong> Please enter your details to login.
 									</div>
 								</div>
@@ -27,7 +27,7 @@
 								</fieldset>
 								<div class="button_bar clearfix">
 									<button class="wide" type="submit">
-										<img src="images/icons/small/white/key_2.png">
+										<img src="../../images/icons/small/white/key_2.png">
 										<span>Login</span>
 									</button>
 								</div>
@@ -37,7 +37,7 @@
 					</div>
 					<a href="index.php" id="login_logo"><span>Adminica</span></a>
 					<button data-dialog="dialog_register" class="dialog_button send_right" style="margin-top:10px;">
-						<img src="images/icons/small/white/user.png">
+						<img src="../../images/icons/small/white/user.png">
 						<span>Not Registered ?</span>
 					</button>
 				</div>

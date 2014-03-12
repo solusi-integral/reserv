@@ -27,7 +27,7 @@ This editor has all the usual formatting options you expect. It can be toggled a
 
 						<div class="button_bar clearfix">
 							<button type="submit" class="dark" onsubmit="editor1.post();">
-								<img src="images/icons/small/white/bended_arrow_right.png">
+								<img src="../../images/icons/small/white/bended_arrow_right.png">
 								<span>Submit</span>
 							</button>
 						</div>
@@ -40,7 +40,7 @@ This editor has all the usual formatting options you expect. It can be toggled a
 
 						<div class="button_bar clearfix">
 							<button type="submit" class="dark" onsubmit="editor2.post()">
-								<img src="images/icons/small/white/bended_arrow_right.png">
+								<img src="../../images/icons/small/white/bended_arrow_right.png">
 								<span>Submit</span>
 							</button>
 						</div>

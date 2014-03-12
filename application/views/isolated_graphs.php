@@ -62,7 +62,7 @@
 									<div class="col_20">
 										<div class="info_box">
 											<div class="split one">
-												<a href="#"><img src="images/icons/large/grey/alert.png" width="36" height="36" /></a>
+												<a href="#"><img src="../../images/icons/large/grey/alert.png" width="36" height="36" /></a>
 											</div>
 											<label>View Alerts</label>
 										</div>

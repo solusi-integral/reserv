@@ -92,15 +92,15 @@
 
 							<div class="button_bar clearfix">
 								<button class="green dark">
-									<img src="images/icons/small/white/bended_arrow_right.png">
+									<img src="../../images/icons/small/white/bended_arrow_right.png">
 									<span>Yes</span>
 								</button>
 								<button class="red dark">
-									<img src="images/icons/small/white/bended_arrow_right.png">
+									<img src="../../images/icons/small/white/bended_arrow_right.png">
 									<span>No</span>
 								</button>
 								<button class="grey dark send_right">
-									<img src="images/icons/small/white/bended_arrow_right.png">
+									<img src="../../images/icons/small/white/bended_arrow_right.png">
 									<span>Maybe</span>
 								</button>
 							</div>
@@ -115,32 +115,32 @@
 								<label>Buttons</label>
 								<div>
 									<button class="skin_colour">
-										<img src="images/icons/small/white/file_cabinet.png">
+										<img src="../../images/icons/small/white/file_cabinet.png">
 										<span>Button</span>
 									</button>
 
 									<button class="black icon_only">
-										<img src="images/icons/small/white/file_cabinet.png">
+										<img src="../../images/icons/small/white/file_cabinet.png">
 									</button>
 
 									<button class="blue icon_only">
-										<img src="images/icons/small/white/film_strip.png">
+										<img src="../../images/icons/small/white/film_strip.png">
 									</button>
 
 									<button class="navy icon_only">
-										<img src="images/icons/small/white/firefox.png">
+										<img src="../../images/icons/small/white/firefox.png">
 									</button>
 
 									<button class="red icon_only">
-										<img src="images/icons/small/white/flag.png">
+										<img src="../../images/icons/small/white/flag.png">
 									</button>
 
 									<button class="green icon_only">
-										<img src="images/icons/small/white/folder.png">
+										<img src="../../images/icons/small/white/folder.png">
 									</button>
 
 									<button class="orange icon_only">
-										<img src="images/icons/small/white/frames.png">
+										<img src="../../images/icons/small/white/frames.png">
 									</button>
 
 									<div class="clearfix"></div>
@@ -197,7 +197,7 @@
 								<label>Dialog</label>
 								<div class="clearfix">
 									<button class="dialog_button" data-dialog="dialog_form">
-										<img src="images/icons/small/white/speech_bubble_2.png">
+										<img src="../../images/icons/small/white/speech_bubble_2.png">
 										<span>Open</span>
 									</button>
 								</div>
@@ -464,19 +464,19 @@
 						<div class="block">
 							<div class="section">
 								<div class="alert dismissible alert_blue">
-								<img height="24" width="24" src="images/icons/small/white/alert_2.png">
+								<img height="24" width="24" src="../../images/icons/small/white/alert_2.png">
 								This is a <strong>blue</strong> Alert!
 								</div>
 								<div class="alert dismissible alert_green">
-								<img height="24" width="24" src="images/icons/small/white/alert.png">
+								<img height="24" width="24" src="../../images/icons/small/white/alert.png">
 								This is a <strong>green</strong> Alert!
 								</div>
 								<div class="alert dismissible alert_red">
-								<img height="24" width="24" src="images/icons/small/white/alarm_bell.png">
+								<img height="24" width="24" src="../../images/icons/small/white/alarm_bell.png">
 								This is a <strong>red</strong> Alert!
 								</div>
 								<div class="alert alert_orange">
-								<img height="24" width="24" src="images/icons/small/white/alarm_clock.png">
+								<img height="24" width="24" src="../../images/icons/small/white/alarm_clock.png">
 								This is an <strong>orange</strong> Alert and cannot be dismissed.
 								</div>
 							</div>
@@ -488,19 +488,19 @@
 						<div class="block">
 							<div class="section">
 								<div class="alert dismissible alert_navy">
-								<img height="24" width="24" src="images/icons/small/white/cog_3.png">
+								<img height="24" width="24" src="../../images/icons/small/white/cog_3.png">
 								This is a <strong>navy</strong> Alert!
 								</div>
 								<div class="alert dismissible alert_black">
-								<img height="24" width="24" src="images/icons/small/white/locked_2.png">
+								<img height="24" width="24" src="../../images/icons/small/white/locked_2.png">
 								This is a <strong>black</strong> Alert!
 								</div>
 								<div class="alert dismissible alert_grey">
-								<img height="24" width="24" src="images/icons/small/white/speech_bubble_2.png">
+								<img height="24" width="24" src="../../images/icons/small/white/speech_bubble_2.png">
 								This is a <strong>grey</strong> Alert!
 								</div>
 								<div class="alert alert_light">
-								<img height="24" width="24" src="images/icons/small/grey/speech_bubble_2.png">
+								<img height="24" width="24" src="../../images/icons/small/grey/speech_bubble_2.png">
 								This alert cannot be dismissed.
 								</div>
 							</div>
