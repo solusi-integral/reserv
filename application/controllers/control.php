@@ -26,6 +26,9 @@ class Control extends CI_Controller {
             $data['gtype']      = $this->GType();
             $data['ttype']      = $this->TType();
             $data['rtype']      = $this->RType();
+            $data['pesan']      = $this->status();
+            $data['today_sum']  = $this->today();
+            $data['today_red']  = $this->today_red();
             $this->load->view('index', $data);
 	}
         
@@ -92,6 +95,59 @@ class Control extends CI_Controller {
             $this->db->from('result');
             $Rtyper                = $this->db->count_all_results();
             return $Rtyper;
+        }
+        
+        function status()
+        {
+            $status = $this->green_percentage();
+            if ($status > 90){
+                $pesan  = 'Great';
+            }
+            else if ($status > 80){
+                $pesan  = 'Good';
+            }
+            else if ($status > 75){
+                $pesan  = 'Fair';
+            }
+            else {
+                $pesan  = 'Bad';
+            }
+            return $pesan; 
+        }
+        
+        function today()
+        {
+            $this->load->helper('date');
+            $time = now();
+            $today  = date("Y-m-d", $time);
+            $this->db->where('Date =', $today);
+            $this->db->from('result');
+            $today_total                = $this->db->count_all_results();
+            return $today_total;
+        }
+        
+        function today_red()
+        {
+            $this->load->helper('date');
+            $time = now();
+            $today  = date("Y-m-d", $time);
+            $UL                 = 0;
+            $DL                 = 15;  
+            $this->db->where('Date =', $today);
+            $this->db->where('Results <', $UL);
+            $this->db->or_where('Results >', $DL);
+            $this->db->from('result');
+            $today_total                = $this->db->count_all_results();
+            $red    = $today_total/2;
+            return $red;
+        }
+        
+        function yesterday()
+        {
+            $this->load->helper('date');
+            $time = now();
+            $today  = date("Y-m-d", $time - 86400);
+            return $today;
         }
       
 }

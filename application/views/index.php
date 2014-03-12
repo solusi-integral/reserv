@@ -18,7 +18,7 @@
 				<div class="box grid_16 tabs">
 					<ul class="tab_header clearfix">
 						<li><a href="#tabs-1">All Time Stats</a></li>
-						<li><a href="#tabs-2">Server Stats</a></li>
+						<li><a href="#tabs-2">Today Stats</a></li>
 					</ul>
 					<div class="controls">
 						<a href="#" class="grabber"></a>
@@ -53,7 +53,7 @@
 								<div class="col_20 no_border_top">
 									<div class="info_box">
 										<div class="split one">
-											<div class="big_letter green">Good</div>
+											<div class="big_letter green"><?php echo $pesan ?></div>
 										</div>
 										<label>Remote Status</label>
 									</div>
@@ -65,14 +65,14 @@
 												<span class="spark_pie large"><?php echo $gtype ?>, <?php echo $ttype ?>, <?php echo $rtype ?>
 											</div>
 										</div>
-										<label>Resources</label>
+										<label>Race Type</label>
 									</div>
 								</div>
 								<div class="col_20 no_border_top no_border_right">
 									<div class="info_box">
 										<div class="split two"><?php echo $sumrace ?> <small>records</small></div>
 										<div class="split two red"><?php echo $red ?> <small>records</small></div>
-										<label>Connections</label>
+										<label>Performance</label>
 									</div>
 								</div>
 							</div>
@@ -122,8 +122,8 @@
 								</div>
 								<div class="col_20 no_border_top no_border_right">
 									<div class="info_box">
-										<div class="split two">3,122 <small>ext</small></div>
-										<div class="split two red">253 <small>int</small></div>
+										<div class="split two"><?php echo $today_sum ?> <small>ext</small></div>
+										<div class="split two red"><?php echo $today_red ?> <small>int</small></div>
 										<label>Connections</label>
 									</div>
 								</div>
