@@ -1,16 +1,10 @@
 <html>
 <head>
-<title></title>
+<title>Remote Reporting System</title>
 </head>
 <body>
-    <h1><?php echo $date ?></h1><br>
-    <h1><?php echo $jump_date ?></h1><br>
-    <h1><?php echo $type ?></h1><br>
-    <h1><?php echo $runners ?></h1><br>
-    <h1><?php echo $number ?></h1><br>
-    <h1><?php echo $location ?></h1><br>
-    <h1><?php echo $results ?></h1><br>
-    <h1><?php echo $name ?></h1><br>
-    <h1><?php echo $comment ?></h1><br>
+<center><h1>Data Recorded</h1></center><br>
+<b><?php echo $location ?></b> race number <b><?php echo $number ?></b> with result <b><?php echo $results ?></b> clicked by: <b><i><?php echo $name ?></i></b> has been recorded to the database.<br><br>
+    Debug information: <?php echo $date ?> | <?php echo $jump_date ?> | <?php echo $type ?> | <?php echo $runners ?> | <?php echo $number ?> | <?php echo $location ?> | <?php echo $results ?> | <?php echo $name ?> | <?php echo $comment ?>
 </body>
 </html>

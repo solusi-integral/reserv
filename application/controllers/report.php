@@ -25,8 +25,9 @@ class Report extends CI_Controller {
         public function record($date, $jump_date, $type, $runners, $number, $location, $results, $name, $comment)
         {
             $this->load->model('report_model','',TRUE);
+            $decode_time            = rawurldecode($jump_date);
             $data['date']           = $date;
-            $data['jump_date']      = $jump_date;
+            $data['jump_date']      = $decode_time;
             $data['type']           = $type;
             $data['runners']        = $runners;
             $data['number']         = $number;
