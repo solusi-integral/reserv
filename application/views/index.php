@@ -9,7 +9,7 @@
 				<?php include 'includes/components/navigation.php'?>
 				<div class="flat_area grid_16">
 					<h2>Dashboard
-						<small>- Welcome to Adminica.</small>
+                                            <small>- Welcome to Adminica</small>
 						<div class="holder">
 							<?php include 'includes/components/dynamic_loading.php'?>
 						</div>
@@ -33,10 +33,10 @@
 										<div class="value_tag"><span>+453 today</span></div>
 										<div class="split one">
 											<div class="chart">
-												<span class="spark_bar large random_number_5"></span>
+												<span class="spark_bar large"><?php echo $today_gree ?>, <?php echo $yeste_gree ?>, <?//php echo $twod_gree ?>, 0, 0</span>
 											</div>
 										</div>
-										<label>Leads per hour</label>
+										<label>Last 5 Days</label>
 									</div>
 								</div>
 								<div class="col_20 no_border_top">
@@ -104,7 +104,7 @@
 								<div class="col_20 no_border_top">
 									<div class="info_box">
 										<div class="split one">
-											<div class="big_letter yellow">Fair</div>
+											<div class="big_letter yellow"><?php echo $today_perf ?></div>
 										</div>
 										<label>Remote Status</label>
 									</div>
@@ -154,7 +154,7 @@
 						</div>
 						<div class="col_20 no_border_top">
 							<div class="info_box">
-								<div class="split one"><span class="spark_bar large random_number_5">0,5,1,4,2,3</span></div>
+								<div class="split one"><span class="spark_bar large"><?php echo $today_gree ?>, <?php echo $yeste_gree ?>, 0, 0, 0</span></div>
 								<label>Trends</label>
 							</div>
 						</div>
