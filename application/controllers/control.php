@@ -32,7 +32,6 @@ class Control extends CI_Controller {
             $data['today_perf'] = $this->today_performance();
             $data['today_gree'] = $this->today_green();
             $data['yeste_gree'] = $this->yesterday_green();
-            //$data['twod_gree']  = $this->twodays_green();
             $this->load->view('index', $data);
 	}
         
@@ -217,43 +216,8 @@ class Control extends CI_Controller {
             $perce1     = round(($green/$total*100),2);
             return $perce1;
         }
-        /*
-        function twodays()
-        {
-            $this->load->helper('date');
-            $time = now();
-            $today  = date("Y-m-d", $time - (60*60*24*2));
-            $this->db->where('Date =', $today);
-            $this->db->from('result');
-            $today_total                = $this->db->count_all_results();
-            return $today_total;
-        }
         
-        function twodays_red()
-        {
-            $this->load->helper('date');
-            $time = now();
-            $today  = date("Y-m-d", $time - (60*60*24*2));
-            $UL                 = 1;
-            $DL                 = 15;  
-            $this->db->where('Date =', $today);
-            $this->db->where('Results <', $UL);
-            $this->db->or_where('Results >', $DL);
-            $this->db->from('result');
-            $today_total                = $this->db->count_all_results();
-            $red    = $today_total;
-            return $red;
-        }
         
-        function twodays_green()
-        {
-            $total  = $this->twodays();
-            $red    = $this->twodays_red();
-            $green  = $total-$red;
-            $perce1     = round(($green/$total*100),2);
-            return $perce1;
-        }
-      */
 }
 
 /* End of file welcome.php */
