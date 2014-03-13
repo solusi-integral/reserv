@@ -70,8 +70,8 @@
 								</div>
 								<div class="col_20 no_border_top no_border_right">
 									<div class="info_box">
-										<div class="split two"><?php echo $sumrace ?> <small>records</small></div>
-										<div class="split two red"><?php echo $red ?> <small>records</small></div>
+										<div class="split two"><?php echo $sumrace ?> <small>races</small></div>
+										<div class="split two red"><?php echo $red ?> <small>races</small></div>
 										<label>Performance</label>
 									</div>
 								</div>
@@ -95,10 +95,10 @@
 										<div class="value_tag"><span>estimated</span></div>
 										<div class="split one">
 											<div class="chart">
-												<span class="spark_line large random_number_5"></span>
+												<span class="big_letter green"><?php echo $today_gree ?> %</span>
 											</div>
 										</div>
-										<label>Daily Hits</label>
+										<label>Today Performance</label>
 									</div>
 								</div>
 								<div class="col_20 no_border_top">
@@ -117,14 +117,14 @@
 												26, 74, 105</span>
 											</div>
 										</div>
-										<label>Resources</label>
+										<label>Race Types</label>
 									</div>
 								</div>
 								<div class="col_20 no_border_top no_border_right">
 									<div class="info_box">
-										<div class="split two"><?php echo $today_sum ?> <small>ext</small></div>
-										<div class="split two red"><?php echo $today_red ?> <small>int</small></div>
-										<label>Connections</label>
+										<div class="split two"><?php echo $today_sum ?> <small>races</small></div>
+										<div class="split two red"><?php echo $today_red ?> <small>races</small></div>
+										<label>Performance</label>
 									</div>
 								</div>
 							</div>
@@ -163,7 +163,7 @@
 								<div class="split one">
 									<div class="big_letter red"><?php echo $perce ?> %</div>
 								</div>
-								<label>Server Health</label>
+								<label>All Time Performance</label>
 							</div>
 						</div>
 						<div class="col_20 no_border_right no_border_top">
