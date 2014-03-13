@@ -37,6 +37,21 @@ class Report extends CI_Controller {
             $data['comment']        = $comment;
             $this->load->view('report_view',$data);
             $this->db->insert('result', $data);
+            $gtype  = 'G';
+            $ttype  = 'T';
+            $rtype  = 'R';
+            if ($type == $gtype) 
+            {
+                $this->db->insert('gtype', $data);
+            }
+            else if ($type == $ttype) 
+            {
+                $this->db->insert('ttype', $data);
+            }
+            else if ($type == $rtype)
+            {
+                $this->db->insert('rtype', $data);
+            }
         }
 }
 
