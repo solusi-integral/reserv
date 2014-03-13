@@ -10,7 +10,7 @@ header('Cache-Control: public, max-age=60, must-revalidate');
 	<head>
 		<meta charset="utf-8">
 
-		<title>Adminica | The Professional Admin Theme</title>
+		<title>Remote Performance Reporting System - CV Solusi Integral</title>
 
   		<meta name="description" content="http://themeforest.net/item/adminica-the-professional-admin-template/160638">
   		<meta name="author" content="Oisin Lavery - Tricycle Labs">
