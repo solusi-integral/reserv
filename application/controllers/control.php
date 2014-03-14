@@ -205,9 +205,13 @@ class Control extends CI_Controller {
             $DL                 = 15;  
             $this->db->where('Date =', $today);
             $this->db->where('Results <', $UL);
-            $this->db->or_where('Results >', $DL);
             $this->db->from('result');
-            $today_total                = $this->db->count_all_results();
+            $todayul         = $this->db->count_all_results();
+            $this->db->where('Date =', $today);
+            $this->db->where('Results >', $DL);
+            $this->db->from('result');
+            $todaydl        =$this->db->count_all_results();
+            $today_total    = $todayul+$todaydl;
             $red    = $today_total;
             return $red;
         }
