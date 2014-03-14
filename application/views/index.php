@@ -183,7 +183,7 @@
 			<div class="main_container container_16 clearfix">
 				<div class="box grid_8 tabs">
 					<ul class="tab_header clearfix">
-						<li><a href="#tabs-1">Quicklinks</a></li>
+						<li><a href="#tabs-1">Last Results</a></li>
 						<li><a href="#tabs-2">Content</a></li>
 					</ul>
 					<div class="controls">
@@ -194,12 +194,11 @@
 					<div class="toggle_container">
 						<div id="tabs-1" class="block">
 							<ul class="flat medium">
-								<li><span class="spark_bar small random_number_5 spark_inline"></span> Aenean tempor ullamcorper</li>
-								<li><span class="spark_line small random_number_5 spark_inline"></span>Rutrum commodo, vehicula tempus</li>
-								<li><span class="spark_bar small random_number_5 spark_inline"></span><a href="#">Curabitur nec arcu</a></li>
-								<li><span class="spark_bar small random_number_5 spark_inline"></span> Aenean tempor ullamcorper</li>
-								<li><span class="spark_line small random_number_5 spark_inline"></span>Rutrum commodo, vehicula tempus</li>
-								<li><span class="spark_line small random_number_5 spark_inline"></span>Rutrum commodo, vehicula tempus</li>
+                                                            <?php
+                                                            foreach ($last6 as $row){
+								echo '<li><span class="spark_bar small random_number_5 spark_inline"></span>'. $row->Name .' clicked '.$row->Location .' with '. $row->Results .' as the result.</li>';
+                                                            }
+                                                            ?>
 							</ul>
 						</div>
 						<div id="tabs-2" class="block">

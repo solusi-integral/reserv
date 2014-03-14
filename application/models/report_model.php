@@ -27,4 +27,19 @@ class Report_model extends CI_Model{
     {
         return $this->db->insert('data', $data);
     }
+    
+    public function get_races()
+    {
+        $this->db->order_by('Time', 'DESC');
+        $query  = $this->db->get('result', 200);
+        return $query->result();
+    }
+    
+    public function get_races_6()
+    {
+        $this->db->order_by('Time', 'DESC');
+        $query  = $this->db->get('result', 6);
+        return $query->result();
+    }
+    
 }

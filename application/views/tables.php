@@ -26,20 +26,24 @@
                                                             <th>Number</th>
                                                             <th>Location</th>
                                                             <th>Results</th>
+                                                            <th>Name</th>
                                                             <th>Comments</th>
                                                     </tr>
                                             </thead>
                                             <tbody>
-                                                <?//php foreach ($data as $row){ ;?>
-                                                <tr class="gradeX">
-                                                        <td><?php echo $data ?></td>
-                                                        <td><?//php echo $row['usrID'];?></td>                                                                                   
-                                                        <td><?//php echo $row['usrID'];?></td>
-                                                        <td class="center"><?//php echo $row['usrID'];?></td>
-                                                        <td class="center"><?//php echo $row['usrID'];?></td>
-                                                        <td class="center"><?//php echo $row['usrID'];?></td>
-                                                        <td>none</td>
-                                                </tr>
+                                                <?php 
+                                                foreach ($query as $row){
+                                                echo '<tr class="gradeX">';
+                                                        echo '<td>'. $row->Time .'</td>';
+                                                        echo '<td class="center">'. $row->Type .'</td>';                                                                                   
+                                                        echo '<td class="center">'. $row->Runners .'</td>';
+                                                        echo '<td class="center">'. $row->Number .'</td>';
+                                                        echo '<td class="center">'. $row->Location .'</td>';
+                                                        echo '<td class="center">'. $row->Results .'</td>';
+                                                        echo '<td>'. $row->Name .'</td>';
+                                                        echo '<td>'. $row->Comment .'</td>';
+                                                echo '</tr>'; 
+                                                } ?>
                                             </tbody>
                                             </table> 
                                    </div>

@@ -19,10 +19,15 @@ class Tables extends CI_Controller {
 	 */
 	public function index()
 	{
-            $this->db->select();
-            $data  = $this->db->get('result');
+            $this->load->library('table');
+            $this->load->helper('html');         
+            $this->load->model('report_model');
+            
+            $data['query']   = $this->report_model->get_races();
             $this->load->view('tables', $data);
 	}
+        
+        
         
 }
 

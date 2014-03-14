@@ -32,6 +32,7 @@ class Control extends CI_Controller {
             $data['today_perf'] = $this->today_performance();
             $data['today_gree'] = $this->today_green();
             $data['yeste_gree'] = $this->yesterday_green();
+            $data['last6']      = $this->last6();
             $this->load->view('index', $data);
 	}
         
@@ -223,6 +224,13 @@ class Control extends CI_Controller {
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
             return $perce1;
+        }
+        
+        function last6()
+        {
+            $this->load->model('report_model');
+            $data   = $this->report_model->get_races_6();
+            return $data;
         }
         
         
