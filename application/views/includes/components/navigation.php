@@ -1,6 +1,22 @@
 <div id="nav_top" class="dropdown_menu clearfix round_top">
 	<ul class="clearfix">
 		<li class="icon_only"><a href="control" class="pjax"><img src="../../images/icons/small/grey/laptop.png"/><span class="display_none">Home</span></a></li>
+                
+                <li><a href="#"><img src="../../images/icons/small/grey/coverflow.png"/><span>R Type</span></a>
+                    
+                </li>
+                
+                <li><a href="#"><img src="../../images/icons/small/grey/coverflow.png"/><span>G Type</span></a>
+                    
+                </li>
+                
+                <li><a href="#"><img src="../../images/icons/small/grey/coverflow.png"/><span>T Type</span></a>
+                    
+                </li>
+                
+                <li><a href="#"><img src="../../images/icons/small/grey/coverflow.png"/><span>Personal</span></a>
+                    
+                </li>
 
 		<li><a href="#"><img src="../../images/icons/small/grey/frames.png"/><span>Layout</span></a>
 			<ul class="open_multiple">
@@ -52,7 +68,7 @@
 				</li>
 			</ul>
 		</li>
-		<li><a href="gallery" class="pjax"><img src="../../images/icons/small/grey/images.png"/><span>Gallery</span></a></li>
+		<!-- Gallery Menu Disabled <li><a href="gallery" class="pjax"><img src="../../images/icons/small/grey/images.png"/><span>Gallery</span></a></li> -->
 		<li><a href="#"><img src="../../images/icons/small/grey/blocks_images.png"/><span>Tables</span></a>
 			<ul>
 				<li><a href="tables" class="pjax"><span>DataTables</span></a></li>
@@ -65,7 +81,7 @@
 				<li><a href="contacts" class="pjax"><img src="../../images/icons/small/grey/users.png"/><span>Contacts</span><div class="alert badge">&#9733</div></a></li>
 			</ul>
 		</li>
-		<li><a href="calendar" class="pjax"><img src="../../images/icons/small/grey/month_calendar.png"/><span>Cal</span></a></li>
+		<!-- Calendar Function Removed <li><a href="calendar" class="pjax"><img src="../../images/icons/small/grey/month_calendar.png"/><span>Cal</span></a></li> -->
 		<li><a href="charts" class="pjax"><img src="../../images/icons/small/grey/graph.png"/><span>Charts</span></a>
 			<ul class="dropdown_right">
 				<li><a href="charts" class="pjax"><span>Large Charts</span></a></li>
