@@ -12,8 +12,8 @@ header('Cache-Control: public, max-age=60, must-revalidate');
 
 		<title>Remote Performance Reporting System - CV Solusi Integral</title>
 
-  		<meta name="description" content="http://themeforest.net/item/adminica-the-professional-admin-template/160638">
-  		<meta name="author" content="Oisin Lavery - Tricycle Labs">
+  		<meta name="description" content="Custom Remote Reporting System for Client">
+  		<meta name="author" content="CV Solusi Integral">
 
 	<!-- iPhone, iPad and Android specific settings -->
 
