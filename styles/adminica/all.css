@@ -678,7 +678,7 @@ a.logo span {
   visibility: hidden;
 }
 a.logo {
-  background: url(../../images/interface/adminica_logo_black-trans.png) no-repeat;
+  background: url(../../images/interface/integral_logo.png) no-repeat;
   display: block;
   height: 87px;
   width: 180px;
@@ -2867,7 +2867,7 @@ Login Box
   border-width: none;
 }
 a#login_logo {
-  background: transparent url(../../images/interface/adminica_logo_black-trans.png) 0 -15px no-repeat;
+  background: transparent url(../../images/interface/integral_logo.png) 0 -15px no-repeat;
   position: relative;
   display: block;
   height: 67px;
