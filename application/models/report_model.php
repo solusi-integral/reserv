@@ -42,4 +42,86 @@ class Report_model extends CI_Model{
         return $query->result();
     }
     
+    public function all_sum_race()
+    {
+        $query   = $this->db->count_all_results('result');
+        return $query;
+        
+    }
+    
+    public function all_sum_redrace()
+    {
+        $this->load->helper('date');
+        $now                = time();
+        $UL                 = 1;
+        $DL                 = 15;  
+        $this->db->where('Results <', $UL);
+        $this->db->or_where('Results >', $DL);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function all_gtype_sum_race()
+    {
+        $this->load->helper('date');
+        $Gtype      = 'G';
+        $this->db->where('Type =', $Gtype);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function all_ttype_sum_race()
+    {
+        $this->load->helper('date');
+        $Ttype      = 'T';
+        $this->db->where('Type =', $Ttype);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function all_rtype_sum_race()
+    {
+        $this->load->helper('date');
+        $Rtype      = 'R';
+        $this->db->where('Type =', $Rtype);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function today_sum_race()
+    {
+        $this->load->helper('date');
+        $time   = now();
+        $today  = date("Y-m-d", $time);
+        $this->db->where('Date =', $today);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function today_red_ul()
+    {
+        $this->load->helper('date');
+        $time = now();
+        $today  = date("Y-m-d", $time);
+        $UL                 = 1;
+        $DL                 = 15;  
+        $this->db->where('Date =', $today);
+        $this->db->where('Results <', $UL);
+        $query  = $this->db->count_all_results('result');
+        return $query;
+    }
+    
+    public function today_red_dl()
+    {
+        $this->load->helper('date');
+        $time = now();
+        $today  = date("Y-m-d", $time);
+        $UL                 = 1;
+        $DL                 = 15;  
+        $this->db->where('Date =', $today);
+        $this->db->where('Results >', $DL);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
 }

@@ -38,24 +38,15 @@ class Control extends CI_Controller {
         
         function sumrace()
         {
-            $this->load->helper('date');
-            $this->load->model('report_model','',TRUE);
-            $data    = $this->db->count_all_results('result');
+            $this->load->model('report_model');
+            $data       = $this->report_model->all_sum_race();
             return $data;
         }
         
         function redrace()
         {
-            $this->load->helper('date');
-            $this->load->model('report_model','',TRUE);
-            $now                = time();
-            $UL                 = 1;
-            $DL                 = 15;  
-            $this->db->where('Results <', $UL);
-            $this->db->or_where('Results >', $DL);
-            $this->db->from('result');
-            $red                = $this->db->count_all_results();
-            $data               = $red;
+            $this->load->model('report_model');
+            $data               = $this->report_model->all_sum_redrace();
             return $data;
         }
         
@@ -70,34 +61,22 @@ class Control extends CI_Controller {
         
         function GType()
         {
-            $this->load->helper('date');
-            $this->load->model('report_model','',TRUE);
-            $Gtype      = 'G';
-            $this->db->where('Type =', $Gtype);
-            $this->db->from('result');
-            $Gtyper                = $this->db->count_all_results();
+            $this->load->model('report_model');
+            $Gtyper                = $this->report_model->all_gtype_sum_race();
             return $Gtyper;          
         }
         
         function TType()
         {
-            $this->load->helper('date');
-            $this->load->model('report_model','',TRUE);
-            $Ttype      = 'T';
-            $this->db->where('Type =', $Ttype);
-            $this->db->from('result');
-            $Ttyper                = $this->db->count_all_results();
+            $this->load->model('report_model');
+            $Ttyper                = $this->report_model->all_ttype_sum_race();
             return $Ttyper;
         }
         
         function RType()
         {
-            $this->load->helper('date');
-            $this->load->model('report_model','',TRUE);
-            $Rtype      = 'R';
-            $this->db->where('Type =', $Rtype);
-            $this->db->from('result');
-            $Rtyper                = $this->db->count_all_results();
+            $this->load->model('report_model');
+            $Rtyper                = $this->report_model->all_rtype_sum_race();
             return $Rtyper;
         }
         
@@ -121,18 +100,15 @@ class Control extends CI_Controller {
         
         function today()
         {
-            $this->load->helper('date');
-            $time   = now();
-            $today  = date("Y-m-d", $time);
-            $this->db->where('Date =', $today);
-            $this->db->from('result');
-            $today_total                = $this->db->count_all_results();
+            $this->load->model('report_model');
+            $today_total                = $this->report_model->today_sum_race();
             return $today_total;
         }
         
         function today_red()
         {
             $this->load->helper('date');
+            $this->load->model('report_model');
             $time = now();
             $today  = date("Y-m-d", $time);
             $UL                 = 1;
@@ -141,10 +117,11 @@ class Control extends CI_Controller {
             $this->db->where('Results <', $UL);
             $this->db->from('result');
             $todayul         = $this->db->count_all_results();
+            //$todayul         = $this->report_model->today_red_ul();
             $this->db->where('Date =', $today);
             $this->db->where('Results >', $DL);
             $this->db->from('result');
-            $todaydl        =$this->db->count_all_results();
+            $todaydl        = $this->db->count_all_results();
             $today_total    = $todayul+$todaydl;
             $red    = $today_total;
             return $red;
