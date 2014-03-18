@@ -12,7 +12,7 @@ class Control extends CI_Controller {
 	 *	- or -
 	 * Since this controller is set as the default controller in 
 	 * config/routes.php, it's displayed at http://example.com/
-	 *
+	 * 
 	 * So any other public methods not prefixed with an underscore will
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
@@ -53,7 +53,7 @@ class Control extends CI_Controller {
             return $data;
         }
         
-        function _green_percentage()
+        function green_percentage()
         {
             $all        = $this->sumrace();
             $red        = $this->redrace();
@@ -62,30 +62,30 @@ class Control extends CI_Controller {
             return $perce1;
         }
         
-        function _GType()
+        function GType()
         {
             $this->load->model('report_model');
             $Gtyper                = $this->report_model->all_gtype_sum_race();
             return $Gtyper;          
         }
         
-        function _TType()
+        function TType()
         {
             $this->load->model('report_model');
             $Ttyper                = $this->report_model->all_ttype_sum_race();
             return $Ttyper;
         }
         
-        function _RType()
+        function RType()
         {
             $this->load->model('report_model');
             $Rtyper                = $this->report_model->all_rtype_sum_race();
             return $Rtyper;
         }
         
-        function _status()
+        function status()
         {
-            $status = $this->_green_percentage();
+            $status = $this->green_percentage();
             if ($status > 90){
                 $pesan  = 'Great';
             }
@@ -101,14 +101,14 @@ class Control extends CI_Controller {
             return $pesan; 
         }
         
-        function _today()
+        function today()
         {
             $this->load->model('report_model');
             $today_total                = $this->report_model->today_sum_race();
             return $today_total;
         }
         
-        function _today_red()
+        function today_red()
         {
             $this->load->model('report_model');
             $todayul         = $this->report_model->today_red_ul();
@@ -118,10 +118,10 @@ class Control extends CI_Controller {
             return $red;
         }
         
-        function _today_green()
+        function today_green()
         {
-            $total  = $this->_today();
-            $red    = $this->_today_red();
+            $total  = $this->today();
+            $red    = $this->today_red();
             
             if ($red == 0)
             {
@@ -135,9 +135,9 @@ class Control extends CI_Controller {
             return $perce1;
         }
         
-        function _today_performance()
+        function today_performance()
         {
-            $status = $this->_today_green();
+            $status = $this->today_green();
             if ($status > 90){
                 $pesan  = 'Great';
             }
@@ -153,14 +153,14 @@ class Control extends CI_Controller {
             return $pesan; 
         }
         
-        function _yesterday()
+        function yesterday()
         {
             $this->load->model('report_model');
             $today_total    = $this->report_model->yesterday_sum_race();
             return $today_total;
         }
         
-        function _yesterday_red()
+        function yesterday_red()
         {
             $this->load->model('report_model');
             $todayul         = $this->report_model->yesterday_red_ul();
@@ -170,16 +170,16 @@ class Control extends CI_Controller {
             return $red;
         }
         
-        function _yesterday_green()
+        function yesterday_green()
         {
-            $total  = $this->_yesterday();
-            $red    = $this->_yesterday_red();
+            $total  = $this->yesterday();
+            $red    = $this->yesterday_red();
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
             return $perce1;
         }
         
-        function _twday_sum()
+        function twday_sum()
         {
             $this->load->model('report_model');
             $offset         = 3*60*60*24;
@@ -187,7 +187,7 @@ class Control extends CI_Controller {
             return $today_total;
         }
         
-        function _twday_red()
+        function twday_red()
         {
             $this->load->model('report_model');
             $offset         = 3*60*60*24;
@@ -198,16 +198,16 @@ class Control extends CI_Controller {
             return $red;
         }
         
-        function _twday_green()
+        function twday_green()
         {
-            $total  = $this->_twday_sum();
-            $red    = $this->_twday_red();
+            $total  = $this->twday_sum();
+            $red    = $this->twday_red();
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
             return $perce1;
         }
         
-        function _thday_sum()
+        function thday_sum()
         {
             $this->load->model('report_model');
             $offset         = 4*60*60*24;
@@ -215,7 +215,7 @@ class Control extends CI_Controller {
             return $today_total;
         }
         
-        function _thday_red()
+        function thday_red()
         {
             $this->load->model('report_model');
             $offset         = 4*60*60*24;
@@ -226,16 +226,16 @@ class Control extends CI_Controller {
             return $red;
         }
         
-        function _thday_green()
+        function thday_green()
         {
-            $total  = $this->_thday_sum();
-            $red    = $this->_thday_red();
+            $total  = $this->thday_sum();
+            $red    = $this->thday_red();
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
             return $perce1;
         }
         
-        function _frday_sum()
+        function frday_sum()
         {
             $this->load->model('report_model');
             $offset         = 5*60*60*24;
@@ -243,7 +243,7 @@ class Control extends CI_Controller {
             return $today_total;
         }
         
-        function _frday_red()
+        function frday_red()
         {
             $this->load->model('report_model');
             $offset         = 5*60*60*24;
@@ -256,8 +256,8 @@ class Control extends CI_Controller {
         
         function frday_green()
         {
-            $total  = $this->_frday_sum();
-            $red    = $this->_frday_red();
+            $total  = $this->frday_sum();
+            $red    = $this->frday_red();
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
             return $perce1;
