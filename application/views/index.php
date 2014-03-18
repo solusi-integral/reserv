@@ -9,7 +9,7 @@
 				<?php include 'includes/components/navigation.php'?>
 				<div class="flat_area grid_16">
 					<h2>Dashboard
-                                            <small>- Welcome to Adminica</small>
+                                            <small>- Welcome to Remote Reporting System</small>
 						<div class="holder">
 							<?php include 'includes/components/dynamic_loading.php'?>
 						</div>
@@ -30,7 +30,7 @@
 							<div class="columns">
 								<div class="col_20 no_border_top">
 									<div class="info_box">
-										<div class="value_tag"><span>+453 today</span></div>
+										<div class="value_tag"><span><?php $diff=$today_gree-$yeste_gree; echo $diff?></span></div>
 										<div class="split one">
 											<div class="chart">
 												<span class="spark_bar large"><?php echo $today_gree ?>, <?php echo $yeste_gree ?>, <?php echo $twday_gree ?>, <?php echo $thday_gree ?>, <?php echo $frday_gree ?></span>
@@ -81,7 +81,7 @@
 							<div class="columns">
 								<div class="col_20 no_border_top">
 									<div class="info_box">
-										<div class="value_tag"><span>+453 today</span></div>
+										<div class="value_tag"><span><?php $diff=$today_gree-$yeste_gree; echo $diff?></span></div>
 										<div class="split one">
 											<div class="chart">
 												<span class="spark_bar large random_number_5"></span>
@@ -139,17 +139,17 @@
 						<div class="col_20 no_border_top">
 							<div class="info_box">
 								<div class="split one">
-									<a href="#"><img src="../../images/icons/large/white/alert.png" width="36" height="36" /></a>
+									<div class="big_letter red"><?php echo $today_gree ?> %</div>
 								</div>
-								<label>View Alerts</label>
+								<label>Today Performance</label>
 							</div>
 						</div>
 						<div class="col_20 no_border_top">
 							<div class="info_box">
-								<div class="split three green">US</div>
-								<div class="split three orange">Asia</div>
-								<div class="split three red">Europe</div>
-								<label>Global</label>
+								<div class="split three green">Surya</div>
+								<div class="split three orange">Indra</div>
+								<div class="split three red">Azis</div>
+								<label>Load Distribution</label>
 							</div>
 						</div>
 						<div class="col_20 no_border_top">
@@ -170,10 +170,10 @@
 							<div class="info_box">
 								<div class="split one">
 									<div class="chart">
-										<span class="spark_bar large random_number_5">0,5,1,4,2,3</span>
+										<span class="big_letter red"><?php echo $yeste_gree ?> %</span>
 									</div>
 								</div>
-								<label>User Stats</label>
+								<label>Yesterday Performance</label>
 							</div>
 						</div>
 					</div>
@@ -291,7 +291,8 @@
 				</div>
 			</div>
 
-			<div class="main_container container_16 clearfix">
+                        <!--
+                        <div class="main_container container_16 clearfix">
 				<div class="box grid_8">
 					<div class="block">
 						<fieldset class="label_side label_small no_border">
@@ -325,7 +326,7 @@
 						<?php include 'includes/content/feature_tiles.php'?>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		<?php include 'includes/dialogs/dialog_register.php'?>
 		<?php include 'includes/dialogs/dialog_welcome.php'?>
 		<?php include 'includes/dialogs/dialog_logout.php'?>
