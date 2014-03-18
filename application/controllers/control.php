@@ -250,7 +250,7 @@ class Control extends CI_Controller {
             return $today_total;
         }
         
-        function frday_red()
+        function _frday_red()
         {
             $this->load->model('report_model');
             $offset         = 5*60*60*24;
@@ -264,7 +264,7 @@ class Control extends CI_Controller {
         function frday_green()
         {
             $total  = $this->_frday_sum();
-            $red    = $this->frday_red();
+            $red    = $this->_frday_red();
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
             return $perce1;
