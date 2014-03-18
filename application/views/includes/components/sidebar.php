@@ -1,7 +1,7 @@
 <div id="sidebar" class="sidebar pjax_links">
 	<div class="cog">+</div>
 
-	<a href="index.php" class="logo"><span>Adminica</span></a>
+	<a href="index.php" class="logo"><span>Home</span></a>
 
 	<div class="user_box dark_box clearfix">
 		<img src="../../images/interface/profile.jpg" width="55" alt="Profile Pic" />
@@ -14,7 +14,7 @@
 	</div><!-- #user_box -->
 
 	<ul class="side_accordion" id="nav_side"> <!-- add class 'open_multiple' to change to from accordion to toggles -->
-		<li><a href="#" class="dialog_button" data-dialog="dialog_welcome"><img src="../../images/icons/small/grey/speech_bubble.png"/>Adminica</a></li>
+		<li><a href="#"><img src="../../images/icons/small/grey/speech_bubble.png"/>Home</a></li>
 		<li><a href="empty.php" class="pjax"><img src="../../images/icons/small/grey/document.png"/>Empty</a></li>
 
 		<li><a href="#"><img src="../../images/icons/small/grey/mail.png"/>Mailbox<div class="alert badge alert_red">5</div></a>
