@@ -39,7 +39,7 @@ class Control extends CI_Controller {
             $data['today_perf'] = $this->_today_performance();
             $data['today_gree'] = $this->_today_green();
             $data['yeste_gree'] = $this->_yesterday_green();
-            $data['twday_gree'] = $this->twday_green();
+            $data['twday_gree'] = $this->_twday_green();
             $data['thday_gree'] = $this->thday_green();
             $data['frday_gree'] = $this->frday_green();
             $data['last6']      = $this->last6();
@@ -205,7 +205,7 @@ class Control extends CI_Controller {
             return $red;
         }
         
-        function twday_green()
+        function _twday_green()
         {
             $total  = $this->_twday_sum();
             $red    = $this->_twday_red();
