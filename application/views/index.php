@@ -30,7 +30,7 @@
 							<div class="columns">
 								<div class="col_20 no_border_top">
 									<div class="info_box">
-										<div class="value_tag"><span><?php $diff=$today_gree-$yeste_gree; echo $diff?></span></div>
+										<div class="value_tag"><span><?php $diff=round($today_gree-$yeste_gree, 2); echo $diff?></span></div>
 										<div class="split one">
 											<div class="chart">
 												<span class="spark_bar large"><?php echo $today_gree ?>, <?php echo $yeste_gree ?>, <?php echo $twday_gree ?>, <?php echo $thday_gree ?>, <?php echo $frday_gree ?></span>
@@ -81,7 +81,7 @@
 							<div class="columns">
 								<div class="col_20 no_border_top">
 									<div class="info_box">
-										<div class="value_tag"><span><?php $diff=$today_gree-$yeste_gree; echo $diff?></span></div>
+										<div class="value_tag"><span><?php $diff=round($today_gree-$yeste_gree, 2); echo $diff?></span></div>
 										<div class="split one">
 											<div class="chart">
 												<span class="spark_bar large random_number_5"></span>
