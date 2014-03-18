@@ -135,4 +135,65 @@ class Report_model extends CI_Model{
         return $this->db->count_all_results();
     }
     
+    public function yesterday_red_ul()
+    {
+        $this->load->helper('date');
+        $time = now();
+        $today  = date("Y-m-d", $time - 86400);
+        $UL                 = 1;
+        $DL                 = 15;  
+        $this->db->where('Date =', $today);
+        $this->db->where('Results <', $UL);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function yesterday_red_dl()
+    {
+        $this->load->helper('date');
+        $time = now();
+        $today  = date("Y-m-d", $time - 86400);
+        $UL                 = 1;
+        $DL                 = 15;  
+        $this->db->where('Date =', $today);
+        $this->db->where('Results >', $DL);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function global_sum_race($offset)
+    {
+        $this->load->helper('date');
+        $time = now();
+        $today  = date("Y-m-d", $time - $offset);
+        $this->db->where('Date =', $today);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function global_red_ul($offset)
+    {
+        $this->load->helper('date');
+        $time = now();
+        $today  = date("Y-m-d", $time - $offset);
+        $UL                 = 1;
+        $DL                 = 15;  
+        $this->db->where('Date =', $today);
+        $this->db->where('Results <', $UL);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function global_red_dl($offset)
+    {
+        $this->load->helper('date');
+        $time = now();
+        $today  = date("Y-m-d", $time - $offset);
+        $UL                 = 1;
+        $DL                 = 15;  
+        $this->db->where('Date =', $today);
+        $this->db->where('Results >', $DL);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
 }
