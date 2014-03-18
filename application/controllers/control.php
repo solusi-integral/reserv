@@ -107,21 +107,9 @@ class Control extends CI_Controller {
         
         function today_red()
         {
-            $this->load->helper('date');
             $this->load->model('report_model');
-            $time = now();
-            $today  = date("Y-m-d", $time);
-            $UL                 = 1;
-            $DL                 = 15;  
-            $this->db->where('Date =', $today);
-            $this->db->where('Results <', $UL);
-            $this->db->from('result');
-            $todayul         = $this->db->count_all_results();
-            //$todayul         = $this->report_model->today_red_ul();
-            $this->db->where('Date =', $today);
-            $this->db->where('Results >', $DL);
-            $this->db->from('result');
-            $todaydl        = $this->db->count_all_results();
+            $todayul         = $this->report_model->today_red_ul();
+            $todaydl        = $this->report_model->today_red_dl();
             $today_total    = $todayul+$todaydl;
             $red    = $today_total;
             return $red;
@@ -162,23 +150,16 @@ class Control extends CI_Controller {
             return $pesan; 
         }
         
-        function today_last1()
-        {
-            $this->load->model('report_model','',TRUE);
-            $this->db->select('Results');
-            $query  = $this->db->get('result', 5);
-            $row['ro1']   = $query->row(1);
-            return $row;
-        }
-        
         function yesterday()
         {
+            $this->load->model('report_model');
             $this->load->helper('date');
             $time = now();
             $today  = date("Y-m-d", $time - 86400);
             $this->db->where('Date =', $today);
             $this->db->from('result');
-            $today_total                = $this->db->count_all_results();
+            //$today_total                = $this->db->count_all_results();
+            $today_total    = $this->report_model->yesterday_sum_race();
             return $today_total;
         }
         
