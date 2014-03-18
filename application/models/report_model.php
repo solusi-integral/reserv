@@ -199,4 +199,25 @@ class Report_model extends CI_Model{
         $this->db->from('result');
         return $this->db->count_all_results();
     }
+    
+    public function edit_race($id, $data)
+    {
+        
+    }
+    
+    public function info_race($id)
+    {
+        $this->db->where('ID =', $id);
+        $this->db->from('result');
+        return $this->db->get();
+    }
+    
+    public function update_race($id, $comment)
+    {
+        $data   = array(
+            'Comment' => $comment
+        );
+        $this->db->where('ID', $id);
+        $this->db->update('result', $data);
+    }
 }

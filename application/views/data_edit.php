@@ -5,7 +5,7 @@
 				<div class="center">
 					<div class="main_container full_size container_16 clearfix">
 						<div class="box light grid_16">
-							<h2 class="box_head">Isolated Wizard</h2>
+							<h2 class="box_head">Race Details</h2>
 							<div class="controls">
 								<div class="wizard_progressbar"></div>
 							</div>
@@ -16,20 +16,20 @@
 										<ul class="clearfix">
 											<li class="current">
 												<a href="#step_1" class="clearfix">
-													<span>1. <strong>Basic Information</strong></span>
-													<small>Name, email, address, etc.</small>
+													<span>1. <strong>Race Information</strong></span>
+													<small>Basic race information. </small>
 												</a>
 											</li>
 											<li>
 												<a href="#step_2" class="clearfix">
-													<span>2. <strong>Personal Information</strong></span>
-													<small>A few more details...</small>
+													<span>2. <strong>Additional Info</strong></span>
+													<small>Details like comments.</small>
 												</a>
 											</li>
 											<li>
 												<a href="#step_3" class="clearfix">
-													<span>3. <strong>Unimportant Information</strong></span>
-													<small>Were nearly there!</small>
+													<span>3. <strong>Personal Info</strong></span>
+													<small>Who is reporting the edit.</small>
 												</a>
 											</li>
 											<li>
@@ -44,27 +44,29 @@
 
 									<div class="wizard_content">
 
-		                            	<form action="#" method="post" class="validate_form">
+		                            	<form action="<?php echo $this->config->base_url(); ?>index.php/data/insert" method="post" class="validate_form">
 										<div id="step_1" class="step block" style="display:block;">
 											<div class="section">
-												<h2>1. Account Information</h2>
-												<p>Welcome to <a href="index.php">Adminica</a>, please enter your information to register on the system.</p>
+												<h2>1. Race Information</h2>
+                                                                                                <?php foreach ($info as $row) { ?>
+												<p>Please verify race information below.</p>
+                                                                                                <input type="hidden" name="data_id" value="<?php echo $row->ID ?>">
 											</div>
 											<div class="columns clearfix">
 												<div class="col_50">
 													<fieldset class="label_side top">
-														<label>Name</label>
+														<label>Location</label>
 														<div>
-															<input type="text" name="required_1a" id="required_1a" class="required">
+                                                                                                                    <input type="text" placeholder="<?php echo $row->Location ?>">
 															<div class="required_tag"></div>
 				                                        </div>
 													</fieldset>
 												</div>
 												<div class="col_50">
 													<fieldset class="label_side top">
-														<label>Surname</label>
+														<label>Type</label>
 														<div>
-															<input type="text" name="required_1b" id="required_1b" class="required">
+															<input type="text" placeholder="<?php echo $row->Type ?>">
 															<div class="required_tag"></div>
 				                                        </div>
 													</fieldset>
@@ -73,71 +75,78 @@
 											<div class="columns clearfix">
 												<div class="col_50">
 													<fieldset class="label_side bottom">
-														<label>Email</label>
+														<label>Race Number</label>
 														<div>
-															<input type="email" name="required_1c" id="required_1c" class="required">
+															<input type="email" placeholder="<?php echo $row->Number ?>">
 															<div class="required_tag"></div>
 				                                        </div>
 													</fieldset>
 												</div>
 												<div class="col_50 clearfix">
 													<fieldset class="label_side clearfix bottom">
-														<label class="clearfix">Phone<span>with country code</span></label>
+														<label class="clearfix">Jump Date</label>
 														<div>
-															<input type="number" name="required_1d" id="required_1d" class="required">
+															<input type="number" placeholder="<?php echo $row->Jump_Date ?>">
 															<div class="required_tag"></div>
 				                                        </div>
 													</fieldset>
 												</div>
 											</div>
-
+                                                                                                <?php } ?>
 											<div class="button_bar clearfix">
 												<button class="next_step forward send_right" data-goto="step_2" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/white/bended_arrow_right.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="<?php echo $this->config->base_url(); ?>images/icons/small/white/bended_arrow_right.png">
 													<span>Next Step</span>
 												</button>
 											</div>
 										</div>
 
 										<div id="step_2" class="step block">
-											<h2 class="section">2. Personal Information</h2>
+											<h2 class="section">2. Additional Info</h2>
 
 											<div class="columns clearfix">
 												<div class="col_50">
 													<fieldset class="label_side top">
-														<label>Date of Birth</label>
+														<label>Location</label>
 														<div class="clearfix">
-															<input type="text" name="required_2a" id="required_2a" class="datepicker required" style="width:100px;">
+															<input type="text" placeholder="<?php echo $row->Location ?>">
 															<div class="required_tag"></div>
 														</div>
 													</fieldset>
 												</div>
 												<div class="col_50">
 													<fieldset class="label_side top">
-														<label>Gender</label>
-														<div>
-															<div class="jqui_radios">
-																<input type="radio" name="required_2b" id="required_2b1"  class="required" /><label for="required_2b1">Male</label>
-																<input type="radio" name="required_2b" id="required_2b2" /><label for="required_2b2">Female</label>																						</div>
+														<label>Time</label>
+														
+															<div class="clearfix">
+															<input type="text" placeholder="<?php echo $row->Jump_Date ?>">
 															<div class="required_tag"></div>
 														</div>
+														
 													</fieldset>
 												</div>
 											</div>
 											<fieldset>
-												<label>Biography<span>What an annoying question in a registration wizard! Luckily it is not required.</span></label>
-												<div class="clearfix">
-													<textarea class="autogrow" placeholder="Once upon a time..."></textarea>
-												</div>
+												<label>Comment<span>Please select race comment you wish to report.</span></label>
+												<div class="jqui_radios">
+                                                                                                    <input type="radio" name="comment" value="Network Error" id="required_2c1" class="required"/><label for="required_2c1">Network Error</label> 
+                                                                                                    <input type="radio" name="comment" value="Remote Failure" id="required_2c2" /><label for="required_2c2">Remote Failure</label>
+                                                                                                    <input type="radio" name="comment" value="Not Shown" id="required_2c3" /><label for="required_2c3">Not Shown</label>
+                                                                                                    <input type="radio" name="comment" value="Late Shown" id="required_2c4" /><label for="required_2c4">Late Shown</label>
+                                                                                                    <input type="radio" name="comment" value="False Start" id="required_2c5" /><label for="required_2c5">False Start</label>
+                                                                                                    <input type="radio" name="comment" value="Standing Start" id="required_2c6" /><label for="required_2c6">Standing Start</label>
+                                                                                                    <input type="radio" name="comment" value="Other" id="required_2c7" /><label for="required_2c7">Other</label>
+                                                                                                                                
+                                                                                                </div>
 											</fieldset>
 
 											<div class="button_bar clearfix">
 												<button class="next_step back light" data-goto="step_1" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/grey/bended_arrow_left.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="<?php echo $this->config->base_url(); ?>images/icons/small/grey/bended_arrow_left.png">
 													<span>Prev Step</span>
 												</button>
 												<button class="next_step forward send_right" data-goto="step_3" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/white/bended_arrow_right.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="<?php echo $this->config->base_url(); ?>images/icons/small/white/bended_arrow_right.png">
 													<span>Next Step</span>
 												</button>
 											</div>
@@ -145,31 +154,24 @@
 
 										<div id="step_3" class="step block">
 											<div class="section">
-												<h2>3. Unimportant Information</h2>
-												<p>These fields aren't so important and so can be skipped as there aren't any required fields.</p>
+												<h2>3. Personal Info</h2>
+												<p>Who is reporting the edit.</p>
 											</div>
 
 											<fieldset class="label_side top">
-												<label>Text Field<span>Just a regular field</span></label>
+												<label>Name</label>
 												<div>
-													<input type="text" name="required_3a" id="required_3a">
-		                                        </div>
-											</fieldset>
-
-											<fieldset class="label_side">
-												<label>Text Field<span>Another regular field</span></label>
-												<div>
-													<input type="text" name="required_3b" id="required_3b">
+													<input type="text" id="required_3a" placeholder="<?php echo $row->Name ?>">
 		                                        </div>
 											</fieldset>
 
 											<div class="button_bar clearfix">
 												<button class="next_step back light" data-goto="step_2" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/grey/bended_arrow_left.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="<?php echo $this->config->base_url(); ?>images/icons/small/grey/bended_arrow_left.png">
 													<span>Prev Step</span>
 												</button>
 												<button class="next_step forward send_right" data-goto="step_4" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/white/bended_arrow_right.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="<?php echo $this->config->base_url(); ?>images/icons/small/white/bended_arrow_right.png">
 													<span>Next Step</span>
 												</button>
 											</div>
@@ -178,32 +180,16 @@
 										<div id="step_4" class="step block">
 											<div class="section">
 												<h2>4. Finish</h2>
-												<p>If all your fields are valid this form is going to submit, EXCITING.</p>
+												<p>Please confirm you want to submit the edit.</p>
 											</div>
-
-											<fieldset class="label_side top">
-												<label>Last field<span>Just one more...</span></label>
-												<div>
-												<input type="text" name="required_4a" id="required_4a" class="required">
-												<div class="required_tag"></div>
-		                                        </div>
-											</fieldset>
-
-											<fieldset class="label_side">
-												<label>Permission</label>
-												<div class="uniform inline clearfix">
-													<input type="checkbox" name="required_4b" id="required_4b" class="required"/><label>I agree with the terms and conditions</label>
-													<label for="required_4b" generated="true" class="error">This field is required.</label>
-												</div>
-											</fieldset>
 
 											<div class="button_bar clearfix">
 												<button class="next_step back light" data-goto="step_3" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/grey/bended_arrow_left.png">
+													<img height="24" width="24" alt="Bended Arrow Right" src="<?php echo $this->config->base_url(); ?>images/icons/small/grey/bended_arrow_left.png">
 													<span>Prev Step</span>
 												</button>
-												<button class="next_step green send_right submit_button" type="button">
-													<img height="24" width="24" alt="Bended Arrow Right" src="../../images/icons/small/white/bended_arrow_right.png">
+                                                                                            <button class="next_step green send_right submit_button" type="submit">
+													<img height="24" width="24" alt="Bended Arrow Right" src="<?php echo $this->config->base_url(); ?>images/icons/small/white/bended_arrow_right.png">
 													<span>Complete</span>
 												</button>
 											</div>
@@ -218,5 +204,5 @@
 				</div>
 			</div>
 		</div>
-            <?php echo $this->config->base_url(); ?>
+            <?php print_r($info) ?>
 <?php include 'includes/core/document_foot.php'?>

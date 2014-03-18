@@ -22,10 +22,26 @@ class Data extends CI_Controller {
 		$this->load->view('charts');
 	}
         
-        public function edit()
+        public function edit($id)
         {
-            $this->load->view('data_edit');
+            $this->load->model('report_model');
+            $query  = $this->report_model->info_race($id);
+            $data['info']   = $query->result();
+            $this->load->view('data_edit', $data);
         }
+        
+        public function insert()
+        {
+            $rawdata    = $this->input->post();
+            $race_id    = $this->input->post('data_id');
+            $comment    = $this->input->post('comment');
+            $data['race_id']   = $race_id;
+            $data['comment']    = $comment;
+            $this->load->view('data_post', $data);
+            $this->load->model('report_model');
+            $this->report_model->update_race($race_id, $comment);
+        }
+        
         
 }
 
