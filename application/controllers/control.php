@@ -29,7 +29,7 @@ class Control extends CI_Controller {
             $this->load->model('report_model','',TRUE);
             $data['sumrace']    = $this->_sumrace();
             $data['red']        = $this->_redrace();
-            $data['perce']      = $this->green_percentage();
+            $data['perce']      = $this->_green_percentage();
             $data['gtype']      = $this->GType();
             $data['ttype']      = $this->TType();
             $data['rtype']      = $this->RType();
@@ -60,7 +60,7 @@ class Control extends CI_Controller {
             return $data;
         }
         
-        function green_percentage()
+        function _green_percentage()
         {
             $all        = $this->sumrace();
             $red        = $this->_redrace();
@@ -92,7 +92,7 @@ class Control extends CI_Controller {
         
         function status()
         {
-            $status = $this->green_percentage();
+            $status = $this->_green_percentage();
             if ($status > 90){
                 $pesan  = 'Great';
             }
