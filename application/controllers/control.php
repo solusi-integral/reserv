@@ -153,12 +153,6 @@ class Control extends CI_Controller {
         function yesterday()
         {
             $this->load->model('report_model');
-            $this->load->helper('date');
-            $time = now();
-            $today  = date("Y-m-d", $time - 86400);
-            $this->db->where('Date =', $today);
-            $this->db->from('result');
-            //$today_total                = $this->db->count_all_results();
             $today_total    = $this->report_model->yesterday_sum_race();
             return $today_total;
         }
