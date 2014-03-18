@@ -20,33 +20,33 @@ class Control extends CI_Controller {
 	public function index()
 	{
             $this->load->model('report_model','',TRUE);
-            $data['sumrace']    = $this->_sumrace();
-            $data['red']        = $this->_redrace();
-            $data['perce']      = $this->_green_percentage();
-            $data['gtype']      = $this->_GType();
-            $data['ttype']      = $this->_TType();
-            $data['rtype']      = $this->_RType();
-            $data['pesan']      = $this->_status();
-            $data['today_sum']  = $this->_today();
-            $data['today_red']  = $this->_today_red();
-            $data['today_perf'] = $this->_today_performance();
-            $data['today_gree'] = $this->_today_green();
-            $data['yeste_gree'] = $this->_yesterday_green();
-            $data['twday_gree'] = $this->_twday_green();
-            $data['thday_gree'] = $this->_thday_green();
+            $data['sumrace']    = $this->sumrace();
+            $data['red']        = $this->redrace();
+            $data['perce']      = $this->green_percentage();
+            $data['gtype']      = $this->GType();
+            $data['ttype']      = $this->TType();
+            $data['rtype']      = $this->RType();
+            $data['pesan']      = $this->status();
+            $data['today_sum']  = $this->today();
+            $data['today_red']  = $this->today_red();
+            $data['today_perf'] = $this->today_performance();
+            $data['today_gree'] = $this->today_green();
+            $data['yeste_gree'] = $this->yesterday_green();
+            $data['twday_gree'] = $this->twday_green();
+            $data['thday_gree'] = $this->thday_green();
             $data['frday_gree'] = $this->frday_green();
             $data['last6']      = $this->last6();
             $this->load->view('index', $data);
 	}
         
-        function _sumrace()
+        function sumrace()
         {
             $this->load->model('report_model');
             $data       = $this->report_model->all_sum_race();
             return $data;
         }
         
-        function _redrace()
+        function redrace()
         {
             $this->load->model('report_model');
             $data               = $this->report_model->all_sum_redrace();
@@ -56,7 +56,7 @@ class Control extends CI_Controller {
         function _green_percentage()
         {
             $all        = $this->sumrace();
-            $red        = $this->_redrace();
+            $red        = $this->redrace();
             $green      = $all-$red;
             $perce1     = round(($green/$all*100),2);
             return $perce1;
