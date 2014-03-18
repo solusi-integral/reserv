@@ -21,49 +21,49 @@ header('Cache-Control: public, max-age=60, must-revalidate');
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link href="../../images/interface/iOS_icon.png" rel="apple-touch-icon">
+		<link href="<?php echo $this->config->base_url(); ?>images/interface/iOS_icon.png" rel="apple-touch-icon">
 
 	<!-- Styles -->
 
-		<link rel="stylesheet" href="../../styles/adminica/reset.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/reset.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
 
 
 		<!-- NOTE: The following css files have been combined and minified into plugins.css
 
-		<link rel="stylesheet" href="../../styles/plugins/colorpicker/colorpicker.css">
-		<link rel="stylesheet" href="../../styles/plugins/datatables/datatables.css">
-		<link rel="stylesheet" href="../../styles/plugins/elfinder/elfinder.css">
-		<link rel="stylesheet" href="../../styles/plugins/fancybox/fancybox.css">
-		<link rel="stylesheet" href="../../styles/plugins/fullcalendar/fullcalendar.css">
-		<link rel="stylesheet" href="../../styles/plugins/isotope/isotope.css">
-		<link rel="stylesheet" href="../../styles/plugins/multiselect/multiselect.css">
-		<link rel="stylesheet" href="../../styles/plugins/select2/select2.css">
-		<link rel="stylesheet" href="../../styles/plugins/selectbox/selectbox.css">
-		<link rel="stylesheet" href="../../styles/plugins/slidernav/slidernav.css">
-		<link rel="stylesheet" href="../../styles/plugins/slidernav/smallipop.css">
-		<link rel="stylesheet" href="../../styles/plugins/syntaxhighlighter/syntaxhighlighter.css">
-		<link rel="stylesheet" href="../../styles/plugins/syntaxhighlighter/shThemeDefault.css">
-		<link rel="stylesheet" href="../../styles/plugins/tagit/tagit.css">
-		<link rel="stylesheet" href="../../styles/plugins/themeroller/themeroller.css">
-		<link rel="stylesheet" href="../../styles/plugins/tinyeditor/tinyeditor.css">
-		<link rel="stylesheet" href="../../styles/plugins/tiptip/tiptip.css">
-		<link rel="stylesheet" href="../../styles/plugins/uistars/uistars.css">
-		<link rel="stylesheet" href="../../styles/plugins/uitotop/uitotop.css">
-		<link rel="stylesheet" href="../../styles/plugins/uniform/uniform.css"> -->
-		<link rel="stylesheet" href="../../styles/plugins/all/plugins.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/colorpicker/colorpicker.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/datatables/datatables.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/elfinder/elfinder.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/fancybox/fancybox.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/fullcalendar/fullcalendar.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/isotope/isotope.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/multiselect/multiselect.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/select2/select2.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/selectbox/selectbox.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/slidernav/slidernav.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/slidernav/smallipop.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/syntaxhighlighter/syntaxhighlighter.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/syntaxhighlighter/shThemeDefault.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/tagit/tagit.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/themeroller/themeroller.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/tinyeditor/tinyeditor.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/tiptip/tiptip.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/uistars/uistars.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/uitotop/uitotop.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/uniform/uniform.css"> -->
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/plugins/all/plugins.css">
 
 
 		<!-- NOTE: The following css files have been combined and minified into all.css
 
-		<link rel="stylesheet" href="../../styles/adminica/text.css">
-		<link rel="stylesheet" href="../../styles/adminica/grid.css">
-		<link rel="stylesheet" href="../../styles/adminica/main.css">
-		<link rel="stylesheet" href="../../styles/adminica/mobile.css">
-		<link rel="stylesheet" href="../../styles/adminica/base.css">
-		<link rel="stylesheet" href="../../styles/adminica/ie.css">
-		<link rel="stylesheet" href="../../styles/themes/switcher.css"> -->
-		<link rel="stylesheet" href="../../styles/adminica/all.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/text.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/grid.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/main.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/mobile.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/base.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/ie.css">
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/themes/switcher.css"> -->
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/all.css">
 
 
 		<!-- Style Switcher
@@ -77,13 +77,13 @@ header('Cache-Control: public, max-age=60, must-revalidate');
 		theme_switcher.php 	: colour theme - black/grey by default.						(eg. styles/themes/theme_switcher.php?default=theme_red.css)
 		bg_switcher.php 	: background image - dark boxes by default.					(eg. styles/themes/bg_switcher.php?default=bg_honeycomb.css)	-->
 
-		<link rel="stylesheet" href="../../styles/themes/layout_switcher.php?default=layout_fixed.css" >
-		<link rel="stylesheet" href="../../styles/themes/nav_switcher.php?default=nav_top.css" >
-		<link rel="stylesheet" href="../../styles/themes/skin_switcher.php?default=switcher.css" >
-		<link rel="stylesheet" href="../../styles/themes/theme_switcher.php?default=theme_blue.css" >
-		<link rel="stylesheet" href="../../styles/themes/bg_switcher.php?default=bg_honeycomb.css" >
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/themes/layout_switcher.php?default=layout_fixed.css" >
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/themes/nav_switcher.php?default=nav_top.css" >
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/themes/skin_switcher.php?default=switcher.css" >
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/themes/theme_switcher.php?default=theme_blue.css" >
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/themes/bg_switcher.php?default=bg_honeycomb.css" >
 
-		<link rel="stylesheet" href="../../styles/adminica/colours.css"> <!-- this file overrides the theme's default colour scheme, allowing more colour combinations (see layout example page)
+		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/colours.css"> <!-- this file overrides the theme's default colour scheme, allowing more colour combinations (see layout example page)
 
 
 		<!-- NOTE: The following js files have been conbined and minified into plugins-min.js
@@ -130,7 +130,7 @@ header('Cache-Control: public, max-age=60, must-revalidate');
 		<script src="../../scripts/uitotop/uitotop.js"></script>
 		<script src="../../scripts/uniform/uniform.js"></script>
 		<script src="../../scripts/validation/validation.js"></script> -->
-		<script src="../../scripts/plugins-min.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/plugins-min.js"></script>
 
 
 		<!-- NOTE: The following js files have been conbined and minified into adminica_all-min.js
@@ -145,7 +145,7 @@ header('Cache-Control: public, max-age=60, must-revalidate');
 		<script src="../../scripts/adminica/adminica_wizard.js"></script>
 		<script src="../../scripts/adminica/adminica_forms.js"></script>
 		<script src="../../scripts/adminica/adminica_load.js"></script>	-->
-		<script src="../../scripts/adminica/adminica_all-min.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_all-min.js"></script>
 
 
 		</head>

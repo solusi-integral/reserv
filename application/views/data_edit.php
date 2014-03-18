@@ -218,4 +218,5 @@
 				</div>
 			</div>
 		</div>
+            <?php echo $this->config->base_url(); ?>
 <?php include 'includes/core/document_foot.php'?>
