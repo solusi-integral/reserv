@@ -131,7 +131,7 @@ class Report_model extends CI_Model{
         $time = now();
         $today  = date("Y-m-d", $time - 86400);
         $this->db->where('Date =', $today);
-        //$this->db->from('result');
+        $this->db->from('result');
         return $this->db->count_all_results();
     }
     
