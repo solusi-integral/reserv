@@ -107,7 +107,8 @@ class Report_model extends CI_Model{
         $DL                 = 15;  
         $this->db->where('Date =', $today);
         $this->db->where('Results <', $UL);
-        $query  = $this->db->count_all_results('result');
+        $this->db->from('result');
+        $query  = $this->db->count_all_results();
         return $query;
     }
     
@@ -121,6 +122,16 @@ class Report_model extends CI_Model{
         $this->db->where('Date =', $today);
         $this->db->where('Results >', $DL);
         $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function yesterday_sum_race()
+    {
+        $this->load->helper('date');
+        $time = now();
+        $today  = date("Y-m-d", $time - 86400);
+        $this->db->where('Date =', $today);
+        //$this->db->from('result');
         return $this->db->count_all_results();
     }
     
