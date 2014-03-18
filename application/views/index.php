@@ -33,7 +33,7 @@
 										<div class="value_tag"><span>+453 today</span></div>
 										<div class="split one">
 											<div class="chart">
-												<span class="spark_bar large"><?php echo $today_gree ?>, <?php echo $yeste_gree ?>, <?//php echo $twod_gree ?>, 0, 0</span>
+												<span class="spark_bar large"><?php echo $today_gree ?>, <?php echo $yeste_gree ?>, <?php echo $twday_gree ?>, <?php echo $thday_gree ?>, <?php echo $frday_gree ?></span>
 											</div>
 										</div>
 										<label>Last 5 Days</label>
@@ -154,7 +154,7 @@
 						</div>
 						<div class="col_20 no_border_top">
 							<div class="info_box">
-								<div class="split one"><span class="spark_bar large"><?php echo $today_gree ?>, <?php echo $yeste_gree ?>, 0, 0, 0</span></div>
+								<div class="split one"><span class="spark_bar large"><?php echo $today_gree ?>, <?php echo $yeste_gree ?>, <?php echo $twday_gree ?>, <?php echo $thday_gree ?>, <?php echo $frday_gree ?></span></div>
 								<label>Trends</label>
 							</div>
 						</div>
