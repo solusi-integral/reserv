@@ -30,7 +30,7 @@ class Control extends CI_Controller {
             $data['sumrace']    = $this->_sumrace();
             $data['red']        = $this->_redrace();
             $data['perce']      = $this->_green_percentage();
-            $data['gtype']      = $this->GType();
+            $data['gtype']      = $this->_GType();
             $data['ttype']      = $this->TType();
             $data['rtype']      = $this->RType();
             $data['pesan']      = $this->status();
@@ -69,7 +69,7 @@ class Control extends CI_Controller {
             return $perce1;
         }
         
-        function GType()
+        function _GType()
         {
             $this->load->model('report_model');
             $Gtyper                = $this->report_model->all_gtype_sum_race();
