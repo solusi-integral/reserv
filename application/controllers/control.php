@@ -31,14 +31,14 @@ class Control extends CI_Controller {
             $data['red']        = $this->_redrace();
             $data['perce']      = $this->_green_percentage();
             $data['gtype']      = $this->_GType();
-            $data['ttype']      = $this->TType();
-            $data['rtype']      = $this->RType();
-            $data['pesan']      = $this->status();
-            $data['today_sum']  = $this->today();
-            $data['today_red']  = $this->today_red();
-            $data['today_perf'] = $this->today_performance();
-            $data['today_gree'] = $this->today_green();
-            $data['yeste_gree'] = $this->yesterday_green();
+            $data['ttype']      = $this->_TType();
+            $data['rtype']      = $this->_RType();
+            $data['pesan']      = $this->_status();
+            $data['today_sum']  = $this->_today();
+            $data['today_red']  = $this->_today_red();
+            $data['today_perf'] = $this->_today_performance();
+            $data['today_gree'] = $this->_today_green();
+            $data['yeste_gree'] = $this->_yesterday_green();
             $data['twday_gree'] = $this->twday_green();
             $data['thday_gree'] = $this->thday_green();
             $data['frday_gree'] = $this->frday_green();
@@ -76,21 +76,21 @@ class Control extends CI_Controller {
             return $Gtyper;          
         }
         
-        function TType()
+        function _TType()
         {
             $this->load->model('report_model');
             $Ttyper                = $this->report_model->all_ttype_sum_race();
             return $Ttyper;
         }
         
-        function RType()
+        function _RType()
         {
             $this->load->model('report_model');
             $Rtyper                = $this->report_model->all_rtype_sum_race();
             return $Rtyper;
         }
         
-        function status()
+        function _status()
         {
             $status = $this->_green_percentage();
             if ($status > 90){
@@ -108,14 +108,14 @@ class Control extends CI_Controller {
             return $pesan; 
         }
         
-        function today()
+        function _today()
         {
             $this->load->model('report_model');
             $today_total                = $this->report_model->today_sum_race();
             return $today_total;
         }
         
-        function today_red()
+        function _today_red()
         {
             $this->load->model('report_model');
             $todayul         = $this->report_model->today_red_ul();
@@ -125,10 +125,10 @@ class Control extends CI_Controller {
             return $red;
         }
         
-        function today_green()
+        function _today_green()
         {
-            $total  = $this->today();
-            $red    = $this->today_red();
+            $total  = $this->_today();
+            $red    = $this->_today_red();
             
             if ($red == 0)
             {
@@ -142,9 +142,9 @@ class Control extends CI_Controller {
             return $perce1;
         }
         
-        function today_performance()
+        function _today_performance()
         {
-            $status = $this->today_green();
+            $status = $this->_today_green();
             if ($status > 90){
                 $pesan  = 'Great';
             }
@@ -160,14 +160,14 @@ class Control extends CI_Controller {
             return $pesan; 
         }
         
-        function yesterday()
+        function _yesterday()
         {
             $this->load->model('report_model');
             $today_total    = $this->report_model->yesterday_sum_race();
             return $today_total;
         }
         
-        function yesterday_red()
+        function _yesterday_red()
         {
             $this->load->model('report_model');
             $todayul         = $this->report_model->yesterday_red_ul();
@@ -177,16 +177,16 @@ class Control extends CI_Controller {
             return $red;
         }
         
-        function yesterday_green()
+        function _yesterday_green()
         {
-            $total  = $this->yesterday();
-            $red    = $this->yesterday_red();
+            $total  = $this->_yesterday();
+            $red    = $this->_yesterday_red();
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
             return $perce1;
         }
         
-        function twday_sum()
+        function _twday_sum()
         {
             $this->load->model('report_model');
             $offset         = 3*60*60*24;
@@ -207,7 +207,7 @@ class Control extends CI_Controller {
         
         function twday_green()
         {
-            $total  = $this->twday_sum();
+            $total  = $this->_twday_sum();
             $red    = $this->twday_red();
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
