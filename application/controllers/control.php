@@ -27,8 +27,8 @@ class Control extends CI_Controller {
              * @data    mixed
              */
             $this->load->model('report_model','',TRUE);
-            $data['sumrace']    = $this->sumrace();
-            $data['red']        = $this->redrace();
+            $data['sumrace']    = $this->_sumrace();
+            $data['red']        = $this->_redrace();
             $data['perce']      = $this->green_percentage();
             $data['gtype']      = $this->GType();
             $data['ttype']      = $this->TType();
@@ -46,14 +46,14 @@ class Control extends CI_Controller {
             $this->load->view('index', $data);
 	}
         
-        function sumrace()
+        function _sumrace()
         {
             $this->load->model('report_model');
             $data       = $this->report_model->all_sum_race();
             return $data;
         }
         
-        function redrace()
+        function _redrace()
         {
             $this->load->model('report_model');
             $data               = $this->report_model->all_sum_redrace();
@@ -63,7 +63,7 @@ class Control extends CI_Controller {
         function green_percentage()
         {
             $all        = $this->sumrace();
-            $red        = $this->redrace();
+            $red        = $this->_redrace();
             $green      = $all-$red;
             $perce1     = round(($green/$all*100),2);
             return $perce1;
