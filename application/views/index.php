@@ -247,6 +247,8 @@
 						</form>
 					</div>
 				</div>
+                            
+                                <!--
 				<div class="box grid_16">
 					<ul class="block content_accordion ">
 						<li>
@@ -264,7 +266,9 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
+                                
+                        <!--
 			<div class="main_container glass clearfix">
 				<div class="columns" style="padding:10px 10px 0">
 					<div class="flat_area col_30">
@@ -289,7 +293,7 @@
 
 					</div>
 				</div>
-			</div>
+			</div> -->
 
                         <!--
                         <div class="main_container container_16 clearfix">
