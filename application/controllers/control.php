@@ -40,7 +40,7 @@ class Control extends CI_Controller {
             $data['today_gree'] = $this->_today_green();
             $data['yeste_gree'] = $this->_yesterday_green();
             $data['twday_gree'] = $this->_twday_green();
-            $data['thday_gree'] = $this->thday_green();
+            $data['thday_gree'] = $this->_thday_green();
             $data['frday_gree'] = $this->frday_green();
             $data['last6']      = $this->last6();
             $this->load->view('index', $data);
@@ -222,7 +222,7 @@ class Control extends CI_Controller {
             return $today_total;
         }
         
-        function thday_red()
+        function _thday_red()
         {
             $this->load->model('report_model');
             $offset         = 4*60*60*24;
@@ -233,10 +233,10 @@ class Control extends CI_Controller {
             return $red;
         }
         
-        function thday_green()
+        function _thday_green()
         {
             $total  = $this->_thday_sum();
-            $red    = $this->thday_red();
+            $red    = $this->_thday_red();
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
             return $perce1;
