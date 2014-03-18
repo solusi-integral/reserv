@@ -13,7 +13,7 @@
 							<?php include 'includes/components/dynamic_loading.php'?>
 						</div>
 					</h2>
-					<p>This <strong>jQuery powered Table</strong> takes a standard html table and turns it into a <strong>sortable</strong>, <strong>filterable</strong> and <strong>searchable</strong>  table. The<strong> search is LIVE</strong> so doesn't require you to reload the page! Also, the items are <strong>automatically paginated</strong> into sets of 10, 20 or 50. </p><p>Try it out and you'll see how <strong>powerful yet easy to use</strong> it is.</p>
+					<p>This table contains the last 200 races. The<strong> search is LIVE</strong> so doesn't require you to reload the page! Also, the items are <strong>automatically paginated</strong> into sets of 10, 20 or 50. </p>
 				</div>
 				<div class="box grid_16 single_datatable">
                                     <div id="dt1" class="no_margin">
@@ -50,7 +50,7 @@
 				</div>
 				<div class="flat_area grid_16">
 					<h2>Tabbed table</h2>
-					<p>The table below can be placed in a tabbed box just like any other <strong>Adminica</strong> control. This is really good to supply extra info about table or even plot a graph of the data. </p>
+					<p> This is really good to supply extra info about table or even plot a graph of the data. </p>
 				</div>
 				<div class="box grid_16 tabs">
 					<ul id="touch_sort" class="tab_header clearfix">
