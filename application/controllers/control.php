@@ -32,6 +32,9 @@ class Control extends CI_Controller {
             $data['today_perf'] = $this->today_performance();
             $data['today_gree'] = $this->today_green();
             $data['yeste_gree'] = $this->yesterday_green();
+            $data['twday_gree'] = $this->twday_green();
+            $data['thday_gree'] = $this->thday_green();
+            $data['frday_gree'] = $this->frday_green();
             $data['last6']      = $this->last6();
             $this->load->view('index', $data);
 	}
@@ -159,19 +162,9 @@ class Control extends CI_Controller {
         
         function yesterday_red()
         {
-            $this->load->helper('date');
-            $time = now();
-            $today  = date("Y-m-d", $time - 86400);
-            $UL                 = 1;
-            $DL                 = 15;  
-            $this->db->where('Date =', $today);
-            $this->db->where('Results <', $UL);
-            $this->db->from('result');
-            $todayul         = $this->db->count_all_results();
-            $this->db->where('Date =', $today);
-            $this->db->where('Results >', $DL);
-            $this->db->from('result');
-            $todaydl        =$this->db->count_all_results();
+            $this->load->model('report_model');
+            $todayul         = $this->report_model->yesterday_red_ul();
+            $todaydl        = $this->report_model->yesterday_red_dl();
             $today_total    = $todayul+$todaydl;
             $red    = $today_total;
             return $red;
@@ -181,6 +174,90 @@ class Control extends CI_Controller {
         {
             $total  = $this->yesterday();
             $red    = $this->yesterday_red();
+            $green  = $total-$red;
+            $perce1     = round(($green/$total*100),2);
+            return $perce1;
+        }
+        
+        function twday_sum()
+        {
+            $this->load->model('report_model');
+            $offset         = 3*60*60*24;
+            $today_total    = $this->report_model->global_sum_race($offset);
+            return $today_total;
+        }
+        
+        function twday_red()
+        {
+            $this->load->model('report_model');
+            $offset         = 3*60*60*24;
+            $todayul        = $this->report_model->global_red_ul($offset);
+            $todaydl        = $this->report_model->global_red_dl($offset);
+            $today_total    = $todayul+$todaydl;
+            $red    = $today_total;
+            return $red;
+        }
+        
+        function twday_green()
+        {
+            $total  = $this->twday_sum();
+            $red    = $this->twday_red();
+            $green  = $total-$red;
+            $perce1     = round(($green/$total*100),2);
+            return $perce1;
+        }
+        
+        function thday_sum()
+        {
+            $this->load->model('report_model');
+            $offset         = 4*60*60*24;
+            $today_total    = $this->report_model->global_sum_race($offset);
+            return $today_total;
+        }
+        
+        function thday_red()
+        {
+            $this->load->model('report_model');
+            $offset         = 4*60*60*24;
+            $todayul        = $this->report_model->global_red_ul($offset);
+            $todaydl        = $this->report_model->global_red_dl($offset);
+            $today_total    = $todayul+$todaydl;
+            $red    = $today_total;
+            return $red;
+        }
+        
+        function thday_green()
+        {
+            $total  = $this->thday_sum();
+            $red    = $this->thday_red();
+            $green  = $total-$red;
+            $perce1     = round(($green/$total*100),2);
+            return $perce1;
+        }
+        
+        function frday_sum()
+        {
+            $this->load->model('report_model');
+            $offset         = 5*60*60*24;
+            $today_total    = $this->report_model->global_sum_race($offset);
+            return $today_total;
+        }
+        
+        function frday_red()
+        {
+            $this->load->model('report_model');
+            $offset         = 5*60*60*24;
+            $todayul        = $this->report_model->global_red_ul($offset);
+            $todaydl        = $this->report_model->global_red_dl($offset);
+            $today_total    = $todayul+$todaydl;
+            $red    = $today_total;
+            return $red;
+        }
+        
+        function frday_green()
+        {
+            $total  = $this->frday_sum();
+            $red    = $this->frday_red();
             $green  = $total-$red;
             $perce1     = round(($green/$total*100),2);
             return $perce1;
