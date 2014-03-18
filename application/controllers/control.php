@@ -131,8 +131,16 @@ class Control extends CI_Controller {
         {
             $total  = $this->today();
             $red    = $this->today_red();
-            $green  = $total-$red;
-            $perce1     = round(($green/$total*100),2);
+            
+            if ($red == 0)
+            {
+                $perce1 = 100;
+            }
+            else 
+            {
+                $green  = $total-$red;
+                $perce1     = round(($green/$total*100),2);
+            }
             return $perce1;
         }
         
