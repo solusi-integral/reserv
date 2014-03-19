@@ -1,3 +1,6 @@
+<?php
+header('X-RESERV-CODE: 200 OK');
+?>
 <html>
 <head>
 <title>Remote Reporting System</title>

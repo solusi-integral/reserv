@@ -1,4 +1,4 @@
-<?php include 'includes/core/document_head.php'?>
+<?php include 'includes/core/document_head_pjax.php'?>
 	<div id="pjax">
 		<div id="wrapper" data-adminica-nav-top="1" data-adminica-side-top="1">
 			<?php include 'includes/components/topbar.php'?>
@@ -145,7 +145,7 @@
 							</div>
 						</div>
 						<div class="col_20 no_border_top">
-							<div class="info_box">
+                                                    <div class="info_box" id="pjax_person">
 								<div class="split three green">Surya <?php echo $surya; ?> %</div>
 								<div class="split three orange">Indra <?php echo $indra; ?> %</div>
 								<div class="split three red">Azis <?php echo $azis; ?> %</div>
@@ -160,7 +160,7 @@
 						</div>
 						<div class="col_20 no_border_top">
 							<div class="info_box">
-								<div class="split one">
+								<div class="split one" id="pjax_green">
 									<div class="big_letter red"><?php echo $perce ?> %</div>
 								</div>
 								<label>All Time Performance</label>
@@ -183,7 +183,7 @@
 			<div class="main_container container_16 clearfix">
 				<div class="box grid_8 tabs">
 					<ul class="tab_header clearfix">
-						<li><a href="#tabs-1">Last Results</a></li>
+						<li><a href="#pjax_last6">Last Results</a></li>
 						<li><a href="#tabs-2">Content</a></li>
 					</ul>
 					<div class="controls">
@@ -192,11 +192,11 @@
 						<a href="#" class="show_all_tabs"></a>
 					</div>
 					<div class="toggle_container">
-						<div id="tabs-1" class="block">
+                                            <div id="pjax_last6" class="block" >
 							<ul class="flat medium">
                                                             <?php
                                                             foreach ($last6 as $row){
-								echo '<li><a href="data/edit/'. $row->ID .'" target="_blank"><span class="spark_bar small random_number_5 spark_inline"></span>'. $row->Name .' clicked '.$row->Location .' with '. $row->Results .' as the result.</a></li>';
+								echo '<li><a href="data/edit/'. $row->ID .'" target="_blank"><span class="spark_bar small random_number_5 spark_inline"></span>'. $row->Name .' clicked '.$row->Location .' number '. $row->Number .' with '. $row->Results .' as the result.</a></li>';
                                                             }
                                                             ?>
 							</ul>

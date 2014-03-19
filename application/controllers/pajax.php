@@ -58,6 +58,12 @@ class Pajax extends CI_Controller {
             $this->load->view('pjax_person', $data);
         }
         
+        public function pjax_last6()
+        {
+            $data['last6']      = $this->last6();
+            $this->load->view('pjax_last6',$data);
+        }
+        
         function sumrace()
         {
             $this->load->model('report_model');
