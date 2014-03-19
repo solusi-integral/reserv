@@ -69,7 +69,7 @@
 									</div>
 								</div>
 								<div class="col_20 no_border_top no_border_right">
-									<div class="info_box">
+                                                                    <div class="info_box" id="pjax_total">
 										<div class="split two"><?php echo $sumrace ?> <small>races</small></div>
 										<div class="split two red"><?php echo $red ?> <small>races</small></div>
 										<label>Performance</label>
@@ -160,8 +160,8 @@
 						</div>
 						<div class="col_20 no_border_top">
 							<div class="info_box">
-								<div class="split one" id="pjax_green">
-									<div class="big_letter red"><?php echo $perce ?> %</div>
+								<div class="split one">
+                                                                    <div class="big_letter red" id="pjax_green"><?php echo $perce ?> %</div>
 								</div>
 								<label>All Time Performance</label>
 							</div>
