@@ -19,9 +19,42 @@ class Graphs extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('graphs');
+            $data['total']      = $this->sumrace();
+            $data['red']        = $this->redrace();
+            $data['green']      = $this->green_percentage();
+            $this->load->view('graphs', $data);
 	}
         
+        public function pjax_total()
+        {
+            $data['total']      = $this->sumrace();
+            $data['red']        = $this->redrace();
+            $data['green']      = $this->green_percentage();
+            $this->load->view('graphs_pjax_total', $data);
+        }
+        
+        function sumrace()
+        {
+            $this->load->model('report_model');
+            $data       = $this->report_model->all_sum_race();
+            return $data;
+        }
+        
+        function redrace()
+        {
+            $this->load->model('report_model');
+            $data               = $this->report_model->all_sum_redrace();
+            return $data;
+        }
+        
+        function green_percentage()
+        {
+            $all        = $this->sumrace();
+            $red        = $this->redrace();
+            $green      = $all-$red;
+            $perce1     = round(($green/$all*100),2);
+            return $perce1;
+        }
 }
 
 /* End of file welcome.php */

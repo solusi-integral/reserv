@@ -22,6 +22,8 @@ class Charts extends CI_Controller {
 		$this->load->view('charts');
 	}
         
+        
+        
 }
 
 /* End of file welcome.php */

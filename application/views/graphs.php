@@ -1,4 +1,4 @@
-<?php include 'includes/core/document_head.php'?>
+<?php include 'includes/core/document_head_pjax.php'?>
 	<div id="pjax">
 		<div id="wrapper" data-adminica-nav-top="9" data-adminica-nav-inner="2">
 			<?php include 'includes/components/topbar.php'?>
@@ -61,9 +61,9 @@
 								</div>
 							</div>
 							<div class="col_20 no_border_top no_border_right">
-								<div class="info_box">
-									<div class="split two">9,756 <small>ext</small></div>
-									<div class="split two red">2,846 <small>int</small></div>
+								<div class="info_box" id="pjax_total">
+									<div class="split two"><?php echo $total; ?> <small>races</small></div>
+									<div class="split two red"><?php echo $red; ?> <small>races</small></div>
 									<label>Connections</label>
 								</div>
 							</div>
