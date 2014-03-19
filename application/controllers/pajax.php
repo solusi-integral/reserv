@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Graphs extends CI_Controller {
+class Pajax extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,18 +19,44 @@ class Graphs extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->view('charts');
+	}
+        
+        public function pjax_total()
+        {
             $data['total']      = $this->sumrace();
             $data['red']        = $this->redrace();
             $data['green']      = $this->green_percentage();
+            $this->load->view('graphs_pjax_total', $data);
+        }
+        
+        public function pjax_green()
+        {
+            $data['green']      = $this->green_percentage();
+            $this->load->view('pjax_green', $data);
+        }
+        
+        public function pjax_status()
+        {
             $data['status']     = $this->status();
+            $this->load->view('pjax_status', $data);
+        }
+        
+        public function pjax_chart()
+        {
             $data['gtype']      = $this->GType();
             $data['rtype']      = $this->RType();
             $data['ttype']      = $this->TType();
-            $data['azis']       = $this->individual_performance('azis');
+            $this->load->view('pjax_chart', $data);
+        }
+        
+        public function pjax_person()
+        {
             $data['surya']      = $this->individual_performance('surya');
+            $data['azis']       = $this->individual_performance('azis');
             $data['indra']      = $this->individual_performance('indra');
-            $this->load->view('graphs', $data);
-	}
+            $this->load->view('pjax_person', $data);
+        }
         
         function sumrace()
         {
@@ -271,6 +297,7 @@ class Graphs extends CI_Controller {
             $green  = round($data/$all*100, 2);
             return $green;
         }
+        
 }
 
 /* End of file welcome.php */

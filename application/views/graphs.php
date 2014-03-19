@@ -8,7 +8,7 @@
 				<div id="main_container" class="main_container container_16 clearfix">
 				<?php include 'includes/components/navigation.php'?>
 				<div class="flat_area grid_16">
-					<h2>Info Blocks
+					<h2>All Time Performance Overviews
 						<div class="holder">
 							<?php include 'includes/components/dynamic_loading.php'?>
 						</div>
@@ -19,30 +19,26 @@
 					<div class="block lines">
 						<div class="columns">
 							<div class="col_20 no_border_top">
-								<div class="info_box">
-									<div class="value_tag"><span>+453 today</span></div>
-									<div class="split one">
-										<div class="chart">
-											<span class="spark_bar large random_number_5">0,5,1,4,2,3</span>
-										</div>
-									</div>
-									<label>Sales per hour<div class="comment icon_small chat_black"><a href="#"></a></div></label>
+                                                            <div class="info_box" id="pjax_person">
+									<div class="split three green">Surya <?php echo $surya; ?> %</div>
+									<div class="split three orange">Indra <?php echo $indra; ?> %</div>
+									<div class="split three red">Azis <?php echo $azis; ?> %</div>
+									<label>Load Distribution</label>
 								</div>
 							</div>
 							<div class="col_20 no_border_top">
 								<div class="info_box">
-									<div class="split one">
-										<div class="big_letter green">OK</div>
+                                                                    <div class="split one" id="pjax_status">
+                                                                            <div class="big_letter green"><?php echo $status;?></div>
 									</div>
 									<label>System Status</label>
 								</div>
 							</div>
 							<div class="col_20 no_border_top">
 								<div class="info_box">
-									<div class="split one">
+									<div class="split one" id="pjax_chart">
 										<div class="chart">
-											<span class="spark_pie large random_number_3">
-											26, 745, 105</span>
+											<span class="spark_pie large"><?php echo $gtype;?>, <?php echo $rtype;?>, <?php echo $ttype;?></span>
 										</div>
 									</div>
 									<label>Resources</label>
@@ -51,13 +47,10 @@
 							<div class="col_20 no_border_top">
 								<div class="info_box">
 									<div class="value_tag"><span>estimated</span></div>
-									<div class="split one">
-										<div class="chart">
-											<span class="spark_line large random_number_5">
-											26, 74, 102, 153, 25</span>
-										</div>
+									<div class="split one" id="pjax_green">
+										<div class="big_letter red"><?php echo $green; ?> %</div>
 									</div>
-									<label>Daily Traffic</label>
+									<label>All Time Performance</label>
 								</div>
 							</div>
 							<div class="col_20 no_border_top no_border_right">
@@ -98,9 +91,9 @@
 							<div class="col_20 no_border_top">
 								<div class="info_box">
 									<div class="split one">
-										<div class="big_letter red">30%</div>
+										<div class="big_letter red"><?php echo $green; ?> %</div>
 									</div>
-									<label>Server Health</label>
+									<label>All Time Performance</label>
 								</div>
 							</div>
 							<div class="col_20 no_border_top no_border_right">
