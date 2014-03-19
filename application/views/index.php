@@ -146,9 +146,9 @@
 						</div>
 						<div class="col_20 no_border_top">
 							<div class="info_box">
-								<div class="split three green">Surya</div>
-								<div class="split three orange">Indra</div>
-								<div class="split three red">Azis</div>
+								<div class="split three green">Surya <?php echo $surya; ?> %</div>
+								<div class="split three orange">Indra <?php echo $indra; ?> %</div>
+								<div class="split three red">Azis <?php echo $azis; ?> %</div>
 								<label>Load Distribution</label>
 							</div>
 						</div>
