@@ -220,4 +220,11 @@ class Report_model extends CI_Model{
         $this->db->where('ID', $id);
         $this->db->update('result', $data);
     }
+    
+    public function individual_performance($name)
+    {
+        $this->db->like('Name', $name);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
 }
