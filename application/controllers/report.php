@@ -31,10 +31,10 @@ class Report extends CI_Controller {
             $data['type']           = $type;
             $data['runners']        = $runners;
             $data['number']         = $number;
-            $data['location']       = $location;
+            $data['location']       = rawurldecode($location);
             $data['results']        = $results;
             $data['name']           = $name;
-            $data['comment']        = $comment;
+            $data['comment']        = rawurldecode($comment);
             $this->load->view('report_view',$data);
             $this->db->insert('result', $data);
             $gtype  = 'G';
