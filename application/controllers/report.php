@@ -27,12 +27,16 @@ class Report extends CI_Controller {
             $this->load->model('report_model','',TRUE);
             $this->load->helper('date');
             $curr                   = time();
-            $timeb                  = 0630;
-            $timee                  = 1930;
+            $timeb                  = 0830;
+            $timee                  = 2130;
             $current_time = (int) date('Hi');
             if($current_time >= $timeb and $current_time <= $timee) {
                 // do stuff
                 $data['counted']    = 1;
+            }
+            else
+            {
+                $data['counted']    =0;
             }
             $decode_time            = rawurldecode($jump_date);
             $data['date']           = $date;
