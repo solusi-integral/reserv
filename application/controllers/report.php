@@ -40,10 +40,10 @@ class Report extends CI_Controller {
             $data['type']           = $type;
             $data['runners']        = $runners;
             $data['number']         = $number;
-            $data['location']       = rawurldecode($location);
+            $data['location']       = rawurldecode(str_replace('_', '%20', $location));
             $data['results']        = $results;
             $data['name']           = $name;
-            $data['comment']        = rawurldecode($comment);
+            $data['comment']        = rawurldecode(str_replace('_', '%20', $comment));
             $this->load->view('report_view',$data);
             $this->db->insert('result', $data);
             $gtype  = 'G';
