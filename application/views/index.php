@@ -9,7 +9,7 @@
 				<?php include 'includes/components/navigation.php'?>
 				<div class="flat_area grid_16">
 					<h2>Dashboard
-                                            <small>- Welcome to Remote Reporting System</small>
+                                            <small>- Welcome to Remote Reporting System.</small>
 						<div class="holder">
 							<?php include 'includes/components/dynamic_loading.php'?>
 						</div>

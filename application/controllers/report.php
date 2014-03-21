@@ -25,6 +25,15 @@ class Report extends CI_Controller {
         public function record($date, $jump_date, $type, $runners, $number, $location, $results, $name, $comment)
         {
             $this->load->model('report_model','',TRUE);
+            $this->load->helper('date');
+            $curr                   = time();
+            $timeb                  = 0630;
+            $timee                  = 1930;
+            $current_time = (int) date('Hi');
+            if($current_time >= $timeb and $current_time <= $timee) {
+                // do stuff
+                $data['counted']    = 1;
+            }
             $decode_time            = rawurldecode($jump_date);
             $data['date']           = $date;
             $data['jump_date']      = $decode_time;
