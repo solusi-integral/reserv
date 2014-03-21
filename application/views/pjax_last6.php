@@ -1,5 +1,5 @@
 <?php 
-header('Cache-Control: public, max-age=180, must-revalidate');
+header('Cache-Control: public, max-age=120, must-revalidate');
 ?>
 <ul class="flat medium">
     <?php

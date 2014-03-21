@@ -14,6 +14,6 @@ $('#pjax_status').load('http://reserv.solusi-integral.co.id/index.php/pajax/pjax
 //$('#pjax_chart').load('http://reserv.solusi-integral.co.id/index.php/pajax/pjax_chart');
 $('#pjax_person').load('http://reserv.solusi-integral.co.id/index.php/pajax/pjax_person');
 $('#pjax_last6').load('http://reserv.solusi-integral.co.id/index.php/pajax/pjax_last6');
-}, 3230); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
+}, 1234); // the "3000" here refers to the time to refresh the div. it is in milliseconds.
 });
 // ]]>

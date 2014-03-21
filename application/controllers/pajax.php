@@ -27,18 +27,21 @@ class Pajax extends CI_Controller {
             $data['total']      = $this->sumrace();
             $data['red']        = $this->redrace();
             $data['green']      = $this->green_percentage();
+            $this->output->cache(2);
             $this->load->view('graphs_pjax_total', $data);
         }
         
         public function pjax_green()
         {
             $data['green']      = $this->green_percentage();
+            $this->output->cache(2);
             $this->load->view('pjax_green', $data);
         }
         
         public function pjax_status()
         {
             $data['status']     = $this->status();
+            $this->output->cache(2);
             $this->load->view('pjax_status', $data);
         }
         
@@ -47,6 +50,7 @@ class Pajax extends CI_Controller {
             $data['gtype']      = $this->GType();
             $data['rtype']      = $this->RType();
             $data['ttype']      = $this->TType();
+            $this->output->cache(2);
             $this->load->view('pjax_chart', $data);
         }
         
@@ -55,12 +59,14 @@ class Pajax extends CI_Controller {
             $data['surya']      = $this->individual_performance('surya');
             $data['azis']       = $this->individual_performance('azis');
             $data['indra']      = $this->individual_performance('indra');
+            $this->output->cache(2);
             $this->load->view('pjax_person', $data);
         }
         
         public function pjax_last6()
         {
             $data['last6']      = $this->last6();
+            $this->output->cache(2);
             $this->load->view('pjax_last6',$data);
         }
         
