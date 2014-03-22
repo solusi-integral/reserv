@@ -47,21 +47,42 @@ class Report_model extends CI_Model{
     
     public function all_sum_race()
     {
+        $this->db->where('Counted =', 1);
         $query   = $this->db->count_all_results('result');
         return $query;
         
     }
     
-    public function all_sum_redrace()
+    private function all_sum_redrace1()
     {
         $this->load->helper('date');
         $now                = time();
         $UL                 = 1;
         $DL                 = 15;  
         $this->db->where('Results <', $UL);
-        $this->db->or_where('Results >', $DL);
+        $this->db->where('Counted = ', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
+    }
+    
+    private function all_sum_redrace2()
+    {
+        $this->load->helper('date');
+        $now                = time();
+        $UL                 = 1;
+        $DL                 = 15;  
+        $this->db->where('Results >', $DL);
+        $this->db->where('Counted = ', 1);
+        $this->db->from('result');
+        return $this->db->count_all_results();
+    }
+    
+    public function all_sum_redrace()
+    {
+        $redrace    = $this->all_sum_redrace1();
+        $redrace2   = $this->all_sum_redrace2();
+        $tredrace   = $redrace+$redrace2;
+        return $tredrace;
     }
     
     public function all_gtype_sum_race()
@@ -69,6 +90,7 @@ class Report_model extends CI_Model{
         $this->load->helper('date');
         $Gtype      = 'G';
         $this->db->where('Type =', $Gtype);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
     }
@@ -78,6 +100,7 @@ class Report_model extends CI_Model{
         $this->load->helper('date');
         $Ttype      = 'T';
         $this->db->where('Type =', $Ttype);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
     }
@@ -87,6 +110,7 @@ class Report_model extends CI_Model{
         $this->load->helper('date');
         $Rtype      = 'R';
         $this->db->where('Type =', $Rtype);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
     }
@@ -97,6 +121,7 @@ class Report_model extends CI_Model{
         $time   = now();
         $today  = date("Y-m-d", $time);
         $this->db->where('Date =', $today);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
     }
@@ -110,6 +135,7 @@ class Report_model extends CI_Model{
         $DL                 = 15;  
         $this->db->where('Date =', $today);
         $this->db->where('Results <', $UL);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         $query  = $this->db->count_all_results();
         return $query;
@@ -124,6 +150,7 @@ class Report_model extends CI_Model{
         $DL                 = 15;  
         $this->db->where('Date =', $today);
         $this->db->where('Results >', $DL);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
     }
@@ -134,6 +161,7 @@ class Report_model extends CI_Model{
         $time = now();
         $today  = date("Y-m-d", $time - 86400);
         $this->db->where('Date =', $today);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
     }
@@ -147,6 +175,7 @@ class Report_model extends CI_Model{
         $DL                 = 15;  
         $this->db->where('Date =', $today);
         $this->db->where('Results <', $UL);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
     }
@@ -160,6 +189,7 @@ class Report_model extends CI_Model{
         $DL                 = 15;  
         $this->db->where('Date =', $today);
         $this->db->where('Results >', $DL);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
     }
@@ -170,6 +200,7 @@ class Report_model extends CI_Model{
         $time = now();
         $today  = date("Y-m-d", $time - $offset);
         $this->db->where('Date =', $today);
+        
         $this->db->from('result');
         return $this->db->count_all_results();
     }
@@ -224,6 +255,7 @@ class Report_model extends CI_Model{
     public function individual_performance($name)
     {
         $this->db->like('Name', $name);
+        $this->db->where('Counted =', 1);
         $this->db->from('result');
         return $this->db->count_all_results();
     }
