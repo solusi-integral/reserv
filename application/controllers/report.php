@@ -43,11 +43,24 @@ class Report extends CI_Controller {
                 {
                     $data['counted']    = 0;
                 } else{
-                    $data['counted']    = 1;
+                    if ($comment == 'Standing Start' or $comment == 'Standing_Start'){
+                        $data['counted']    = 0;   
+                    } else {
+                        $data['counted']    = 1;
+                    }
                 }
             }
             else if ($acttime >= $timeba and $acttime <= $timeea){
-                $data['counted']    = 1;
+                if ($type == $rtype)
+                {
+                    $data['counted']    = 0;
+                } else{
+                    if ($comment == 'Standing Start' or $comment == 'Standing_Start'){
+                        $data['counted']    = 0;   
+                    } else {
+                        $data['counted']    = 1;
+                    }
+                }
             }
             else {
                 $data['counted']    = 0;
