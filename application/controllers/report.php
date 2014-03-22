@@ -26,17 +26,31 @@ class Report extends CI_Controller {
         {
             $this->load->model('report_model','',TRUE);
             $this->load->helper('date');
-            $curr                   = time();
-            $timeb                  = 0830;
-            $timee                  = 2130;
-            $current_time = (int) date('Hi');
-            if($current_time >= $timeb and $current_time <= $timee) {
-                // do stuff
+            $gmt                = local_to_gmt(now());
+            $sydtz              = 'UP10';
+            $dst                = TRUE;
+            $timeb              = 1130;
+            $timee              = 2400;
+            $timeba             = 0000;
+            $timeea             = 0030;
+            $gtype  = 'G';
+            $ttype  = 'T';
+            $rtype  = 'R';
+            $acttime            = date("Hi", gmt_to_local($gmt, $sydtz, $dst));
+            if ($acttime >= $timeb and $acttime <= $timee){
+                //Filter counted races and uncounted races
+                if ($type == $rtype)
+                {
+                    $data['counted']    = 0;
+                } else{
+                    $data['counted']    = 1;
+                }
+            }
+            else if ($acttime >= $timeba and $acttime <= $timeea){
                 $data['counted']    = 1;
             }
-            else
-            {
-                $data['counted']    =0;
+            else {
+                $data['counted']    = 0;
             }
             $decode_time            = rawurldecode($jump_date);
             $data['date']           = $date;
@@ -50,9 +64,6 @@ class Report extends CI_Controller {
             $data['comment']        = rawurldecode(str_replace('_', '%20', $comment));
             $this->load->view('report_view',$data);
             $this->db->insert('result', $data);
-            $gtype  = 'G';
-            $ttype  = 'T';
-            $rtype  = 'R';
             if ($type == $gtype) 
             {
                 $this->db->insert('gtype', $data);
