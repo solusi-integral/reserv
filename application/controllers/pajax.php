@@ -70,6 +70,13 @@ class Pajax extends CI_Controller {
             $this->load->view('pjax_last6',$data);
         }
         
+        public function pjax_today()
+        {
+            $data['today_gree']      = $this->today_green();
+            $this->output->cache(2);
+            $this->load->view('pjax_today', $data);
+        }
+        
         function sumrace()
         {
             $this->load->model('report_model');

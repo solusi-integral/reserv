@@ -94,7 +94,7 @@
 									<div class="info_box">
 										<div class="value_tag"><span>estimated</span></div>
 										<div class="split one">
-											<div class="chart">
+                                                                                    <div class="chart" id="pjax_today">
 												<span class="big_letter green"><?php echo $today_gree ?> %</span>
 											</div>
 										</div>
@@ -138,7 +138,7 @@
 					<div class="columns lines">
 						<div class="col_20 no_border_top">
 							<div class="info_box">
-								<div class="split one">
+                                                            <div class="split one" id="pjax_today">
 									<div class="big_letter red"><?php echo $today_gree ?> %</div>
 								</div>
 								<label>Today Performance</label>
