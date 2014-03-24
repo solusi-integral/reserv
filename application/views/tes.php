@@ -4,6 +4,5 @@ echo "</br>";
 echo "</br>";
 echo "Green Race ". $green;
 echo "<br>";
-echo "Red DL ". $reddl;
-
+print_r($nilai);
 ?>
