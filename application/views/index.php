@@ -138,7 +138,7 @@
 					<div class="columns lines">
 						<div class="col_20 no_border_top">
 							<div class="info_box">
-                                                            <div class="split one" id="pjax_today">
+                                                            <div class="split one" id="pjax_today2">
 									<div class="big_letter red"><?php echo $today_gree ?> %</div>
 								</div>
 								<label>Today Performance</label>
