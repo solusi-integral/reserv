@@ -8,9 +8,12 @@
     <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="http://www.pureexample.com/js/flot/jquery.flot.min.js"></script>
     <script type="text/javascript">
-        var data = [[1, 130], [2, 40], [3, 80], [4, 160], [5, 159], [6, 370], [7, 330], [8, 350], [9, 370], [10, 400], [11, 330], [12, 350]];
  
-        var dataset = [{label: "line1",data: data}];
+        var datar = <?php echo json_encode($array); ?>;
+        
+        var datat = <?php echo json_encode($array2); ?>;
+    
+        var dataset = [{label: "Result",data: datar},{label: "Target",data: datat}];
  
         var options = {
             series: {
