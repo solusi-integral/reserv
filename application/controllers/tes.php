@@ -70,18 +70,18 @@ class Tes extends CI_Controller {
             } else if ($week == 14){
                 $timeaa   = "2014W131";
                 $timebb   = "2014W137";
-            } else if ($week == 2){
-                $timeaa   = "2014W011";
-                $timebb   = "2014W017";
-            } else if ($week == 2){
-                $timeaa   = "2014W011";
-                $timebb   = "2014W017";
-            } else if ($week == 2){
-                $timeaa   = "2014W011";
-                $timebb   = "2014W017";
-            } else if ($week == 2){
-                $timeaa   = "2014W011";
-                $timebb   = "2014W017";
+            } else if ($week == 15){
+                $timeaa   = "2014W151";
+                $timebb   = "2014W157";
+            } else if ($week == 15){
+                $timeaa   = "2014W151";
+                $timebb   = "2014W157";
+            } else if ($week == 16){
+                $timeaa   = "2014W161";
+                $timebb   = "2014W167";
+            } else if ($week == 17){
+                $timeaa   = "2014W171";
+                $timebb   = "2014W177";
             } else if ($week == 2){
                 $timeaa   = "2014W011";
                 $timebb   = "2014W017";
