@@ -1,7 +1,9 @@
 <?php
-echo $weekly;
+echo "Total Race ". $weekly;
 echo "</br>";
 echo "</br>";
-//echo $green;
+echo "Green Race ". $green;
+echo "<br>";
+echo "Red DL ". $reddl;
 
 ?>
