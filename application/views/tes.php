@@ -1,8 +1,7 @@
 <?php
-echo "Total Race ". $weekly;
-echo "</br>";
-echo "</br>";
-echo "Green Race ". $green;
-echo "<br>";
-//print_r($nilai);
+print_r($array);
+echo '<br>';
+print_r($array2);
+echo '<br>';
+echo json_encode($array2);
 ?>
