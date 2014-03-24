@@ -81,6 +81,57 @@ class Tes extends CI_Controller {
 //            $data['hasil']      = $hasil;
             $data1[]            = array(1, $minggu01);
             $data1[]            = array(2, $minggu02);
+            $data1[]            = array(3, $minggu03);
+            $data1[]            = array(4, $minggu04);
+            $data1[]            = array(5, $minggu05);
+            $data1[]            = array(6, $minggu06);
+            $data1[]            = array(7, $minggu07);
+            $data1[]            = array(8, $minggu08);
+            $data1[]            = array(9, $minggu09);
+            $data1[]            = array(10, $minggu10);
+            $data1[]            = array(11, $minggu11);
+            $data1[]            = array(12, $minggu12);
+            $data1[]            = array(13, $minggu13);
+            $data1[]            = array(14, $minggu14);
+            $data1[]            = array(15, $minggu15);
+            $data1[]            = array(16, $minggu16);
+            $data1[]            = array(17, $minggu17);
+            $data1[]            = array(18, $minggu18);
+            $data1[]            = array(19, $minggu19);
+            $data1[]            = array(20, $minggu20);
+            $data1[]            = array(21, $minggu21);
+            $data1[]            = array(22, $minggu22);
+            $data1[]            = array(23, $minggu23);
+            $data1[]            = array(24, $minggu24);
+            $data1[]            = array(25, $minggu25);
+            $data1[]            = array(26, $minggu26);
+            $data1[]            = array(27, $minggu27);
+            $data1[]            = array(28, $minggu28);
+            $data1[]            = array(29, $minggu29);
+            $data1[]            = array(30, $minggu30);
+            $data1[]            = array(31, $minggu31);
+            $data1[]            = array(32, $minggu32);
+            $data1[]            = array(33, $minggu33);
+            $data1[]            = array(34, $minggu34);
+            $data1[]            = array(35, $minggu35);
+            $data1[]            = array(36, $minggu36);
+            $data1[]            = array(37, $minggu37);
+            $data1[]            = array(38, $minggu38);
+            $data1[]            = array(39, $minggu39);
+            $data1[]            = array(40, $minggu40);
+            $data1[]            = array(41, $minggu41);
+            $data1[]            = array(42, $minggu42);
+            $data1[]            = array(43, $minggu43);
+            $data1[]            = array(44, $minggu44);
+            $data1[]            = array(45, $minggu45);
+            $data1[]            = array(46, $minggu46);
+            $data1[]            = array(47, $minggu47);
+            $data1[]            = array(48, $minggu48);
+            $data1[]            = array(49, $minggu49);
+            $data1[]            = array(50, $minggu50);
+            $data1[]            = array(51, $minggu51);
+            $data1[]            = array(52, $minggu52);
+            
             $mergeData[]        = array(
                 'label' => "Data 1",
                 'data'  => $data1,
@@ -133,11 +184,8 @@ class Tes extends CI_Controller {
                 $timeaa   = "2014W131";
                 $timebb   = "2014W137";
             } else if ($week == 14){
-                $timeaa   = "2014W131";
-                $timebb   = "2014W137";
-            } else if ($week == 15){
-                $timeaa   = "2014W151";
-                $timebb   = "2014W157";
+                $timeaa   = "2014W141";
+                $timebb   = "2014W147";
             } else if ($week == 15){
                 $timeaa   = "2014W151";
                 $timebb   = "2014W157";
@@ -311,11 +359,8 @@ class Tes extends CI_Controller {
                 $timeaa   = "2014W131";
                 $timebb   = "2014W137";
             } else if ($week == 14){
-                $timeaa   = "2014W131";
-                $timebb   = "2014W137";
-            } else if ($week == 15){
-                $timeaa   = "2014W151";
-                $timebb   = "2014W157";
+                $timeaa   = "2014W141";
+                $timebb   = "2014W147";
             } else if ($week == 15){
                 $timeaa   = "2014W151";
                 $timebb   = "2014W157";
