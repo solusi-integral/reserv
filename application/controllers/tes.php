@@ -19,13 +19,15 @@ class Tes extends CI_Controller {
 	 */
 	public function index()
 	{
-            $timeaa   = "2014W121";
-            $timebb   = "2014W127";
-            $query      = $this->__get_weekly_red_dl($timeaa, $timebb);
-            $data['weekly']     = $query;
-//            $week       = 12;
-//            $data['weekly']     = $this->__result_week_total($week);
-//            $data['green']      = $this->__result_week_green($week);
+//            $timeaa   = "2014W121";
+//            $timebb   = "2014W127";
+//            $query      = $this->__get_weekly_red_dl($timeaa, $timebb);
+//            $data['reddl']     = $query;
+//            $data['redul']        = $this->__get_weekly_red_ul($timeaa, $timebb);
+//            $data['total']          = $this->__get_weekly_total($timeaa, $timebb);
+            $week       = 12;
+            $data['weekly']     = $this->__result_week_total($week);
+            $data['green']      = $this->__result_week_green($week);
             $this->load->view('tes', $data);
 	}
                 
@@ -209,6 +211,17 @@ class Tes extends CI_Controller {
                 $timebb   = "2014W037";
             } else if ($week == 4){
                 $timeaa   = "2014W041";
+                $timebb   = "2014W067";
+            } else if ($week == 7){
+                $timeaa   = "2014W071";
+                $timebb   = "2014W077";
+            } else if ($week == 8){
+                $timeaa   = "2014W081";
+                $timebb   = "2014W087";
+            } else if ($week == 9){
+                $timeaa   = "2014W091";
+                $timebb   = "2014W097";
+            } else if ($week == 10){
                 $timebb   = "2014W047";
             } else if ($week == 5){
                 $timeaa   = "2014W051";
@@ -371,8 +384,9 @@ class Tes extends CI_Controller {
             //$green      = round(($this->__result_week_red($week)/$this->__result_week_total($week)*100), 2);
             $red        = $this->__result_week_red($week);
             $total      = $this->__result_week_total($week);
-            $green      = $red/$total*100;
-            return $red;
+            $green      = $total-$red;
+            $perce      = round($green/$total*100, 2);
+            return $perce;
         }
         
         private function __get_weekly_total($timeaa, $timebb)
@@ -390,6 +404,7 @@ class Tes extends CI_Controller {
             $timea  = date("Y-m-d",strtotime($timeaa));
             $timeb  = date("Y-m-d",strtotime($timebb));
             $query  = $this->report_model->weekly_performance_redul($timea, $timeb);
+            return $query;
         }
         
         private function __get_weekly_red_dl($timeaa, $timebb)
@@ -398,6 +413,7 @@ class Tes extends CI_Controller {
             $timea  = date("Y-m-d",strtotime($timeaa));
             $timeb  = date("Y-m-d",strtotime($timebb));
             $query  = $this->report_model->weekly_performance_reddl($timea, $timeb);
+            return $query;
         }
 }
 
