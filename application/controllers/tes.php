@@ -25,6 +25,11 @@ class Tes extends CI_Controller {
 //            $data['reddl']     = $query;
 //            $data['redul']        = $this->__get_weekly_red_ul($timeaa, $timebb);
 //            $data['total']          = $this->__get_weekly_total($timeaa, $timebb);
+            
+	}
+        
+        public function get_json()
+        {
             $minggu01           = $this->__result_week_green(1);
             $minggu02           = $this->__result_week_green(2);
             $minggu03           = $this->__result_week_green(3);
@@ -133,7 +138,7 @@ class Tes extends CI_Controller {
             $data1[]            = array(52, $minggu52);
             $mergeData[]        = array(
                 'label' => "Weekly Result",
-                'data'  => $data1,
+                'result'  => $data1,
                 'color' => '#6bcadb'
             );
             
@@ -192,14 +197,13 @@ class Tes extends CI_Controller {
             $data2[]            = array(52, $target);
             $mergeData[]        = array(
                 'label' => "Target",
-                'data'  => $data2,
+                'target'  => $data2,
                 'color' => '#6db000'
             );
             
-            $data['array']      = $data1;
             $data['array2']     = $mergeData;
-            $this->load->view('tes', $data);
-	}
+            $this->load->view('weekly', $data);
+        }
                 
         private function __result_week_total($week)
         {

@@ -1,7 +1,9 @@
-<?php
-print_r($array);
-echo '<br>';
-print_r($array2);
-echo '<br>';
-echo json_encode($array2);
-?>
+<html>
+    <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script langu
+    </head>
+    <body>
+        
+    </body>
+</html>

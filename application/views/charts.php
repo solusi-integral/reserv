@@ -1,4 +1,4 @@
-<?php include 'includes/core/document_head.php'?>
+<?php include 'includes/core/document_head_flot.php'?>
 	<div id="pjax">
 		<div id="wrapper" data-adminica-nav-top="9" data-adminica-nav-inner="1">
 			<?php include 'includes/components/topbar.php'?>
