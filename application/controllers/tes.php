@@ -25,16 +25,15 @@ class Tes extends CI_Controller {
 //            $data['reddl']     = $query;
 //            $data['redul']        = $this->__get_weekly_red_ul($timeaa, $timebb);
 //            $data['total']          = $this->__get_weekly_total($timeaa, $timebb);
-            for ($x=1; $x<=52; $x++)
-            {
-                $serial     = $x;
-                $nilai      = $this->__result_week_green($x);
-                $data1[]    = array ($serial, $nilai);
-            }
+//            for ($x=1; $x<=52; $x++)
+//            {
+//                $serial     = $x;
+//                $nilai      = $this->__result_week_green($x);
+//                $data1[]    = array ($serial, $nilai);
+//            }
             $week       = 12;
             $data['weekly']     = $this->__result_week_total($week);
             $data['green']      = $this->__result_week_green($week);
-            $data['nilai']      = $data1;
             $this->load->view('tes', $data);
 	}
                 
@@ -388,11 +387,15 @@ class Tes extends CI_Controller {
         
         private function __result_week_green($week)
         {
-            //$green      = round(($this->__result_week_red($week)/$this->__result_week_total($week)*100), 2);
             $red        = $this->__result_week_red($week);
             $total      = $this->__result_week_total($week);
-            $green      = $total-$red;
-            $perce      = round($green/$total*100, 2);
+            if ($total == 0){
+                $perce  = 0;
+            } else
+            {
+                $green      = $total-$red;
+                $perce      = round($green/$total*100, 2);
+            }
             return $perce;
         }
         
