@@ -1,8 +1,7 @@
 <?php
-print_r($weekly);
+echo $weekly;
 echo "</br>";
 echo "</br>";
-$time   = "2014W12";
-echo date(datetime::ISO8601,strtotime($time));
+//echo $green;
 
 ?>
