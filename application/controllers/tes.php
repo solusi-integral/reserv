@@ -25,6 +25,7 @@ class Tes extends CI_Controller {
 //            $data['reddl']     = $query;
 //            $data['redul']        = $this->__get_weekly_red_ul($timeaa, $timebb);
 //            $data['total']          = $this->__get_weekly_total($timeaa, $timebb);
+            $this->load->view('tes');
             
 	}
         
