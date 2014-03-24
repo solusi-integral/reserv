@@ -61,15 +61,15 @@ class Tes extends CI_Controller {
             } else if ($week == 11){
                 $timeaa   = "2014W111";
                 $timebb   = "2014W117";
-            } else if ($week == 2){
-                $timeaa   = "2014W011";
-                $timebb   = "2014W017";
-            } else if ($week == 2){
-                $timeaa   = "2014W011";
-                $timebb   = "2014W017";
-            } else if ($week == 2){
-                $timeaa   = "2014W011";
-                $timebb   = "2014W017";
+            } else if ($week == 12){
+                $timeaa   = "2014W121";
+                $timebb   = "2014W127";
+            } else if ($week == 13){
+                $timeaa   = "2014W131";
+                $timebb   = "2014W137";
+            } else if ($week == 14){
+                $timeaa   = "2014W131";
+                $timebb   = "2014W137";
             } else if ($week == 2){
                 $timeaa   = "2014W011";
                 $timebb   = "2014W017";
