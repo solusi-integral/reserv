@@ -272,9 +272,8 @@ class Report_model extends CI_Model{
     public function weekly_performance_redul($datea, $dateb)
     {
         $UL                 = 1;
-        $DL                 = 15;  
         $this->db->where('Counted =', 1);
-        $this->db->where('Results >', $UL);
+        $this->db->where('Results <', $UL);
         $this->db->where('Date >=', $datea);
         $this->db->where('Date <=', $dateb);
         $this->db->from('result');
@@ -283,7 +282,6 @@ class Report_model extends CI_Model{
     
     public function weekly_performance_reddl($datea, $dateb)
     {
-        $UL                 = 1;
         $DL                 = 15;  
         $this->db->where('Counted =', 1);
         $this->db->where('Results >', $DL);
