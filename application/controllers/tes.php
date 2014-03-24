@@ -31,9 +31,61 @@ class Tes extends CI_Controller {
 //                $nilai      = $this->__result_week_green($x);
 //                $data1[]    = array ($serial, $nilai);
 //            }
-            $week       = 12;
+            $minggu01           = $this->__result_week_green(1);
+            $minggu02           = $this->__result_week_green(2);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu04           = $this->__result_week_green(4);
+            $minggu05           = $this->__result_week_green(5);
+            $minggu06           = $this->__result_week_green(6);
+            $minggu07           = $this->__result_week_green(7);
+            $minggu08           = $this->__result_week_green(8);
+            $minggu09           = $this->__result_week_green(9);
+            $minggu10           = $this->__result_week_green(10);
+            $minggu11           = $this->__result_week_green(11);
+            $minggu12           = $this->__result_week_green(12);
+            $minggu13           = $this->__result_week_green(13);
+            $minggu14           = $this->__result_week_green(14);
+            $minggu15           = $this->__result_week_green(15);
+            $minggu16           = $this->__result_week_green(16);
+            $minggu17           = $this->__result_week_green(17);
+            $minggu18           = $this->__result_week_green(18);
+            $minggu19           = $this->__result_week_green(19);
+            $minggu20           = $this->__result_week_green(20);
+            $minggu21           = $this->__result_week_green(21);
+            $minggu22           = $this->__result_week_green(22);
+            $minggu23           = $this->__result_week_green(23);
+            $minggu24           = $this->__result_week_green(24);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            $minggu03           = $this->__result_week_green(3);
+            
+            $week       = 13;
             $data['weekly']     = $this->__result_week_total($week);
             $data['green']      = $this->__result_week_green($week);
+//            $data['hasil']      = $hasil;
             $this->load->view('tes', $data);
 	}
                 
@@ -390,7 +442,7 @@ class Tes extends CI_Controller {
             $red        = $this->__result_week_red($week);
             $total      = $this->__result_week_total($week);
             if ($total == 0){
-                $perce  = 0;
+                $perce      = 0;
             } else
             {
                 $green      = $total-$red;
