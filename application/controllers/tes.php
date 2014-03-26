@@ -35,7 +35,7 @@ class Tes extends CI_Controller {
             $minggu08           = $this->__result_week_green(8);
             $minggu09           = $this->__result_week_green(9);
 //            $minggu10           = $this->__result_week_green(10);
-            $minggu10           = 100;
+            $minggu10           = 0;
             $minggu11           = $this->__result_week_green(11);
             $minggu12           = $this->__result_week_green(12);
             $minggu13           = $this->__result_week_green(13);

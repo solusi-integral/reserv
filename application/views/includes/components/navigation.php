@@ -95,7 +95,7 @@
 		<li><a href="charts" class="pjax"><img src="../../images/icons/small/grey/graph.png"/><span>Charts</span></a>
 			<ul class="dropdown_right">
 				<li><a href="charts" class="pjax"><span>Large Charts</span></a></li>
-				<li><a href="graphs" class="pjax"><span>Info Graphs</span></a><div class="alert badge">&#9733</div></li>
+				<!--<li><a href="graphs" class="pjax"><span>Info Graphs</span></a><div class="alert badge">&#9733</div></li>-->
 			</ul></li>
 		
                 <!-- Login Menu Removed        

@@ -133,19 +133,19 @@ header('Cache-Control: public, max-age=60, must-revalidate');
 		<script src="<?php echo $this->config->base_url(); ?>scripts/plugins-min.js"></script>
 
 
-		<!-- NOTE: The following js files have been conbined and minified into adminica_all-min.js
+		<!-- NOTE: The following js files have been conbined and minified into adminica_all-min.js -->
 
-		<script src="../../scripts/adminica/adminica_ui.js"></script>
-		<script src="../../scripts/adminica/adminica_mobile.js"></script>
-		<script src="../../scripts/adminica/adminica_datatables.js"></script>
-		<script src="../../scripts/adminica/adminica_calendar.js"></script>
-		<script src="../../scripts/adminica/adminica_charts.js"></script>
-		<script src="../../scripts/adminica/adminica_gallery.js"></script>
-		<script src="../../scripts/adminica/adminica_various.js"></script>
-		<script src="../../scripts/adminica/adminica_wizard.js"></script>
-		<script src="../../scripts/adminica/adminica_forms.js"></script>
-		<script src="../../scripts/adminica/adminica_load.js"></script>	-->
-		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_all_flot.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_ui.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_mobile.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_datatables.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_calendar.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>index.php/charts/get_chart_js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_gallery.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_various.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_wizard.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_forms.js"></script>
+		<script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_load.js"></script>
+		<!-- <script src="<?php echo $this->config->base_url(); ?>scripts/adminica/adminica_all_flot.js"></script> -->
 
 
 		</head>
