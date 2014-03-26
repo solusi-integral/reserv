@@ -1,3 +1,7 @@
+<?php 
+header('Cache-Control: public, max-age=300, must-revalidate');
+?>
+
 function adminicaCharts(){
 
 if($(".flot").length>0){
@@ -20,7 +24,9 @@ if($(".flot").length>0){
     for (var i = -20; i < 20; i += 0.4)
         extra_data_1.push([i, Math.tan(i)+(i*5)]);
 
-	var extra_data_2 = [[1988, 483994], [1989, 479060], [1991, 401949], [1993, 402375], [1994, 377867], [1996, 337946], [1997, 336185], [1998, 328611], [2000, 342172], [2001, 344932], [2003, 440813], [2004, 480451], [2006, 528692]];
+//	var extra_data_2 = [[1988, 483994], [1989, 479060], [1991, 401949], [1993, 402375], [1994, 377867], [1996, 337946], [1997, 336185], [1998, 328611], [2000, 342172], [2001, 344932], [2003, 440813], [2004, 480451], [2006, 528692]];
+        
+        var extra_data_2 = <?php echo json_encode($weekly); ?>;
 
 	var pie_data = [];
 	var series = Math.floor(Math.random()*5)+1;
@@ -204,7 +210,7 @@ if($(".flot").length>0){
     [
         {
 			shadowSize: 10,
-        	label:'Points Chart',
+        	label:'Weekly Race Total',
 			color:adminica_blue,
             data: extra_data_2,
             points: {
