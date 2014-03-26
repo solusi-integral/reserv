@@ -14,7 +14,7 @@
 					</h2>
 				</div>
 				<div class="box grid_16">
-					<h2 class="box_head">Weekly Performance Result</h2>
+					<h2 class="box_head">Weekly Performance Result (G & T)</h2>
 					<div class="controls">
 						<a href="#" class="grabber"></a>
 						<a href="#" class="toggle"></a>
@@ -29,7 +29,7 @@
 				 </div>
 
 				<div class="box grid_16">
-					<h2 class="box_head">Point Graph with Pie chart</h2>
+					<h2 class="box_head">Weekly Race Total (G & T)</h2>
 					<div class="controls">
 							<a href="#" class="grabber"></a>
 							<a href="#" class="toggle"></a>
