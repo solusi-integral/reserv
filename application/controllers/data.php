@@ -42,6 +42,10 @@ class Data extends CI_Controller {
             $this->report_model->update_race($race_id, $comment);
         }
         
+        public function add()
+        {
+            $this->load->view('data_add');
+        }
         
 }
 
