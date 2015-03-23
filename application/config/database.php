@@ -41,17 +41,16 @@
 | The $active_group variable lets you choose which connection group to
 | make active.  By default there is only one group (the 'default' group).
 |
-| The $active_record variables lets you determine whether or not to load
-| the active record class
+| The $active_record variable ok
 */
 
 $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = '192.168.5.193';
-$db['default']['username'] = 'reserv';
-$db['default']['password'] = 'yt7bKYFsu72rLKfQ';
-$db['default']['database'] = 'reserv';
+$db['default']['username'] = 'reserv_new';
+$db['default']['password'] = 'ZZteRQqpyRJJQ8RF';
+$db['default']['database'] = 'reserv_new';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
