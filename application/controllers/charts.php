@@ -26,8 +26,8 @@ class Charts extends CI_Controller {
         
         public function get_chart_js()
         {
-            $timeaa   = "2014W111";
-//            $timebb   = "2014W117";
+            $timeaa   = "2015W111";
+//            $timebb   = "2015W117";
 //            $query      = $this->__get_weekly_red_dl($timeaa, $timebb);
 //            $data['reddl']     = $query;
 //            $data['redul']        = $this->__get_weekly_red_ul($timeaa, $timebb);
@@ -602,161 +602,161 @@ class Charts extends CI_Controller {
         private function __result_week_total($week)
         {
             if ($week == 1){
-                $timeaa   = "2014W011";
-                $timebb   = "2014W017";
+                $timeaa   = "2015W011";
+                $timebb   = "2015W017";
             } else if ($week == 2){
-                $timeaa   = "2014W021";
-                $timebb   = "2014W027";
+                $timeaa   = "2015W021";
+                $timebb   = "2015W027";
             } else if ($week == 3){
-                $timeaa   = "2014W031";
-                $timebb   = "2014W037";
+                $timeaa   = "2015W031";
+                $timebb   = "2015W037";
             } else if ($week == 4){
-                $timeaa   = "2014W041";
-                $timebb   = "2014W047";
+                $timeaa   = "2015W041";
+                $timebb   = "2015W047";
             } else if ($week == 5){
-                $timeaa   = "2014W051";
-                $timebb   = "2014W057";
+                $timeaa   = "2015W051";
+                $timebb   = "2015W057";
             } else if ($week == 6){
-                $timeaa   = "2014W061";
-                $timebb   = "2014W067";
+                $timeaa   = "2015W061";
+                $timebb   = "2015W067";
             } else if ($week == 7){
-                $timeaa   = "2014W071";
-                $timebb   = "2014W077";
+                $timeaa   = "2015W071";
+                $timebb   = "2015W077";
             } else if ($week == 8){
-                $timeaa   = "2014W081";
-                $timebb   = "2014W087";
+                $timeaa   = "2015W081";
+                $timebb   = "2015W087";
             } else if ($week == 9){
-                $timeaa   = "2014W091";
-                $timebb   = "2014W097";
+                $timeaa   = "2015W091";
+                $timebb   = "2015W097";
             } else if ($week == 10){
-                $timeaa   = "2014W101";
-                $timebb   = "2014W107";
+                $timeaa   = "2015W101";
+                $timebb   = "2015W107";
             } else if ($week == 11){
-                $timeaa   = "2014W111";
-                $timebb   = "2014W117";
+                $timeaa   = "2015W111";
+                $timebb   = "2015W117";
             } else if ($week == 12){
-                $timeaa   = "2014W121";
-                $timebb   = "2014W127";
+                $timeaa   = "2015W121";
+                $timebb   = "2015W127";
             } else if ($week == 13){
-                $timeaa   = "2014W131";
-                $timebb   = "2014W137";
+                $timeaa   = "2015W131";
+                $timebb   = "2015W137";
             } else if ($week == 14){
-                $timeaa   = "2014W141";
-                $timebb   = "2014W147";
+                $timeaa   = "2015W141";
+                $timebb   = "2015W147";
             } else if ($week == 15){
-                $timeaa   = "2014W151";
-                $timebb   = "2014W157";
+                $timeaa   = "2015W151";
+                $timebb   = "2015W157";
             } else if ($week == 16){
-                $timeaa   = "2014W161";
-                $timebb   = "2014W167";
+                $timeaa   = "2015W161";
+                $timebb   = "2015W167";
             } else if ($week == 17){
-                $timeaa   = "2014W171";
-                $timebb   = "2014W177";
+                $timeaa   = "2015W171";
+                $timebb   = "2015W177";
             } else if ($week == 18){
-                $timeaa   = "2014W181";
-                $timebb   = "2014W187";
+                $timeaa   = "2015W181";
+                $timebb   = "2015W187";
             } else if ($week == 19){
-                $timeaa   = "2014W191";
-                $timebb   = "2014W197";
+                $timeaa   = "2015W191";
+                $timebb   = "2015W197";
             } else if ($week == 20){
-                $timeaa   = "2014W201";
-                $timebb   = "2014W207";
+                $timeaa   = "2015W201";
+                $timebb   = "2015W207";
             } else if ($week == 21){
-                $timeaa   = "2014W211";
-                $timebb   = "2014W217";
+                $timeaa   = "2015W211";
+                $timebb   = "2015W217";
             } else if ($week == 22){
-                $timeaa   = "2014W221";
-                $timebb   = "2014W227";
+                $timeaa   = "2015W221";
+                $timebb   = "2015W227";
             } else if ($week == 23){
-                $timeaa   = "2014W231";
-                $timebb   = "2014W237";
+                $timeaa   = "2015W231";
+                $timebb   = "2015W237";
             } else if ($week == 24){
-                $timeaa   = "2014W241";
-                $timebb   = "2014W247";
+                $timeaa   = "2015W241";
+                $timebb   = "2015W247";
             } else if ($week == 25){
-                $timeaa   = "2014W251";
-                $timebb   = "2014W257";
+                $timeaa   = "2015W251";
+                $timebb   = "2015W257";
             } else if ($week == 26){
-                $timeaa   = "2014W261";
-                $timebb   = "2014W267";
+                $timeaa   = "2015W261";
+                $timebb   = "2015W267";
             } else if ($week == 27){
-                $timeaa   = "2014W271";
-                $timebb   = "2014W277";
+                $timeaa   = "2015W271";
+                $timebb   = "2015W277";
             } else if ($week == 28){
-                $timeaa   = "2014W281";
-                $timebb   = "2014W287";
+                $timeaa   = "2015W281";
+                $timebb   = "2015W287";
             } else if ($week == 29){
-                $timeaa   = "2014W291";
-                $timebb   = "2014W297";
+                $timeaa   = "2015W291";
+                $timebb   = "2015W297";
             } else if ($week == 30){
-                $timeaa   = "2014W301";
-                $timebb   = "2014W307";
+                $timeaa   = "2015W301";
+                $timebb   = "2015W307";
             } else if ($week == 31){
-                $timeaa   = "2014W311";
-                $timebb   = "2014W317";
+                $timeaa   = "2015W311";
+                $timebb   = "2015W317";
             } else if ($week == 32){
-                $timeaa   = "2014W321";
-                $timebb   = "2014W327";
+                $timeaa   = "2015W321";
+                $timebb   = "2015W327";
             } else if ($week == 33){
-                $timeaa   = "2014W331";
-                $timebb   = "2014W337";
+                $timeaa   = "2015W331";
+                $timebb   = "2015W337";
             } else if ($week == 34){
-                $timeaa   = "2014W341";
-                $timebb   = "2014W347";
+                $timeaa   = "2015W341";
+                $timebb   = "2015W347";
             } else if ($week == 35){
-                $timeaa   = "2014W351";
-                $timebb   = "2014W357";
+                $timeaa   = "2015W351";
+                $timebb   = "2015W357";
             } else if ($week == 36){
-                $timeaa   = "2014W361";
-                $timebb   = "2014W367";
+                $timeaa   = "2015W361";
+                $timebb   = "2015W367";
             } else if ($week == 37){
-                $timeaa   = "2014W371";
-                $timebb   = "2014W377";
+                $timeaa   = "2015W371";
+                $timebb   = "2015W377";
             } else if ($week == 38){
-                $timeaa   = "2014W381";
-                $timebb   = "2014W387";
+                $timeaa   = "2015W381";
+                $timebb   = "2015W387";
             } else if ($week == 39){
-                $timeaa   = "2014W391";
-                $timebb   = "2014W397";
+                $timeaa   = "2015W391";
+                $timebb   = "2015W397";
             } else if ($week == 40){
-                $timeaa   = "2014W401";
-                $timebb   = "2014W407";
+                $timeaa   = "2015W401";
+                $timebb   = "2015W407";
             } else if ($week == 41){
-                $timeaa   = "2014W411";
-                $timebb   = "2014W417";
+                $timeaa   = "2015W411";
+                $timebb   = "2015W417";
             } else if ($week == 42){
-                $timeaa   = "2014W421";
-                $timebb   = "2014W427";
+                $timeaa   = "2015W421";
+                $timebb   = "2015W427";
             } else if ($week == 43){
-                $timeaa   = "2014W431";
-                $timebb   = "2014W437";
+                $timeaa   = "2015W431";
+                $timebb   = "2015W437";
             } else if ($week == 44){
-                $timeaa   = "2014W441";
-                $timebb   = "2014W447";
+                $timeaa   = "2015W441";
+                $timebb   = "2015W447";
             } else if ($week == 45){
-                $timeaa   = "2014W451";
-                $timebb   = "2014W457";
+                $timeaa   = "2015W451";
+                $timebb   = "2015W457";
             } else if ($week == 46){
-                $timeaa   = "2014W461";
-                $timebb   = "2014W467";
+                $timeaa   = "2015W461";
+                $timebb   = "2015W467";
             } else if ($week == 47){
-                $timeaa   = "2014W471";
-                $timebb   = "2014W477";
+                $timeaa   = "2015W471";
+                $timebb   = "2015W477";
             } else if ($week == 48){
-                $timeaa   = "2014W481";
-                $timebb   = "2014W487";
+                $timeaa   = "2015W481";
+                $timebb   = "2015W487";
             } else if ($week == 49){
-                $timeaa   = "2014W491";
-                $timebb   = "2014W497";
+                $timeaa   = "2015W491";
+                $timebb   = "2015W497";
             } else if ($week == 50){
-                $timeaa   = "2014W501";
-                $timebb   = "2014W507";
+                $timeaa   = "2015W501";
+                $timebb   = "2015W507";
             } else if ($week == 51){
-                $timeaa   = "2014W511";
-                $timebb   = "2014W517";
+                $timeaa   = "2015W511";
+                $timebb   = "2015W517";
             } else if ($week == 52){
-                $timeaa   = "2014W521";
-                $timebb   = "2014W527";
+                $timeaa   = "2015W521";
+                $timebb   = "2015W527";
             } else {
                 show_error('Undefined week number');
             }
@@ -766,172 +766,172 @@ class Charts extends CI_Controller {
         private function __result_week_red($week)
         {
             if ($week == 1){
-                $timeaa   = "2014W011";
-                $timebb   = "2014W017";
+                $timeaa   = "2015W011";
+                $timebb   = "2015W017";
             } else if ($week == 2){
-                $timeaa   = "2014W021";
-                $timebb   = "2014W027";
+                $timeaa   = "2015W021";
+                $timebb   = "2015W027";
             } else if ($week == 3){
-                $timeaa   = "2014W031";
-                $timebb   = "2014W037";
+                $timeaa   = "2015W031";
+                $timebb   = "2015W037";
             } else if ($week == 4){
-                $timeaa   = "2014W041";
-                $timebb   = "2014W067";
+                $timeaa   = "2015W041";
+                $timebb   = "2015W067";
             } else if ($week == 7){
-                $timeaa   = "2014W071";
-                $timebb   = "2014W077";
+                $timeaa   = "2015W071";
+                $timebb   = "2015W077";
             } else if ($week == 8){
-                $timeaa   = "2014W081";
-                $timebb   = "2014W087";
+                $timeaa   = "2015W081";
+                $timebb   = "2015W087";
             } else if ($week == 9){
-                $timeaa   = "2014W091";
-                $timebb   = "2014W097";
+                $timeaa   = "2015W091";
+                $timebb   = "2015W097";
             } else if ($week == 10){
-                $timebb   = "2014W047";
+                $timebb   = "2015W047";
             } else if ($week == 5){
-                $timeaa   = "2014W051";
-                $timebb   = "2014W057";
+                $timeaa   = "2015W051";
+                $timebb   = "2015W057";
             } else if ($week == 6){
-                $timeaa   = "2014W061";
-                $timebb   = "2014W067";
+                $timeaa   = "2015W061";
+                $timebb   = "2015W067";
             } else if ($week == 7){
-                $timeaa   = "2014W071";
-                $timebb   = "2014W077";
+                $timeaa   = "2015W071";
+                $timebb   = "2015W077";
             } else if ($week == 8){
-                $timeaa   = "2014W081";
-                $timebb   = "2014W087";
+                $timeaa   = "2015W081";
+                $timebb   = "2015W087";
             } else if ($week == 9){
-                $timeaa   = "2014W091";
-                $timebb   = "2014W097";
+                $timeaa   = "2015W091";
+                $timebb   = "2015W097";
             } else if ($week == 10){
-                $timeaa   = "2014W101";
-                $timebb   = "2014W107";
+                $timeaa   = "2015W101";
+                $timebb   = "2015W107";
             } else if ($week == 11){
-                $timeaa   = "2014W111";
-                $timebb   = "2014W117";
+                $timeaa   = "2015W111";
+                $timebb   = "2015W117";
             } else if ($week == 12){
-                $timeaa   = "2014W121";
-                $timebb   = "2014W127";
+                $timeaa   = "2015W121";
+                $timebb   = "2015W127";
             } else if ($week == 13){
-                $timeaa   = "2014W131";
-                $timebb   = "2014W137";
+                $timeaa   = "2015W131";
+                $timebb   = "2015W137";
             } else if ($week == 14){
-                $timeaa   = "2014W141";
-                $timebb   = "2014W147";
+                $timeaa   = "2015W141";
+                $timebb   = "2015W147";
             } else if ($week == 15){
-                $timeaa   = "2014W151";
-                $timebb   = "2014W157";
+                $timeaa   = "2015W151";
+                $timebb   = "2015W157";
             } else if ($week == 16){
-                $timeaa   = "2014W161";
-                $timebb   = "2014W167";
+                $timeaa   = "2015W161";
+                $timebb   = "2015W167";
             } else if ($week == 17){
-                $timeaa   = "2014W171";
-                $timebb   = "2014W177";
+                $timeaa   = "2015W171";
+                $timebb   = "2015W177";
             } else if ($week == 18){
-                $timeaa   = "2014W181";
-                $timebb   = "2014W187";
+                $timeaa   = "2015W181";
+                $timebb   = "2015W187";
             } else if ($week == 19){
-                $timeaa   = "2014W191";
-                $timebb   = "2014W197";
+                $timeaa   = "2015W191";
+                $timebb   = "2015W197";
             } else if ($week == 20){
-                $timeaa   = "2014W201";
-                $timebb   = "2014W207";
+                $timeaa   = "2015W201";
+                $timebb   = "2015W207";
             } else if ($week == 21){
-                $timeaa   = "2014W211";
-                $timebb   = "2014W217";
+                $timeaa   = "2015W211";
+                $timebb   = "2015W217";
             } else if ($week == 22){
-                $timeaa   = "2014W221";
-                $timebb   = "2014W227";
+                $timeaa   = "2015W221";
+                $timebb   = "2015W227";
             } else if ($week == 23){
-                $timeaa   = "2014W231";
-                $timebb   = "2014W237";
+                $timeaa   = "2015W231";
+                $timebb   = "2015W237";
             } else if ($week == 24){
-                $timeaa   = "2014W241";
-                $timebb   = "2014W247";
+                $timeaa   = "2015W241";
+                $timebb   = "2015W247";
             } else if ($week == 25){
-                $timeaa   = "2014W251";
-                $timebb   = "2014W257";
+                $timeaa   = "2015W251";
+                $timebb   = "2015W257";
             } else if ($week == 26){
-                $timeaa   = "2014W261";
-                $timebb   = "2014W267";
+                $timeaa   = "2015W261";
+                $timebb   = "2015W267";
             } else if ($week == 27){
-                $timeaa   = "2014W271";
-                $timebb   = "2014W277";
+                $timeaa   = "2015W271";
+                $timebb   = "2015W277";
             } else if ($week == 28){
-                $timeaa   = "2014W281";
-                $timebb   = "2014W287";
+                $timeaa   = "2015W281";
+                $timebb   = "2015W287";
             } else if ($week == 29){
-                $timeaa   = "2014W291";
-                $timebb   = "2014W297";
+                $timeaa   = "2015W291";
+                $timebb   = "2015W297";
             } else if ($week == 30){
-                $timeaa   = "2014W301";
-                $timebb   = "2014W307";
+                $timeaa   = "2015W301";
+                $timebb   = "2015W307";
             } else if ($week == 31){
-                $timeaa   = "2014W311";
-                $timebb   = "2014W317";
+                $timeaa   = "2015W311";
+                $timebb   = "2015W317";
             } else if ($week == 32){
-                $timeaa   = "2014W321";
-                $timebb   = "2014W327";
+                $timeaa   = "2015W321";
+                $timebb   = "2015W327";
             } else if ($week == 33){
-                $timeaa   = "2014W331";
-                $timebb   = "2014W337";
+                $timeaa   = "2015W331";
+                $timebb   = "2015W337";
             } else if ($week == 34){
-                $timeaa   = "2014W341";
-                $timebb   = "2014W347";
+                $timeaa   = "2015W341";
+                $timebb   = "2015W347";
             } else if ($week == 35){
-                $timeaa   = "2014W351";
-                $timebb   = "2014W357";
+                $timeaa   = "2015W351";
+                $timebb   = "2015W357";
             } else if ($week == 36){
-                $timeaa   = "2014W361";
-                $timebb   = "2014W367";
+                $timeaa   = "2015W361";
+                $timebb   = "2015W367";
             } else if ($week == 37){
-                $timeaa   = "2014W371";
-                $timebb   = "2014W377";
+                $timeaa   = "2015W371";
+                $timebb   = "2015W377";
             } else if ($week == 38){
-                $timeaa   = "2014W381";
-                $timebb   = "2014W387";
+                $timeaa   = "2015W381";
+                $timebb   = "2015W387";
             } else if ($week == 39){
-                $timeaa   = "2014W391";
-                $timebb   = "2014W397";
+                $timeaa   = "2015W391";
+                $timebb   = "2015W397";
             } else if ($week == 40){
-                $timeaa   = "2014W401";
-                $timebb   = "2014W407";
+                $timeaa   = "2015W401";
+                $timebb   = "2015W407";
             } else if ($week == 41){
-                $timeaa   = "2014W411";
-                $timebb   = "2014W417";
+                $timeaa   = "2015W411";
+                $timebb   = "2015W417";
             } else if ($week == 42){
-                $timeaa   = "2014W421";
-                $timebb   = "2014W427";
+                $timeaa   = "2015W421";
+                $timebb   = "2015W427";
             } else if ($week == 43){
-                $timeaa   = "2014W431";
-                $timebb   = "2014W437";
+                $timeaa   = "2015W431";
+                $timebb   = "2015W437";
             } else if ($week == 44){
-                $timeaa   = "2014W441";
-                $timebb   = "2014W447";
+                $timeaa   = "2015W441";
+                $timebb   = "2015W447";
             } else if ($week == 45){
-                $timeaa   = "2014W451";
-                $timebb   = "2014W457";
+                $timeaa   = "2015W451";
+                $timebb   = "2015W457";
             } else if ($week == 46){
-                $timeaa   = "2014W461";
-                $timebb   = "2014W467";
+                $timeaa   = "2015W461";
+                $timebb   = "2015W467";
             } else if ($week == 47){
-                $timeaa   = "2014W471";
-                $timebb   = "2014W477";
+                $timeaa   = "2015W471";
+                $timebb   = "2015W477";
             } else if ($week == 48){
-                $timeaa   = "2014W481";
-                $timebb   = "2014W487";
+                $timeaa   = "2015W481";
+                $timebb   = "2015W487";
             } else if ($week == 49){
-                $timeaa   = "2014W491";
-                $timebb   = "2014W497";
+                $timeaa   = "2015W491";
+                $timebb   = "2015W497";
             } else if ($week == 50){
-                $timeaa   = "2014W501";
-                $timebb   = "2014W507";
+                $timeaa   = "2015W501";
+                $timebb   = "2015W507";
             } else if ($week == 51){
-                $timeaa   = "2014W511";
-                $timebb   = "2014W517";
+                $timeaa   = "2015W511";
+                $timebb   = "2015W517";
             } else if ($week == 52){
-                $timeaa   = "2014W521";
-                $timebb   = "2014W527";
+                $timeaa   = "2015W521";
+                $timebb   = "2015W527";
             } else {
                 show_error('Undefined week number');
             }
