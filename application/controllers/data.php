@@ -60,21 +60,26 @@ class Data extends CI_Controller {
         {
             $loc_name   = strtoupper($this->input->post('loc_name'));
             $race_type  = $this->input->post('race_type');
-            echo $race_type;
-            echo $loc_name;
+            //Load Location Model
             $this->load->model('location_model');
+            //Insert data to database via Location Model and get the result back.
             $status = $this->location_model->insert($race_type, $loc_name);
-            echo $status;
+            if ($status == 1){
+                echo "Berhasil";
+            }
+            else {
+                echo $status;
+            }
             if ($race_type = 'G')
             {
-                
+                $status = $this->location_model->ginsert($race_type, $loc_name);
             }
             
             else if ($race_type = 'T'){
-                
+                $status = $this->location_model->tinsert($race_type, $loc_name);
             }
             else if ($race_type = 'R'){
-                
+                $status = $this->location_model->rinsert($race_type, $loc_name);
             }
             
         }

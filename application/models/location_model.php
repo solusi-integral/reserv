@@ -28,5 +28,31 @@ class Location_model extends CI_Model{
         
     }
     
+    public function ginsert($race_type, $loc_name)
+    {
+        $data = array(
+            'Type' => $race_type ,
+            'Location' => $loc_name
+        );
+        return $this->db->insert('G_Location',$data);        
+    }
+    
+    public function tinsert($race_type, $loc_name)
+    {
+        $data = array(
+            'Type' => $race_type ,
+            'Location' => $loc_name
+        );
+        return $this->db->insert('T_Location',$data);        
+    }
+    
+    public function rinsert($race_type, $loc_name)
+    {
+        $data = array(
+            'Type' => $race_type ,
+            'Location' => $loc_name
+        );
+        return $this->db->insert('R_Location',$data);        
+    }
     
 }
