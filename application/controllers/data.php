@@ -44,8 +44,10 @@ class Data extends CI_Controller {
         
         public function add_loc()
         {
-            //$this->load->view('data_add');
+            //$this->load->view('form_loc');
+            $this->load->helper('form') ;
             $this->load->view('form_loc');
+                        
         }
         
         public function add_race()
@@ -56,6 +58,24 @@ class Data extends CI_Controller {
         
         public function data_add()
         {
+            $loc_name   = strtoupper($this->input->post('loc_name'));
+            $race_type  = $this->input->post('race_type');
+            echo $race_type;
+            echo $loc_name;
+            $this->load->model('location_model');
+            $status = $this->location_model->insert($race_type, $loc_name);
+            echo $status;
+            if ($race_type = 'G')
+            {
+                
+            }
+            
+            else if ($race_type = 'T'){
+                
+            }
+            else if ($race_type = 'R'){
+                
+            }
             
         }
         

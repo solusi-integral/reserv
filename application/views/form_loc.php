@@ -10,12 +10,10 @@
 				<div class="box grid_16">
 					<div class="block">
                                         <?php echo form_open('data/data_add'); ?>
-					<!-- <form action="<?php //echo $this->config->base_url(); ?>index.php/data/data_add" method="post" class="validate_form"> -->
 						<h2 class="section">Add New Location</h2>
 						<fieldset class="label_side label_small">
 							<label for="text_field_inline">Location</label>
 							<div>
-								<input type="text" name="loc">
                                                                 <?php 
                                                                     $data_name = array(
                                                                     'name' => 'loc_name',
@@ -52,11 +50,7 @@
 						</div>
 
 						<div class="button_bar clearfix">
-							<button class="dark" type="submit">
                                                             <?php echo form_submit('submit', 'Submit', "class='dark'"); ?>
-								<img src="../../images/icons/small/white/mail.png">
-								<span>Send</span>
-							</button>
 							<button class="light send_right" type="reset">
 								<span>Reset</span>
 							</button>
