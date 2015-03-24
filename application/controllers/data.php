@@ -53,7 +53,11 @@ class Data extends CI_Controller {
         public function add_race()
         {
             //$this->load->view('data_add');
-            $this->load->view('data_add');
+            $this->load->helper('form') ;
+            $this->load->model('location_model');
+            $query = $this->location_model->lookup();
+            $data['location']   = $query->result();
+            $this->load->view('form_test', $data);
         }
         
         public function data_add()

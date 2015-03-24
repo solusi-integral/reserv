@@ -25,7 +25,8 @@ class Location_model extends CI_Model{
     
     public function lookup()
     {
-        
+        $query = $this->db->get('Location');
+        return $query;
     }
     
     public function ginsert($race_type, $loc_name)
