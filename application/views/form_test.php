@@ -43,6 +43,7 @@
             
             //create Runner dropdown box
             $data_runner = array(
+            '0' => '0',
             '1' => '1',
             '2' => '2',
             '3' => '3',
@@ -64,7 +65,7 @@
             '19' => '19',
             '20' => '20'
             );
-            
+            echo form_label('Race Runner');
             echo form_dropdown('runner', $data_runner, '1', 'class="dropdown_box"');
             
             //create race number dropdown box
@@ -90,7 +91,7 @@
             '19' => '19',
             '20' => '20'
             );
-            
+            echo form_label('Race Number');
             echo form_dropdown('race_number', $data_race_number, '1', 'class="dropdown_box"');
             
             //create race number dropdown box
@@ -98,8 +99,8 @@
             {
                 $data_location[$row->Location] = $row->Location;
             }
-            
-            echo form_dropdown('race_number', $data_location, 'BENALLA', 'class="dropdown_box"');
+            //echo form_label('Race');
+            echo form_dropdown('location', $data_location, 'BENALLA', 'class="dropdown_box"');
             
             //create performance result field
             $data_perf = array(

@@ -90,6 +90,41 @@ class Data extends CI_Controller {
         
         public function data_race()
         {
+            $gtype  = 'G';
+            $ttype  = 'T';
+            $rtype  = 'R';
+            $jt_hour        = $this->input->post('jt_hour');
+            $jt_min         = $this->input->post('jt_min');
+            //Combining Jump time
+            $jump           = $jt_hour.':'.$jt_min.':00';
+            $race_type      = $this->input->post('race_type');
+            $runners        = $this->input->post('runner');
+            $race_number    = $this->input->post('race_number');
+            $location       = $this->input->post('location');
+            $perf           = $this->input->post('perf');
+            
+            $this->load->model('report_model');
+            $data['jump_date']      = $jump;
+            $data['type']           = $race_type;
+            $data['runners']        = $runners;
+            $data['number']         = $race_number;
+            $data['location']       = $location;
+            $data['results']        = $perf;
+            $data['name']           = 'Indra';
+            $data['comment']        = 'None';
+            $query = $this->db->insert('result', $data);
+            if ($race_type == $gtype) 
+            {
+                $this->db->insert('gtype', $data);
+            }
+            else if ($race_type == $ttype) 
+            {
+                $this->db->insert('ttype', $data);
+            }
+            else if ($race_type == $rtype)
+            {
+                $this->db->insert('rtype', $data);
+            }
             
         }
 }

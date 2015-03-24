@@ -25,7 +25,11 @@ class Location_model extends CI_Model{
     
     public function lookup()
     {
+        //Sort Database in order ascending based on Location names
+        $this->db->order_by('Location', 'asc'); 
+        //Get database from table - Location
         $query = $this->db->get('Location');
+        // return the query
         return $query;
     }
     
