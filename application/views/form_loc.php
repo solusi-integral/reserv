@@ -9,12 +9,23 @@
 
 				<div class="box grid_16">
 					<div class="block">
-					<form action="<?php echo $this->config->base_url(); ?>index.php/data/data_add" method="post" class="validate_form">
+                                        <?php echo form_open('data/data_add'); ?>
+					<!-- <form action="<?php //echo $this->config->base_url(); ?>index.php/data/data_add" method="post" class="validate_form"> -->
 						<h2 class="section">Add New Location</h2>
 						<fieldset class="label_side label_small">
-							<label for="text_field_inline">Location Name</label>
+							<label for="text_field_inline">Location</label>
 							<div>
-								<input type="text">
+								<input type="text" name="loc">
+                                                                <?php 
+                                                                    $data_name = array(
+                                                                    'name' => 'loc_name',
+                                                                    'id' => 'loc_name',
+                                                                    'class' => 'input_box',
+                                                                    'placeholder' => 'Please Enter Name'
+                                                                    );
+
+                                                                    echo form_input($data_name);
+                                                                ?>
 							</div>
 						</fieldset>
 						
@@ -23,10 +34,17 @@
 								<fieldset class="label_side label_small">
 									<label>Race Type</label>
 									<div>
-										<div class="jqui_radios">
-											<input type="radio" name="race_type" value="G" id="type_rc1"/><label for="type_rc1">G Type Races</label>
-											<input type="radio" name="race_type" value="T" id="type_rc2"/><label for="type_rc2">T Type Races</label>
-                                                                                        <input type="radio" name="race_type" value="R" id="type_rc3"/><label for="type_rc3">R Type Races</label>
+										<div class="jqui_dr">
+                                                                                    <?php 
+                                                                                        $data_gender = array(
+                                                                                        'G' => 'G',
+                                                                                        'T' => 'T',
+                                                                                        'R' => 'R'
+                                                                                        );
+
+                                                                                        echo form_dropdown('race_type', $data_gender, 'G', 'class="dropdown_box"');
+                                                                                    
+                                                                                    ?>
                                                                                 </div>
 									</div>
 								</fieldset>
@@ -35,6 +53,7 @@
 
 						<div class="button_bar clearfix">
 							<button class="dark" type="submit">
+                                                            <?php echo form_submit('submit', 'Submit', "class='dark'"); ?>
 								<img src="../../images/icons/small/white/mail.png">
 								<span>Send</span>
 							</button>
