@@ -90,6 +90,15 @@ class Data extends CI_Controller {
         
         public function data_race()
         {
+            $this->load->model('report_model','',TRUE);
+            $this->load->helper('date');
+            $gmt                = local_to_gmt(now());
+            $sydtz              = 'UP10';
+            $dst                = TRUE;
+            $timeb              = 1130;
+            $timee              = 2400;
+            $timeba             = 0000;
+            $timeea             = 0030;
             $gtype  = 'G';
             $ttype  = 'T';
             $rtype  = 'R';
@@ -103,7 +112,17 @@ class Data extends CI_Controller {
             $location       = $this->input->post('location');
             $perf           = $this->input->post('perf');
             
-            $this->load->model('report_model');
+            // Need to work on this to filter unwanted race (outside the working hours)
+            
+            $date                   = date('Y-m-d H:i:s', $gmt);
+            if ($runner = 0){
+               $counted = 0;
+                
+            } else {
+                $counted = 1;
+            }
+            $data['counted']        = $counted;
+            $data['date']           = $date;
             $data['jump_date']      = $jump;
             $data['type']           = $race_type;
             $data['runners']        = $runners;
@@ -125,6 +144,7 @@ class Data extends CI_Controller {
             {
                 $this->db->insert('rtype', $data);
             }
+            echo '<a href=';echo $this->config->base_url(); echo 'index.php/data/add_race'; echo '>Add More</a>';
             
         }
 }
