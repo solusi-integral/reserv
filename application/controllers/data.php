@@ -42,11 +42,27 @@ class Data extends CI_Controller {
             $this->report_model->update_race($race_id, $comment);
         }
         
-        public function add()
+        public function add_loc()
         {
+            //$this->load->view('data_add');
+            $this->load->view('form_loc');
+        }
+        
+        public function add_race()
+        {
+            //$this->load->view('data_add');
             $this->load->view('data_add');
         }
         
+        public function data_add()
+        {
+            
+        }
+        
+        public function data_race()
+        {
+            
+        }
 }
 
 /* End of file welcome.php */

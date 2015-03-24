@@ -44,7 +44,7 @@
 
 									<div class="wizard_content">
 
-		                            	<form action="<?php echo $this->config->base_url(); ?>index.php/data/data_race" method="post" class="validate_form">
+		                            	<form action="<?php echo $this->config->base_url(); ?>index.php/data/insert" method="post" class="validate_form">
 										<div id="step_1" class="step block" style="display:block;">
 											<div class="section">
 												<h2>1. Race Information</h2>
@@ -201,5 +201,5 @@
 				</div>
 			</div>
 		</div>
-            <?php //print_r($info) ?>
+            <?php print_r($info) ?>
 <?php include 'includes/core/document_foot.php'?>
