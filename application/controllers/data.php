@@ -113,12 +113,23 @@ class Data extends CI_Controller {
             $perf           = $this->input->post('perf');
             
             // Need to work on this to filter unwanted race (outside the working hours)
-            
-            $date                   = date('Y-m-d H:i:s', $gmt);
+            // Yesterday Performance is not working #6
+            // Changed from date('Y-m-d H:i:s', $gmt);
+            // To date('Y-m-d', $gmt);
+            $date                   = date('Y-m-d', $gmt);
             if ($runner = 0){
                $counted = 0;
                 
-            } else {
+            } 
+            else if ($race_type == $rtype){
+                $counted = 0;
+            }
+            
+            else if ($race_type == $ttype){
+                $counted = 1;
+            }
+            else if ($race_type == $gtype)
+            {
                 $counted = 1;
             }
             $data['counted']        = $counted;
