@@ -121,7 +121,7 @@
 									</div>
 								</div>
 								<div class="col_20 no_border_top no_border_right">
-									<div class="info_box pjax_today_total">
+									<div class="info_box" id="pjax_today_total">
 										<div class="split two"><?php echo $today_sum ?> <small>races</small></div>
 										<div class="split two red"><?php echo $today_red ?> <small>races</small></div>
 										<label>Performance</label>
