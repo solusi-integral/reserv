@@ -76,9 +76,25 @@ class Pajax extends CI_Controller {
             $this->output->cache(2);
             $this->load->view('pjax_today', $data);
         }
+        
+        public function pjax_today_perf()
+        {
+            $data['pjax_today_perf']      = $this->today_performance();
+            $this->output->cache(2);
+            $this->load->view('pjax_today_perf', $data);
+        }
+        
+        public function pjax_today_total()
+        {
+            $data['today_total']    =   $this->today();
+            $data['today_red']      =   $this->today_red();
+            $this->output->cache(2);
+            $this->load->view('pjax_today_total', $data);
+        }
+        
         public function pjax_test()
         {
-            $data['todaytest']      = $this->today_red();
+            $data['todaytest']      = $this->today_performance();
             $this->output->cache(2);
             $this->load->view('pjax_test', $data);
         }
