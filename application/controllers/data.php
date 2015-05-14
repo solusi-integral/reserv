@@ -109,6 +109,7 @@ class Data extends CI_Controller {
             $race_type      = $this->input->post('race_type');
             $runners        = $this->input->post('runner');
             $race_number    = $this->input->post('race_number');
+            $operator       = $this->input->post('data_oper');
             $location       = $this->input->post('location');
             $perf           = $this->input->post('perf');
             
@@ -140,7 +141,7 @@ class Data extends CI_Controller {
             $data['number']         = $race_number;
             $data['location']       = $location;
             $data['results']        = $perf;
-            $data['name']           = 'Indra';
+            $data['name']           = $operator;
             $data['comment']        = 'None';
             $query = $this->db->insert('result', $data);
             if ($race_type == $gtype) 

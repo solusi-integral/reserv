@@ -102,6 +102,13 @@
             //echo form_label('Race');
             echo form_dropdown('location', $data_location, 'BENALLA', 'class="dropdown_box"');
             
+            //Create Data Entry Operator
+            $data_race_oper  = array(
+                'Indra' => 'Indra',
+                'Surya' => 'Surya'
+            );
+            echo form_dropdown('data_oper', $data_race_oper, 'Indra', 'class="dropdown_box"');
+            
             //create performance result field
             $data_perf = array(
             'name' => 'perf',
