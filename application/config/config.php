@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://reserv.solusi-integral.co.id/';
+$config['base_url']	= 'https://reserv.solusi-integral.co.id/';
 
 /*
 |--------------------------------------------------------------------------
