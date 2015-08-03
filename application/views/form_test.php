@@ -2,7 +2,7 @@
     <head>
         <title>Entry Form For Location</title>
     </head>
-    <body bgcolor="#E6E6FA">
+    <body style="background-color:#E6E6FA">
         <?php 
             //Create form
             echo form_open('data/data_race'); 
