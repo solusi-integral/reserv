@@ -104,6 +104,7 @@
             
             //Create Data Entry Operator
             $data_race_oper  = array(
+                'Adit' => 'Adit',
                 'Indra' => 'Indra',
                 'Surya' => 'Surya'
             );
