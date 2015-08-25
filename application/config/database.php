@@ -47,10 +47,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '192.168.5.193';
-$db['default']['username'] = 'reserv_new';
+$db['default']['hostname'] = '127.0.0.1';
+$db['default']['username'] = 'reserv';
 $db['default']['password'] = 'ZZteRQqpyRJJQ8RF';
-$db['default']['database'] = 'reserv_new';
+$db['default']['database'] = 'reserv';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

@@ -106,6 +106,7 @@
             $data_race_oper  = array(
                 'Adit' => 'Adit',
                 'Indra' => 'Indra',
+		'Rezky' => 'Rezky',
                 'Surya' => 'Surya'
             );
             echo form_dropdown('data_oper', $data_race_oper, 'Indra', 'class="dropdown_box"');
