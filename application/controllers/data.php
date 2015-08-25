@@ -93,6 +93,7 @@ class Data extends CI_Controller {
             $this->load->model('report_model','',TRUE);
             $this->load->helper('date');
             $gmt                = local_to_gmt(now());
+            // Sydney Timezone
             $sydtz              = 'UP10';
             $dst                = TRUE;
             $timeb              = 1130;
@@ -156,7 +157,7 @@ class Data extends CI_Controller {
             {
                 $this->db->insert('rtype', $data);
             }
-            echo '<a href=';echo $this->config->base_url(); echo 'index.php/data/add_race'; echo '>Add More</a>';
+            echo '<a href=';echo $this->config->base_url(); echo 'data/add_race'; echo '>Add More</a>';
             
         }
 }

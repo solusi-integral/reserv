@@ -262,7 +262,7 @@ class Control extends CI_Controller {
             $total  = $this->frday_sum();
             $red    = $this->frday_red();
             $green  = $total-$red;
-            $perce1     = round(($green/$total*100),2);
+            $perce1 = round(($green/$total*100),2);
             return $perce1;
         }
         
