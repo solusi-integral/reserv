@@ -32,6 +32,7 @@ class Control extends CI_Controller {
             $data['today_perf'] = $this->today_performance();
             $data['today_gree'] = $this->today_green();
             $data['yeste_gree'] = $this->yesterday_green();
+            // Perlu diperbaiki
             //$data['twday_gree'] = $this->twday_green();
             //$data['thday_gree'] = $this->thday_green();
             //$data['frday_gree'] = $this->frday_green();
