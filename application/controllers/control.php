@@ -211,6 +211,10 @@ class Control extends CI_Controller {
             $total  = $this->twday_sum();
             $red    = $this->twday_red();
             $green  = $total-$red;
+            if ($total==0)
+                {
+                    $total = 1;
+                }
             $perce1     = round(($green/$total*100),2);
             return $perce1;
         }
@@ -239,6 +243,10 @@ class Control extends CI_Controller {
             $total  = $this->thday_sum();
             $red    = $this->thday_red();
             $green  = $total-$red;
+            if ($total==0)
+                {
+                    $total = 1;
+                }
             $perce1     = round(($green/$total*100),2);
             return $perce1;
         }
@@ -267,6 +275,10 @@ class Control extends CI_Controller {
             $total  = $this->frday_sum();
             $red    = $this->frday_red();
             $green  = $total-$red;
+            if ($total==0)
+                {
+                    $total = 1;
+                }
             $perce1 = round(($green/$total*100),2);
             return $perce1;
         }
