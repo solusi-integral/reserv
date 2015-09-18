@@ -179,7 +179,11 @@ class Control extends CI_Controller {
             $total  = $this->yesterday();
             $red    = $this->yesterday_red();
             $green  = $total-$red;
-            $perce1     = round(($green/$total*100),2);
+            if ($total==0)
+                {
+                    $total = 1;
+                }
+            $perce1 = round(($green/$total*100),2);
             return $perce1;
         }
         
