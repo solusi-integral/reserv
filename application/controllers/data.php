@@ -68,18 +68,23 @@ class Data extends CI_Controller {
             $this->load->model('location_model');
             //Insert data to database via Location Model and get the result back.
             $status = $this->location_model->insert($race_type, $loc_name);
+			//Filter result based on the previous rules.
             if ($status == 1){
                 echo "Berhasil";
             }
             else {
                 echo $status;
             }
+			//Insert data into G type database instead of general database. This function allow us
+			//to differentiate the performance for each and every type. 
             if ($race_type = 'G')
             {
+				//Insert to database using model "location" with insert function
                 $status = $this->location_model->ginsert($race_type, $loc_name);
             }
             
             else if ($race_type = 'T'){
+				//Insert to database using model named "location" with standart insert function
                 $status = $this->location_model->tinsert($race_type, $loc_name);
             }
             else if ($race_type = 'R'){
@@ -90,20 +95,30 @@ class Data extends CI_Controller {
         
         public function data_race()
         {
+			// Load Model named "report"
             $this->load->model('report_model','',TRUE);
+			// Load Date Helper
             $this->load->helper('date');
+			// Set time and date zone to GMT
             $gmt                = local_to_gmt(now());
             // Sydney Timezone
             $sydtz              = 'UP10';
+			// Sydney "daylight time zone"
             $dst                = TRUE;
+			// Counting begin at 11.30 each day
             $timeb              = 1130;
+			// Counting time end at 24.00 each day
             $timee              = 2400;
+			
             $timeba             = 0000;
             $timeea             = 0030;
-            $gtype  = 'G';
+            // Devide places to different type to make it easier to do the statistics.
+			$gtype  = 'G';
             $ttype  = 'T';
             $rtype  = 'R';
+			// Relay the data from POST method form with value of 'jt_hour'
             $jt_hour        = $this->input->post('jt_hour');
+			// Relay the data from POST method form with value of 'jt_min'
             $jt_min         = $this->input->post('jt_min');
             //Combining Jump time
             $jump           = $jt_hour.':'.$jt_min.':00';
