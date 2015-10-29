@@ -8,7 +8,7 @@
                 <!-- Cancelled due to reduced functionality -->
 		<div id="loading_overlay">
 			<div class="loading_message round_bottom">
-				<img src="<?//php echo $this->config->base_url(); ?>images/interface/loading.gif" alt="loading" />
+				<img src="<?php echo $this->config->base_url(); ?>images/interface/loading.gif" alt="loading" />
 			</div>
 		</div>
 
