@@ -70,7 +70,7 @@ class Report_model extends CI_Model{
         $this->load->helper('date');
         $now                = time();
         $UL                 = 1;
-        $DL                 = 15;  
+        $DL                 = 15;   
         $this->db->where('Results >', $DL);
         $this->db->where('Counted = ', 1);
         $this->db->from('result');
