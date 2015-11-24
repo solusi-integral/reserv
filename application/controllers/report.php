@@ -109,6 +109,36 @@ class Report extends CI_Controller {
                 $this->db->insert('rtype', $data);
             }
         }
+        
+        private function __mailonmissed5()
+        {
+            /**
+             * Send Automated Email Notification When Missed 5 Races
+             * 
+             * This function will send an automated email notification using
+             * MandrillAPI to predefined email address.
+             */
+        }
+        
+        private function __mailonmissed10()
+        {
+            /**
+             * Send Automated Email Notification When Missed 10 Races
+             * 
+             * This function will send an automated email notification using
+             * MandrillAPI to predefined email address.
+             */
+        }
+        
+        private function __mailonmissed30()
+        {
+            /**
+             * Send Automated Email Notification When Missed 30 Races
+             * 
+             * This function will send an automated email notification using
+             * MandrillAPI to predefined email address.
+             */
+        }
 }
 
 /* End of file welcome.php */
