@@ -96,6 +96,7 @@ class Report extends CI_Controller {
             $data['comment']        = rawurldecode(str_replace('_', '%20', $comment));
             $this->load->view('report_view',$data);
             $this->db->insert('result', $data);
+            $id = $this->db->insert_id();
             if ($type == $gtype) 
             {
                 $this->db->insert('gtype', $data);
