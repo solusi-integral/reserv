@@ -44,16 +44,27 @@ class Control extends CI_Controller {
         
         function sumrace()
         {
+			/**
+			/* This function is use to find the total number of race.
+			/* That figure will be use to calculate the performance of the day
+			/* @var author Indra
+			/* @var 	numeric 	$data
+			**/
             $this->load->model('report_model');
-            $data       = $this->report_model->all_sum_race();
-            return $data;
+            // Save data from report model then save return variable to $data
+			$data       = $this->report_model->all_sum_race();
+            // Return data to the function
+			return $data;
         }
         
         function redrace()
         {
+			// Load report model from helper
             $this->load->model('report_model');
+			// Savae data from report model, all sum redrace to variable $data
             $data               = $this->report_model->all_sum_redrace();
-            return $data;
+            // Return the variable containing result to the caller
+			return $data;
         }
         
         function green_percentage()

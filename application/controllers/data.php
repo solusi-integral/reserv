@@ -16,6 +16,7 @@ class Data extends CI_Controller {
 	 * So any other public methods not prefixed with an underscore will
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
+         * fixed error #1 #2 #3
 	 */
 	public function index()
 	{
