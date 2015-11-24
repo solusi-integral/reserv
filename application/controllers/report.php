@@ -125,7 +125,7 @@ class Report extends CI_Controller {
              * Why we don't place it on pjax or something similar? Because those
              * function require at least one active visitor to make it works.
              * 
-             * Github Issue ID #11
+             * Github Issue ID #11 
              */
         }
         
