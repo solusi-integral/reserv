@@ -117,27 +117,51 @@ class Report extends CI_Controller {
              * Send Automated Email Notification When Missed 5 Races
              * 
              * This function will send an automated email notification using
-             * MandrillAPI to predefined email address.
+             * MandrillAPI to predefined email address. Placed insert this
+             * controller because everytime there is remote API calls it should
+             * be handled by this controller. Therefore, it is suitable for 
+             * automated reporting. Why? When there is incoming report that's 
+             * means remote server is functional.
+             * Why we don't place it on pjax or something similar? Because those
+             * function require at least one active visitor to make it works.
+             * 
+             * Github Issue ID #11
              */
         }
         
         private function __mailonmissed10()
         {
             /**
-             * Send Automated Email Notification When Missed 10 Races
+             * Send Automated Email Notification When Missed 5 Races
              * 
              * This function will send an automated email notification using
-             * MandrillAPI to predefined email address.
+             * MandrillAPI to predefined email address. Placed insert this
+             * controller because everytime there is remote API calls it should
+             * be handled by this controller. Therefore, it is suitable for 
+             * automated reporting. Why? When there is incoming report that's 
+             * means remote server is functional.
+             * Why we don't place it on pjax or something similar? Because those
+             * function require at least one active visitor to make it works.
+             * 
+             * Github Issue ID #11
              */
         }
         
         private function __mailonmissed30()
         {
             /**
-             * Send Automated Email Notification When Missed 30 Races
+             * Send Automated Email Notification When Missed 5 Races
              * 
              * This function will send an automated email notification using
-             * MandrillAPI to predefined email address.
+             * MandrillAPI to predefined email address. Placed insert this
+             * controller because everytime there is remote API calls it should
+             * be handled by this controller. Therefore, it is suitable for 
+             * automated reporting. Why? When there is incoming report that's 
+             * means remote server is functional.
+             * Why we don't place it on pjax or something similar? Because those
+             * function require at least one active visitor to make it works.
+             * 
+             * Github Issue ID #11
              */
         }
 }
