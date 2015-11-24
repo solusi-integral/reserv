@@ -125,6 +125,13 @@ class Report extends CI_Controller {
              * Why we don't place it on pjax or something similar? Because those
              * function require at least one active visitor to make it works.
              * 
+             * How does it works?
+             * 
+             * Everytime the remote server call this controller to enter a new 
+             * data, @record function will get a unique ID for every valid data.
+             * We use that unique ID to do backward lookup. How many? Depending 
+             * on the required notification level.
+             * 
              * Github Issue ID #11 
              */
         }
