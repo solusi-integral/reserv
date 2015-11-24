@@ -151,6 +151,13 @@ class Report extends CI_Controller {
              * function require at least one active visitor to make it works.
              * 
              * Github Issue ID #11
+             * 
+             * How does it works?
+             * 
+             * Everytime the remote server call this controller to enter a new 
+             * data, @record function will get a unique ID for every valid data.
+             * We use that unique ID to do backward lookup. How many? Depending 
+             * on the required notification level.
              */
         }
         
@@ -169,6 +176,13 @@ class Report extends CI_Controller {
              * function require at least one active visitor to make it works.
              * 
              * Github Issue ID #11
+             * 
+             * How does it works?
+             * 
+             * Everytime the remote server call this controller to enter a new 
+             * data, @record function will get a unique ID for every valid data.
+             * We use that unique ID to do backward lookup. How many? Depending 
+             * on the required notification level.
              */
         }
 }
