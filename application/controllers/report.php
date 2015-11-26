@@ -258,12 +258,35 @@ class Report extends CI_Controller {
             $query_30  = $this->report_model->info_race($id_29);
             $query_31  = $this->report_model->info_race($id_30);
             
+            //$data   = $query_01->result();
+            $data   = $this->__processrace($id);
+            echo $data;
+        }
+        
+        private function __processrace($id)
+        {
+            // Load Report_model helper
+            $this->load->model('report_model');
+            $query  = $this->report_model->info_race($id);
             $data   = $query_01->result();
-            print_r($data);
             foreach ($data as $row) {
-                echo $row->Name;
-                echo $row->Counted;
+                $nama       = $row->Name;
+                $counted    = $row->Counted;
             }
+            
+            if ($counted == 1)
+            {
+                if ($nama == 'none')
+                {
+                    $alert = 1;
+                }
+                
+                else {
+                    $alert = 0;
+                }
+            }
+            
+            return $alert;
         }
 }
 
