@@ -263,8 +263,8 @@ class Report extends CI_Controller {
             //print_r($data);
             //print_r($data2);
             //$data3  = $data2['Name'];
-            //print($data3);
-            //kecho $data['info'][0]['Name'];
+            print($data3);
+            echo $data2['Name'];
         }
 }
 
