@@ -292,7 +292,8 @@ class Report extends CI_Controller {
                 else {
                     $alert = 0;
                 }
-                
+            }
+            else {
                 $alert  = 0;
             }
             
