@@ -260,7 +260,7 @@ class Report extends CI_Controller {
             
             $data   = $query_01->result();
             print_r($data);
-            //echo $data['info'][0]['Name'];
+            //kecho $data['info'][0]['Name'];
         }
 }
 
