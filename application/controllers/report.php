@@ -292,6 +292,8 @@ class Report extends CI_Controller {
                 else {
                     $alert = 0;
                 }
+                
+                $alert  = 0;
             }
             
             // Return boolean value to function caller
