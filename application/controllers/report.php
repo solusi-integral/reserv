@@ -262,7 +262,8 @@ class Report extends CI_Controller {
             $data2  = array_shift($data);
             //print_r($data);
             print_r($data2);
-            print($data2['Name']);
+            $data3  = $data2['Name'];
+            print($data3);
             //kecho $data['info'][0]['Name'];
         }
 }
