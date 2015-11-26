@@ -259,7 +259,6 @@ class Report extends CI_Controller {
             $query_31  = $this->report_model->info_race($id_30);
             
             $data   = $query_01->result();
-            $data2  = array_shift($data);
         }
 }
 
