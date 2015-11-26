@@ -225,7 +225,38 @@ class Report extends CI_Controller {
             $id_30  = $id-30;
             
             // Lookup data from database based on race id
-            $query  = $this->report_model->info_race($id);
+            $query_01  = $this->report_model->info_race($id_cur);
+            $query_02  = $this->report_model->info_race($id_01);
+            $query_03  = $this->report_model->info_race($id_02);
+            $query_04  = $this->report_model->info_race($id_03);
+            $query_05  = $this->report_model->info_race($id_04);
+            $query_06  = $this->report_model->info_race($id_05);
+            $query_07  = $this->report_model->info_race($id_06);
+            $query_08  = $this->report_model->info_race($id_07);
+            $query_09  = $this->report_model->info_race($id_08);
+            $query_10  = $this->report_model->info_race($id_09);
+            $query_11  = $this->report_model->info_race($id_10);
+            $query_12  = $this->report_model->info_race($id_11);
+            $query_13  = $this->report_model->info_race($id_12);
+            $query_14  = $this->report_model->info_race($id_13);
+            $query_15  = $this->report_model->info_race($id_14);
+            $query_16  = $this->report_model->info_race($id_15);
+            $query_17  = $this->report_model->info_race($id_16);
+            $query_18  = $this->report_model->info_race($id_17);
+            $query_19  = $this->report_model->info_race($id_18);
+            $query_20  = $this->report_model->info_race($id_19);
+            $query_21  = $this->report_model->info_race($id_20);
+            $query_22  = $this->report_model->info_race($id_21);
+            $query_23  = $this->report_model->info_race($id_22);
+            $query_24  = $this->report_model->info_race($id_23);
+            $query_25  = $this->report_model->info_race($id_24);
+            $query_26  = $this->report_model->info_race($id_25);
+            $query_27  = $this->report_model->info_race($id_26);
+            $query_28  = $this->report_model->info_race($id_27);
+            $query_29  = $this->report_model->info_race($id_28);
+            $query_30  = $this->report_model->info_race($id_29);
+            $query_31  = $this->report_model->info_race($id_30);
+            
             $data['info']   = $query->result();
         }
 }
