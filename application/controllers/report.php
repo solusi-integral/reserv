@@ -269,15 +269,21 @@ class Report extends CI_Controller {
         {
             // Load Report_model helper
             $this->load->model('report_model');
+            // Get race info based on race id
             $query  = $this->report_model->info_race($id);
+            // Store result into $data variable
             $data   = $query->result();
+            // Convert array into variable
             foreach ($data as $row) {
                 $nama       = $row->Name;
                 $counted    = $row->Counted;
             }
             
+            // Determine whether we should sent alert based on race result
+            // Only for those which are counted
             if ($counted == 1)
             {
+                // Only for missed races
                 if ($nama == 'none')
                 {
                     $alert = 1;
@@ -288,6 +294,7 @@ class Report extends CI_Controller {
                 }
             }
             
+            // Return boolean value to function caller
             return $alert;
         }
 }
