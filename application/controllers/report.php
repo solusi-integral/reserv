@@ -186,7 +186,7 @@ class Report extends CI_Controller {
              */
         }
         
-        private function __lookup30races($id)
+        public function lookup30races($id)
         {
             // Load Report_model helper
             $this->load->model('report_model');
@@ -257,7 +257,8 @@ class Report extends CI_Controller {
             $query_30  = $this->report_model->info_race($id_29);
             $query_31  = $this->report_model->info_race($id_30);
             
-            $data['info']   = $query->result();
+            $data['info']   = $query_01->result();
+            print($data);
         }
 }
 
