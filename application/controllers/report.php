@@ -259,7 +259,7 @@ class Report extends CI_Controller {
             $query_31  = $this->report_model->info_race($id_30);
             
             $data['info']   = $query_01->result();
-            print($data);
+            print_r($data);
         }
 }
 
