@@ -186,6 +186,7 @@ class Report extends CI_Controller {
              */
         }
         
+        // Please change it back to private function when you are done
         public function lookup30races($id)
         {
             // Load Report_model helper
