@@ -107,9 +107,9 @@ class Data extends CI_Controller {
 			// Sydney "daylight time zone"
             $dst                = TRUE;
 			// Counting begin at 11.30 each day
-            $timeb              = 1130;
+            $timeb              = 1200;
 			// Counting time end at 24.00 each day
-            $timee              = 2400;
+            $timee              = 2000;
 			
             $timeba             = 0000;
             $timeea             = 0030;
