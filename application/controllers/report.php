@@ -185,6 +185,13 @@ class Report extends CI_Controller {
              * on the required notification level.
              */
         }
+        
+        private function __lookup30races($id)
+        {
+            $this->load->model('report_model');
+            $query  = $this->report_model->info_race($id);
+            $data['info']   = $query->result();
+        }
 }
 
 /* End of file welcome.php */
