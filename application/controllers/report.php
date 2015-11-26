@@ -262,6 +262,7 @@ class Report extends CI_Controller {
             print_r($data);
             foreach ($data as $row) {
                 echo $row->Name;
+                echo $row->Counted;
             }
         }
 }
