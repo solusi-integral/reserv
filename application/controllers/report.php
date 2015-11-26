@@ -188,7 +188,43 @@ class Report extends CI_Controller {
         
         private function __lookup30races($id)
         {
+            // Load Report_model helper
             $this->load->model('report_model');
+            
+            // Get race ID for the last 30 races.
+            $id_cur = $id;
+            $id_01  = $id-1;
+            $id_02  = $id-2;
+            $id_03  = $id-3;
+            $id_04  = $id-4;
+            $id_05  = $id-5;
+            $id_06  = $id-6;
+            $id_07  = $id-7;
+            $id_08  = $id-8;
+            $id_09  = $id-9;
+            $id_10  = $id-10;
+            $id_11  = $id-11;
+            $id_12  = $id-12;
+            $id_13  = $id-13;
+            $id_14  = $id-14;
+            $id_15  = $id-15;
+            $id_16  = $id-16;
+            $id_17  = $id-17;
+            $id_18  = $id-18;
+            $id_19  = $id-19;
+            $id_20  = $id-20;
+            $id_21  = $id-21;
+            $id_22  = $id-22;
+            $id_23  = $id-23;
+            $id_24  = $id-24;
+            $id_25  = $id-25;
+            $id_26  = $id-26;
+            $id_27  = $id-27;
+            $id_28  = $id-28;
+            $id_29  = $id-29;
+            $id_30  = $id-30;
+            
+            // Lookup data from database based on race id
             $query  = $this->report_model->info_race($id);
             $data['info']   = $query->result();
         }
