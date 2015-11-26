@@ -260,9 +260,9 @@ class Report extends CI_Controller {
             
             //$data   = $query_01->result();
             $race05 = $query_01 + $query_02 + $query_03 + $query_04 + $query_05;
-            $data   = $this->__processrace($id);
+            //$data   = $this->__processrace($id);
             echo $race05;
-            echo $data;
+            //echo $data;
         }
         
         private function __processrace($id)
