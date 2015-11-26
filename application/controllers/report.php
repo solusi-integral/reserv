@@ -259,8 +259,9 @@ class Report extends CI_Controller {
             $query_31  = $this->report_model->info_race($id_30);
             
             $data   = $query_01->result();
+            print_r($data);
             foreach ($data as $row) {
-                echo $row->Location;
+                echo $row->Name;
             }
         }
 }
