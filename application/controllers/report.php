@@ -260,11 +260,6 @@ class Report extends CI_Controller {
             
             $data   = $query_01->result();
             $data2  = array_shift($data);
-            //print_r($data);
-            //print_r($data2);
-            $data3  = $data2['Name'];
-            
-            echo $data3;
         }
 }
 
