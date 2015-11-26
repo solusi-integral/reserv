@@ -268,7 +268,7 @@ class Report extends CI_Controller {
             // Load Report_model helper
             $this->load->model('report_model');
             $query  = $this->report_model->info_race($id);
-            $data   = $query_01->result();
+            $data   = $query->result();
             foreach ($data as $row) {
                 $nama       = $row->Name;
                 $counted    = $row->Counted;
