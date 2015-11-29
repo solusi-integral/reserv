@@ -51,7 +51,7 @@ class Report extends CI_Controller {
             $timeb              = 1200;
             $timee              = 2200;
             $timeba             = 0000;
-            $timeea             = 0030;
+            $timeea             = 0001;
             $gtype  = 'G';
             $ttype  = 'T';
             $rtype  = 'R';
