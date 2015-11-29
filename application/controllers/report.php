@@ -56,6 +56,11 @@ class Report extends CI_Controller {
             $ttype  = 'T';
             $rtype  = 'R';
             $acttime            = date("Hi", gmt_to_local($gmt, $sydtz, $dst));
+            $actday             = date("D", gmt_to_local($gmt, $sydtz, $dst));
+            if ($actday == "Sat")
+            {
+                $data['counted']    = 0;
+            }
             if ($acttime >= $timeb and $acttime <= $timee){
                 //Filter counted races  and uncounted races
                 if ($type == $rtype)
