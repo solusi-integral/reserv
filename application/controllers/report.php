@@ -48,8 +48,8 @@ class Report extends CI_Controller {
             $gmt                = local_to_gmt(now());
             $sydtz              = 'UP10';
             $dst                = TRUE;
-            $timeb              = 1130;
-            $timee              = 2400;
+            $timeb              = 1200;
+            $timee              = 2200;
             $timeba             = 0000;
             $timeea             = 0030;
             $gtype  = 'G';
