@@ -123,7 +123,7 @@ class Report extends CI_Controller {
             {
                 $status2    = "530 Failed reconding!";
             }
-            $data2['race_id']['Status'] = $status2;
+            $data2['Status'] = $status2;
             $this->__jsonoutput($data2);
         }
         
