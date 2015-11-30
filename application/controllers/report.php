@@ -105,7 +105,7 @@ class Report extends CI_Controller {
             $data2['race_id']        = $id;
             if ($type == $gtype) 
             {
-                $this->db->insert('gtype', $data);
+                $data2['status']    = $this->db->insert('gtype', $data);
             }
             else if ($type == $ttype) 
             {
