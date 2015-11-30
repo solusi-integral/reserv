@@ -99,9 +99,10 @@ class Report extends CI_Controller {
             $data['results']        = $results;
             $data['name']           = $name;
             $data['comment']        = rawurldecode(str_replace('_', '%20', $comment));
-            $this->load->view('report_view',$data);
+            //$this->load->view('report_view',$data);
             $this->db->insert('result', $data);
             $id = $this->db->insert_id();
+            $data['race_id']        = $id;
             if ($type == $gtype) 
             {
                 $this->db->insert('gtype', $data);
@@ -114,19 +115,20 @@ class Report extends CI_Controller {
             {
                 $this->db->insert('rtype', $data);
             }
+            $this->__jsonoutput($data);
         }
         
         private function __jsonoutput($data)
         {
             $this->output->set_output(json_encode($data));
             $this->output->set_content_type('application/json');
-            $this->output->set_header("HTTP/1.0 200 OK");
-            $this->output->set_header("HTTP/1.1 200 OK");
-            $this->output->set_header('Last-Modified: '.gmdate('D, d M Y H:i:s', $last_update).' GMT');
-            $this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
-            $this->output->set_header("Cache-Control: post-check=0, pre-check=0");
-            $this->output->set_header("Pragma: no-cache");
-            $this->output->set_status_header('201');
+            //$this->output->set_header("HTTP/1.0 200 OK");
+            //$this->output->set_header("HTTP/1.1 200 OK");
+            //$this->output->set_header('Last-Modified: '.gmdate('D, d M Y H:i:s', $last_update).' GMT');
+            //$this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
+            //$this->output->set_header("Cache-Control: post-check=0, pre-check=0");
+            //$this->output->set_header("Pragma: no-cache");
+            //$this->output->set_status_header('201');
         }
         
         private function __mailonmissed5()
