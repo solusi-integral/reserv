@@ -43,30 +43,44 @@ class Report extends CI_Controller {
              * @var     int     $result     Click Result
              * @var     string  $comment    Race Comment . Must be URL Encoded.
              */
+            // Load database model for easier database related task
             $this->load->model('report_model','',TRUE);
+            // Load date helper for date related task
             $this->load->helper('date');
+            // Change local time to GMT
             $gmt                = local_to_gmt(now());
+            // Sydney time zone
             $sydtz              = 'UP10';
+            // DST Observation
             $dst                = TRUE;
+            // Daily operation time
             $timeb              = 1200;
             $timee              = 2200;
             $timeba             = 0000;
             $timeea             = 0001;
+            // Race types
             $gtype  = 'G';
             $ttype  = 'T';
             $rtype  = 'R';
+            // Reconvert date from GMT to Sydney timezone
             $acttime            = date("Hi", gmt_to_local($gmt, $sydtz, $dst));
+            // Get what day is it?
             $actday             = date("D", gmt_to_local($gmt, $sydtz, $dst));
+            
+            // Exclude saturday from count
             if ($actday == "Sat")
             {
                 $data['counted']    = 0;
             }
+            
+            // Count races during operational time
             if ($acttime >= $timeb and $acttime <= $timee){
                 //Filter counted races  and uncounted races
                 if ($type == $rtype)
                 {
                     $data['counted']    = 0;
                 } else{
+                    // Exclude standing start races
                     if ($comment == 'Standing Start' or $comment == 'Standing_Start'){
                         $data['counted']    = 0;   
                     } else {
@@ -79,6 +93,7 @@ class Report extends CI_Controller {
                 {
                     $data['counted']    = 0;
                 } else{
+                    // Exclude Standing start races
                     if ($comment == 'Standing Start' or $comment == 'Standing_Start'){
                         $data['counted']    = 0;   
                     } else {
@@ -86,36 +101,52 @@ class Report extends CI_Controller {
                     }
                 }
             }
+            // Black hole if race criteria doesn't met above
             else {
                 $data['counted']    = 0;
             }
+            
+            // Decode time from POST data
             $decode_time            = rawurldecode($jump_date);
+            // Store POST data into array
             $data['date']           = $date;
             $data['jump_date']      = $decode_time;
             $data['type']           = $type;
             $data['runners']        = $runners;
             $data['number']         = $number;
+            // Decode location from remote location
             $loc                    = rawurldecode(str_replace('_', '%20', $location));
             $data['location']       = $loc;
             $data['results']        = $results;
             $data['name']           = $name;
+            // Decode name from remote location
             $data['comment']        = rawurldecode(str_replace('_', '%20', $comment));
             //$this->load->view('report_view',$data);
+            // Insert data into database
             $this->db->insert('result', $data);
+            // Get last insert ID
             $id = $this->db->insert_id();
+            // Store insert ID into array
             $data2['race_id']        = $id;
+            
+            // Individual data for each type
             if ($type == $gtype) 
             {
+                // Return boolean value
                 $status    = $this->db->insert('gtype', $data);
             }
             else if ($type == $ttype) 
             {
+                // Return boolean value
                 $status     = $this->db->insert('ttype', $data);
             }
             else if ($type == $rtype)
             {
+                // Return boolean value
                 $status     = $this->db->insert('rtype', $data);
             }
+            
+            // Set status based on return
             if ($status == 1)
             {
                 $status2    = "201 Data recoded!";
@@ -124,9 +155,13 @@ class Report extends CI_Controller {
             {
                 $status2    = "530 Failed reconding!";
             }
+            
+            // Insert required data into array
             $data2['Status']        = $status2;
             $data2['Location']      = $loc;
             $data2['Result']        = $results;
+            
+            // Proccess the output using private function __jsonoutput
             $this->__jsonoutput($data2);
         }
         
@@ -137,10 +172,6 @@ class Report extends CI_Controller {
             $this->output->set_output(json_encode($data));
             //$this->output->set_header("HTTP/1.0 200 OK");
             //$this->output->set_header("HTTP/1.1 200 OK");
-            //$this->output->set_header('Last-Modified: '.gmdate('D, d M Y H:i:s', $last_update).' GMT');
-            //$this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
-            //$this->output->set_header("Cache-Control: post-check=0, pre-check=0");
-            //$this->output->set_header("Pragma: no-cache");
         }
         
         private function __mailonmissed5()
