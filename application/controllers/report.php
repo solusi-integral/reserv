@@ -381,8 +381,8 @@ class Report extends CI_Controller {
             $query_31  = $this->__processrace($id_30);
             
             $race['lima']       = $query_01 + $query_02 + $query_03 + $query_04 + $query_05;
-            $race['sepuluh']    = $race05 + $query_06 + $query_07 + $query_08 + $query_09 + $query_10;
-            $race['tigapuluh']  = $race10 + $query_11 + $query_12 + $query_13 + $query_14 + $query_15 + $query_16 + $query_17 + $query_18 + $query_19 + $query_20 + $query_21 + $query_22 + $query_23 + $query_24 + $query_25 + $query_26 + $query_27 + $query_28 + $query_29 + $query_30;
+            $race['sepuluh']    = $race['lima'] + $query_06 + $query_07 + $query_08 + $query_09 + $query_10;
+            $race['tigapuluh']  = $race['sepuluh'] + $query_11 + $query_12 + $query_13 + $query_14 + $query_15 + $query_16 + $query_17 + $query_18 + $query_19 + $query_20 + $query_21 + $query_22 + $query_23 + $query_24 + $query_25 + $query_26 + $query_27 + $query_28 + $query_29 + $query_30;
 
             return $race;
         }
