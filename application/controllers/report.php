@@ -102,7 +102,7 @@ class Report extends CI_Controller {
             //$this->load->view('report_view',$data);
             $this->db->insert('result', $data);
             $id = $this->db->insert_id();
-            $data['race_id']        = $id;
+            $data2['race_id']        = $id;
             if ($type == $gtype) 
             {
                 $this->db->insert('gtype', $data);
@@ -115,7 +115,7 @@ class Report extends CI_Controller {
             {
                 $this->db->insert('rtype', $data);
             }
-            $this->__jsonoutput($data);
+            $this->__jsonoutput($data2);
         }
         
         private function __jsonoutput($data)
