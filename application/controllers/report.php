@@ -175,7 +175,7 @@ class Report extends CI_Controller {
             //$this->output->set_header("HTTP/1.1 200 OK");
         }
         
-        public function osticket()
+        private function __osticket()
         {
             /**
              * 
@@ -219,6 +219,16 @@ class Report extends CI_Controller {
                 die('Unable to create ticket: '.$result);
 
             $ticket_id = (int) $result;
+            
+            return $result;
+        }
+        
+        public function mailmissed($id)
+        {
+            $race   = $this->__lookup30races($id);
+            $r5     = $race['lima'];
+            $r10    = $race['sepuluh'];
+            $r30    = $race['tigapuluh'];
             
         }
         
@@ -298,7 +308,7 @@ class Report extends CI_Controller {
         }
         
         // Please change it back to private function when you are done
-        public function lookup30races($id)
+        private function __lookup30races($id)
         {
             // Load Report_model helper
             $this->load->model('report_model');
@@ -373,7 +383,7 @@ class Report extends CI_Controller {
             $race['sepuluh']    = $race05 + $query_06 + $query_07 + $query_08 + $query_09 + $query_10;
             $race['tigapuluh']  = $race10 + $query_11 + $query_12 + $query_13 + $query_14 + $query_15 + $query_16 + $query_17 + $query_18 + $query_19 + $query_20 + $query_21 + $query_22 + $query_23 + $query_24 + $query_25 + $query_26 + $query_27 + $query_28 + $query_29 + $query_30;
 
-            print_r($race);
+            return $race;
         }
         
         private function __processrace($id)
