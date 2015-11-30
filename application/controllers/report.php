@@ -229,6 +229,7 @@ class Report extends CI_Controller {
             $r5     = $race['lima'];
             $r10    = $race['sepuluh'];
             $r30    = $race['tigapuluh'];
+            echo $r5;
             
         }
         
