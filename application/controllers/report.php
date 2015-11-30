@@ -175,6 +175,53 @@ class Report extends CI_Controller {
             //$this->output->set_header("HTTP/1.1 200 OK");
         }
         
+        public function osticket()
+        {
+            /**
+             * 
+             * 
+             * Ref: https://github.com/osTicket/osTicket-1.7/blob/develop/setup/doc/api.md
+             * Ref: https://github.com/osTicket/osTicket-1.7/blob/develop/setup/doc/api/tickets.md
+             */
+            
+            $config = array(
+                  'url'=>'http://ticket.local.solusi-integral.co.id/api/tickets.json',  // URL to site.tld/api/tickets.json
+                  'key'=>'73E5B1264DC9D4327D3B695932BE89B6'  // API Key goes here
+            );
+            
+            $data = array(
+                'name'      =>      'Indra Kurniawan',  // from name aka User/Client Name
+                'email'     =>      'indra@indramgl.web.id',  // from email aka User/Client Email
+                'phone'     =>      '628572941649',  // phone number aka User/Client Phone Number
+                'subject'   =>      'Test API message',  // test subject, aka Issue Summary
+                'message'   =>      'This is a test of the osTicket API',  // test ticket body, aka Issue Details.
+                'ip'        =>      '10.117.242.38', // Should be IP address of the machine thats trying to open the ticket.
+                'topicId'   =>      '1' // the help Topic that you want to use for the ticket 
+                //'Agency'  =>		'58', //this is an example of a custom list entry. This should be the number of the entry.
+                //'Site'	=>		'Bermuda'; // this is an example of a custom text field.  You can push anything into here you want.	
+                //'attachments' => array()
+            );
+            
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $config['url']);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+            curl_setopt($ch, CURLOPT_USERAGENT, 'osTicket API Client v1.8');
+            curl_setopt($ch, CURLOPT_HEADER, FALSE);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array( 'Expect:', 'X-API-Key: '.$config['key']));
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, FALSE);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+            $result=curl_exec($ch);
+            $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+
+            if ($code != 201)
+                die('Unable to create ticket: '.$result);
+
+            $ticket_id = (int) $result;
+            
+        }
+        
         private function __mailonmissed5()
         {
             /**
