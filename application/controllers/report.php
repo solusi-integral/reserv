@@ -169,7 +169,7 @@ class Report extends CI_Controller {
         {
             $this->output->set_content_type('application/json');
             $this->output->set_status_header('201');
-            $this->output->set_header("'X-RESERV-CODE: 200 OK'");
+            $this->output->set_header('X-RESERV-CODE: 200 OK');
             $this->output->set_output(json_encode($data));
             //$this->output->set_header("HTTP/1.0 200 OK");
             //$this->output->set_header("HTTP/1.1 200 OK");
