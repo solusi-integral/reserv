@@ -195,7 +195,7 @@ class Report extends CI_Controller {
                 'phone'     =>      '628572941649',  // phone number aka User/Client Phone Number
                 'subject'   =>      'Test API message',  // test subject, aka Issue Summary
                 'message'   =>      'This is a test of the osTicket API',  // test ticket body, aka Issue Details.
-                'ip'        =>      '10.117.242.38', // Should be IP address of the machine thats trying to open the ticket.
+                'ip'        =>      '161.202.10.197', // Should be IP address of the machine thats trying to open the ticket.
                 'topicId'   =>      '10' // the help Topic that you want to use for the ticket 
                 //'Agency'  =>		'58', //this is an example of a custom list entry. This should be the number of the entry.
                 //'Site'	=>		'Bermuda'; // this is an example of a custom text field.  You can push anything into here you want.	
