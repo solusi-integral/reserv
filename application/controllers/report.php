@@ -95,7 +95,8 @@ class Report extends CI_Controller {
             $data['type']           = $type;
             $data['runners']        = $runners;
             $data['number']         = $number;
-            $data['location']       = rawurldecode(str_replace('_', '%20', $location));
+            $loc                    = rawurldecode(str_replace('_', '%20', $location));
+            $data['location']       = $loc;
             $data['results']        = $results;
             $data['name']           = $name;
             $data['comment']        = rawurldecode(str_replace('_', '%20', $comment));
@@ -123,7 +124,8 @@ class Report extends CI_Controller {
             {
                 $status2    = "530 Failed reconding!";
             }
-            $data2['Status'] = $status2;
+            $data2['Status']        = $status2;
+            $data2['Location']      = $loc;
             $this->__jsonoutput($data2);
         }
         
