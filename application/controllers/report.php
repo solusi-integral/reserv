@@ -126,6 +126,7 @@ class Report extends CI_Controller {
             }
             $data2['Status']        = $status2;
             $data2['Location']      = $loc;
+            $data2['Result']        = $results;
             $this->__jsonoutput($data2);
         }
         
