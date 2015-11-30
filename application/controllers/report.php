@@ -105,16 +105,25 @@ class Report extends CI_Controller {
             $data2['race_id']        = $id;
             if ($type == $gtype) 
             {
-                $data2['status']    = $this->db->insert('gtype', $data);
+                $status    = $this->db->insert('gtype', $data);
             }
             else if ($type == $ttype) 
             {
-                $this->db->insert('ttype', $data);
+                $status     = $this->db->insert('ttype', $data);
             }
             else if ($type == $rtype)
             {
-                $this->db->insert('rtype', $data);
+                $status     = $this->db->insert('rtype', $data);
             }
+            if ($status == 1)
+            {
+                $status2    = "201 Data recoded!";
+            }
+            else if ($status == 0)
+            {
+                $status2    = "530 Failed reconding!";
+            }
+            $data2['race_id']['Status'] = $status2;
             $this->__jsonoutput($data2);
         }
         
