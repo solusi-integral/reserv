@@ -207,7 +207,7 @@ class Report extends CI_Controller {
             echo $response;
         }
         
-        private function __freshdeskupdate()
+        private function __freshdskupdate()
         {
             $fd_domain = "https://cvsolusiintegral.freshdesk.com";
             $token = "YOUR_FRESHDESK_API_TOKEN";
