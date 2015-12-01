@@ -207,7 +207,7 @@ class Report extends CI_Controller {
             echo $response;
         }
         
-        public function freshdskupdate()
+        public function freshdsk_update($id)
         {
             $API_KEY = "ggXySu214rbWhkDJpAKU";
             $FD_ENDPOINT = "https://cvsolusiintegral.freshdesk.com"; // verify if you are using https, and change accordingly!
@@ -217,7 +217,6 @@ class Report extends CI_Controller {
               // php5.4 & below: 'helpdesk_note[attachments][][resource]' =>  "@x.png"
               //'helpdesk_note[attachments][][resource]' =>  curl_file_create("data/x.png", "image/png", "x.png")
             );
-            $id     = 6;
             $header[] = "Content-type: multipart/form-data";
             $url = "$FD_ENDPOINT/helpdesk/tickets/".$id."/conversations/note.json";
             $ch = curl_init($url);
