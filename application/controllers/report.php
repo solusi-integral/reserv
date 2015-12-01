@@ -178,7 +178,7 @@ class Report extends CI_Controller {
             //$this->output->set_header("HTTP/1.1 200 OK");
         }
         
-        public function freshdsk_create()
+        private function __freshdsk_create()
         {
             $fd_domain = "https://cvsolusiintegral.freshdesk.com";
             $token = "ggXySu214rbWhkDJpAKU";
@@ -207,7 +207,7 @@ class Report extends CI_Controller {
             echo $response;
         }
         
-        public function freshdsk_update($id)
+        private function __freshdsk_update($id)
         {
             $API_KEY = "ggXySu214rbWhkDJpAKU";
             $FD_ENDPOINT = "https://cvsolusiintegral.freshdesk.com"; // verify if you are using https, and change accordingly!
