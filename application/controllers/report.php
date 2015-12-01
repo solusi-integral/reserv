@@ -217,8 +217,9 @@ class Report extends CI_Controller {
               // php5.4 & below: 'helpdesk_note[attachments][][resource]' =>  "@x.png"
               //'helpdesk_note[attachments][][resource]' =>  curl_file_create("data/x.png", "image/png", "x.png")
             );
+            $id     = 6;
             $header[] = "Content-type: multipart/form-data";
-            $url = "$FD_ENDPOINT/helpdesk/tickets/[id]/conversations/note.json";
+            $url = "$FD_ENDPOINT/helpdesk/tickets/".$id."/conversations/note.json";
             $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_POST, true);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
