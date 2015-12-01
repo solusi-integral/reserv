@@ -187,11 +187,11 @@ class Report extends CI_Controller {
                 "helpdesk_ticket" => array(
                     "description" => "Some details on the issue ...",
                     "subject" => "Support needed..",
-                    "email" => "tom@outerspace.com",
+                    "email" => "indra@indramgl.web.id",
                     "priority" => 1,
                     "status" => 2
                 ),
-                "cc_emails" => "ram@freshdesk.com,diana@freshdesk.com"
+                "cc_emails" => ""
             );
             $json_body = json_encode($data, JSON_FORCE_OBJECT | JSON_PRETTY_PRINT);
             $header[] = "Content-type: application/json";
