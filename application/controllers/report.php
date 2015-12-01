@@ -162,7 +162,7 @@ class Report extends CI_Controller {
             $data2['Result']        = $results;
             
             // Send notification if ops team missed 5, 10, or 30 races.
-            $this->__mailmissed($id);
+            //$this->__mailmissed($id);
             
             // Proccess the output using private function __jsonoutput
             $this->__jsonoutput($data2);
