@@ -207,32 +207,33 @@ class Report extends CI_Controller {
             echo $response;
         }
         
-        private function __freshdskupdate()
+        public function freshdskupdate()
         {
-            $fd_domain = "https://cvsolusiintegral.freshdesk.com";
-            $token = "YOUR_FRESHDESK_API_TOKEN";
-            $password = "X";
-            $custom_field = array(
-                      "weapon_1" => "Laser Gun" );
-            $data = array(
-                "helpdesk_ticket" => array(
-                    "priority" => 4,
-                    "status" => 3,
-                    "custom_field" => $custom_field
-                )
+            $API_KEY = "ggXySu214rbWhkDJpAKU";
+            $FD_ENDPOINT = "https://cvsolusiintegral.freshdesk.com"; // verify if you are using https, and change accordingly!
+            $payload = array(
+              'helpdesk_note[body]' => 'Note Content',
+              'helpdesk_note[private]' => 'false'
+              // php5.4 & below: 'helpdesk_note[attachments][][resource]' =>  "@x.png"
+              //'helpdesk_note[attachments][][resource]' =>  curl_file_create("data/x.png", "image/png", "x.png")
             );
-            $json_body = json_encode($data, JSON_FORCE_OBJECT | JSON_PRETTY_PRINT);
-            $header[] = "Content-type: application/json";
-            $connection = curl_init("$fd_domain/helpdesk/tickets/[ticket_id].json");
-            curl_setopt($connection, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($connection, CURLOPT_HTTPHEADER, $header);
-            curl_setopt($connection, CURLOPT_HEADER, false);
-            curl_setopt($connection, CURLOPT_USERPWD, "$token:$password");
-            curl_setopt($connection, CURLOPT_POSTFIELDS, $json_body);
-            curl_setopt($connection, CURLOPT_CUSTOMREQUEST, 'PUT');
-            curl_setopt($connection, CURLOPT_VERBOSE, 1);
-            $response = curl_exec($connection);
-            echo $response;
+            $header[] = "Content-type: multipart/form-data";
+            $url = "$FD_ENDPOINT/helpdesk/tickets/[id]/conversations/note.json";
+            $ch = curl_init($url);
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+            curl_setopt($ch, CURLOPT_USERPWD, "$API_KEY:X");
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+            curl_setopt($ch, CURLOPT_HEADER, false);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+            $server_output = curl_exec($ch);
+            var_dump($server_output);
+            $response = json_decode($server_output);
+            var_dump($response);
+            curl_close($ch);
         }
         
         private function __osticket($name,$email,$subject,$message)
