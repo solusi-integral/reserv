@@ -193,22 +193,29 @@ class Report extends CI_Controller {
             
             // Check if there is a record for today already
             $counter    = $this->notif_model->count($time);
-            echo $counter;
             
-            // If there is a record for today then get the detail
-            $query      = $this->notif_model->lookup($time);
-            print_r($query);
-            
-            // Store each field into variables.
-            foreach ($query as $row)
+            if ($counter == 1)
             {
-                $ticket = $row->ticket_id;
+                // If there is a record for today then get the detail
+                $query      = $this->notif_model->lookup($time);
+                print_r($query);
+
+                // Store each field into variables.
+                foreach ($query as $row)
+                {
+                    $ticket = $row->ticket_id;
+                }
+                echo $ticket;
             }
-            echo $ticket;
+            
+            else if ($counter == 0)
+            {
+                $this->notif_model->insert($ticket_id);
+            }
             
         }
         
-        private function __freshdsk_create()
+        public function freshdsk_create()
         {
             $fd_domain = "https://cvsolusiintegral.freshdesk.com";
             $token = "ggXySu214rbWhkDJpAKU";
