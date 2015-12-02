@@ -27,7 +27,7 @@ class Notif_model extends CI_Model{
         //Sort Database in order ascending based on Location names
         $this->db->order_by('notification_id', 'asc'); 
         //Get database from table - Location
-        $query = $this->db->get('notification');
+        $query = $this->db->get('notification',5);
         // return the query
         return $query;
     }
