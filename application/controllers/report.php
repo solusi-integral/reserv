@@ -181,7 +181,7 @@ class Report extends CI_Controller {
         public function ticketdispatcher()
         {
             // Load database model for easier database related task
-            $this->load->model('report_model','',TRUE);
+            $this->load->model('notif_model','',TRUE);
             // Load date helper for date related task
             $this->load->helper('date');
             
