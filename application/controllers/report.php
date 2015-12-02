@@ -178,6 +178,18 @@ class Report extends CI_Controller {
             //$this->output->set_header("HTTP/1.1 200 OK");
         }
         
+        public function ticketdispatcher()
+        {
+            // Load database model for easier database related task
+            $this->load->model('report_model','',TRUE);
+            // Load date helper for date related task
+            $this->load->helper('date');
+            
+            $query      = $this->notif_model->lookup();
+            
+            
+        }
+        
         private function __freshdsk_create()
         {
             $fd_domain = "https://cvsolusiintegral.freshdesk.com";
