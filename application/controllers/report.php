@@ -206,29 +206,34 @@ class Report extends CI_Controller {
                     $ticket = $row->ticket_id;
                 }
                 echo $ticket;
+                
+                $this->__freshdsk_update($ticket);
             }
             
             else if ($counter == 0)
             {
+                $freshdsk   = $this->__freshdsk_create($description, $subject, $email, $cc_emails);
+                $fresh_decode   = json_decode($freshdsk);
+                $ticket_id      = $fresh_decode['display_id'];
                 $this->notif_model->insert($ticket_id);
             }
             
         }
         
-        public function freshdsk_create()
+        private function __freshdsk_create($description, $subject, $email, $cc_emails)
         {
             $fd_domain = "https://cvsolusiintegral.freshdesk.com";
             $token = "ggXySu214rbWhkDJpAKU";
             $password = "X";
             $data = array(
                 "helpdesk_ticket" => array(
-                    "description" => "Some details on the issue ...",
-                    "subject" => "Support needed..",
-                    "email" => "indra@indramgl.web.id",
+                    "description" => $description,
+                    "subject" => $subject,
+                    "email" => $email,
                     "priority" => 1,
                     "status" => 2
                 ),
-                "cc_emails" => ""
+                "cc_emails" => $cc_emails
             );
             $json_body = json_encode($data, JSON_FORCE_OBJECT | JSON_PRETTY_PRINT);
             $header[] = "Content-type: application/json";
@@ -241,7 +246,7 @@ class Report extends CI_Controller {
             curl_setopt($connection, CURLOPT_POSTFIELDS, $json_body);
             curl_setopt($connection, CURLOPT_VERBOSE, 1);
             $response = curl_exec($connection);
-            echo $response;
+            return $response;
         }
         
         private function __freshdsk_update($id)
