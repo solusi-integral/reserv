@@ -22,12 +22,11 @@ class Notif_model extends CI_Model{
         return $this->db->insert('notification',$data);
     }
     
-    public function lookup()
+    public function lookup($time)
     {
-        //Sort Database in order ascending based on Location names
-        $this->db->order_by('notification_id', 'asc'); 
-        //Get database from table - Location
-        $query = $this->db->get('notification',5);
+        $this->db->where('time =', $time);
+        $this->db->from('notification');
+        $query = $this->db->get();
         // return the query
         return $query;
     }
