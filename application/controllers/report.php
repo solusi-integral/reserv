@@ -194,9 +194,9 @@ class Report extends CI_Controller {
             
             foreach ($query as $row)
             {
-                
+                $ticket = $row->ticket_id;
             }
-            
+            echo $ticket;
             
         }
         
