@@ -208,6 +208,9 @@ class Report extends CI_Controller {
                 echo $ticket;
                 
                 $this->__freshdsk_update($ticket);
+                // Update the database also for each call the notif_5 or 10 or 30
+                // Should be updated
+                // Send notification everytime the count hit 5, 10, 15, 20
             }
             
             else if ($counter == 0)
