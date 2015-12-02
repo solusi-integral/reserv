@@ -185,16 +185,21 @@ class Report extends CI_Controller {
             // Load date helper for date related task
             $this->load->helper('date');
             
+            // Get Current Time
             $waktu      = now();
+            // Get standarized date format YYYY-MM-DD, aka 2015-12-02
             $time       = date("Y-m-d", $waktu);
             echo $time;
             
+            // Check if there is a record for today already
             $counter    = $this->notif_model->count($time);
             echo $counter;
             
+            // If there is a record for today then get the detail
             $query      = $this->notif_model->lookup($time);
             print_r($query);
             
+            // Store each field into variables.
             foreach ($query as $row)
             {
                 $ticket = $row->ticket_id;
