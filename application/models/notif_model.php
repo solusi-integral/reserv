@@ -31,6 +31,13 @@ class Notif_model extends CI_Model{
         return $query->result();
     }
     
+    public function count($time)
+    {
+        $this->db->where('date =', $time);
+        $query  = $this->db->count_all_results('notification');
+        return $query->result();
+    }
+    
     public function findticket($id)
     {
         $this->db->where('ticket_id =', $id);
