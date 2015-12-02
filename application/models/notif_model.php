@@ -24,7 +24,7 @@ class Notif_model extends CI_Model{
     
     public function lookup($time)
     {
-        $this->db->where('time =', $time);
+        $this->db->where('date =', $time);
         $this->db->from('notification');
         $query = $this->db->get();
         // return the query
