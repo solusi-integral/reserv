@@ -190,6 +190,7 @@ class Report extends CI_Controller {
             
             $query      = $this->notif_model->lookup($time);
             print_r($query);
+            
             foreach ($query as $row)
             {
                 
