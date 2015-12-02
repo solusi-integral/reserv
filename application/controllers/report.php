@@ -190,7 +190,7 @@ class Report extends CI_Controller {
             echo $time;
             
             $counter    = $this->notif_model->count($time);
-            print_r($counter);
+            echo $counter;
             
             $query      = $this->notif_model->lookup($time);
             print_r($query);
