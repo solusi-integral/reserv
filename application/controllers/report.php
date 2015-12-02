@@ -185,7 +185,15 @@ class Report extends CI_Controller {
             // Load date helper for date related task
             $this->load->helper('date');
             
+            $waktu      = now();
+            $tangga     = date("YY-MM-DD", $waktu);
+            
             $query      = $this->notif_model->lookup();
+            print_r($query);
+            foreach ($query as $row)
+            {
+                
+            }
             
             
         }
