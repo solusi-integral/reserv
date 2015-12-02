@@ -186,7 +186,8 @@ class Report extends CI_Controller {
             $this->load->helper('date');
             
             $waktu      = now();
-            $time     = date("YY-MM-DD", $waktu);
+            $time       = date("YY-MM-DD", $waktu);
+            echo $time;
             
             $query      = $this->notif_model->lookup($time);
             print_r($query);
