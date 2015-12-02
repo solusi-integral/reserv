@@ -186,9 +186,9 @@ class Report extends CI_Controller {
             $this->load->helper('date');
             
             $waktu      = now();
-            $tangga     = date("YY-MM-DD", $waktu);
+            $time     = date("YY-MM-DD", $waktu);
             
-            $query      = $this->notif_model->lookup();
+            $query      = $this->notif_model->lookup($time);
             print_r($query);
             foreach ($query as $row)
             {
