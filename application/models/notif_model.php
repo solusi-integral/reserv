@@ -25,9 +25,10 @@ class Notif_model extends CI_Model{
     public function lookup($time)
     {
         $this->db->where('date =', $time);
+        $query  = $this->db->get('notification');
         //$this->db->from('notification');
         // return the query
-        return $this->db->get('notification');
+        return $query->result();
     }
     
     public function findticket($id)
