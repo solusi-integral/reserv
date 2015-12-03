@@ -269,7 +269,7 @@ class Report extends CI_Controller {
             $url = "$FD_ENDPOINT/helpdesk/tickets/".$id."/conversations/note.json";
             $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $json_body);
             curl_setopt($ch, CURLOPT_USERPWD, "$API_KEY:X");
             curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
             curl_setopt($ch, CURLOPT_HEADER, false);
