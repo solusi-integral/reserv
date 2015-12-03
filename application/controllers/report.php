@@ -235,6 +235,7 @@ class Report extends CI_Controller {
                 $this->notif_model->insert($ticket_id,$time);
             }
             
+            return;
         }
         
         private function __freshdsk_create($description, $subject, $email, $cc_emails)
@@ -360,7 +361,7 @@ class Report extends CI_Controller {
             return;
         }
         
-        public function mailonmissed5()
+        private function __mailonmissed5()
         {
             /**
              * Send Automated Email Notification When Missed 5 Races
@@ -401,7 +402,7 @@ class Report extends CI_Controller {
                             ​';
             $cc_emails  = 'indra.kurniawan@yahoo.co.id';
             $result     = $this->__ticketdispatcher($message, $subject, $email, $cc_emails);
-            echo $result;
+            return $result;
         }
         
         private function __mailonmissed10()
@@ -442,7 +443,7 @@ class Report extends CI_Controller {
                             ​
 
                             ​';
-            $result     = $this->__osticket($name, $email, $subject, $message);
+            //$result     = $this->__osticket($name, $email, $subject, $message);
             return $result;
         }
         
@@ -484,7 +485,7 @@ class Report extends CI_Controller {
                             ​
 
                             ​';
-            $result     = $this->__osticket($name, $email, $subject, $message);
+            //$result     = $this->__osticket($name, $email, $subject, $message);
             return $result;
         }
         
