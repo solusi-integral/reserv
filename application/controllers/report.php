@@ -204,12 +204,20 @@ class Report extends CI_Controller {
                     $ticket = $row->ticket_id;
                     $notif  = $row->notif_5;
                 }
-                echo $ticket;
                 
-                $notif      = $notif+1;
-                $this->notif_model->update_ticket($ticket,$notif);
+                if ($notif == 5)
+                {
+                    $this->__freshdsk_update($ticket);
+                    $notif      = 0;
+                    $this->notif_model->update_ticket($ticket,$notif);
+                } 
                 
-                $this->__freshdsk_update($ticket);
+                else
+                {
+                    $notif      = $notif+1;
+                    $this->notif_model->update_ticket($ticket,$notif);
+                }
+                
                 // Update the database also for each call the notif_5 or 10 or 30
                 // Should be updated
                 // Send notification everytime the count hit 5, 10, 15, 20
