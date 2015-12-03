@@ -178,7 +178,7 @@ class Report extends CI_Controller {
             //$this->output->set_header("HTTP/1.1 200 OK");
         }
         
-        public function ticketdispatcher()
+        private function __ticketdispatcher($message, $subject, $email, $cc_emails)
         {
             // Load database model for easier database related task
             $this->load->model('notif_model','',TRUE);
@@ -215,15 +215,11 @@ class Report extends CI_Controller {
             
             else if ($counter == 0)
             {
-                $description    = urldecode($description);
-                $subject        = urldecode($subject);
-                $email          = urldecode($email);
-                $cc_emails      = urldecode($cc_emails);
-                $freshdsk   = $this->__freshdsk_create($description, $subject, $email, $cc_emails);
+                $freshdsk   = $this->__freshdsk_create($message, $subject, $email, $cc_emails);
                 $fresh_decode   = json_decode($freshdsk);
                 $ticket_id      = $fresh_decode['display_id'];
                 //$this->notif_model->insert($ticket_id);
-                echo $ticket_id; 
+                echo $freshdsk; 
             }
             
         }
@@ -393,7 +389,7 @@ class Report extends CI_Controller {
 
                             ​';
             $cc_emails  = 'indra.kurniawan@yahoo.co.id';
-            $result     = $this->__freshdsk_create($message, $subject, $email, $cc_emails);
+            $result     = $this->__ticketdispatcher($message, $subject, $email, $cc_emails);
             echo $result;
         }
         
