@@ -254,7 +254,7 @@ class Report extends CI_Controller {
             return $response;
         }
         
-        private function __freshdsk_update($id)
+        public function freshdsk_update($id)
         {
             $API_KEY = "ggXySu214rbWhkDJpAKU";
             $FD_ENDPOINT = "https://cvsolusiintegral.freshdesk.com"; // verify if you are using https, and change accordingly!
