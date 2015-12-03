@@ -189,7 +189,6 @@ class Report extends CI_Controller {
             $waktu      = now();
             // Get standarized date format YYYY-MM-DD, aka 2015-12-02
             $time       = date("Y-m-d", $waktu);
-            echo $time;
             
             // Check if there is a record for today already
             $counter    = $this->notif_model->count($time);
@@ -198,7 +197,6 @@ class Report extends CI_Controller {
             {
                 // If there is a record for today then get the detail
                 $query      = $this->notif_model->lookup($time);
-                print_r($query);
 
                 // Store each field into variables.
                 foreach ($query as $row)
@@ -223,7 +221,6 @@ class Report extends CI_Controller {
                 }
                 
                 $this->notif_model->insert($ticket_id,$time);
-                echo $ticket_id;
             }
             
         }
