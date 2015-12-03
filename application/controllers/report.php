@@ -444,7 +444,7 @@ class Report extends CI_Controller {
 
                             ​';
             //$result     = $this->__osticket($name, $email, $subject, $message);
-            return $result;
+            return;
         }
         
         private function __mailonmissed30()
@@ -486,7 +486,7 @@ class Report extends CI_Controller {
 
                             ​';
             //$result     = $this->__osticket($name, $email, $subject, $message);
-            return $result;
+            return;
         }
         
         // Please change it back to private function when you are done
