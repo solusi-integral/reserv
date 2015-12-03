@@ -277,10 +277,7 @@ class Report extends CI_Controller {
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
             $server_output = curl_exec($ch);
-            var_dump($server_output);
-            $response = json_decode($server_output);
-            var_dump($response);
-            curl_close($ch);
+            echo $server_output;
         }
         
         private function __osticket($name,$email,$subject,$message)
