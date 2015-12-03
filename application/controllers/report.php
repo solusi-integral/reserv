@@ -215,6 +215,10 @@ class Report extends CI_Controller {
             
             else if ($counter == 0)
             {
+                $description    = urldecode($description);
+                $subject        = urldecode($subject);
+                $email          = urldecode($email);
+                $cc_emails      = urldecode($cc_emails);
                 $freshdsk   = $this->__freshdsk_create($description, $subject, $email, $cc_emails);
                 $fresh_decode   = json_decode($freshdsk);
                 $ticket_id      = $fresh_decode['display_id'];
@@ -224,7 +228,7 @@ class Report extends CI_Controller {
             
         }
         
-        public function freshdsk_create($description, $subject, $email, $cc_emails)
+        private function __freshdsk_create($description, $subject, $email, $cc_emails)
         {
             $fd_domain = "https://cvsolusiintegral.freshdesk.com";
             $token = "ggXySu214rbWhkDJpAKU";
@@ -250,7 +254,7 @@ class Report extends CI_Controller {
             curl_setopt($connection, CURLOPT_POSTFIELDS, $json_body);
             curl_setopt($connection, CURLOPT_VERBOSE, 1);
             $response = curl_exec($connection);
-            echo $response;
+            return $response;
         }
         
         private function __freshdsk_update($id)
