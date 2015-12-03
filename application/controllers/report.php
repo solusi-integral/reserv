@@ -221,6 +221,7 @@ class Report extends CI_Controller {
                 {
                     $ticket_id  = $row->display_id;
                 }
+                
                 $this->notif_model->insert($ticket_id);
                 echo $ticket_id;
             }
