@@ -264,12 +264,12 @@ class Report extends CI_Controller {
               // php5.4 & below: 'helpdesk_note[attachments][][resource]' =>  "@x.png"
               //'helpdesk_note[attachments][][resource]' =>  curl_file_create("data/x.png", "image/png", "x.png")
             );
-            $json_body  = json_encode($payload, JSON_FORCE_OBJECT | JSON_PRETTY_PRINT);
-            $header[] = "Content-type: application/json";
+            //$json_body  = json_encode($payload, JSON_FORCE_OBJECT | JSON_PRETTY_PRINT);
+            $header[] = "Content-type: multipart/form-data";
             $url = "$FD_ENDPOINT/helpdesk/tickets/".$id."/conversations/note.json";
             $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $json_body);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
             curl_setopt($ch, CURLOPT_USERPWD, "$API_KEY:X");
             curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
             curl_setopt($ch, CURLOPT_HEADER, false);
