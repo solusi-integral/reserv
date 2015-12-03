@@ -14,10 +14,11 @@
 class Notif_model extends CI_Model{
     //put your code here
     
-    public function insert($ticket_id)
+    public function insert($ticket_id,$time)
     {
         // Create an array to enter the data
         $data = array(
+            'date'      => $time,
             'ticket_id' => $ticket_id,
             'notif_5'   => 0,
             'notif_10'  => 0,
