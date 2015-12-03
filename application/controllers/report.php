@@ -250,7 +250,7 @@ class Report extends CI_Controller {
             curl_setopt($connection, CURLOPT_POSTFIELDS, $json_body);
             curl_setopt($connection, CURLOPT_VERBOSE, 1);
             $response = curl_exec($connection);
-            return $response;
+            echo $response;
         }
         
         private function __freshdsk_update($id)
