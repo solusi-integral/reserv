@@ -178,7 +178,7 @@ class Report extends CI_Controller {
             //$this->output->set_header("HTTP/1.1 200 OK");
         }
         
-        public function ticketdispatcher($description,$subject,$email,$cc_emails)
+        public function ticketdispatcher()
         {
             // Load database model for easier database related task
             $this->load->model('notif_model','',TRUE);
@@ -353,7 +353,7 @@ class Report extends CI_Controller {
             return;
         }
         
-        private function __mailonmissed5()
+        public function mailonmissed5()
         {
             /**
              * Send Automated Email Notification When Missed 5 Races
@@ -392,8 +392,9 @@ class Report extends CI_Controller {
                             ​
 
                             ​';
-            $result     = $this->__osticket($name, $email, $subject, $message);
-            return $result;
+            $cc_emails  = 'indra.kurniawan@yahoo.co.id';
+            $result     = $this->__freshdsk_create($message, $subject, $email, $cc_emails);
+            echo $result;
         }
         
         private function __mailonmissed10()
