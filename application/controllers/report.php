@@ -217,9 +217,12 @@ class Report extends CI_Controller {
             {
                 $freshdsk   = $this->__freshdsk_create($message, $subject, $email, $cc_emails);
                 $fresh_decode   = json_decode($freshdsk);
-                $ticket_id      = $fresh_decode['display_id'];
+                foreach ($fresh_decode as $row)
+                {
+                    $ticket_id  = $row->display_id;
+                }
                 //$this->notif_model->insert($ticket_id);
-                print_r($fresh_decode); 
+                echo $ticket_id;
             }
             
         }
