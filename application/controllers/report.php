@@ -224,7 +224,7 @@ class Report extends CI_Controller {
             
         }
         
-        private function __freshdsk_create($description, $subject, $email, $cc_emails)
+        public function freshdsk_create($description, $subject, $email, $cc_emails)
         {
             $fd_domain = "https://cvsolusiintegral.freshdesk.com";
             $token = "ggXySu214rbWhkDJpAKU";
