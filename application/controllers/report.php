@@ -202,8 +202,12 @@ class Report extends CI_Controller {
                 foreach ($query as $row)
                 {
                     $ticket = $row->ticket_id;
+                    $notif  = $row->notif_5;
                 }
                 echo $ticket;
+                
+                $notif      = $notif+1;
+                $this->notif_model->update_ticket($id,$notif_5);
                 
                 $this->__freshdsk_update($ticket);
                 // Update the database also for each call the notif_5 or 10 or 30

@@ -61,4 +61,15 @@ class Notif_model extends CI_Model{
         return $query;
     }
     
+    public function update_ticket($id,$notif_5)
+    {
+        $data = array(
+               'notif_5' => $notif_5
+            );
+
+        $this->db->where('ticket_id', $id);
+        $query  = $this->db->update('notification', $data); 
+        return $query->result();
+    }
+    
 }
