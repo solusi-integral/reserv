@@ -271,7 +271,7 @@ class Report extends CI_Controller {
             $API_KEY = "ggXySu214rbWhkDJpAKU";
             $FD_ENDPOINT = "https://cvsolusiintegral.freshdesk.com"; // verify if you are using https, and change accordingly!
             $payload = array(
-              'helpdesk_note[body]' => 'Note Content',
+              'helpdesk_note[body]' => 'Operation team has missed another 5 races',
               'helpdesk_note[private]' => 'false'
               // php5.4 & below: 'helpdesk_note[attachments][][resource]' =>  "@x.png"
               //'helpdesk_note[attachments][][resource]' =>  curl_file_create("data/x.png", "image/png", "x.png")
