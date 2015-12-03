@@ -205,7 +205,7 @@ class Report extends CI_Controller {
                 }
                 echo $ticket;
                 
-                //$this->__freshdsk_update($ticket);
+                $this->__freshdsk_update($ticket);
                 // Update the database also for each call the notif_5 or 10 or 30
                 // Should be updated
                 // Send notification everytime the count hit 5, 10, 15, 20
@@ -254,7 +254,7 @@ class Report extends CI_Controller {
             return $response;
         }
         
-        public function freshdsk_update($id)
+        private function __freshdsk_update($id)
         {
             $API_KEY = "ggXySu214rbWhkDJpAKU";
             $FD_ENDPOINT = "https://cvsolusiintegral.freshdesk.com"; // verify if you are using https, and change accordingly!
@@ -278,7 +278,7 @@ class Report extends CI_Controller {
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
             $server_output = curl_exec($ch);
-            echo $server_output;
+            return $server_output;
         }
         
         private function __osticket($name,$email,$subject,$message)
