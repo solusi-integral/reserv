@@ -1,5 +1,5 @@
 <?php 
-header('Cache-Control: public, max-age=60, must-revalidate');
+header('Cache-Control: public, max-age=86400, must-revalidate');
 ?>
 <!doctype html public "✰">
 <!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
