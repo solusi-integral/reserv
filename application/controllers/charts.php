@@ -1,5 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/**
+ * Description of Charts
+ * 
+ * @package     Reserv
+ * @author      CV Solusi Integral
+ * @copyright   Copyright (c) 2014 CV Solusi Integral
+ * @link http://www.solusi-integral.co.id CV Solusi Integral
+ */
+
 class Charts extends CI_Controller {
 
 	/**

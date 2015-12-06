@@ -1,5 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/**
+ * @package     Reserv
+ * @author      CV Solusi Integral
+ * @copyright   Copyright (c) 2014 CV Solusi Integral
+ * @link http://www.solusi-integral.co.id CV Solusi Integral
+ */
+
 class Report extends CI_Controller {
 
 	/**

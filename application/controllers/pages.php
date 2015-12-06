@@ -7,9 +7,12 @@
  */
 
 /**
- * Description of report
- *
- * @author indra
+ * Description of Pages
+ * 
+ * @package     Reserv
+ * @author      CV Solusi Integral
+ * @copyright   Copyright (c) 2014 CV Solusi Integral
+ * @link http://www.solusi-integral.co.id CV Solusi Integral
  */
 class Pages extends CI_Controller  {
     //put your code here
