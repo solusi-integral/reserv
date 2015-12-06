@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta charset="utf-8">
 
 	<title>Class CI_Email | Reserv</title>
 
-	<script type="text/javascript" src="resources/combined.js?3775771524"></script>
-	<script type="text/javascript" src="elementlist.js?2699905531"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
 </head>
 
@@ -19,21 +16,39 @@
 
 
 		<div id="groups">
-			<h3>Packages</h3>
+				<h3>Packages</h3>
 			<ul>
-				<li class="active"><a href="package-CodeIgniter.html">CodeIgniter<span></span></a>
+				<li>
+					<a href="package-CodeIgniter.html">
+						CodeIgniter<span></span>
+					</a>
+
 						<ul>
-				<li><a href="package-CodeIgniter.Drivers.html">Drivers</a>
+				<li>
+					<a href="package-CodeIgniter.Drivers.html">
+						Drivers					</a>
+
 						</li>
-				<li class="active"><a href="package-CodeIgniter.Libraries.html">Libraries</a>
+				<li>
+					<a href="package-CodeIgniter.Libraries.html">
+						Libraries					</a>
+
 						</li>
 							</ul></li>
-				<li><a href="package-None.html">None</a>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="package-Reserv.html">
+						Reserv					</a>
+
 						</li>
 			</ul>
 		</div>
 
-		<hr />
+		<hr>
 
 
 		<div id="elements">
@@ -86,12 +101,15 @@
 				<li><a href="class-CI_Xmlrpcs.html">CI_Xmlrpcs</a></li>
 				<li><a href="class-CI_Zip.html">CI_Zip</a></li>
 				<li><a href="class-Control.html">Control</a></li>
+				<li><a href="class-Data.html">Data</a></li>
 				<li><a href="class-Graphs.html">Graphs</a></li>
+				<li><a href="class-Pajax.html">Pajax</a></li>
 				<li><a href="class-Report.html">Report</a></li>
 				<li><a href="class-Report_api.html">Report_api</a></li>
 				<li><a href="class-REST_Controller.html">REST_Controller</a></li>
 				<li><a href="class-Tables.html">Tables</a></li>
 				<li><a href="class-Tables_static.html">Tables_static</a></li>
+				<li><a href="class-Tes.html">Tes</a></li>
 				<li><a href="class-Welcome.html">Welcome</a></li>
 			</ul>
 
@@ -108,10 +126,9 @@
 <div id="right">
 <div id="rightInner">
 	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
 	</form>
 
 	<div id="navigation">
@@ -120,8 +137,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="package-CodeIgniter.Libraries.html" title="Summary of CodeIgniter\Libraries"><span>Package</span></a>
-			</li>
+<span>Package</span>			</li>
 			<li class="active">
 <span>Class</span>			</li>
 		</ul>
@@ -139,11 +155,9 @@
 
 
 	<div class="description">
-	
-<p>CodeIgniter Email Class</p>
+	<p>CodeIgniter Email Class</p>
 
 <p>Permits email to be sent using Mail, Sendmail, or SMTP.</p>
-
 	</div>
 
 
@@ -158,25 +172,27 @@
 		
 		
 		
-		<b>Package:</b> <a href="package-CodeIgniter.html">CodeIgniter</a>\<a href="package-CodeIgniter.Libraries.html">Libraries</a><br />
+		<b>Package:</b> <a href="package-CodeIgniter.html">CodeIgniter</a>\<a href="package-CodeIgniter.Libraries.html">Libraries</a><br>
 
 				<b>Category:</b>
-				Libraries<br />
+				Libraries<br>
 				<b>Author:</b>
-				ExpressionEngine Dev Team<br />
+				EllisLab Dev Team<br>
 				<b>Link:</b>
-				<a href="http://codeigniter.com/user_guide/libraries/email.html">http://codeigniter.com/user_guide/libraries/email.html</a><br />
-		<b>Located at</b> <a href="source-class-CI_Email.html#18-2088" title="Go to source code">system/libraries/Email.php</a><br />
+				<a href="http://codeigniter.com/user_guide/libraries/email.html">http://codeigniter.com/user_guide/libraries/email.html</a><br>
+			<b>Located at</b> <a href="source-class-CI_Email.html#19-2089" title="Go to source code">system/libraries/Email.php</a>
+		<br>
 	</div>
 
 
 
-	<table class="summary" id="methods">
+	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
 	<tr data-order="__construct" id="___construct">
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -184,20 +200,16 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-CI_Email.html#81-99" title="Go to source code">__construct</a>( <span>mixed <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-CI_Email.html#82-100" title="Go to source code">__construct</a>( <span> <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
-			
-<p>Constructor - Sets Email Preferences</p>
-
+			<p>Constructor - Sets Email Preferences</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Constructor - Sets Email Preferences</p>
+			<p>Constructor - Sets Email Preferences</p>
 
 <p>The constructor can be passed an array of config values</p>
-
 
 
 
@@ -212,6 +224,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -219,24 +232,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_initialize">#</a>
-		<code><a href="source-class-CI_Email.html#103-134" title="Go to source code">initialize</a>( <span>array <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-CI_Email.html#104-135" title="Go to source code">initialize</a>( <span>array <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
-			
-<p>Initialize preferences</p>
-
+			<p>Initialize preferences</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Initialize preferences</p>
-
+			<p>Initialize preferences</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$config</var></dt>
-					<dd><code>array</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -250,6 +259,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -257,18 +267,14 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-CI_Email.html#138-168" title="Go to source code">clear</a>( <span>mixed <var>$clear_attachments</var> = <span class="php-keyword1">FALSE</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#139-169" title="Go to source code">clear</a>( <span> <var>$clear_attachments</var> = <span class="php-keyword1">FALSE</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Initialize the Email Data</p>
-
+			<p>Initialize the Email Data</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Initialize the Email Data</p>
-
+			<p>Initialize the Email Data</p>
 
 
 
@@ -283,6 +289,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -290,26 +297,22 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_from">#</a>
-		<code><a href="source-class-CI_Email.html#172-211" title="Go to source code">from</a>( <span>string <var>$from</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#173-212" title="Go to source code">from</a>( <span>string <var>$from</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set FROM</p>
-
+			<p>Set FROM</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set FROM</p>
-
+			<p>Set FROM</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$from</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 					<dt><var>$name</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -323,6 +326,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -330,26 +334,22 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_reply_to">#</a>
-		<code><a href="source-class-CI_Email.html#215-249" title="Go to source code">reply_to</a>( <span>string <var>$replyto</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#216-250" title="Go to source code">reply_to</a>( <span>string <var>$replyto</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Reply-to</p>
-
+			<p>Set Reply-to</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Reply-to</p>
-
+			<p>Set Reply-to</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$replyto</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 					<dt><var>$name</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -363,6 +363,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -370,24 +371,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_to">#</a>
-		<code><a href="source-class-CI_Email.html#253-287" title="Go to source code">to</a>( <span>string <var>$to</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#254-288" title="Go to source code">to</a>( <span>string <var>$to</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Recipients</p>
-
+			<p>Set Recipients</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Recipients</p>
-
+			<p>Set Recipients</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$to</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -401,6 +398,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -408,24 +406,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_cc">#</a>
-		<code><a href="source-class-CI_Email.html#291-316" title="Go to source code">cc</a>( <span>string <var>$cc</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#292-317" title="Go to source code">cc</a>( <span>string <var>$cc</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Set CC</p>
-
+			<p>Set CC</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set CC</p>
-
+			<p>Set CC</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$cc</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -439,6 +433,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -446,26 +441,22 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_bcc">#</a>
-		<code><a href="source-class-CI_Email.html#320-354" title="Go to source code">bcc</a>( <span>string <var>$bcc</var></span>, <span>string <var>$limit</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#321-355" title="Go to source code">bcc</a>( <span>string <var>$bcc</var></span>, <span>string <var>$limit</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set BCC</p>
-
+			<p>Set BCC</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set BCC</p>
-
+			<p>Set BCC</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$bcc</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 					<dt><var>$limit</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -479,6 +470,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -486,24 +478,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_subject">#</a>
-		<code><a href="source-class-CI_Email.html#358-370" title="Go to source code">subject</a>( <span>string <var>$subject</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#359-371" title="Go to source code">subject</a>( <span>string <var>$subject</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Email Subject</p>
-
+			<p>Set Email Subject</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Email Subject</p>
-
+			<p>Set Email Subject</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$subject</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -517,6 +505,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -524,24 +513,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_message">#</a>
-		<code><a href="source-class-CI_Email.html#374-397" title="Go to source code">message</a>( <span>string <var>$body</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#375-398" title="Go to source code">message</a>( <span>string <var>$body</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Body</p>
-
+			<p>Set Body</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Body</p>
-
+			<p>Set Body</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$body</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -555,6 +540,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -562,24 +548,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_attach">#</a>
-		<code><a href="source-class-CI_Email.html#401-414" title="Go to source code">attach</a>( <span>string <var>$filename</var></span>, <span>mixed <var>$disposition</var> = <span class="php-quote">'attachment'</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#402-415" title="Go to source code">attach</a>( <span>string <var>$filename</var></span>, <span> <var>$disposition</var> = <span class="php-quote">'attachment'</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Assign file attachments</p>
-
+			<p>Assign file attachments</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Assign file attachments</p>
-
+			<p>Assign file attachments</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$filename</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 					<dt><var>$disposition</var></dt>
 					<dd></dd>
 				</dl></div>
@@ -595,6 +577,7 @@
 
 		<td class="attributes"><code>
 			 protected 
+
 			
 			
 			</code>
@@ -602,26 +585,22 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__set_header">#</a>
-		<code><a href="source-class-CI_Email.html#418-429" title="Go to source code">_set_header</a>( <span>string <var>$header</var></span>, <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#419-430" title="Go to source code">_set_header</a>( <span>string <var>$header</var></span>, <span>string <var>$value</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Add a Header Item</p>
-
+			<p>Add a Header Item</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Add a Header Item</p>
-
+			<p>Add a Header Item</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$header</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 					<dt><var>$value</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -635,6 +614,7 @@
 
 		<td class="attributes"><code>
 			 protected 
+
 			array
 			
 			</code>
@@ -642,29 +622,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__str_to_array">#</a>
-		<code><a href="source-class-CI_Email.html#433-455" title="Go to source code">_str_to_array</a>( <span>string <var>$email</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#434-456" title="Go to source code">_str_to_array</a>( <span>string <var>$email</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Convert a String to an Array</p>
-
+			<p>Convert a String to an Array</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Convert a String to an Array</p>
-
+			<p>Convert a String to an Array</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$email</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br />
+					array
 				</div>
 
 
@@ -677,6 +653,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -684,24 +661,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_alt_message">#</a>
-		<code><a href="source-class-CI_Email.html#459-470" title="Go to source code">set_alt_message</a>( <span>string <var>$str</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#460-471" title="Go to source code">set_alt_message</a>( <span>string <var>$str</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Multipart Value</p>
-
+			<p>Set Multipart Value</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Multipart Value</p>
-
+			<p>Set Multipart Value</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$str</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -715,6 +688,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -722,24 +696,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_mailtype">#</a>
-		<code><a href="source-class-CI_Email.html#474-485" title="Go to source code">set_mailtype</a>( <span>string <var>$type</var> = <span class="php-quote">'text'</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#475-486" title="Go to source code">set_mailtype</a>( <span>string <var>$type</var> = <span class="php-quote">'text'</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Mailtype</p>
-
+			<p>Set Mailtype</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Mailtype</p>
-
+			<p>Set Mailtype</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$type</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -753,6 +723,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -760,24 +731,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_wordwrap">#</a>
-		<code><a href="source-class-CI_Email.html#489-500" title="Go to source code">set_wordwrap</a>( <span>string <var>$wordwrap</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#490-501" title="Go to source code">set_wordwrap</a>( <span>string <var>$wordwrap</var> = <span class="php-keyword1">TRUE</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Wordwrap</p>
-
+			<p>Set Wordwrap</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Wordwrap</p>
-
+			<p>Set Wordwrap</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$wordwrap</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -791,6 +758,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -798,24 +766,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_protocol">#</a>
-		<code><a href="source-class-CI_Email.html#504-515" title="Go to source code">set_protocol</a>( <span>string <var>$protocol</var> = <span class="php-quote">'mail'</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#505-516" title="Go to source code">set_protocol</a>( <span>string <var>$protocol</var> = <span class="php-quote">'mail'</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Protocol</p>
-
+			<p>Set Protocol</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Protocol</p>
-
+			<p>Set Protocol</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$protocol</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -829,6 +793,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -836,24 +801,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_priority">#</a>
-		<code><a href="source-class-CI_Email.html#519-542" title="Go to source code">set_priority</a>( <span>integer <var>$n</var> = <span class="php-num">3</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#520-543" title="Go to source code">set_priority</a>( <span>integer <var>$n</var> = <span class="php-num">3</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Priority</p>
-
+			<p>Set Priority</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Priority</p>
-
+			<p>Set Priority</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$n</var></dt>
-					<dd><code>integer</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -867,6 +828,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -874,24 +836,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_newline">#</a>
-		<code><a href="source-class-CI_Email.html#546-564" title="Go to source code">set_newline</a>( <span>string <var>$newline</var> = <span class="php-quote">&quot;\n&quot;</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#547-565" title="Go to source code">set_newline</a>( <span>string <var>$newline</var> = <span class="php-quote">&quot;\n&quot;</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Newline Character</p>
-
+			<p>Set Newline Character</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Newline Character</p>
-
+			<p>Set Newline Character</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$newline</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -905,6 +863,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			
 			
 			</code>
@@ -912,24 +871,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set_crlf">#</a>
-		<code><a href="source-class-CI_Email.html#568-586" title="Go to source code">set_crlf</a>( <span>string <var>$crlf</var> = <span class="php-quote">&quot;\n&quot;</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#569-587" title="Go to source code">set_crlf</a>( <span>string <var>$crlf</var> = <span class="php-quote">&quot;\n&quot;</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set CRLF</p>
-
+			<p>Set CRLF</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set CRLF</p>
-
+			<p>Set CRLF</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$crlf</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 
@@ -943,6 +898,7 @@
 
 		<td class="attributes"><code>
 			 protected 
+
 			
 			
 			</code>
@@ -950,18 +906,14 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__set_boundaries">#</a>
-		<code><a href="source-class-CI_Email.html#590-600" title="Go to source code">_set_boundaries</a>( )</code>
+		<code><a href="source-class-CI_Email.html#591-601" title="Go to source code">_set_boundaries</a>( )</code>
 
 		<div class="description short">
-			
-<p>Set Message Boundary</p>
-
+			<p>Set Message Boundary</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Message Boundary</p>
-
+			<p>Set Message Boundary</p>
 
 
 
@@ -976,6 +928,7 @@
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -983,24 +936,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__get_message_id">#</a>
-		<code><a href="source-class-CI_Email.html#604-617" title="Go to source code">_get_message_id</a>( )</code>
+		<code><a href="source-class-CI_Email.html#605-618" title="Go to source code">_get_message_id</a>( )</code>
 
 		<div class="description short">
-			
-<p>Get the Message ID</p>
-
+			<p>Get the Message ID</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Get the Message ID</p>
-
+			<p>Get the Message ID</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1013,6 +962,7 @@
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1020,29 +970,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__get_protocol">#</a>
-		<code><a href="source-class-CI_Email.html#621-637" title="Go to source code">_get_protocol</a>( <span>boolean <var>$return</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#622-638" title="Go to source code">_get_protocol</a>( <span>boolean <var>$return</var> = <span class="php-keyword1">TRUE</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Get Mail Protocol</p>
-
+			<p>Get Mail Protocol</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Get Mail Protocol</p>
-
+			<p>Get Mail Protocol</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$return</var></dt>
-					<dd><code>boolean</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1055,6 +1001,7 @@
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1062,29 +1009,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__get_encoding">#</a>
-		<code><a href="source-class-CI_Email.html#641-664" title="Go to source code">_get_encoding</a>( <span>boolean <var>$return</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#642-665" title="Go to source code">_get_encoding</a>( <span>boolean <var>$return</var> = <span class="php-keyword1">TRUE</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Get Mail Encoding</p>
-
+			<p>Get Mail Encoding</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Get Mail Encoding</p>
-
+			<p>Get Mail Encoding</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$return</var></dt>
-					<dd><code>boolean</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1097,6 +1040,7 @@
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1104,24 +1048,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__get_content_type">#</a>
-		<code><a href="source-class-CI_Email.html#668-692" title="Go to source code">_get_content_type</a>( )</code>
+		<code><a href="source-class-CI_Email.html#669-693" title="Go to source code">_get_content_type</a>( )</code>
 
 		<div class="description short">
-			
-<p>Get content type (text/html/attachment)</p>
-
+			<p>Get content type (text/html/attachment)</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Get content type (text/html/attachment)</p>
-
+			<p>Get content type (text/html/attachment)</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1134,6 +1074,7 @@
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1141,24 +1082,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__set_date">#</a>
-		<code><a href="source-class-CI_Email.html#696-710" title="Go to source code">_set_date</a>( )</code>
+		<code><a href="source-class-CI_Email.html#697-711" title="Go to source code">_set_date</a>( )</code>
 
 		<div class="description short">
-			
-<p>Set RFC 822 Date</p>
-
+			<p>Set RFC 822 Date</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set RFC 822 Date</p>
-
+			<p>Set RFC 822 Date</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1171,6 +1108,7 @@
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1178,24 +1116,20 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__get_mime_message">#</a>
-		<code><a href="source-class-CI_Email.html#714-723" title="Go to source code">_get_mime_message</a>( )</code>
+		<code><a href="source-class-CI_Email.html#715-724" title="Go to source code">_get_mime_message</a>( )</code>
 
 		<div class="description short">
-			
-<p>Mime message</p>
-
+			<p>Mime message</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Mime message</p>
-
+			<p>Mime message</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1208,6 +1142,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			boolean
 			
 			</code>
@@ -1215,29 +1150,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_validate_email">#</a>
-		<code><a href="source-class-CI_Email.html#727-752" title="Go to source code">validate_email</a>( <span>string <var>$email</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#728-753" title="Go to source code">validate_email</a>( <span>string <var>$email</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Validate Email Address</p>
-
+			<p>Validate Email Address</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Validate Email Address</p>
-
+			<p>Validate Email Address</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$email</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -1250,6 +1181,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			boolean
 			
 			</code>
@@ -1257,29 +1189,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_valid_email">#</a>
-		<code><a href="source-class-CI_Email.html#756-766" title="Go to source code">valid_email</a>( <span>string <var>$address</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#757-767" title="Go to source code">valid_email</a>( <span>string <var>$address</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Email Validation</p>
-
+			<p>Email Validation</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Email Validation</p>
-
+			<p>Email Validation</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$address</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -1292,6 +1220,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			string
 			
 			</code>
@@ -1299,31 +1228,25 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clean_email">#</a>
-		<code><a href="source-class-CI_Email.html#770-806" title="Go to source code">clean_email</a>( <span>string <var>$email</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#771-807" title="Go to source code">clean_email</a>( <span>string <var>$email</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Clean Extended Email Address: Joe Smith &lt;<a
-href="mailto:joe&#64;smith.com">joe&#64;<!---->smith.com</a>&gt;</p>
-
+			<p>Clean Extended Email Address: Joe Smith <a href="m&#97;&#105;&#108;&#116;&#111;&#x3a;&#x6a;&#x6f;&#x65;&#x40;s&#109;&#105;&#116;&#104;&#46;&#x63;&#x6f;&#x6d;">&#x6a;&#x6f;&#x65;&#x40;s&#109;&#105;&#116;&#104;&#46;&#x63;&#x6f;&#x6d;</a></p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Clean Extended Email Address: Joe Smith &lt;<a
-href="mailto:joe&#64;smith.com">joe&#64;<!---->smith.com</a>&gt;</p>
-
+			<p>Clean Extended Email Address: Joe Smith <a href="m&#97;&#105;&#108;&#116;&#111;&#x3a;&#x6a;&#x6f;&#x65;&#x40;s&#109;&#105;&#116;&#104;&#46;&#x63;&#x6f;&#x6d;">&#x6a;&#x6f;&#x65;&#x40;s&#109;&#105;&#116;&#104;&#46;&#x63;&#x6f;&#x6d;</a></p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$email</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1336,6 +1259,7 @@ href="mailto:joe&#64;smith.com">joe&#64;<!---->smith.com</a>&gt;</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1343,28 +1267,25 @@ href="mailto:joe&#64;smith.com">joe&#64;<!---->smith.com</a>&gt;</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__get_alt_message">#</a>
-		<code><a href="source-class-CI_Email.html#810-854" title="Go to source code">_get_alt_message</a>( )</code>
+		<code><a href="source-class-CI_Email.html#811-855" title="Go to source code">_get_alt_message</a>( )</code>
 
 		<div class="description short">
-			
-<p>Build alternative plain text message</p>
-
+			<p>Build alternative plain text message</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Build alternative plain text message</p>
+			<p>Build alternative plain text message</p>
 
-<p>This public function provides the raw message for use in plain-text headers
-of HTML-formatted emails. If the user hasn't specified his own alternative
-message it creates one by stripping the HTML</p>
-
+<p>This public function provides the raw message for use
+in plain-text headers of HTML-formatted emails.
+If the user hasn't specified his own alternative message
+it creates one by stripping the HTML</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1377,6 +1298,7 @@ message it creates one by stripping the HTML</p>
 
 		<td class="attributes"><code>
 			 public 
+
 			string
 			
 			</code>
@@ -1384,31 +1306,27 @@ message it creates one by stripping the HTML</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_word_wrap">#</a>
-		<code><a href="source-class-CI_Email.html#858-950" title="Go to source code">word_wrap</a>( <span>string <var>$str</var></span>, <span>integer <var>$charlim</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#859-951" title="Go to source code">word_wrap</a>( <span>string <var>$str</var></span>, <span>integer <var>$charlim</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Word Wrap</p>
-
+			<p>Word Wrap</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Word Wrap</p>
-
+			<p>Word Wrap</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$str</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 					<dt><var>$charlim</var></dt>
-					<dd><code>integer</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1421,6 +1339,7 @@ message it creates one by stripping the HTML</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1428,24 +1347,20 @@ message it creates one by stripping the HTML</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__build_headers">#</a>
-		<code><a href="source-class-CI_Email.html#954-968" title="Go to source code">_build_headers</a>( )</code>
+		<code><a href="source-class-CI_Email.html#955-969" title="Go to source code">_build_headers</a>( )</code>
 
 		<div class="description short">
-			
-<p>Build final headers</p>
-
+			<p>Build final headers</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Build final headers</p>
-
+			<p>Build final headers</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1458,6 +1373,7 @@ message it creates one by stripping the HTML</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			
 			
 			</code>
@@ -1465,18 +1381,14 @@ message it creates one by stripping the HTML</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__write_headers">#</a>
-		<code><a href="source-class-CI_Email.html#972-1003" title="Go to source code">_write_headers</a>( )</code>
+		<code><a href="source-class-CI_Email.html#973-1004" title="Go to source code">_write_headers</a>( )</code>
 
 		<div class="description short">
-			
-<p>Write Headers as a string</p>
-
+			<p>Write Headers as a string</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Write Headers as a string</p>
-
+			<p>Write Headers as a string</p>
 
 
 
@@ -1491,6 +1403,7 @@ message it creates one by stripping the HTML</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			
 			
 			</code>
@@ -1498,18 +1411,14 @@ message it creates one by stripping the HTML</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__build_message">#</a>
-		<code><a href="source-class-CI_Email.html#1007-1183" title="Go to source code">_build_message</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1008-1184" title="Go to source code">_build_message</a>( )</code>
 
 		<div class="description short">
-			
-<p>Build Final Body and attachments</p>
-
+			<p>Build Final Body and attachments</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Build Final Body and attachments</p>
-
+			<p>Build Final Body and attachments</p>
 
 
 
@@ -1524,6 +1433,7 @@ message it creates one by stripping the HTML</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1531,35 +1441,30 @@ message it creates one by stripping the HTML</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__prep_quoted_printable">#</a>
-		<code><a href="source-class-CI_Email.html#1187-1276" title="Go to source code">_prep_quoted_printable</a>( <span>string <var>$str</var></span>, <span>integer <var>$charlim</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#1188-1277" title="Go to source code">_prep_quoted_printable</a>( <span>string <var>$str</var></span>, <span>integer <var>$charlim</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Prep Quoted Printable</p>
-
+			<p>Prep Quoted Printable</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Prep Quoted Printable</p>
+			<p>Prep Quoted Printable</p>
 
-<p>Prepares string for Quoted-Printable Content-Transfer-Encoding Refer to RFC
-2045 <a
-href="http://www.ietf.org/rfc/rfc2045.txt">http://www.ietf.org/rfc/rfc2045.txt</a></p>
-
+<p>Prepares string for Quoted-Printable Content-Transfer-Encoding
+Refer to RFC 2045 http://www.ietf.org/rfc/rfc2045.txt</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$str</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 					<dt><var>$charlim</var></dt>
-					<dd><code>integer</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1572,6 +1477,7 @@ href="http://www.ietf.org/rfc/rfc2045.txt">http://www.ietf.org/rfc/rfc2045.txt</
 
 		<td class="attributes"><code>
 			 protected 
+
 			str
 			
 			</code>
@@ -1579,34 +1485,30 @@ href="http://www.ietf.org/rfc/rfc2045.txt">http://www.ietf.org/rfc/rfc2045.txt</
 
 		<td class="name"><div>
 		<a class="anchor" href="#__prep_q_encoding">#</a>
-		<code><a href="source-class-CI_Email.html#1280-1348" title="Go to source code">_prep_q_encoding</a>( <span>str <var>$str</var></span>, <span>boolean <var>$from</var> = <span class="php-keyword1">FALSE</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#1281-1349" title="Go to source code">_prep_q_encoding</a>( <span>str <var>$str</var></span>, <span>boolean <var>$from</var> = <span class="php-keyword1">FALSE</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Prep Q Encoding</p>
-
+			<p>Prep Q Encoding</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Prep Q Encoding</p>
+			<p>Prep Q Encoding</p>
 
-<p>Performs "Q Encoding" on a string for use in email headers. It's related but
-not identical to quoted-printable, so it has its own method</p>
-
+<p>Performs "Q Encoding" on a string for use in email headers.  It's related
+but not identical to quoted-printable, so it has its own method</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$str</var></dt>
-					<dd><code>str</code></dd>
+					<dd></dd>
 					<dt><var>$from</var></dt>
-					<dd><code>boolean</code><br>// set to TRUE for processing From: headers</dd>
+					<dd>set to TRUE for processing From: headers</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>str</code><br />
+					str
 				</div>
 
 
@@ -1619,6 +1521,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 public 
+
 			boolean
 			
 			</code>
@@ -1626,24 +1529,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_send">#</a>
-		<code><a href="source-class-CI_Email.html#1352-1391" title="Go to source code">send</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1353-1392" title="Go to source code">send</a>( )</code>
 
 		<div class="description short">
-			
-<p>Send Email</p>
-
+			<p>Send Email</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Send Email</p>
-
+			<p>Send Email</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -1656,6 +1555,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 public 
+
 			boolean
 			
 			</code>
@@ -1663,24 +1563,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_batch_bcc_send">#</a>
-		<code><a href="source-class-CI_Email.html#1395-1449" title="Go to source code">batch_bcc_send</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1396-1450" title="Go to source code">batch_bcc_send</a>( )</code>
 
 		<div class="description short">
-			
-<p>Batch Bcc Send. Sends groups of BCCs in batches</p>
-
+			<p>Batch Bcc Send.  Sends groups of BCCs in batches</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Batch Bcc Send. Sends groups of BCCs in batches</p>
-
+			<p>Batch Bcc Send.  Sends groups of BCCs in batches</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -1693,6 +1589,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			
 			
 			</code>
@@ -1700,18 +1597,14 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__unwrap_specials">#</a>
-		<code><a href="source-class-CI_Email.html#1453-1462" title="Go to source code">_unwrap_specials</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1454-1463" title="Go to source code">_unwrap_specials</a>( )</code>
 
 		<div class="description short">
-			
-<p>Unwrap special elements</p>
-
+			<p>Unwrap special elements</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Unwrap special elements</p>
-
+			<p>Unwrap special elements</p>
 
 
 
@@ -1726,6 +1619,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1733,24 +1627,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__remove_nl_callback">#</a>
-		<code><a href="source-class-CI_Email.html#1466-1480" title="Go to source code">_remove_nl_callback</a>( <span>mixed <var>$matches</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#1467-1481" title="Go to source code">_remove_nl_callback</a>( <span> <var>$matches</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Strip line-breaks via callback</p>
-
+			<p>Strip line-breaks via callback</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Strip line-breaks via callback</p>
-
+			<p>Strip line-breaks via callback</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1763,6 +1653,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			boolean
 			
 			</code>
@@ -1770,24 +1661,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__spool_email">#</a>
-		<code><a href="source-class-CI_Email.html#1484-1525" title="Go to source code">_spool_email</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1485-1526" title="Go to source code">_spool_email</a>( )</code>
 
 		<div class="description short">
-			
-<p>Spool mail to the mail server</p>
-
+			<p>Spool mail to the mail server</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Spool mail to the mail server</p>
-
+			<p>Spool mail to the mail server</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -1800,6 +1687,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			boolean
 			
 			</code>
@@ -1807,24 +1695,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__send_with_mail">#</a>
-		<code><a href="source-class-CI_Email.html#1529-1562" title="Go to source code">_send_with_mail</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1530-1563" title="Go to source code">_send_with_mail</a>( )</code>
 
 		<div class="description short">
-			
-<p>Send using mail()</p>
-
+			<p>Send using mail()</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Send using mail()</p>
-
+			<p>Send using mail()</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -1837,6 +1721,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			boolean
 			
 			</code>
@@ -1844,24 +1729,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__send_with_sendmail">#</a>
-		<code><a href="source-class-CI_Email.html#1566-1600" title="Go to source code">_send_with_sendmail</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1567-1601" title="Go to source code">_send_with_sendmail</a>( )</code>
 
 		<div class="description short">
-			
-<p>Send using Sendmail</p>
-
+			<p>Send using Sendmail</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Send using Sendmail</p>
-
+			<p>Send using Sendmail</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -1874,6 +1755,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			boolean
 			
 			</code>
@@ -1881,24 +1763,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__send_with_smtp">#</a>
-		<code><a href="source-class-CI_Email.html#1604-1669" title="Go to source code">_send_with_smtp</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1605-1670" title="Go to source code">_send_with_smtp</a>( )</code>
 
 		<div class="description short">
-			
-<p>Send using SMTP</p>
-
+			<p>Send using SMTP</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Send using SMTP</p>
-
+			<p>Send using SMTP</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -1911,6 +1789,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1918,24 +1797,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__smtp_connect">#</a>
-		<code><a href="source-class-CI_Email.html#1673-1707" title="Go to source code">_smtp_connect</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1674-1708" title="Go to source code">_smtp_connect</a>( )</code>
 
 		<div class="description short">
-			
-<p>SMTP Connect</p>
-
+			<p>SMTP Connect</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>SMTP Connect</p>
-
+			<p>SMTP Connect</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1948,6 +1823,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -1955,31 +1831,27 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__send_command">#</a>
-		<code><a href="source-class-CI_Email.html#1711-1780" title="Go to source code">_send_command</a>( <span>string <var>$cmd</var></span>, <span>string <var>$data</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#1712-1781" title="Go to source code">_send_command</a>( <span>string <var>$cmd</var></span>, <span>string <var>$data</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Send SMTP command</p>
-
+			<p>Send SMTP command</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Send SMTP command</p>
-
+			<p>Send SMTP command</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$cmd</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 					<dt><var>$data</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -1992,6 +1864,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			boolean
 			
 			</code>
@@ -1999,24 +1872,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__smtp_authenticate">#</a>
-		<code><a href="source-class-CI_Email.html#1784-1834" title="Go to source code">_smtp_authenticate</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1785-1835" title="Go to source code">_smtp_authenticate</a>( )</code>
 
 		<div class="description short">
-			
-<p>SMTP Authenticate</p>
-
+			<p>SMTP Authenticate</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>SMTP Authenticate</p>
-
+			<p>SMTP Authenticate</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -2029,6 +1898,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			boolean
 			
 			</code>
@@ -2036,24 +1906,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__send_data">#</a>
-		<code><a href="source-class-CI_Email.html#1838-1855" title="Go to source code">_send_data</a>( <span>mixed <var>$data</var></span> )</code>
+		<code><a href="source-class-CI_Email.html#1839-1856" title="Go to source code">_send_data</a>( <span> <var>$data</var></span> )</code>
 
 		<div class="description short">
-			
-<p>Send SMTP data</p>
-
+			<p>Send SMTP data</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Send SMTP data</p>
-
+			<p>Send SMTP data</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>boolean</code><br />
+					boolean
 				</div>
 
 
@@ -2066,6 +1932,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -2073,24 +1940,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__get_smtp_data">#</a>
-		<code><a href="source-class-CI_Email.html#1859-1880" title="Go to source code">_get_smtp_data</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1860-1881" title="Go to source code">_get_smtp_data</a>( )</code>
 
 		<div class="description short">
-			
-<p>Get SMTP data</p>
-
+			<p>Get SMTP data</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Get SMTP data</p>
-
+			<p>Get SMTP data</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -2103,6 +1966,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -2110,24 +1974,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__get_hostname">#</a>
-		<code><a href="source-class-CI_Email.html#1884-1893" title="Go to source code">_get_hostname</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1885-1894" title="Go to source code">_get_hostname</a>( )</code>
 
 		<div class="description short">
-			
-<p>Get Hostname</p>
-
+			<p>Get Hostname</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Get Hostname</p>
-
+			<p>Get Hostname</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -2140,6 +2000,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -2147,24 +2008,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__get_ip">#</a>
-		<code><a href="source-class-CI_Email.html#1897-1935" title="Go to source code">_get_ip</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1898-1936" title="Go to source code">_get_ip</a>( )</code>
 
 		<div class="description short">
-			
-<p>Get IP</p>
-
+			<p>Get IP</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Get IP</p>
-
+			<p>Get IP</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -2177,6 +2034,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 public 
+
 			string
 			
 			</code>
@@ -2184,24 +2042,20 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_print_debugger">#</a>
-		<code><a href="source-class-CI_Email.html#1939-1959" title="Go to source code">print_debugger</a>( )</code>
+		<code><a href="source-class-CI_Email.html#1940-1960" title="Go to source code">print_debugger</a>( )</code>
 
 		<div class="description short">
-			
-<p>Get Debug Message</p>
-
+			<p>Get Debug Message</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Get Debug Message</p>
-
+			<p>Get Debug Message</p>
 
 
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -2214,6 +2068,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -2221,31 +2076,27 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__set_error_message">#</a>
-		<code><a href="source-class-CI_Email.html#1963-1983" title="Go to source code">_set_error_message</a>( <span>string <var>$msg</var></span>, <span>mixed <var>$val</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#1964-1984" title="Go to source code">_set_error_message</a>( <span>string <var>$msg</var></span>, <span> <var>$val</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Set Message</p>
-
+			<p>Set Message</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Set Message</p>
-
+			<p>Set Message</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$msg</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 					<dt><var>$val</var></dt>
 					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -2258,6 +2109,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="attributes"><code>
 			 protected 
+
 			string
 			
 			</code>
@@ -2265,29 +2117,25 @@ not identical to quoted-printable, so it has its own method</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#__mime_types">#</a>
-		<code><a href="source-class-CI_Email.html#1987-2086" title="Go to source code">_mime_types</a>( <span>string <var>$ext</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+		<code><a href="source-class-CI_Email.html#1988-2087" title="Go to source code">_mime_types</a>( <span>string <var>$ext</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
 
 		<div class="description short">
-			
-<p>Mime Types</p>
-
+			<p>Mime Types</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
-<p>Mime Types</p>
-
+			<p>Mime Types</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$ext</var></dt>
-					<dd><code>string</code></dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>string</code><br />
+					string
 				</div>
 
 
@@ -2309,7 +2157,7 @@ not identical to quoted-printable, so it has its own method</p>
 
 
 
-	<table class="summary" id="properties">
+	<table class="summary properties" id="properties">
 	<caption>Properties summary</caption>
 	<tr data-order="useragent" id="$useragent">
 		<td class="attributes"><code>
@@ -2318,11 +2166,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#31" title="Go to source code"><var>$useragent</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;CodeIgniter&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$useragent" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#32" title="Go to source code"><var>$useragent</var></a>
 
 			<div class="description short">
 				
@@ -2332,7 +2176,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$useragent" class="anchor">#</a>
+				<code><span class="php-quote">&quot;CodeIgniter&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="mailpath" id="$mailpath">
 		<td class="attributes"><code>
@@ -2341,11 +2191,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#32" title="Go to source code"><var>$mailpath</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;/usr/sbin/sendmail&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$mailpath" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#33" title="Go to source code"><var>$mailpath</var></a>
 
 			<div class="description short">
 				
@@ -2355,7 +2201,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$mailpath" class="anchor">#</a>
+				<code><span class="php-quote">&quot;/usr/sbin/sendmail&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="protocol" id="$protocol">
 		<td class="attributes"><code>
@@ -2364,11 +2216,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#33" title="Go to source code"><var>$protocol</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;mail&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$protocol" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#34" title="Go to source code"><var>$protocol</var></a>
 
 			<div class="description short">
 				
@@ -2378,7 +2226,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$protocol" class="anchor">#</a>
+				<code><span class="php-quote">&quot;mail&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="smtp_host" id="$smtp_host">
 		<td class="attributes"><code>
@@ -2387,11 +2241,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#34" title="Go to source code"><var>$smtp_host</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$smtp_host" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#35" title="Go to source code"><var>$smtp_host</var></a>
 
 			<div class="description short">
 				
@@ -2401,7 +2251,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$smtp_host" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="smtp_user" id="$smtp_user">
 		<td class="attributes"><code>
@@ -2410,11 +2266,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#35" title="Go to source code"><var>$smtp_user</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$smtp_user" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#36" title="Go to source code"><var>$smtp_user</var></a>
 
 			<div class="description short">
 				
@@ -2424,7 +2276,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$smtp_user" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="smtp_pass" id="$smtp_pass">
 		<td class="attributes"><code>
@@ -2433,11 +2291,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#36" title="Go to source code"><var>$smtp_pass</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$smtp_pass" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#37" title="Go to source code"><var>$smtp_pass</var></a>
 
 			<div class="description short">
 				
@@ -2447,7 +2301,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$smtp_pass" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="smtp_port" id="$smtp_port">
 		<td class="attributes"><code>
@@ -2456,11 +2316,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#37" title="Go to source code"><var>$smtp_port</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;25&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$smtp_port" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#38" title="Go to source code"><var>$smtp_port</var></a>
 
 			<div class="description short">
 				
@@ -2470,7 +2326,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$smtp_port" class="anchor">#</a>
+				<code><span class="php-quote">&quot;25&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="smtp_timeout" id="$smtp_timeout">
 		<td class="attributes"><code>
@@ -2479,11 +2341,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#38" title="Go to source code"><var>$smtp_timeout</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">5</span></code></td>
-		<td class="description"><div>
-			<a href="#$smtp_timeout" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#39" title="Go to source code"><var>$smtp_timeout</var></a>
 
 			<div class="description short">
 				
@@ -2493,7 +2351,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$smtp_timeout" class="anchor">#</a>
+				<code><span class="php-num">5</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="smtp_crypto" id="$smtp_crypto">
 		<td class="attributes"><code>
@@ -2502,11 +2366,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#39" title="Go to source code"><var>$smtp_crypto</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$smtp_crypto" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#40" title="Go to source code"><var>$smtp_crypto</var></a>
 
 			<div class="description short">
 				
@@ -2516,7 +2376,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$smtp_crypto" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="wordwrap" id="$wordwrap">
 		<td class="attributes"><code>
@@ -2525,11 +2391,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#40" title="Go to source code"><var>$wordwrap</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">TRUE</span></code></td>
-		<td class="description"><div>
-			<a href="#$wordwrap" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#41" title="Go to source code"><var>$wordwrap</var></a>
 
 			<div class="description short">
 				
@@ -2539,7 +2401,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$wordwrap" class="anchor">#</a>
+				<code><span class="php-keyword1">TRUE</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="wrapchars" id="$wrapchars">
 		<td class="attributes"><code>
@@ -2548,11 +2416,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#41" title="Go to source code"><var>$wrapchars</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;76&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$wrapchars" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#42" title="Go to source code"><var>$wrapchars</var></a>
 
 			<div class="description short">
 				
@@ -2562,7 +2426,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$wrapchars" class="anchor">#</a>
+				<code><span class="php-quote">&quot;76&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="mailtype" id="$mailtype">
 		<td class="attributes"><code>
@@ -2571,11 +2441,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#42" title="Go to source code"><var>$mailtype</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;text&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$mailtype" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#43" title="Go to source code"><var>$mailtype</var></a>
 
 			<div class="description short">
 				
@@ -2585,7 +2451,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$mailtype" class="anchor">#</a>
+				<code><span class="php-quote">&quot;text&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="charset" id="$charset">
 		<td class="attributes"><code>
@@ -2594,11 +2466,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#43" title="Go to source code"><var>$charset</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;utf-8&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$charset" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#44" title="Go to source code"><var>$charset</var></a>
 
 			<div class="description short">
 				
@@ -2608,7 +2476,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$charset" class="anchor">#</a>
+				<code><span class="php-quote">&quot;utf-8&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="multipart" id="$multipart">
 		<td class="attributes"><code>
@@ -2617,11 +2491,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#44" title="Go to source code"><var>$multipart</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;mixed&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$multipart" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#45" title="Go to source code"><var>$multipart</var></a>
 
 			<div class="description short">
 				
@@ -2631,7 +2501,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$multipart" class="anchor">#</a>
+				<code><span class="php-quote">&quot;mixed&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="alt_message" id="$alt_message">
 		<td class="attributes"><code>
@@ -2640,11 +2516,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#45" title="Go to source code"><var>$alt_message</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">''</span></code></td>
-		<td class="description"><div>
-			<a href="#$alt_message" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#46" title="Go to source code"><var>$alt_message</var></a>
 
 			<div class="description short">
 				
@@ -2654,7 +2526,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$alt_message" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="validate" id="$validate">
 		<td class="attributes"><code>
@@ -2663,11 +2541,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#46" title="Go to source code"><var>$validate</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
-		<td class="description"><div>
-			<a href="#$validate" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#47" title="Go to source code"><var>$validate</var></a>
 
 			<div class="description short">
 				
@@ -2677,7 +2551,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$validate" class="anchor">#</a>
+				<code><span class="php-keyword1">FALSE</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="priority" id="$priority">
 		<td class="attributes"><code>
@@ -2686,11 +2566,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#47" title="Go to source code"><var>$priority</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;3&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$priority" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#48" title="Go to source code"><var>$priority</var></a>
 
 			<div class="description short">
 				
@@ -2700,7 +2576,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$priority" class="anchor">#</a>
+				<code><span class="php-quote">&quot;3&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="newline" id="$newline">
 		<td class="attributes"><code>
@@ -2709,11 +2591,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#48" title="Go to source code"><var>$newline</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;\n&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$newline" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#49" title="Go to source code"><var>$newline</var></a>
 
 			<div class="description short">
 				
@@ -2723,7 +2601,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$newline" class="anchor">#</a>
+				<code><span class="php-quote">&quot;\n&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="crlf" id="$crlf">
 		<td class="attributes"><code>
@@ -2732,11 +2616,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#49" title="Go to source code"><var>$crlf</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;\n&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$crlf" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#50" title="Go to source code"><var>$crlf</var></a>
 
 			<div class="description short">
 				
@@ -2746,7 +2626,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$crlf" class="anchor">#</a>
+				<code><span class="php-quote">&quot;\n&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="send_multipart" id="$send_multipart">
 		<td class="attributes"><code>
@@ -2755,11 +2641,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#52" title="Go to source code"><var>$send_multipart</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">TRUE</span></code></td>
-		<td class="description"><div>
-			<a href="#$send_multipart" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#53" title="Go to source code"><var>$send_multipart</var></a>
 
 			<div class="description short">
 				
@@ -2769,7 +2651,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$send_multipart" class="anchor">#</a>
+				<code><span class="php-keyword1">TRUE</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="bcc_batch_mode" id="$bcc_batch_mode">
 		<td class="attributes"><code>
@@ -2778,11 +2666,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#53" title="Go to source code"><var>$bcc_batch_mode</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
-		<td class="description"><div>
-			<a href="#$bcc_batch_mode" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#54" title="Go to source code"><var>$bcc_batch_mode</var></a>
 
 			<div class="description short">
 				
@@ -2792,7 +2676,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$bcc_batch_mode" class="anchor">#</a>
+				<code><span class="php-keyword1">FALSE</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="bcc_batch_size" id="$bcc_batch_size">
 		<td class="attributes"><code>
@@ -2801,11 +2691,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#54" title="Go to source code"><var>$bcc_batch_size</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">200</span></code></td>
-		<td class="description"><div>
-			<a href="#$bcc_batch_size" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#55" title="Go to source code"><var>$bcc_batch_size</var></a>
 
 			<div class="description short">
 				
@@ -2815,7 +2701,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$bcc_batch_size" class="anchor">#</a>
+				<code><span class="php-num">200</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_safe_mode" id="$_safe_mode">
 		<td class="attributes"><code>
@@ -2824,11 +2716,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#55" title="Go to source code"><var>$_safe_mode</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
-		<td class="description"><div>
-			<a href="#$_safe_mode" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#56" title="Go to source code"><var>$_safe_mode</var></a>
 
 			<div class="description short">
 				
@@ -2838,7 +2726,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_safe_mode" class="anchor">#</a>
+				<code><span class="php-keyword1">FALSE</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_subject" id="$_subject">
 		<td class="attributes"><code>
@@ -2847,11 +2741,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#56" title="Go to source code"><var>$_subject</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$_subject" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#57" title="Go to source code"><var>$_subject</var></a>
 
 			<div class="description short">
 				
@@ -2861,7 +2751,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_subject" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_body" id="$_body">
 		<td class="attributes"><code>
@@ -2870,11 +2766,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#57" title="Go to source code"><var>$_body</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$_body" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#58" title="Go to source code"><var>$_body</var></a>
 
 			<div class="description short">
 				
@@ -2884,7 +2776,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_body" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_finalbody" id="$_finalbody">
 		<td class="attributes"><code>
@@ -2893,11 +2791,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#58" title="Go to source code"><var>$_finalbody</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$_finalbody" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#59" title="Go to source code"><var>$_finalbody</var></a>
 
 			<div class="description short">
 				
@@ -2907,7 +2801,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_finalbody" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_alt_boundary" id="$_alt_boundary">
 		<td class="attributes"><code>
@@ -2916,11 +2816,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#59" title="Go to source code"><var>$_alt_boundary</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$_alt_boundary" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#60" title="Go to source code"><var>$_alt_boundary</var></a>
 
 			<div class="description short">
 				
@@ -2930,7 +2826,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_alt_boundary" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_atc_boundary" id="$_atc_boundary">
 		<td class="attributes"><code>
@@ -2939,11 +2841,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#60" title="Go to source code"><var>$_atc_boundary</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$_atc_boundary" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#61" title="Go to source code"><var>$_atc_boundary</var></a>
 
 			<div class="description short">
 				
@@ -2953,7 +2851,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_atc_boundary" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_header_str" id="$_header_str">
 		<td class="attributes"><code>
@@ -2962,11 +2866,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#61" title="Go to source code"><var>$_header_str</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$_header_str" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#62" title="Go to source code"><var>$_header_str</var></a>
 
 			<div class="description short">
 				
@@ -2976,7 +2876,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_header_str" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_smtp_connect" id="$_smtp_connect">
 		<td class="attributes"><code>
@@ -2985,11 +2891,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#62" title="Go to source code"><var>$_smtp_connect</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$_smtp_connect" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#63" title="Go to source code"><var>$_smtp_connect</var></a>
 
 			<div class="description short">
 				
@@ -2999,7 +2901,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_smtp_connect" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_encoding" id="$_encoding">
 		<td class="attributes"><code>
@@ -3008,11 +2916,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#63" title="Go to source code"><var>$_encoding</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;8bit&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$_encoding" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#64" title="Go to source code"><var>$_encoding</var></a>
 
 			<div class="description short">
 				
@@ -3022,7 +2926,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_encoding" class="anchor">#</a>
+				<code><span class="php-quote">&quot;8bit&quot;</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_IP" id="$_IP">
 		<td class="attributes"><code>
@@ -3031,11 +2941,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#64" title="Go to source code"><var>$_IP</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
-		<td class="description"><div>
-			<a href="#$_IP" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#65" title="Go to source code"><var>$_IP</var></a>
 
 			<div class="description short">
 				
@@ -3045,7 +2951,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_IP" class="anchor">#</a>
+				<code><span class="php-keyword1">FALSE</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_smtp_auth" id="$_smtp_auth">
 		<td class="attributes"><code>
@@ -3054,11 +2966,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#65" title="Go to source code"><var>$_smtp_auth</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
-		<td class="description"><div>
-			<a href="#$_smtp_auth" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#66" title="Go to source code"><var>$_smtp_auth</var></a>
 
 			<div class="description short">
 				
@@ -3068,7 +2976,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_smtp_auth" class="anchor">#</a>
+				<code><span class="php-keyword1">FALSE</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_replyto_flag" id="$_replyto_flag">
 		<td class="attributes"><code>
@@ -3077,11 +2991,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#66" title="Go to source code"><var>$_replyto_flag</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
-		<td class="description"><div>
-			<a href="#$_replyto_flag" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#67" title="Go to source code"><var>$_replyto_flag</var></a>
 
 			<div class="description short">
 				
@@ -3091,7 +3001,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_replyto_flag" class="anchor">#</a>
+				<code><span class="php-keyword1">FALSE</span></code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_debug_msg" id="$_debug_msg">
 		<td class="attributes"><code>
@@ -3100,11 +3016,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#67" title="Go to source code"><var>$_debug_msg</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$_debug_msg" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#68" title="Go to source code"><var>$_debug_msg</var></a>
 
 			<div class="description short">
 				
@@ -3114,7 +3026,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_debug_msg" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_recipients" id="$_recipients">
 		<td class="attributes"><code>
@@ -3123,11 +3041,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#68" title="Go to source code"><var>$_recipients</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$_recipients" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#69" title="Go to source code"><var>$_recipients</var></a>
 
 			<div class="description short">
 				
@@ -3137,7 +3051,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_recipients" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_cc_array" id="$_cc_array">
 		<td class="attributes"><code>
@@ -3146,11 +3066,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#69" title="Go to source code"><var>$_cc_array</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$_cc_array" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#70" title="Go to source code"><var>$_cc_array</var></a>
 
 			<div class="description short">
 				
@@ -3160,7 +3076,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_cc_array" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_bcc_array" id="$_bcc_array">
 		<td class="attributes"><code>
@@ -3169,11 +3091,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#70" title="Go to source code"><var>$_bcc_array</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$_bcc_array" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#71" title="Go to source code"><var>$_bcc_array</var></a>
 
 			<div class="description short">
 				
@@ -3183,7 +3101,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_bcc_array" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_headers" id="$_headers">
 		<td class="attributes"><code>
@@ -3192,11 +3116,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#71" title="Go to source code"><var>$_headers</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$_headers" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#72" title="Go to source code"><var>$_headers</var></a>
 
 			<div class="description short">
 				
@@ -3206,7 +3126,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_headers" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_attach_name" id="$_attach_name">
 		<td class="attributes"><code>
@@ -3215,11 +3141,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#72" title="Go to source code"><var>$_attach_name</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$_attach_name" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#73" title="Go to source code"><var>$_attach_name</var></a>
 
 			<div class="description short">
 				
@@ -3229,7 +3151,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_attach_name" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_attach_type" id="$_attach_type">
 		<td class="attributes"><code>
@@ -3238,11 +3166,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#73" title="Go to source code"><var>$_attach_type</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$_attach_type" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#74" title="Go to source code"><var>$_attach_type</var></a>
 
 			<div class="description short">
 				
@@ -3252,7 +3176,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_attach_type" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_attach_disp" id="$_attach_disp">
 		<td class="attributes"><code>
@@ -3261,11 +3191,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#74" title="Go to source code"><var>$_attach_disp</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$_attach_disp" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#75" title="Go to source code"><var>$_attach_disp</var></a>
 
 			<div class="description short">
 				
@@ -3275,7 +3201,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_attach_disp" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_protocols" id="$_protocols">
 		<td class="attributes"><code>
@@ -3284,11 +3216,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#75" title="Go to source code"><var>$_protocols</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'mail'</span>, <span class="php-quote">'sendmail'</span>, <span class="php-quote">'smtp'</span>)</code></td>
-		<td class="description"><div>
-			<a href="#$_protocols" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#76" title="Go to source code"><var>$_protocols</var></a>
 
 			<div class="description short">
 				
@@ -3298,7 +3226,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_protocols" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(<span class="php-quote">'mail'</span>, <span class="php-quote">'sendmail'</span>, <span class="php-quote">'smtp'</span>)</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_base_charsets" id="$_base_charsets">
 		<td class="attributes"><code>
@@ -3307,11 +3241,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#76" title="Go to source code"><var>$_base_charsets</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'us-ascii'</span>, <span class="php-quote">'iso-2022-'</span>)</code></td>
-		<td class="description"><div>
-			<a href="#$_base_charsets" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#77" title="Go to source code"><var>$_base_charsets</var></a>
 
 			<div class="description short">
 				
@@ -3321,7 +3251,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_base_charsets" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(<span class="php-quote">'us-ascii'</span>, <span class="php-quote">'iso-2022-'</span>)</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_bit_depths" id="$_bit_depths">
 		<td class="attributes"><code>
@@ -3330,11 +3266,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#77" title="Go to source code"><var>$_bit_depths</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'7bit'</span>, <span class="php-quote">'8bit'</span>)</code></td>
-		<td class="description"><div>
-			<a href="#$_bit_depths" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#78" title="Go to source code"><var>$_bit_depths</var></a>
 
 			<div class="description short">
 				
@@ -3344,7 +3276,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_bit_depths" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(<span class="php-quote">'7bit'</span>, <span class="php-quote">'8bit'</span>)</code>
+			</div>
+		</td>
 	</tr>
 	<tr data-order="_priorities" id="$_priorities">
 		<td class="attributes"><code>
@@ -3353,11 +3291,7 @@ not identical to quoted-printable, so it has its own method</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-CI_Email.html#78" title="Go to source code"><var>$_priorities</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'1 (Highest)'</span>, <span class="php-quote">'2 (High)'</span>, <span class="php-quote">'3 (Normal)'</span>, <span class="php-quote">'4 (Low)'</span>, <span class="php-quote">'5 (Lowest)'</span>)</code></td>
-		<td class="description"><div>
-			<a href="#$_priorities" class="anchor">#</a>
+				<a href="source-class-CI_Email.html#79" title="Go to source code"><var>$_priorities</var></a>
 
 			<div class="description short">
 				
@@ -3367,7 +3301,13 @@ not identical to quoted-printable, so it has its own method</p>
 				
 
 			</div>
-		</div></td>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$_priorities" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(<span class="php-quote">'1 (Highest)'</span>, <span class="php-quote">'2 (High)'</span>, <span class="php-quote">'3 (Normal)'</span>, <span class="php-quote">'4 (Low)'</span>, <span class="php-quote">'5 (Lowest)'</span>)</code>
+			</div>
+		</td>
 	</tr>
 	</table>
 
@@ -3379,9 +3319,11 @@ not identical to quoted-printable, so it has its own method</p>
 </div>
 
 	<div id="footer">
-		Reserv API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+		Reserv API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 </div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
 </body>
 </html>
