@@ -40,5 +40,5 @@ class Tables extends CI_Controller {
         
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file tables.php */
+/* Location: ./application/controllers/tables.php */

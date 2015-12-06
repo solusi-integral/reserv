@@ -187,5 +187,5 @@ class Data extends CI_Controller {
         }
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file data.php */
+/* Location: ./application/controllers/data.php */

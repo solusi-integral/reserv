@@ -350,5 +350,5 @@ class Pajax extends CI_Controller {
         
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file pajax.php */
+/* Location: ./application/controllers/pajax.php */

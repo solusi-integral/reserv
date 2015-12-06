@@ -33,5 +33,5 @@ class Tables_static extends CI_Controller {
         
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file tables_static.php */
+/* Location: ./application/controllers/tables_static.php */

@@ -303,15 +303,14 @@ class Report extends CI_Controller {
             return $server_output;
         }
         
-        private function __osticket($name,$email,$subject,$message)
-        {
-            /**
+        /**
              * 
              * 
              * Ref: https://github.com/osTicket/osTicket-1.7/blob/develop/setup/doc/api.md
              * Ref: https://github.com/osTicket/osTicket-1.7/blob/develop/setup/doc/api/tickets.md
              */
-            
+        private function __osticket($name,$email,$subject,$message)
+        {   
             $config = array(
                   'url'=>'http://ticket.local.solusi-integral.co.id/api/tickets.json',  // URL to site.tld/api/tickets.json
                   'key'=>'73E5B1264DC9D4327D3B695932BE89B6'  // API Key goes here

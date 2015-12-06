@@ -774,5 +774,5 @@ class Tes extends CI_Controller {
         }
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file tes.php */
+/* Location: ./application/controllers/tes.php */

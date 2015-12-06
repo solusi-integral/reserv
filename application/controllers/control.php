@@ -1,5 +1,4 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
 /**
  * Description of Control
  * 
@@ -51,14 +50,14 @@ class Control extends CI_Controller {
             $this->load->view('index', $data);
 	}
         
+        /**
+            /* This function is use to find the total number of race.
+            /* That figure will be use to calculate the performance of the day
+            /* @var author Indra
+            /* @var 	numeric 	$data
+            **/
         function sumrace()
         {
-			/**
-			/* This function is use to find the total number of race.
-			/* That figure will be use to calculate the performance of the day
-			/* @var author Indra
-			/* @var 	numeric 	$data
-			**/
             $this->load->model('report_model');
             // Save data from report model then save return variable to $data
 			$data       = $this->report_model->all_sum_race();
@@ -193,19 +192,19 @@ class Control extends CI_Controller {
             return $red;
         }
         
+        /*
+            * This function is used to calculate overall performance for previous day.
+            * To avoid any error in the code, we can't leave the value devided by zero
+            * Especially when there are no activity from the previous days.
+            * @author	Indra
+            * @var      numeric		$total 		Numeric Value from yesterday, all it
+            * @var		numeric 	$red		Numeric Value from yesterday, only red 
+            * @var 		numberic 	$green		Numberic Value from yesterday, number supplied using the different value of Total and RED
+            * @var		numeric		$perce1		Percentage value from yesterday, rounded by 2 digits, format xx.xx with out percent sign
+            * @var		return		$perce1		Return to the caller from perce1 calculation number. 
+            */
         function yesterday_green()
         {
-			/*
-			* This function is used to calculate overall performance for previous day.
-			* To avoid any error in the code, we can't leave the value devided by zero
-			* Especially when there are no activity from the previous days.
-			* @author	Indra
-			* @var      numeric		$total 		Numeric Value from yesterday, all it
-			* @var		numeric 	$red		Numeric Value from yesterday, only red 
-			* @var 		numberic 	$green		Numberic Value from yesterday, number supplied using the different value of Total and RED
-			* @var		numeric		$perce1		Percentage value from yesterday, rounded by 2 digits, format xx.xx with out percent sign
-			* @var		return		$perce1		Return to the caller from perce1 calculation number. 
-			*/
             $total  = $this->yesterday();
             $red    = $this->yesterday_red();
             $green  = $total-$red;
@@ -217,15 +216,15 @@ class Control extends CI_Controller {
             return $perce1;
         }
         
+        /* 
+            * This function is used to calculate the day before yesterday.
+            * To avoid any error in the result, we can't devide the value by zero
+            * 
+            * @var 		numeric		$offset			How many hours do we have to go back for the performance calculation
+            * @var		numeric 	$today_total	Look up the database to get the total number of event
+            */
         function twday_sum()
         {
-			/* 
-			* This function is used to calculate the day before yesterday.
-			* To avoid any error in the result, we can't devide the value by zero
-			* 
-			* @var 		numeric		$offset			How many hours do we have to go back for the performance calculation
-			* @var		numeric 	$today_total	Look up the database to get the total number of event
-			*/
 			// Load model named 'report'
             $this->load->model('report_model');
             // Count the hours before by 3 x 60 minutes x 60 seconds x 24 hours. 
@@ -236,12 +235,12 @@ class Control extends CI_Controller {
 			return $today_total;
         }
         
+        /*
+            * This function is used to calculate the faulty races from the 2 days ago
+            * 
+            */
         function twday_red()
         {
-			/*
-			* This function is used to calculate the faulty races from the 2 days ago
-			* 
-			*/
             $this->load->model('report_model');
             $offset         = 3*60*60*24;
             $todayul        = $this->report_model->global_red_ul($offset);
@@ -346,5 +345,5 @@ class Control extends CI_Controller {
         
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file control.php */
+/* Location: ./application/controllers/control.php */
