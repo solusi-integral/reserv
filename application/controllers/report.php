@@ -370,9 +370,7 @@ class Report extends CI_Controller {
             return;
         }
         
-        private function __mailonmissed5()
-        {
-            /**
+        /**
              * Send Automated Email Notification When Missed 5 Races
              * 
              * This function will send an automated email notification using
@@ -393,7 +391,8 @@ class Report extends CI_Controller {
              * 
              * Github Issue ID #11 
              */
-            
+        private function __mailonmissed5()
+        {   
             $name       = 'Mr. A. McDonald';
             $subject    = 'Operation Team Has Missed 5 Consecutive Race';
             $email      = 'boz_m@hotmail.com';
@@ -414,9 +413,7 @@ class Report extends CI_Controller {
             return $result;
         }
         
-        private function __mailonmissed10()
-        {
-            /**
+        /**
              * Send Automated Email Notification When Missed 5 Races
              * 
              * This function will send an automated email notification using
@@ -437,6 +434,8 @@ class Report extends CI_Controller {
              * We use that unique ID to do backward lookup. How many? Depending 
              * on the required notification level.
              */
+        private function __mailonmissed10()
+        {
             $name       = 'Mr. A. McDonald';
             $subject    = 'Operation Team Has Missed 10 Consecutive Race';
             $email      = 'boz_m@hotmail.com';
@@ -456,9 +455,7 @@ class Report extends CI_Controller {
             return;
         }
         
-        private function __mailonmissed30()
-        {
-            /**
+        /**
              * Send Automated Email Notification When Missed 5 Races
              * 
              * This function will send an automated email notification using
@@ -479,6 +476,8 @@ class Report extends CI_Controller {
              * We use that unique ID to do backward lookup. How many? Depending 
              * on the required notification level.
              */
+        private function __mailonmissed30()
+        {
             $name       = 'Mr. A. McDonald';
             $subject    = 'Operation Team Has Missed 30 Consecutive Race';
             $email      = 'boz_m@hotmail.com';
