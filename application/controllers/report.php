@@ -29,27 +29,29 @@ class Report extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
         
+        /**
+        * API Calls from Remote
+        * 
+        * This method allows the performance report to be recorded to the database automatically.
+        * It should be called via HTTPS
+        * All variable must be present to avoid errors.
+        * 
+        * API Call URL: https://reserv.solusi-integral.co.id/index.php/report/record/DATE/JUMP_TIME/TYPE/RUNNERS/NUMBER/LOCATION/RESULT/NAME/COMMENT
+        * API Call URL example: https://reserv.solusi-integral.co.id/index.php/report/record/20150803/161700/G/8/3/NORTHAM/7/INDRA/none
+        * 
+        * @api
+        * @var     int     $date       Format YYYYMMDD
+        * @var     int     $jump_time  Format  HHMMSS. Must be URL Encoded.
+        * @var     string  $type       Three option (R,T,G)
+        * @var     int     $runners    Number of runners
+        * @var     int     $number     Race Number
+        * @var     string  $location   Location Name. Must be URL Encoded.
+        * @var     int     $result     Click Result
+        * @var     string  $comment    Race Comment . Must be URL Encoded.
+        */
         public function record($date, $jump_date, $type, $runners, $number, $location, $results, $name, $comment)
         {
-            /**
-             * API Calls from Remote
-             * 
-             * This method allows the performance report to be recorded to the database automatically.
-             * It should be called via HTTPS
-             * All variable must be present to avoid errors.
-             * 
-             * API Call URL: https://reserv.solusi-integral.co.id/index.php/report/record/DATE/JUMP_TIME/TYPE/RUNNERS/NUMBER/LOCATION/RESULT/NAME/COMMENT
-             * API Call URL example: https://reserv.solusi-integral.co.id/index.php/report/record/20150803/161700/G/8/3/NORTHAM/7/INDRA/none
-             * 
-             * @var     int     $date       Format YYYYMMDD
-             * @var     int     $jump_time  Format  HHMMSS. Must be URL Encoded.
-             * @var     string  $type       Three option (R,T,G)
-             * @var     int     $runners    Number of runners
-             * @var     int     $number     Race Number
-             * @var     string  $location   Location Name. Must be URL Encoded.
-             * @var     int     $result     Click Result
-             * @var     string  $comment    Race Comment . Must be URL Encoded.
-             */
+            
             // Load database model for easier database related task
             $this->load->model('report_model','',TRUE);
             // Load date helper for date related task
