@@ -83,7 +83,7 @@ class Report extends CI_Controller {
             }
             
             // Count races during operational time
-            if ($acttime >= $timeb and $acttime <= $timee){
+            else if ($acttime >= $timeb and $acttime <= $timee){
                 //Filter counted races  and uncounted races
                 if ($type == $rtype)
                 {
