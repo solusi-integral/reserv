@@ -177,16 +177,46 @@ class Report extends CI_Controller {
             $this->__jsonoutput($data2);
         }
         
+        /**
+         * Print JSON Formatted Data
+         * 
+         * This function will print JSON formatted data to the remote caller
+         * If the process if going well then system will give HTTP code 201 and
+         * additional HTTP header called X-RESERV-CODE: 200 OK. X-RESERV-CODE is
+         * required by the remote system to determine whether the calls is succeed.
+         * 
+         * @var array   $data       Array from another function
+         * @param type $data
+         */
         private function __jsonoutput($data)
         {
+            // Set the output into a JSOn formated data
             $this->output->set_content_type('application/json');
+            // Set HTTP header to 201 Accepted
             $this->output->set_status_header('201');
+            // Set HTTP header
             $this->output->set_header('X-RESERV-CODE: 200 OK');
+            // Encode the data into JSON
             $this->output->set_output(json_encode($data));
-            //$this->output->set_header("HTTP/1.0 200 OK");
-            //$this->output->set_header("HTTP/1.1 200 OK");
         }
         
+        /**
+         * A Dispacther for creating or post a note to a ticket
+         * 
+         * This function will determine whether the system should create a new
+         * ticket or just update existing ticket. The basic functionality in 
+         * this function is check whether there is a ticket open on that day by
+         * looking up the database. If there is no existing ticket then this
+         * method will create a new one, and insert into the database with 
+         * ticket ID and date. Everytime this method is called it will update a 
+         * field in the database by adding the counter value.
+         * 
+         * @param string $message     Message that we want to include in the ticket
+         * @param string $subject     Ticket subject
+         * @param string $email       Email address of our client
+         * @param string $cc_emails   Send a copy to
+         * @return bool
+         */
         private function __ticketdispatcher($message, $subject, $email, $cc_emails)
         {
             // Load database model for easier database related task
@@ -210,37 +240,48 @@ class Report extends CI_Controller {
                 // Store each field into variables.
                 foreach ($query as $row)
                 {
+                    // Store ticket id into new variable
                     $ticket = $row->ticket_id;
+                    // Store notif couter into new variable
                     $notif  = $row->notif_5;
                 }
                 
+                // when the notif field reached 5
                 if ($notif == 5)
                 {
+                    // call another function to update ticket
                     $this->__freshdsk_update($ticket);
+                    // Set notif couter back to 0
                     $notif      = 0;
+                    // Update the database
                     $this->notif_model->update_ticket($ticket,$notif);
                 } 
                 
+                // when the notif field is not reached 5 then add the value
                 else
                 {
+                    // Set the counter value
                     $notif      = $notif+1;
+                    // Just update the ticket on the database
                     $this->notif_model->update_ticket($ticket,$notif);
                 }
-                
-                // Update the database also for each call the notif_5 or 10 or 30
-                // Should be updated
-                // Send notification everytime the count hit 5, 10, 15, 20
             }
             
+            // If the counter is 0 or nothing on that date
             else if ($counter == 0)
             {
+                // Create new ticket by calling this method
                 $freshdsk   = $this->__freshdsk_create($message, $subject, $email, $cc_emails);
+                // Decode the returned value from JSON into PHP Array
                 $fresh_decode   = json_decode($freshdsk);
+                // Store certain decoded data into new variable
                 foreach ($fresh_decode as $row)
                 {
+                    // Store display id into new variable
                     $ticket_id  = $row->display_id;
                 }
                 
+                // Insert the ticket id and time to the database
                 $this->notif_model->insert($ticket_id,$time);
             }
             
