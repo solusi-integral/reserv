@@ -288,11 +288,29 @@ class Report extends CI_Controller {
             return;
         }
         
+        /**
+         * Create New Freshdesk Ticket
+         * 
+         * Create a new freshdesk ticket using freshdesk publised API. This
+         * function work using cURL, with some predefined variable.
+         * 
+         * @see https://freshdesk.com/api#create_ticket
+         * 
+         * @param type $description
+         * @param type $subject
+         * @param type $email
+         * @param type $cc_emails
+         * @return array
+         */
         private function __freshdsk_create($description, $subject, $email, $cc_emails)
         {
+            // Freshdesk URL
             $fd_domain = "https://cvsolusiintegral.freshdesk.com";
+            // Freshdesk API key
             $token = "ggXySu214rbWhkDJpAKU";
+            // Predefined password
             $password = "X";
+            // Array for the data inserted
             $data = array(
                 "helpdesk_ticket" => array(
                     "description" => $description,
@@ -303,20 +321,34 @@ class Report extends CI_Controller {
                 ),
                 "cc_emails" => $cc_emails
             );
+            // Encode the data into JSON formated data
             $json_body = json_encode($data, JSON_FORCE_OBJECT | JSON_PRETTY_PRINT);
+            // Set request header
             $header[] = "Content-type: application/json";
+            // Set the API end point
             $connection = curl_init("$fd_domain/helpdesk/tickets.json");
             curl_setopt($connection, CURLOPT_RETURNTRANSFER, true);
+            // Set cURL HTTP Header
             curl_setopt($connection, CURLOPT_HTTPHEADER, $header);
             curl_setopt($connection, CURLOPT_HEADER, false);
+            // Set basic HTTP Auth using cRUL
             curl_setopt($connection, CURLOPT_USERPWD, "$token:$password");
+            // Set request using POST command
             curl_setopt($connection, CURLOPT_POST, true);
+            // POST data
             curl_setopt($connection, CURLOPT_POSTFIELDS, $json_body);
             curl_setopt($connection, CURLOPT_VERBOSE, 1);
+            // Store the RAW result into array
             $response = curl_exec($connection);
+            // return the data into function caller
             return $response;
         }
         
+        /**
+         * 
+         * @param type $id
+         * @return array
+         */
         private function __freshdsk_update($id)
         {
             $API_KEY = "ggXySu214rbWhkDJpAKU";
