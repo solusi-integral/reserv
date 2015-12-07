@@ -101,7 +101,9 @@ class Report extends CI_Controller {
                 if ($type == $rtype)
                 {
                     $data['counted']    = 0;
-                } else{
+                } 
+                
+                else{
                     // Exclude Standing start races
                     if ($comment == 'Standing Start' or $comment == 'Standing_Start'){
                         $data['counted']    = 0;   
@@ -296,10 +298,10 @@ class Report extends CI_Controller {
          * 
          * @see https://freshdesk.com/api#create_ticket
          * 
-         * @param type $description
-         * @param type $subject
-         * @param type $email
-         * @param type $cc_emails
+         * @param string $description   Description of the ticket
+         * @param string $subject       Subject of the ticket
+         * @param string $email         Client's email
+         * @param string $cc_emails     Copy sent to
          * @return array
          */
         private function __freshdsk_create($description, $subject, $email, $cc_emails)
@@ -346,13 +348,14 @@ class Report extends CI_Controller {
         
         /**
          * 
-         * @param type $id
+         * @param int $id
          * @return array
          */
         private function __freshdsk_update($id)
         {
             $API_KEY = "ggXySu214rbWhkDJpAKU";
-            $FD_ENDPOINT = "https://cvsolusiintegral.freshdesk.com"; // verify if you are using https, and change accordingly!
+            // verify if you are using https, and change accordingly!
+            $FD_ENDPOINT = "https://cvsolusiintegral.freshdesk.com"; 
             $payload = array(
               'helpdesk_note[body]' => 'Operation team has missed another 5 races',
               'helpdesk_note[private]' => 'false'
