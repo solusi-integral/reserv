@@ -419,8 +419,9 @@ class Report extends CI_Controller {
             curl_close($ch);
 
             if ($code != 201)
-                die('Unable to create ticket: '.$result);
-
+                {
+                    die('Unable to create ticket: '.$result);
+                }
             $ticket_id = (int) $result;
             
             return $result;
