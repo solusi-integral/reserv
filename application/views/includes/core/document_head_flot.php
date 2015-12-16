@@ -26,7 +26,7 @@ header('Cache-Control: public, max-age=60, must-revalidate');
 	<!-- Styles -->
 
 		<link rel="stylesheet" href="<?php echo $this->config->base_url(); ?>styles/adminica/reset.css">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700">
 
 
 		<!-- NOTE: The following css files have been combined and minified into plugins.css
