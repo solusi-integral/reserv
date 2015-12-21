@@ -47,8 +47,8 @@ class Control extends CI_Controller {
             $data['twday_gree'] = $this->twday_green();
             $data['thday_gree'] = $this->thday_green();
             $data['frday_gree'] = $this->frday_green();
-            //$data['last6']      = $this->last6();
-            $data['last6']      = $this->performance->last6();
+            $data['last6']      = $this->last6();
+            //$data['last6']      = $this->performance->last6();
             $data['surya']      = $this->individual_performance('surya');
             $data['azis']       = $this->individual_performance('azis');
             $data['indra']      = $this->individual_performance('indra');
