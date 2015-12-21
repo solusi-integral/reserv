@@ -427,7 +427,7 @@ class Report extends CI_Controller {
             return $result;
         }
         
-        public function mailmissed($id)
+        private function __mailmissed($id)
         {
             $race   = $this->__lookup30races($id);
             if ($race['lima'] == 5)
@@ -467,7 +467,7 @@ class Report extends CI_Controller {
              * 
              * Github Issue ID #11 
              */
-        private function __mailonmissed5()
+        public function mailonmissed5()
         {   
             $name       = 'Mr. A. McDonald';
             $subject    = 'Operation Team Has Missed 5 Consecutive Race';
