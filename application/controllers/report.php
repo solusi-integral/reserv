@@ -656,10 +656,14 @@ class Report extends CI_Controller {
         {
             // Load Report_model helper
             $this->load->model('report_model');
+            // Load Cache Driver
+            $this->load->driver('cache');
             // Get race info based on race id
             $query  = $this->report_model->info_race($id);
             // Store result into $data variable
             $data   = $query->result();
+            // Save data to Memcached
+            $this->cache->memcached->save($id, $data, 7200);
             // Convert array into variable
             foreach ($data as $row) {
                 $nama       = $row->Name;
