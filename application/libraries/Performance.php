@@ -19,7 +19,7 @@ class Performance {
         /* @var $CI type */
         $CI =& get_instance();
         $CI->load->model('report_model');
-        $today_total                = $this->report_model->today_sum_race();
+        $today_total                = $CI->report_model->today_sum_race();
         return $today_total;
     }
 
