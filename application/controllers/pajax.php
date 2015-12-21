@@ -33,9 +33,10 @@ class Pajax extends CI_Controller {
         
         public function pjax_total()
         {
-            $data['total']      = $this->sumrace();
-            $data['red']        = $this->redrace();
-            $data['green']      = $this->green_percentage();
+            $this->load->library('performance');
+            $data['total']      = $this->performance->sumrace();
+            $data['red']        = $this->performance->redrace();
+            $data['green']      = $this->performance->green_percentage();
             $this->output->cache(2);
             $this->load->view('graphs_pjax_total', $data);
         }
