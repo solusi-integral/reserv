@@ -32,26 +32,26 @@ class Control extends CI_Controller {
 	{
             $this->load->model('report_model','',TRUE);
             $this->load->library('performance');
-            $data['sumrace']    = $this->sumrace();
-            $data['red']        = $this->redrace();
-            $data['perce']      = $this->green_percentage();
-            $data['gtype']      = $this->GType();
-            $data['ttype']      = $this->TType();
-            $data['rtype']      = $this->RType();
-            $data['pesan']      = $this->status();
-            $data['today_sum']  = $this->today();
-            $data['today_red']  = $this->today_red();
-            $data['today_perf'] = $this->today_performance();
-            $data['today_gree'] = $this->today_green();
-            $data['yeste_gree'] = $this->yesterday_green();
-            $data['twday_gree'] = $this->twday_green();
-            $data['thday_gree'] = $this->thday_green();
-            $data['frday_gree'] = $this->frday_green();
-            $data['last6']      = $this->last6();
+            $data['sumrace']    = $this->performance->sumrace();
+            $data['red']        = $this->performance->redrace();
+            $data['perce']      = $this->performance->green_percentage();
+            $data['gtype']      = $this->performance->GType();
+            $data['ttype']      = $this->performance->TType();
+            $data['rtype']      = $this->performance->RType();
+            $data['pesan']      = $this->performance->status();
+            $data['today_sum']  = $this->performance->today();
+            $data['today_red']  = $this->performance->today_red();
+            $data['today_perf'] = $this->performance->today_performance();
+            $data['today_gree'] = $this->performance->today_green();
+            $data['yeste_gree'] = $this->performance->yesterday_green();
+            $data['twday_gree'] = $this->performance->twday_green();
+            $data['thday_gree'] = $this->performance->thday_green();
+            $data['frday_gree'] = $this->performance->frday_green();
+            $data['last6']      = $this->performance->last6();
             //$data['last6']      = $this->performance->last6();
-            $data['surya']      = $this->individual_performance('surya');
-            $data['azis']       = $this->individual_performance('azis');
-            $data['indra']      = $this->individual_performance('indra');
+            $data['surya']      = $this->performance->individual_performance('surya');
+            $data['azis']       = $this->performance->individual_performance('azis');
+            $data['indra']      = $this->performance->individual_performance('indra');
             $this->load->view('index', $data);
 	}
         
