@@ -43,39 +43,44 @@ class Pajax extends CI_Controller {
         
         public function pjax_green()
         {
-            $data['green']      = $this->green_percentage();
+            $this->load->library('performance');
+            $data['green']      = $this->performance->green_percentage();
             $this->output->cache(2);
             $this->load->view('pjax_green', $data);
         }
         
         public function pjax_status()
         {
-            $data['status']     = $this->status();
+            $this->load->library('performance');
+            $data['status']     = $this->performance->status();
             $this->output->cache(2);
             $this->load->view('pjax_status', $data);
         }
         
         public function pjax_chart()
         {
-            $data['gtype']      = $this->GType();
-            $data['rtype']      = $this->RType();
-            $data['ttype']      = $this->TType();
+            $this->load->library('performance');
+            $data['gtype']      = $this->performance->GType();
+            $data['rtype']      = $this->performance->RType();
+            $data['ttype']      = $this->performance->TType();
             $this->output->cache(2);
             $this->load->view('pjax_chart', $data);
         }
         
         public function pjax_person()
         {
-            $data['surya']      = $this->individual_performance('surya');
-            $data['azis']       = $this->individual_performance('azis');
-            $data['indra']      = $this->individual_performance('indra');
+            $this->load->library('performance');
+            $data['surya']      = $this->performance->individual_performance('surya');
+            $data['azis']       = $this->performance->individual_performance('azis');
+            $data['indra']      = $this->performance->individual_performance('indra');
             $this->output->cache(2);
             $this->load->view('pjax_person', $data);
         }
         
         public function pjax_last6()
         {
-            $data['last6']      = $this->last6();
+            $this->load->library('performance');
+            $data['last6']      = $this->performance->last6();
             $this->output->cache(2);
             $this->load->view('pjax_last6',$data);
         }
@@ -83,7 +88,6 @@ class Pajax extends CI_Controller {
         public function pjax_today()
         {
             $this->load->library('performance');
-            //$data['today_gree']      = $this->today_green();
             $data['today_gree']      = $this->performance->today_green();
             $this->output->cache(2);
             $this->load->view('pjax_today', $data);
@@ -91,22 +95,25 @@ class Pajax extends CI_Controller {
         
         public function pjax_today_perf()
         {
-            $data['pjax_today_perf']      = $this->today_performance();
+            $this->load->library('performance');
+            $data['pjax_today_perf']      = $this->performance->today_performance();
             $this->output->cache(2);
             $this->load->view('pjax_today_perf', $data);
         }
         
         public function pjax_today_total()
         {
-            $data['today_total']    =   $this->today();
-            $data['today_red']      =   $this->today_red();
+            $this->load->library('performance');
+            $data['today_total']    =   $this->performance->today();
+            $data['today_red']      =   $this->performance->today_red();
             $this->output->cache(2);
             $this->load->view('pjax_today_total', $data);
         }
         
         public function pjax_test()
         {
-            $data['todaytest']      = $this->today_performance();
+            $this->load->library('performance');
+            $data['todaytest']      = $this->performance->today_performance();
             $this->output->cache(2);
             $this->load->view('pjax_test', $data);
         }
