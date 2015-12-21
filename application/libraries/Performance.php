@@ -11,11 +11,14 @@
  *
  * @author indra
  */
-class Performance extends CI_Controller {
+class Performance {
+    
     //put your code here
     public function today()
     {
-        $this->load->model('report_model');
+        /* @var $CI type */
+        $CI =& get_instance();
+        $CI->load->model('report_model');
         $today_total                = $this->report_model->today_sum_race();
         return $today_total;
     }
