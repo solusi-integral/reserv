@@ -11,7 +11,7 @@
  *
  * @author indra
  */
-class Performance extends CI_Controller {
+class Performance {
     //put your code here
     public function today()
     {
