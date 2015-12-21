@@ -191,7 +191,7 @@ class Pajax extends CI_Controller {
         {
             $this->load->helper('performance');
             //$total  = $this->today();
-            $total  = $this->performance->today();
+            $total  = today();
             $red    = $this->today_red();
             
             if ($red == 0)
