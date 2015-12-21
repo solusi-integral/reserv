@@ -180,7 +180,7 @@ class Pajax extends CI_Controller {
         function today_red()
         {
             $this->load->model('report_model');
-            $todayul         = $this->report_model->today_red_ul();
+            $todayul        = $this->report_model->today_red_ul();
             $todaydl        = $this->report_model->today_red_dl();
             $today_total    = $todayul+$todaydl;
             $red    = $today_total;
