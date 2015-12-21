@@ -22,7 +22,7 @@ class Performance {
             **/
         function sumrace()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             // Save data from report model then save return variable to $data
             $data   = $CI->report_model->all_sum_race();
@@ -33,7 +33,7 @@ class Performance {
         function redrace()
         {
             // Load report model from helper
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             // Savae data from report model, all sum redrace to variable $data
             $data   = $CI->report_model->all_sum_redrace();
@@ -52,7 +52,7 @@ class Performance {
         
         function GType()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $Gtyper                = $CI->report_model->all_gtype_sum_race();
             return $Gtyper;          
@@ -60,7 +60,7 @@ class Performance {
         
         function TType()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $Ttyper                = $CI->report_model->all_ttype_sum_race();
             return $Ttyper;
@@ -68,7 +68,7 @@ class Performance {
         
         function RType()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $Rtyper                = $CI->report_model->all_rtype_sum_race();
             return $Rtyper;
@@ -94,7 +94,7 @@ class Performance {
         
         function today()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $today_total  = $CI->report_model->today_sum_race();
             return $today_total;
@@ -102,7 +102,7 @@ class Performance {
         
         function today_red()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $todayul        = $CI->report_model->today_red_ul();
             $todaydl        = $CI->report_model->today_red_dl();
@@ -148,7 +148,7 @@ class Performance {
         
         function yesterday()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $today_total    = $CI->report_model->yesterday_sum_race();
             return $today_total;
@@ -156,7 +156,7 @@ class Performance {
         
         function yesterday_red()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $todayul        = $CI->report_model->yesterday_red_ul();
             $todaydl        = $CI->report_model->yesterday_red_dl();
@@ -199,7 +199,7 @@ class Performance {
         function twday_sum()
         {
             // Load model named 'report'
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             // Count the hours before by 3 x 60 minutes x 60 seconds x 24 hours. 
             $offset         = 3*60*60*24;
@@ -215,7 +215,7 @@ class Performance {
             */
         function twday_red()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $offset         = 3*60*60*24;
             $todayul        = $CI->report_model->global_red_ul($offset);
@@ -240,7 +240,7 @@ class Performance {
         
         function thday_sum()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $offset         = 4*60*60*24;
             $today_total    = $CI->report_model->global_sum_race($offset);
@@ -249,7 +249,7 @@ class Performance {
         
         function thday_red()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $offset         = 4*60*60*24;
             $todayul        = $CI->report_model->global_red_ul($offset);
@@ -274,7 +274,7 @@ class Performance {
         
         function frday_sum()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $offset         = 5*60*60*24;
             $today_total    = $CI->report_model->global_sum_race($offset);
@@ -283,7 +283,7 @@ class Performance {
         
         function frday_red()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $offset         = 5*60*60*24;
             $todayul        = $CI->report_model->global_red_ul($offset);
@@ -308,7 +308,7 @@ class Performance {
         
         function last6()
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $data   = $CI->report_model->get_races_6();
             return $data;
@@ -316,7 +316,7 @@ class Performance {
         
         function individual_performance($name)
         {
-            $CI &= get_instance();
+            $CI =& get_instance();
             $CI->load->model('report_model');
             $data   = $CI->report_model->individual_performance($name);
             $all    = $CI->sumrace();
