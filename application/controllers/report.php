@@ -658,7 +658,7 @@ class Report extends CI_Controller {
             $this->load->model('report_model');
             // Load Cache Driver
             $this->load->driver('cache');
-            if ( ! $data = $this->cache->get($id))
+            if ( ! $data = $this->cache->memcached->get($id))
             {
                 // Get race info based on race id
                 $query  = $this->report_model->info_race($id);
