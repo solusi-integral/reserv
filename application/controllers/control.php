@@ -31,7 +31,7 @@ class Control extends CI_Controller {
 	public function index()
 	{
             $this->load->model('report_model','',TRUE);
-            $this->load->helper('performance');
+            $this->load->library('performance');
             $data['sumrace']    = $this->sumrace();
             $data['red']        = $this->redrace();
             $data['perce']      = $this->green_percentage();
