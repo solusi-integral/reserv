@@ -719,7 +719,10 @@ class Report extends CI_Controller {
             // Get Current Time
             $waktu      = now();
             // Get standarized date format YYYY-MM-DD, aka 2015-12-02
-            $time       = date("Y-m-d", $waktu);
+            //$time       = date("Y-m-d", $waktu);
+            
+            // Get Time for key
+            $time        = date("Y-m-d", strtotime("-1 days"));
             
             // Check if there is a record for today already
             $counter    = $this->result_model->count($time);
