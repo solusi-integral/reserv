@@ -732,12 +732,8 @@ class Report extends CI_Controller {
                 $this->load->library('performance');
                 $yesterday  = $this->performance->yesterday_green();
                 
-                $query  = $this->result_model->insert($yesterday,$time);
-                
-                foreach ($query as $row)
-                {
-                    $id     = $row->id;
-                }
+                $this->result_model->insert($yesterday,$time);
+                $id = $this->db->insert_id();
                 echo $id;
             }
             

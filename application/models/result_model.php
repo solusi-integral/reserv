@@ -34,8 +34,6 @@ class Result_model extends CI_Model {
             'percentage' => $perce,
         );
         // Return the data to function caller
-        $query['data']  = $this->db->insert('daily_result',$data);
-        $query['id']    = $this->db->insert_id();
-        return $query;
+        return $this->db->insert('daily_result',$data);
     }
 }
