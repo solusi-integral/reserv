@@ -35,7 +35,7 @@ class Result_model extends CI_Model {
         );
         // Return the data to function caller
         $query['id']    = $this->db->insert_id();
-        $query['data']  = $this->db->insert('notification',$data);
+        $query['data']  = $this->db->insert('daily_result',$data);
         return $query;
     }
 }
