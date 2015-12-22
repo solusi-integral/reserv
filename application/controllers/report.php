@@ -695,6 +695,69 @@ class Report extends CI_Controller {
             // Return boolean value to function caller
             return $alert;
         }
+        
+        /**
+         * Method to Store Daily Performance to Database
+         * 
+         * This method will calculate yesterday performance from database, and 
+         * then store the value to database. Instead current function by doing
+         * full table scan.
+         * 
+         * Calculation will be done every day on the first data submitted by
+         * remote server.
+         * 
+         */
+        public function dailyreport()
+        {
+            // Load database model for easier database related task
+            $this->load->model('result_model','',TRUE);
+            // Load date helper for date related task
+            $this->load->helper('date');
+            
+            // Get Current Time
+            $waktu      = now();
+            // Get standarized date format YYYY-MM-DD, aka 2015-12-02
+            $time       = date("Y-m-d", $waktu);
+            
+            // Check if there is a record for today already
+            $counter    = $this->result_model->count($time);
+            
+            if ($counter == 1)
+            {
+                return;
+            }
+            
+            else if ($counter == 0)
+            {
+                $this->load->library('performance');
+                $yesterday  = $this->performance->yesterday_green();
+                
+                $query  = $this->result_model->insert($yesterday,$time);
+                
+                foreach ($query as $row)
+                {
+                    $id     = $row->id;
+                    echo $id;
+                }
+                
+            }
+            
+        }
+        
+        /**
+         * Method to Store Weekly Performance to Database
+         * 
+         * This method will calculate last week performance from database, and 
+         * then store the value to database. Instead current function by doing
+         * full table scan.
+         * 
+         * Calculation will be done every Saturday.
+         * 
+         */
+        private function __weeklyreport()
+        {
+            
+        }
 }
 
 /* End of file report.php */
