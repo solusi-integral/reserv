@@ -720,6 +720,8 @@ class Report extends CI_Controller {
             $time       = date("Y-m-d", $waktu);
             $key        = date("Ymd", $waktu);
             
+            print($key);
+            
             // Check if there is a record for today already
             $counter    = $this->result_model->count($time);
             
@@ -736,7 +738,6 @@ class Report extends CI_Controller {
                 $yesterday  = $this->performance->yesterday_green();
                 
                 $this->result_model->insert($yesterday,$time);
-                print $key;
             }
             
         }
