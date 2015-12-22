@@ -714,7 +714,7 @@ class Report extends CI_Controller {
             // Load date helper for date related task
             $this->load->helper('date');
             
-            $this->load->library('encrypt');
+            $this->load->helper('security');
             
             // Get Current Time
             $waktu      = now();
@@ -724,7 +724,7 @@ class Report extends CI_Controller {
             // Check if there is a record for today already
             $counter    = $this->result_model->count($time);
             
-            $key    = $this->encrypt->encode($time);
+            $key    = do_hash($time);
             
             if ($counter == 1)
             {
