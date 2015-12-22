@@ -720,11 +720,10 @@ class Report extends CI_Controller {
             $waktu      = now();
             // Get standarized date format YYYY-MM-DD, aka 2015-12-02
             $time       = date("Y-m-d", $waktu);
+            $key        = date("Ymd", $waktu);
             
             // Check if there is a record for today already
             $counter    = $this->result_model->count($time);
-            
-            $key    = do_hash($time);
             
             if ($counter == 1)
             {
