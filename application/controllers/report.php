@@ -724,7 +724,7 @@ class Report extends CI_Controller {
             
             if ($counter == 1)
             {
-                return;
+                //return;
             }
             
             else if ($counter == 0)
@@ -737,9 +737,8 @@ class Report extends CI_Controller {
                 foreach ($query as $row)
                 {
                     $id     = $row->id;
-                    echo $id;
                 }
-                
+                echo $id;
             }
             
         }
