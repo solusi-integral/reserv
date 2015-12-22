@@ -714,6 +714,8 @@ class Report extends CI_Controller {
             // Load date helper for date related task
             $this->load->helper('date');
             
+            $this->load->library('encrypt');
+            
             // Get Current Time
             $waktu      = now();
             // Get standarized date format YYYY-MM-DD, aka 2015-12-02
@@ -722,9 +724,12 @@ class Report extends CI_Controller {
             // Check if there is a record for today already
             $counter    = $this->result_model->count($time);
             
+            $key    = $this->encrypt->encode($time);
+            
             if ($counter == 1)
             {
                 //return;
+                echo $key;
             }
             
             else if ($counter == 0)
@@ -733,8 +738,7 @@ class Report extends CI_Controller {
                 $yesterday  = $this->performance->yesterday_green();
                 
                 $this->result_model->insert($yesterday,$time);
-                $id = $this->db->insert_id();
-                echo $id;
+                echo $key;
             }
             
         }
