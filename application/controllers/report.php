@@ -726,7 +726,6 @@ class Report extends CI_Controller {
             if ($counter == 1)
             {
                 //return;
-                print $key;
             }
             
             else if ($counter == 0)
