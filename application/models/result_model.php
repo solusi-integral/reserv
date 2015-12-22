@@ -36,4 +36,16 @@ class Result_model extends CI_Model {
         // Return the data to function caller
         return $this->db->insert('daily_result',$data);
     }
+    
+    public function lookup($time)
+    {
+        // Lookup database for spesific criteria
+        $this->db->where('date =', $time);
+        // Get data from notification table
+        $this->db->from('daily_result');
+        // Execute the query and store it
+        $query  = $this->db->get();
+        // return the query
+        return $query;
+    }
 }

@@ -714,19 +714,28 @@ class Report extends CI_Controller {
             // Load date helper for date related task
             $this->load->helper('date');
             
+            $this->load->driver('cache');
+            
             // Get Current Time
             $waktu      = now();
             // Get standarized date format YYYY-MM-DD, aka 2015-12-02
             $time       = date("Y-m-d", $waktu);
-            
             
             // Check if there is a record for today already
             $counter    = $this->result_model->count($time);
             
             if ($counter == 1)
             {
-                //return;
-                
+                $key    = "Pusxg".$time;
+                if ( ! $data = $this->cache->memcached->get($key))
+                    {
+                        // Get race info based on race id
+                        $query  = $this->result_model->lookup($time);
+                        // Store result into $data variable
+                        $data   = $query->result();
+                        // Save data to Memcached
+                        $this->cache->memcached->save($key, $data, 604800);
+                    }
             }
             
             else if ($counter == 0)
