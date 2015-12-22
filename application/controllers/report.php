@@ -714,8 +714,6 @@ class Report extends CI_Controller {
             // Load date helper for date related task
             $this->load->helper('date');
             
-            $this->load->helper('security');
-            
             // Get Current Time
             $waktu      = now();
             // Get standarized date format YYYY-MM-DD, aka 2015-12-02
