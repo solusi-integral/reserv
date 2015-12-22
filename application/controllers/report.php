@@ -718,9 +718,7 @@ class Report extends CI_Controller {
             $waktu      = now();
             // Get standarized date format YYYY-MM-DD, aka 2015-12-02
             $time       = date("Y-m-d", $waktu);
-            $key        = date("Ymd", $waktu);
             
-            print($key);
             
             // Check if there is a record for today already
             $counter    = $this->result_model->count($time);
@@ -729,7 +727,7 @@ class Report extends CI_Controller {
             {
                 //return;
                 
-                echo 'okay';
+                print('okay');
             }
             
             else if ($counter == 0)
