@@ -726,6 +726,8 @@ class Report extends CI_Controller {
             if ($counter == 1)
             {
                 //return;
+                
+                echo 'okay';
             }
             
             else if ($counter == 0)
