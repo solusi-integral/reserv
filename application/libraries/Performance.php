@@ -319,7 +319,7 @@ class Performance {
             $CI =& get_instance();
             $CI->load->model('report_model');
             $data   = $CI->report_model->individual_performance($name);
-            $all    = $CI->sumrace();
+            $all    = $this->sumrace();
             $green  = round($data/$all*100, 2);
             return $green;
         }
