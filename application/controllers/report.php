@@ -728,7 +728,7 @@ class Report extends CI_Controller {
             if ($counter == 1)
             {
                 //return;
-                echo $key;
+                print $key;
             }
             
             else if ($counter == 0)
@@ -737,7 +737,7 @@ class Report extends CI_Controller {
                 $yesterday  = $this->performance->yesterday_green();
                 
                 $this->result_model->insert($yesterday,$time);
-                echo $key;
+                print $key;
             }
             
         }
