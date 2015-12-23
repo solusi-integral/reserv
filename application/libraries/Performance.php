@@ -324,7 +324,7 @@ class Performance {
             return $green;
         }
         
-        private function __result_week_total($week)
+        public function result_week_total($week)
         {
             if ($week == 1){
                 $timeaa   = "2015W011";
@@ -485,10 +485,10 @@ class Performance {
             } else {
                 show_error('Undefined week number');
             }
-            return $this->__get_weekly_total($timeaa, $timebb);
+            return $this->get_weekly_total($timeaa, $timebb);
         }
         
-        private function __result_week_red($week)
+        public function result_week_red($week)
         {
             if ($week == 1){
                 $timeaa   = "2015W011";
@@ -660,16 +660,16 @@ class Performance {
             } else {
                 show_error('Undefined week number');
             }
-            $redul      = $this->__get_weekly_red_ul($timeaa, $timebb);
-            $reddl      = $this->__get_weekly_red_dl($timeaa, $timebb);
+            $redul      = $this->get_weekly_red_ul($timeaa, $timebb);
+            $reddl      = $this->get_weekly_red_dl($timeaa, $timebb);
             $redtotal   = $redul+$reddl;
             return $redtotal;
         }
         
-        private function __result_week_green($week)
+        public function result_week_green($week)
         {
-            $red        = $this->__result_week_red($week);
-            $total      = $this->__result_week_total($week);
+            $red        = $this->result_week_red($week);
+            $total      = $this->result_week_total($week);
             if ($total == 0){
                 $perce      = 0;
             } else if ($red == 0){
@@ -682,12 +682,13 @@ class Performance {
             return $perce;
         }
         
-        private function __get_weekly_total($timeaa, $timebb)
+        public function get_weekly_total($timeaa, $timebb)
         {
-            $this->load->model('report_model');
+            $CI =& get_instance();
+            $CI->load->model('report_model');
             $timea  = date("Y-m-d",strtotime($timeaa));
             $timeb  = date("Y-m-d",strtotime($timebb));
-            $query  = $this->report_model->weekly_performance($timea, $timeb);
+            $query  = $CI->report_model->weekly_performance($timea, $timeb);
             return $query;
         }
         
@@ -700,10 +701,11 @@ class Performance {
          */
         private function __get_weekly_red_ul($timeaa, $timebb)
         {
-            $this->load->model('report_model');
+            $CI =& get_instance();
+            $CI->load->model('report_model');
             $timea  = date("Y-m-d",strtotime($timeaa));
             $timeb  = date("Y-m-d",strtotime($timebb));
-            $query  = $this->report_model->weekly_performance_redul($timea, $timeb);
+            $query  = $CI->report_model->weekly_performance_redul($timea, $timeb);
             return $query;
         }
         
@@ -716,10 +718,11 @@ class Performance {
          */
         private function __get_weekly_red_dl($timeaa, $timebb)
         {
-            $this->load->model('report_model');
+            $CI =& get_instance();
+            $CI->load->model('report_model');
             $timea  = date("Y-m-d",strtotime($timeaa));
             $timeb  = date("Y-m-d",strtotime($timebb));
-            $query  = $this->report_model->weekly_performance_reddl($timea, $timeb);
+            $query  = $CI->report_model->weekly_performance_reddl($timea, $timeb);
             return $query;
         }
     
