@@ -743,7 +743,7 @@ class Report extends CI_Controller {
                         // Save data to Memcached
                         $this->cache->memcached->save($key, $perce, 604800);
                     }
-                $this->output->set_output('pilihan1');
+                $this->output->set_output($perce);
             }
             
             else if ($counter == 0)
