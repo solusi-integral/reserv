@@ -731,7 +731,6 @@ class Report extends CI_Controller {
             $key1   = 'IdfhJdf'.$today;
             
             // Check if there is a record for today already
-            $counter    = $this->result_model->count($time);
             if ( ! $counter = $this->cache->memcached->get($key1))
                     {
                         $counter    = $this->result_model->count($time);
