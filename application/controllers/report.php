@@ -741,7 +741,7 @@ class Report extends CI_Controller {
                             $perce = $row->percentage;
                         }
                         // Save data to Memcached
-                        $this->cache->memcached->save($key, $perce, 604800);
+                        $this->cache->memcached->save($key, $perce, 2160000);
                     }
                 $this->output->set_output($perce);
             }
