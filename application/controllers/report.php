@@ -786,7 +786,7 @@ class Report extends CI_Controller {
             $currentYear    = date('Y');
             $lastWeek       = $currentWeekNumber-1;
             $timeba     = $currentYear.'W'.$lastWeek.'1';
-            $timeba     = $currentYear.'W'.$lastWeek.'7';
+            $timebe     = $currentYear.'W'.$lastWeek.'7';
             //$hasil  = $this->performance->__result_week_green($lastWeek);
             $this->output->set_output($timeba);
         }
