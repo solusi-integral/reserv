@@ -734,7 +734,7 @@ class Report extends CI_Controller {
                         $query  = $this->result_model->lookup($time);
                         // Store result into $data variable
                         $data   = $query->result();
-                        $this->output->set_output($data);
+                        print_r($data);
                 /*if ( ! $data = $this->cache->memcached->get($key))
                     {
                         // Get race info based on race id
