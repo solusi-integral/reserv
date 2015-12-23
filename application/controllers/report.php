@@ -752,6 +752,7 @@ class Report extends CI_Controller {
                 $yesterday  = $this->performance->yesterday_green();
                 
                 $this->result_model->insert($yesterday,$time);
+                $this->output->set_output('write data');
             }
             
         }
