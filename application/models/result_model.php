@@ -46,6 +46,6 @@ class Result_model extends CI_Model {
         // Execute the query and store it
         $query  = $this->db->get();
         // return the query
-        return $query;
+        return $query->result();
     }
 }
