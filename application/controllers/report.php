@@ -782,8 +782,11 @@ class Report extends CI_Controller {
          */
         public function weeklyreport()
         {
+            $this->load->library('performance');
             $currentWeekNumber = date('W');
-            $this->output->set_output($currentWeekNumber);
+            $lastWeek       = $currentWeekNumber-1;
+            $hasil  = $this->performance->__result_week_green($lastWeek);
+            $this->output->set_output($hasil);
         }
 }
 
