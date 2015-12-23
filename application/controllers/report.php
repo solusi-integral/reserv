@@ -730,7 +730,12 @@ class Report extends CI_Controller {
             if ($counter == 1)
             {
                 $key    = "Pusxg".$time;
-                if ( ! $data = $this->cache->memcached->get($key))
+                // Get race info based on race id
+                        $query  = $this->result_model->lookup($time);
+                        // Store result into $data variable
+                        $data   = $query->result();
+                        $this->output->set_output($data);
+                /*if ( ! $data = $this->cache->memcached->get($key))
                     {
                         // Get race info based on race id
                         $query  = $this->result_model->lookup($time);
@@ -738,7 +743,7 @@ class Report extends CI_Controller {
                         $data   = $query->result();
                         // Save data to Memcached
                         $this->cache->memcached->save($key, $data, 604800);
-                    }
+                    }*/
             }
             
             else if ($counter == 0)
