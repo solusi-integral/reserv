@@ -726,9 +726,18 @@ class Report extends CI_Controller {
             
             // Get Time for key
             $time        = date("Y-m-d", strtotime("-1 days"));
+            $today       = date("Y-m-d", $waktu);
+            
+            $key1   = 'IdfhJdf'.$today;
             
             // Check if there is a record for today already
             $counter    = $this->result_model->count($time);
+            if ( ! $counter = $this->cache->memcached->get($key1))
+                    {
+                        $counter    = $this->result_model->count($time);
+                        // Save data to Memcached
+                        $this->cache->memcached->save($key1, $counter, 72000);
+                    }
             
             if ($counter == 1)
             {
