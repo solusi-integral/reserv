@@ -699,7 +699,7 @@ class Performance {
          * @param type $timebb
          * @return type
          */
-        private function __get_weekly_red_ul($timeaa, $timebb)
+        public function get_weekly_red_ul($timeaa, $timebb)
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
@@ -716,7 +716,7 @@ class Performance {
          * @param type $timebb
          * @return type
          */
-        private function __get_weekly_red_dl($timeaa, $timebb)
+        public function get_weekly_red_dl($timeaa, $timebb)
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
