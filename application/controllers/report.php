@@ -713,7 +713,7 @@ class Report extends CI_Controller {
             $this->load->model('result_model','',TRUE);
             // Load date helper for date related task
             $this->load->helper('date');
-            
+            // Load Cache Driver
             $this->load->driver('cache');
             
             // Get Current Time
@@ -729,8 +729,8 @@ class Report extends CI_Controller {
             
             if ($counter == 1)
             {
+                // Set memcached key
                 $key    = "Pusxg".$time;
-                // Get race info based on race id
                 
                 if ( ! $perce = $this->cache->memcached->get($key))
                     {
