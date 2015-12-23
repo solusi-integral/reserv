@@ -796,8 +796,7 @@ class Report extends CI_Controller {
             $green      = $weekly_tot-$weekly_red;
             
             $perce      = round($green/$weekly_tot*100, 2);
-            $hasil  = $this->performance->result_week_green($lastWeek);
-            $this->output->set_output($hasil);
+            $this->output->set_output($perce);
         }
 }
 
