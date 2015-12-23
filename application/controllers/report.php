@@ -175,6 +175,9 @@ class Report extends CI_Controller {
             // Send notification if ops team missed 5, 10, or 30 races.
             $this->__mailmissed($id);
             
+            // Store Daily Report into Database
+            $this->__dailyreport();
+            
             // Proccess the output using private function __jsonoutput
             $this->__jsonoutput($data2);
         }
@@ -707,7 +710,7 @@ class Report extends CI_Controller {
          * remote server.
          * 
          */
-        public function dailyreport()
+        private function __dailyreport()
         {
             // Load database model for easier database related task
             $this->load->model('result_model','',TRUE);
