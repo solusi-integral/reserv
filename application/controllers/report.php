@@ -780,9 +780,10 @@ class Report extends CI_Controller {
          * Calculation will be done every Saturday.
          * 
          */
-        private function __weeklyreport()
+        public function weeklyreport()
         {
-            
+            $currentWeekNumber = date('W');
+            $this->output->set_output($currentWeekNumber);
         }
 }
 
