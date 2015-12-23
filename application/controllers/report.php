@@ -731,18 +731,18 @@ class Report extends CI_Controller {
             {
                 $key    = "Pusxg".$time;
                 // Get race info based on race id
-                        $query  = $this->result_model->lookup($time);
-                        // Store result into $data variable
-                        print_r($query);
-                /*if ( ! $data = $this->cache->memcached->get($key))
+                        
+                if ( ! $perce = $this->cache->memcached->get($key))
                     {
-                        // Get race info based on race id
                         $query  = $this->result_model->lookup($time);
                         // Store result into $data variable
-                        $data   = $query->result();
+                        foreach (query as $row)
+                        {
+                            $perce = $row->percentage;
+                        }
                         // Save data to Memcached
-                        $this->cache->memcached->save($key, $data, 604800);
-                    }*/
+                        $this->cache->memcached->save($key, $perce, 604800);
+                    }
             }
             
             else if ($counter == 0)
