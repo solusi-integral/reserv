@@ -787,8 +787,17 @@ class Report extends CI_Controller {
             $lastWeek       = $currentWeekNumber-1;
             $timeba     = $currentYear.'W'.$lastWeek.'1';
             $timebe     = $currentYear.'W'.$lastWeek.'7';
+            $weekly_tot = $this->performance->__get_weekly_total($timeba,$timebe);
+            $weekly_rul = $this->performance->__get_weekly_red_ul($timeba,$timebe);
+            $weekly_rdl = $this->performance->__get_weekly_red_dl($timeba,$timebe);
+            
+            $weekly_red = $weekly_rul+$weekly_rdl;
+            
+            $green      = $weekly_tot-$weekly_red;
+            
+            $perce      = round($green/$weekly_tot*100, 2);
             //$hasil  = $this->performance->__result_week_green($lastWeek);
-            $this->output->set_output($timeba);
+            $this->output->set_output($perce);
         }
 }
 

@@ -691,6 +691,13 @@ class Performance {
             return $query;
         }
         
+        /**
+         * Red Result Above Required Parameter
+         * 
+         * @param type $timeaa
+         * @param type $timebb
+         * @return type
+         */
         private function __get_weekly_red_ul($timeaa, $timebb)
         {
             $this->load->model('report_model');
@@ -700,6 +707,13 @@ class Performance {
             return $query;
         }
         
+        /**
+         * Red Result Below Required Parameter
+         * 
+         * @param type $timeaa
+         * @param type $timebb
+         * @return type
+         */
         private function __get_weekly_red_dl($timeaa, $timebb)
         {
             $this->load->model('report_model');
