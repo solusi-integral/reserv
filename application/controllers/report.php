@@ -736,7 +736,7 @@ class Report extends CI_Controller {
                     {
                         $query  = $this->result_model->lookup($time);
                         // Store result into $data variable
-                        foreach (query as $row)
+                        foreach ($query as $row)
                         {
                             $perce = $row->percentage;
                         }
