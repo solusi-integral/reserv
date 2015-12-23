@@ -743,7 +743,7 @@ class Report extends CI_Controller {
                         // Save data to Memcached
                         $this->cache->memcached->save($key, $perce, 2160000);
                     }
-                $this->output->set_output($perce);
+                return;
             }
             
             else if ($counter == 0)
@@ -752,7 +752,8 @@ class Report extends CI_Controller {
                 $yesterday  = $this->performance->yesterday_green();
                 
                 $this->result_model->insert($yesterday,$time);
-                $this->output->set_output('write data');
+                
+                return;
             }
             
         }
