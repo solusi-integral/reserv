@@ -782,11 +782,20 @@ class Report extends CI_Controller {
         public function weeklyreport()
         {
             $this->load->library('performance');
+            $this->load->model('result_model');
             $currentWeekNumber = date('W');
             $currentYear    = date('Y');
             $lastWeek       = $currentWeekNumber-1;
             $timeba     = $currentYear.'W'.$lastWeek.'1';
             $timebe     = $currentYear.'W'.$lastWeek.'7';
+            
+            $key1       = 'IDfhOdk'.$currentYear.$lastWeek;
+            if ( ! $counter = $this->cache->memcached->get($key1))
+                    {
+                        $counter    = $this->result_model->week_count($lastWeek,$currentYear);
+                        // Save data to Memcached
+                        $this->cache->memcached->save($key1, $counter, 72000);
+                    }
             $weekly_tot = $this->performance->get_weekly_total($timeba,$timebe);
             $weekly_rul = $this->performance->get_weekly_red_ul($timeba,$timebe);
             $weekly_rdl = $this->performance->get_weekly_red_dl($timeba,$timebe);
@@ -796,7 +805,7 @@ class Report extends CI_Controller {
             $green      = $weekly_tot-$weekly_red;
             
             $perce      = round($green/$weekly_tot*100, 2);
-            $this->output->set_output($perce);
+            $this->output->set_output($counter);
         }
 }
 
