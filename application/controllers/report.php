@@ -815,7 +815,18 @@ class Report extends CI_Controller {
             
             else if ($counter == 1)
             {
-                
+                $key1       = '34UfkjUAwf'.$currentYear.$lastWeek;
+                if ( ! $counter = $this->cache->memcached->get($key1))
+                        {
+                            $query    = $this->result_model->week_lookup($lastWeek,$currentYear);
+                            // Store result into $data variable
+                            foreach ($query as $row)
+                            {
+                                $perce = $row->percentage;
+                            }
+                            // Save data to Memcached
+                            $this->cache->memcached->save($key1, $perce, 2160000);
+                        }
             }
             
             /**
