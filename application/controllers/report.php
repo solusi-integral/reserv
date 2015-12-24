@@ -80,6 +80,7 @@ class Report extends CI_Controller {
             if ($actday == "Sat")
             {
                 $data['counted']    = 0;
+                $this->__weeklyreport();
             }
             
             // Count races during operational time
@@ -779,7 +780,7 @@ class Report extends CI_Controller {
          * Calculation will be done every Saturday.
          * 
          */
-        public function weeklyreport()
+        private function __weeklyreport()
         {
             $this->load->library('performance');
             $this->load->model('result_model');
@@ -829,17 +830,8 @@ class Report extends CI_Controller {
                         }
             }
             
-            /**
-            $weekly_tot = $this->performance->get_weekly_total($timeba,$timebe);
-            $weekly_rul = $this->performance->get_weekly_red_ul($timeba,$timebe);
-            $weekly_rdl = $this->performance->get_weekly_red_dl($timeba,$timebe);
-            
-            $weekly_red = $weekly_rul+$weekly_rdl;
-            
-            $green      = $weekly_tot-$weekly_red;
-            
-            $perce      = round($green/$weekly_tot*100, 2); */
-            $this->output->set_output($counter);
+            return;
+            //$this->output->set_output($counter);
         }
 }
 
