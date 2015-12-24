@@ -798,6 +798,27 @@ class Report extends CI_Controller {
                         // Save data to Memcached
                         $this->cache->memcached->save($key1, $counter, 72000);
                     }
+                    
+            if ($counter == 0)
+            {
+                $weekly_tot = $this->performance->get_weekly_total($timeba,$timebe);
+                $weekly_rul = $this->performance->get_weekly_red_ul($timeba,$timebe);
+                $weekly_rdl = $this->performance->get_weekly_red_dl($timeba,$timebe);
+
+                $weekly_red = $weekly_rul+$weekly_rdl;
+
+                $green      = $weekly_tot-$weekly_red;
+
+                $perce      = round($green/$weekly_tot*100, 2);
+                $this->result_model->week_insert($lastWeek,$currentYear,$perce);
+            }
+            
+            else if ($counter == 1)
+            {
+                
+            }
+            
+            /**
             $weekly_tot = $this->performance->get_weekly_total($timeba,$timebe);
             $weekly_rul = $this->performance->get_weekly_red_ul($timeba,$timebe);
             $weekly_rdl = $this->performance->get_weekly_red_dl($timeba,$timebe);
@@ -806,7 +827,7 @@ class Report extends CI_Controller {
             
             $green      = $weekly_tot-$weekly_red;
             
-            $perce      = round($green/$weekly_tot*100, 2);
+            $perce      = round($green/$weekly_tot*100, 2); */
             $this->output->set_output($counter);
         }
 }
