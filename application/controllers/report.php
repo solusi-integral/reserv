@@ -783,6 +783,8 @@ class Report extends CI_Controller {
         {
             $this->load->library('performance');
             $this->load->model('result_model');
+            // Load Cache Driver
+            $this->load->driver('cache');
             $currentWeekNumber = date('W');
             $currentYear    = date('Y');
             $lastWeek       = $currentWeekNumber-1;
