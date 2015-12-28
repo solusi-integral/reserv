@@ -654,10 +654,10 @@ class Report extends CI_Controller {
             $race['sepuluh']    = $race['lima'] + $query_06 + $query_07 + $query_08 + $query_09 + $query_10;
             $race['tigapuluh']  = $race['sepuluh'] + $query_11 + $query_12 + $query_13 + $query_14 + $query_15 + $query_16 + $query_17 + $query_18 + $query_19 + $query_20 + $query_21 + $query_22 + $query_23 + $query_24 + $query_25 + $query_26 + $query_27 + $query_28 + $query_29 + $query_30;
 
-            $output     = $race['lima'];
-            
             //return $race;
-            $this->output->set_output($output);
+            $this->output->set_output($race['lima']);
+            $this->output->set_output($race['sepuluh']);
+            $this->output->set_output($race['tigapuluh']);
         }
         
         private function __processrace($id)
