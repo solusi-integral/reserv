@@ -257,6 +257,8 @@ class Report extends CI_Controller {
                 {
                     // call another function to update ticket
                     $this->__freshdsk_update($ticket);
+                    // Send SMS using Twilio API
+                    $this->_pesan();
                     // Set notif couter back to 0
                     $notif      = 0;
                     // Update the database
@@ -289,6 +291,8 @@ class Report extends CI_Controller {
                 
                 // Insert the ticket id and time to the database
                 $this->notif_model->insert($ticket_id,$time);
+                // Send SMS using Twilio API
+                $this->_pesan();
             }
             
             return;
@@ -381,6 +385,42 @@ class Report extends CI_Controller {
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
             $server_output = curl_exec($ch);
             return $server_output;
+        }
+        
+        private function _pesan()
+        {
+            /**
+             * Metode Untuk Mengirim SMS Melalui Twilio
+             * 
+             * Metode ini digunakan untuk mengirimkan SMS melalui API Twilio.
+             * 
+             * @author Indra Kurniawan <indra@indramgl.web.id>
+             * 
+             * @var object  $service    Object dari API Twilio
+             * @var mixed   $number     Nomor Telepon Twilio Kita
+             * @var mixed   $dest       Nomor telepon pelamar
+             * @var int     $kode       Kode aktivasi HP
+             * @var string  $message    Pesan yang dikirim ke HP pelamar
+             * @var object  $msg        Hasil proses API Twilio, message ID
+             * 
+             */
+            
+            // Memanggil helper Twilio
+            $this->load->helper('twilio');
+            // Menginisiasi API Twilio
+            $service = get_twilio_service();
+            // Nomor Twilio kita
+            $number = "+12677056262";
+            $dest   = "+6285729416149";
+            // Konfigurasi pesan yang akan dikirim ke pelamar
+            $message    = "Operation team has missed 5 races consecutively. This is an automated notification.";
+            
+            // Mengirim perintah SMS ke API Twilio
+            $msg = $service->account->messages->sendMessage($number, $dest, $message);
+            
+            // Mengembalikan hasil ke fungsi pemanggil
+            return $msg->sid;
+            //$this->load->view('lamaran_sendsms');
         }
         
         private function __mailmissed($id)
