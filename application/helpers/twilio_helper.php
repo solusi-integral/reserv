@@ -31,5 +31,3 @@ function get_twilio_service() {
 
 	return $twilio_service;
 }
-
-?>
