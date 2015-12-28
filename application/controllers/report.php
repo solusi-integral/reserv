@@ -174,7 +174,7 @@ class Report extends CI_Controller {
             $data2['Result']        = $results;
             
             // Send notification if ops team missed 5, 10, or 30 races.
-            $this->__mailmissed($id);
+            //$this->__mailmissed($id);
             
             // Store Daily Report into Database
             $this->__dailyreport();
@@ -656,7 +656,7 @@ class Report extends CI_Controller {
             return $race;
         }
         
-        private function __processrace($id)
+        public function processrace($id)
         {
             // Load Report_model helper
             $this->load->model('report_model');
@@ -697,7 +697,8 @@ class Report extends CI_Controller {
             }
             
             // Return boolean value to function caller
-            return $alert;
+            //return $alert;
+            $this->output->set_output($alert);
         }
         
         /**
