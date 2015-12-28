@@ -1,6 +1,6 @@
 <?php
 
-abstract class Services_Twilio_TaskRouterListResource extends Services_Twilio_NextGenListResource {
+abstract class Services_Twilio_IPMessagingListResource extends Services_Twilio_NextGenListResource {
 
     public function __construct($client, $uri) {
         $name = $this->getResourceName(true);
@@ -10,17 +10,9 @@ abstract class Services_Twilio_TaskRouterListResource extends Services_Twilio_Ne
          * overridden by child classes if the rule doesn't work.
          */
         if (!isset($this->instance_name)) {
-            $this->instance_name = "Services_Twilio_Rest_TaskRouter_" . rtrim($name, 's');
+            $this->instance_name = "Services_Twilio_Rest_IPMessaging_" . rtrim($name, 's');
         }
 
         parent::__construct($client, $uri);
     }
-
-	protected function setupSubresource($name) {
-		$constantized = ucfirst(self::camelize($name));
-		$type = get_class($this) . $constantized;
-		$this->subresources[$name] = new $type(
-			$this->client, $this->uri . "/". $constantized
-		);
-	}
 }
