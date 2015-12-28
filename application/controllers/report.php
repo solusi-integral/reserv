@@ -660,7 +660,7 @@ class Report extends CI_Controller {
             $this->output->set_output($output);
         }
         
-        public function processrace($id)
+        private function __processrace($id)
         {
             // Load Report_model helper
             $this->load->model('report_model');
@@ -701,8 +701,8 @@ class Report extends CI_Controller {
             }
             
             // Return boolean value to function caller
-            //return $alert;
-            $this->output->set_output($alert);
+            return $alert;
+            //$this->output->set_output($alert);
         }
         
         /**
