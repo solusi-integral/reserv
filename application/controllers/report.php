@@ -383,55 +383,7 @@ class Report extends CI_Controller {
             return $server_output;
         }
         
-        /**
-             * 
-             * 
-             * Ref: https://github.com/osTicket/osTicket-1.7/blob/develop/setup/doc/api.md
-             * Ref: https://github.com/osTicket/osTicket-1.7/blob/develop/setup/doc/api/tickets.md
-             */
-        private function __osticket($name,$email,$subject,$message)
-        {   
-            $config = array(
-                  'url'=>'http://ticket.local.solusi-integral.co.id/api/tickets.json',  // URL to site.tld/api/tickets.json
-                  'key'=>'73E5B1264DC9D4327D3B695932BE89B6'  // API Key goes here
-            );
-            
-            $data = array(
-                'name'      =>      $name,  // from name aka User/Client Name
-                'email'     =>      $email,  // from email aka User/Client Email
-                'phone'     =>      '123456789',  // phone number aka User/Client Phone Number
-                'subject'   =>      $subject,  // test subject, aka Issue Summary
-                'message'   =>      $message,  // test ticket body, aka Issue Details.
-                'ip'        =>      '161.202.10.197', // Should be IP address of the machine thats trying to open the ticket.
-                'topicId'   =>      '10' // the help Topic that you want to use for the ticket 
-                //'Agency'  =>		'58', //this is an example of a custom list entry. This should be the number of the entry.
-                //'Site'	=>		'Bermuda'; // this is an example of a custom text field.  You can push anything into here you want.	
-                //'attachments' => array()
-            );
-            
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $config['url']);
-            curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-            curl_setopt($ch, CURLOPT_USERAGENT, 'osTicket API Client v1.8');
-            curl_setopt($ch, CURLOPT_HEADER, FALSE);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array( 'Expect:', 'X-API-Key: '.$config['key']));
-            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, FALSE);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-            $result=curl_exec($ch);
-            $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-            curl_close($ch);
-
-            if ($code != 201)
-                {
-                    die('Unable to create ticket: '.$result);
-                }
-            $ticket_id = (int) $result;
-            
-            return $result;
-        }
-        
-        public function mailmissed($id)
+        private function __mailmissed($id)
         {
             $race   = $this->__lookup30races($id);
             if ($race['sepuluh'] == 5)
@@ -463,8 +415,8 @@ class Report extends CI_Controller {
             {
                 $this->__mailonmissed30();
             }
-            $this->output->set_output($race['sepuluh']);
-            //return;
+            //$this->output->set_output($race['sepuluh']);
+            return;
         }
         
         /**
