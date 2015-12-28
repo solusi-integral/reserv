@@ -431,7 +431,7 @@ class Report extends CI_Controller {
             return $result;
         }
         
-        private function __mailmissed($id)
+        public function mailmissed($id)
         {
             $race   = $this->__lookup30races($id);
             if ($race['lima'] == 5)
@@ -447,6 +447,7 @@ class Report extends CI_Controller {
             {
                 $this->__mailonmissed30();
             }
+            $this->output->set_output($race);
             return;
         }
         
@@ -578,7 +579,7 @@ class Report extends CI_Controller {
         }
         
         // Please change it back to private function when you are done
-        private function __lookup30races($id)
+        public function lookup30races($id)
         {
             // Load Report_model helper
             $this->load->model('report_model');
@@ -653,7 +654,8 @@ class Report extends CI_Controller {
             $race['sepuluh']    = $race['lima'] + $query_06 + $query_07 + $query_08 + $query_09 + $query_10;
             $race['tigapuluh']  = $race['sepuluh'] + $query_11 + $query_12 + $query_13 + $query_14 + $query_15 + $query_16 + $query_17 + $query_18 + $query_19 + $query_20 + $query_21 + $query_22 + $query_23 + $query_24 + $query_25 + $query_26 + $query_27 + $query_28 + $query_29 + $query_30;
 
-            return $race;
+            //return $race;
+            $this->output->set_output($race['lima']);
         }
         
         public function processrace($id)
