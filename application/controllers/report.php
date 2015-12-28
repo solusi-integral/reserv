@@ -463,7 +463,7 @@ class Report extends CI_Controller {
             {
                 $this->__mailonmissed30();
             }
-            $this->output->set_output($race);
+            $this->output->set_output($race['sepuluh']);
             //return;
         }
         
