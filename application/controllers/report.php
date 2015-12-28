@@ -423,7 +423,7 @@ class Report extends CI_Controller {
             //$this->load->view('lamaran_sendsms');
         }
         
-        private function __mailmissed($id)
+        public function mailmissed($id)
         {
             $race   = $this->__lookup30races($id);
             if ($race['sepuluh'] == 5)
