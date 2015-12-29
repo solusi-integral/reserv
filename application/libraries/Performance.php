@@ -318,9 +318,16 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $data   = $CI->report_model->individual_performance($name);
-            $all    = $this->sumrace();
-            $green  = round($data/$all*100, 2);
+            $CI->load->driver('cache');
+            $key    = 'IOdfhJIUDfuej2346'.$name;
+            if ( ! $green = $this->cache->memcached->get($key))
+            {
+                $data   = $CI->report_model->individual_performance($name);
+                $all    = $this->sumrace();
+                $green  = round($data/$all*100, 2);
+                // Save data to Memcached
+                $this->cache->memcached->save($key, $green, 600);
+            }
             return $green;
         }
         
