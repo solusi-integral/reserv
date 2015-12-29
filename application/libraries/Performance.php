@@ -68,7 +68,15 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $Gtyper                = $CI->report_model->all_gtype_sum_race();
+            $CI->load->driver('cache');
+            $key    = 'UIfg32487jkFYerkfgadfilyr89';
+            if ( ! $Gtyper = $CI->cache->memcached->get($key))
+            {
+                // Savae data from report model, all sum redrace to variable $data
+                $Gtyper   = $CI->report_model->all_gtype_sum_race();
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $Gtyper, 600);
+            }
             return $Gtyper;          
         }
         
@@ -76,7 +84,15 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $Ttyper                = $CI->report_model->all_ttype_sum_race();
+            $CI->load->driver('cache');
+            $key    = 'Seury239KFD2347JKDfgyrghk';
+            if ( ! $Ttyper = $CI->cache->memcached->get($key))
+            {
+                // Savae data from report model, all sum redrace to variable $data
+                $Ttyper    = $CI->report_model->all_ttype_sum_race();
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $Ttyper, 600);
+            }
             return $Ttyper;
         }
         
@@ -84,7 +100,15 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $Rtyper                = $CI->report_model->all_rtype_sum_race();
+            $CI->load->driver('cache');
+            $key    = 'Xlfyrklah87234609KLYRFkdfk';
+            if ( ! $Rtyper = $CI->cache->memcached->get($key))
+            {
+                // Savae data from report model, all sum redrace to variable $data
+                $Rtyper    = $CI->report_model->all_rtype_sum_race();
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $Rtyper, 600);
+            }
             return $Rtyper;
         }
         
@@ -110,7 +134,15 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $today_total  = $CI->report_model->today_sum_race();
+            $CI->load->driver('cache');
+            $key    = 'Qeroiuyajkh3496KDJfg3456';
+            if ( ! $today_total = $CI->cache->memcached->get($key))
+            {
+                // Savae data from report model, all sum redrace to variable $data
+                $today_total  = $CI->report_model->today_sum_race();
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $today_total, 600);
+            }
             return $today_total;
         }
         
@@ -118,10 +150,17 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $todayul        = $CI->report_model->today_red_ul();
-            $todaydl        = $CI->report_model->today_red_dl();
-            $today_total    = $todayul+$todaydl;
-            $red    = $today_total;
+            $CI->load->driver('cache');
+            $key    = 'DKfyiu49386akfKJfi3u2gI';
+            if ( ! $red = $CI->cache->memcached->get($key))
+            {
+                $todayul        = $CI->report_model->today_red_ul();
+                $todaydl        = $CI->report_model->today_red_dl();
+                $today_total    = $todayul+$todaydl;
+                $red    = $today_total;
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $red, 600);
+            }
             return $red;
         }
         
@@ -164,7 +203,14 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $today_total    = $CI->report_model->yesterday_sum_race();
+            $CI->load->driver('cache');
+            $key    = 'Zlxfkerr09283jkKUDrfkjdf';
+            if ( ! $today_total = $CI->cache->memcached->get($key))
+            {
+                $today_total    = $CI->report_model->yesterday_sum_race();
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $today_total, 600);
+            }
             return $today_total;
         }
         
@@ -172,10 +218,17 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $todayul        = $CI->report_model->yesterday_red_ul();
-            $todaydl        = $CI->report_model->yesterday_red_dl();
-            $today_total    = $todayul+$todaydl;
-            $red    = $today_total;
+            $CI->load->driver('cache');
+            $key    = 'Roiry29386KJSDtkdjfgbkua';
+            if ( ! $red = $CI->cache->memcached->get($key))
+            {
+                $todayul        = $CI->report_model->yesterday_red_ul();
+                $todaydl        = $CI->report_model->yesterday_red_dl();
+                $today_total    = $todayul+$todaydl;
+                $red    = $today_total;
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $red, 600);
+            }
             return $red;
         }
         
