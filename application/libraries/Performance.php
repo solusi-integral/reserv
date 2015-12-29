@@ -377,7 +377,14 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $data   = $CI->report_model->get_races_6();
+            $CI->load->driver('cache');
+            $key    = 'IUy4238976kTRk3j2y9akdjtg';
+            if ( ! $data = $CI->cache->memcached->get($key))
+            {
+                $data   = $CI->report_model->get_races_6();
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $data, 120);
+            }
             return $data;
         }
         

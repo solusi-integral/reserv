@@ -78,7 +78,6 @@ class Pajax extends CI_Controller {
         {
             $this->load->library('performance');
             $data['last6']      = $this->performance->last6();
-            $this->output->cache(2);
             $this->load->view('pjax_last6',$data);
         }
         
