@@ -24,8 +24,15 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            // Save data from report model then save return variable to $data
-            $data   = $CI->report_model->all_sum_race();
+            $CI->load->driver('cache');
+            $key    = 'KJdgh38If9247adfkj9348KJdfg';
+            if ( ! $data = $CI->cache->memcached->get($key))
+            {
+                // Save data from report model then save return variable to $data
+                $data   = $CI->report_model->all_sum_race();
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $data, 600);
+            }
             // Return data to the function
             return $data;
         }
@@ -35,8 +42,15 @@ class Performance {
             // Load report model from helper
             $CI =& get_instance();
             $CI->load->model('report_model');
-            // Savae data from report model, all sum redrace to variable $data
-            $data   = $CI->report_model->all_sum_redrace();
+            $CI->load->driver('cache');
+            $key    = 'ASjur20fiyKhf93LfhkaduyDLfh';
+            if ( ! $data = $CI->cache->memcached->get($key))
+            {
+                // Savae data from report model, all sum redrace to variable $data
+                $data   = $CI->report_model->all_sum_redrace();
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $data, 600);
+            }
             // Return the variable containing result to the caller
             return $data;
         }
