@@ -75,7 +75,6 @@ class Pajax extends CI_Controller {
             $data['surya']      = $this->performance->individual_performance('surya');
             $data['azis']       = $this->performance->individual_performance('azis');
             $data['indra']      = $this->performance->individual_performance('indra');
-            $this->output->cache(2);
             $this->load->view('pjax_person', $data);
         }
         
