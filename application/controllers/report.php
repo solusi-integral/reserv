@@ -418,6 +418,16 @@ class Report extends CI_Controller {
             // Mengirim perintah SMS ke API Twilio
             $msg = $service->account->messages->sendMessage($number, $dest, $message);
             
+            // Call
+            $service->account->calls->create('+622933216262', '+628116118440', 'http://demo.twilio.com/docs/voice.xml', array( 
+                    'Method' => 'GET',  
+                    'FallbackMethod' => 'GET',  
+                    'StatusCallbackMethod' => 'GET',  
+                    'IfMachine' => 'Hangup', 
+                    'Timeout' => '60', 
+                    'Record' => 'false', 
+            ));
+            
             // Mengembalikan hasil ke fungsi pemanggil
             return $msg->sid;
             //$this->load->view('lamaran_sendsms');
