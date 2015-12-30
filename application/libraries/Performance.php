@@ -268,10 +268,17 @@ class Performance {
             // Load model named 'report'
             $CI =& get_instance();
             $CI->load->model('report_model');
-            // Count the hours before by 3 x 60 minutes x 60 seconds x 24 hours. 
-            $offset         = 3*60*60*24;
-            // Today total by using the number from the database from three days ago
-            $today_total    = $CI->report_model->global_sum_race($offset);
+            $CI->load->driver('cache');
+            $key    = 'Vdlfydfj398JHt3jhtruj2375';
+            if ( ! $today_total = $CI->cache->memcached->get($key))
+            {
+                // Count the hours before by 3 x 60 minutes x 60 seconds x 24 hours. 
+                $offset         = 3*60*60*24;
+                // Today total by using the number from the database from three days ago
+                $today_total    = $CI->report_model->global_sum_race($offset);
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $today_total, 600);
+            }
             // Return value to caller using the calculation provided before
             return $today_total;
         }
@@ -284,11 +291,18 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $offset         = 3*60*60*24;
-            $todayul        = $CI->report_model->global_red_ul($offset);
-            $todaydl        = $CI->report_model->global_red_dl($offset);
-            $today_total    = $todayul+$todaydl;
-            $red    = $today_total;
+            $CI->load->driver('cache');
+            $key    = 'Kjiury23487KJurjJHf347adf';
+            if ( ! $red = $CI->cache->memcached->get($key))
+            {
+                $offset         = 3*60*60*24;
+                $todayul        = $CI->report_model->global_red_ul($offset);
+                $todaydl        = $CI->report_model->global_red_dl($offset);
+                $today_total    = $todayul+$todaydl;
+                $red    = $today_total;
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $red, 600);
+            }
             return $red;
         }
         
@@ -309,8 +323,15 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $offset         = 4*60*60*24;
-            $today_total    = $CI->report_model->global_sum_race($offset);
+            $CI->load->driver('cache');
+            $key    = '834KJdykDFaaaaaeuryDKfbdh';
+            if ( ! $today_total = $CI->cache->memcached->get($key))
+            {
+                $offset         = 4*60*60*24;
+                $today_total    = $CI->report_model->global_sum_race($offset);
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $today_total, 600);
+            }
             return $today_total;
         }
         
@@ -318,11 +339,18 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $offset         = 4*60*60*24;
-            $todayul        = $CI->report_model->global_red_ul($offset);
-            $todaydl        = $CI->report_model->global_red_dl($offset);
-            $today_total    = $todayul+$todaydl;
-            $red    = $today_total;
+            $CI->load->driver('cache');
+            $key    = 'Poeriu34097aKSruqikufg';
+            if ( ! $red = $CI->cache->memcached->get($key))
+            {
+                $offset         = 4*60*60*24;
+                $todayul        = $CI->report_model->global_red_ul($offset);
+                $todaydl        = $CI->report_model->global_red_dl($offset);
+                $today_total    = $todayul+$todaydl;
+                $red    = $today_total;
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $red, 600);
+            }
             return $red;
         }
         
@@ -343,8 +371,15 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $offset         = 5*60*60*24;
-            $today_total    = $CI->report_model->global_sum_race($offset);
+            $CI->load->driver('cache');
+            $key    = 'TruiISDU234kKUr29384KLSg';
+            if ( ! $today_total = $CI->cache->memcached->get($key))
+            {
+                $offset         = 5*60*60*24;
+                $today_total    = $CI->report_model->global_sum_race($offset);
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $today_total, 600);
+            }
             return $today_total;
         }
         
@@ -352,11 +387,18 @@ class Performance {
         {
             $CI =& get_instance();
             $CI->load->model('report_model');
-            $offset         = 5*60*60*24;
-            $todayul        = $CI->report_model->global_red_ul($offset);
-            $todaydl        = $CI->report_model->global_red_dl($offset);
-            $today_total    = $todayul+$todaydl;
-            $red    = $today_total;
+            $CI->load->driver('cache');
+            $key    = 'Yeri304Krlk23jgJRHtglsadu';
+            if ( ! $red = $CI->cache->memcached->get($key))
+            {
+                $offset         = 5*60*60*24;
+                $todayul        = $CI->report_model->global_red_ul($offset);
+                $todaydl        = $CI->report_model->global_red_dl($offset);
+                $today_total    = $todayul+$todaydl;
+                $red    = $today_total;
+                // Save data to Memcached
+                $CI->cache->memcached->save($key, $red, 600);
+            }
             return $red;
         }
         
