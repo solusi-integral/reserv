@@ -103,7 +103,7 @@
 								</div>
 								<div class="col_20 no_border_top">
 									<div class="info_box">
-										<div class="split one">
+										<div class="split one" id="pjax_today_perf">
 											<div class="big_letter yellow pjax_today_perf"><?php echo $today_perf ?></div>
 										</div>
 										<label>Remote Status</label>

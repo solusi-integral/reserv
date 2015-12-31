@@ -92,7 +92,6 @@ class Pajax extends CI_Controller {
         {
             $this->load->library('performance');
             $data['pjax_today_perf']      = $this->performance->today_performance();
-            $this->output->cache(2);
             $this->load->view('pjax_today_perf', $data);
         }
         
@@ -101,7 +100,6 @@ class Pajax extends CI_Controller {
             $this->load->library('performance');
             $data['today_total']    =   $this->performance->today();
             $data['today_red']      =   $this->performance->today_red();
-            $this->output->cache(2);
             $this->load->view('pjax_today_total', $data);
         }
         
@@ -109,7 +107,6 @@ class Pajax extends CI_Controller {
         {
             $this->load->library('performance');
             $data['todaytest']      = $this->performance->today_performance();
-            $this->output->cache(2);
             $this->load->view('pjax_test', $data);
         }
         
