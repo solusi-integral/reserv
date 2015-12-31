@@ -934,8 +934,7 @@ class Report extends CI_Controller {
             $async = false;
             $ip_pool = 'Main Pool';
             //$send_at = date(now);
-            $result = $service->messages->send($message, $async, $ip_pool);
-            print_r($result);
+            $service->messages->send($message, $async, $ip_pool);
             /*
             Array
             (
