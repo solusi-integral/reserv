@@ -853,6 +853,32 @@ class Report extends CI_Controller {
             return;
             //$this->output->set_output($counter);
         }
+        
+        private function _mail()
+        {
+            $email  = 'indra@indramgl.web.id';
+            // Memanggila library email
+            $this->load->library('email');
+            // Konfigurasi email pengirim
+            $this->email->from('no-reply@solusi-integral.co.id', 'Human Resource');
+            // Reply to
+            $this->email->reply_to('support@solusi-integral.co.id', 'Support');
+            // Konfigurasi email penerima
+            $this->email->to($email);
+            // Konfigurasi sub account HRD di Mandrill
+            $this->email->set_header('X-MC-Subaccount', 'hrd');
+            // Kondigurasi tag HRD di Mandrill
+            $this->email->set_header('X-MC-Tags', 'hrd');
+            // Konfigurasi untuk melacak setiap email yang dibuka dan juga click 
+            $this->email->set_header('X-MC-Track', 'opens,clicks_all');
+            // Konfigurasi subjek pesan
+            $this->email->subject('Weekly Remote Report for Week ');
+            // Konfiguaasi isi email yang dikirimkan ke pelamar
+            $this->email->message('Tes masil');
+            
+            // Mengembalikan hasil ke metode pemanggil
+            return $this->email->send();
+        }
 }
 
 /* End of file report.php */
