@@ -15,12 +15,12 @@ if (!class_exists('Services_Twilio')) {
 }
 
 /**
- * Return a twilio services object.
+ * Return a Mandrill services object.
  *
  * Since we don't want to create multiple connection objects we
  * will return the same object during a single page load
  *
- * @return object Services_Twilio
+ * @return object Mandrill Service
  */
 function get_mandrill_service() {
 	static $mandrill_service;
