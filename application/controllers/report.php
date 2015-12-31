@@ -866,9 +866,9 @@ class Report extends CI_Controller {
             // Konfigurasi email penerima
             $this->email->to($email);
             // Konfigurasi sub account HRD di Mandrill
-            $this->email->set_header('X-MC-Subaccount', 'hrd');
+            $this->email->set_header('X-MC-Subaccount', 'reserv');
             // Kondigurasi tag HRD di Mandrill
-            $this->email->set_header('X-MC-Tags', 'hrd');
+            $this->email->set_header('X-MC-Tags', 'reserv');
             // Konfigurasi untuk melacak setiap email yang dibuka dan juga click 
             $this->email->set_header('X-MC-Track', 'opens,clicks_all');
             // Konfigurasi subjek pesan
