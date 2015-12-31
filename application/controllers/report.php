@@ -854,7 +854,7 @@ class Report extends CI_Controller {
             //$this->output->set_output($counter);
         }
         
-        private function _mail()
+        public function mail()
         {
             $email  = 'indra@indramgl.web.id';
             // Memanggila library email
@@ -877,7 +877,9 @@ class Report extends CI_Controller {
             $this->email->message('Tes masil');
             
             // Mengembalikan hasil ke metode pemanggil
-            return $this->email->send();
+            //return $this->email->send();
+            $output = $this->email->send();
+            $this->output->set_output($output);
         }
 }
 
