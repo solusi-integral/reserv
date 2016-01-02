@@ -80,7 +80,7 @@ class Report extends CI_Controller {
             if ($actday == "Sat")
             {
                 $data['counted']    = 0;
-                $this->__weeklyreport();
+                //$this->__weeklyreport();
             }
             
             // Count races during operational time
