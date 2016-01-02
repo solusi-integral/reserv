@@ -174,7 +174,7 @@ class Report extends CI_Controller {
             $data2['Result']        = $results;
             
             // Send notification if ops team missed 5, 10, or 30 races.
-            //$this->__mailmissed($id);
+            $this->__mailmissed($id);
             
             // Store Daily Report into Database
             $this->__dailyreport();
@@ -854,7 +854,7 @@ class Report extends CI_Controller {
             //$this->output->set_output($counter);
         }
         
-        public function mail()
+        private function _mail()
         {
             $this->load->helper('mandrill');
             $service    = get_mandrill_service();
@@ -862,7 +862,7 @@ class Report extends CI_Controller {
             $message = array(
                 'html' => '<p>Example HTML content</p>',
                 'text' => 'Example text content',
-                'subject' => 'example subject',
+                'subject' => 'Weekly Performance Report',
                 'from_email' => 'no-reply@solusi-integral.co.id',
                 'from_name' => 'Solusi Integral',
                 'to' => array(
