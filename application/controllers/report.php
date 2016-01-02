@@ -800,7 +800,7 @@ class Report extends CI_Controller {
          * Calculation will be done every Saturday.
          * 
          */
-        private function __weeklyreport()
+        public function weeklyreport()
         {
             $this->load->library('performance');
             $this->load->model('result_model');
@@ -850,8 +850,8 @@ class Report extends CI_Controller {
                         }
             }
             
-            return;
-            //$this->output->set_output($counter);
+            //return;
+            $this->output->set_output($counter);
         }
         
         private function _mail()
