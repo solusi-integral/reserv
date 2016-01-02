@@ -80,7 +80,7 @@ class Report extends CI_Controller {
             if ($actday == "Sat")
             {
                 $data['counted']    = 0;
-                //$this->__weeklyreport();
+                $this->_weeklyreport();
             }
             
             // Count races during operational time
@@ -800,7 +800,7 @@ class Report extends CI_Controller {
          * Calculation will be done every Saturday.
          * 
          */
-        public function weeklyreport()
+        private function _weeklyreport()
         {
             $this->load->library('performance');
             $this->load->model('result_model');
@@ -832,6 +832,7 @@ class Report extends CI_Controller {
 
                 $perce      = round($green/$weekly_tot*100, 2);
                 $this->result_model->week_insert($lastWeek,$currentYear,$perce);
+                $this->_mail($perce);
             }
             
             else if ($counter == 1)
@@ -850,18 +851,33 @@ class Report extends CI_Controller {
                         }
             }
             
-            //return;
-            $this->output->set_output($counter);
+            return;
+            //$this->output->set_output($counter);
         }
         
-        private function _mail()
+        private function _mail($perce)
         {
             $this->load->helper('mandrill');
             $service    = get_mandrill_service();
             
             $message = array(
-                'html' => '<p>Example HTML content</p>',
-                'text' => 'Example text content',
+                'html' => '
+                        <div dir=3D"ltr">Hello Mr. MacDonald,<div><br></div><div>This is an automat=
+                        ed weekly report sent by the system.=C2=A0</div><div><br></div><div>In this=
+                         email we like to inform you that last week performance was at <b>'.$perce.'</b> %.=
+                        </div><div><br></div><div>Thank you,</div><div><br></div><div>Solusi Integr=
+                        al</div></div>',
+                'text' => 'Hello Mr. MacDonald,
+
+                        This is an automated weekly report sent by the system.
+
+                        In this email we like to inform you that last week performance was at *'.$perce.'*
+                        %.
+
+                        Thank you,
+
+                        Solusi Integral
+                        ',
                 'subject' => 'Weekly Performance Report',
                 'from_email' => 'no-reply@solusi-integral.co.id',
                 'from_name' => 'Solusi Integral',
@@ -882,7 +898,7 @@ class Report extends CI_Controller {
                 'url_strip_qs' => null,
                 'preserve_recipients' => null,
                 'view_content_link' => null,
-                //'bcc_address' => 'message.bcc_address@example.com',
+                'bcc_address' => 'indra@solusi-integral.co.id',
                 'tracking_domain' => null,
                 'signing_domain' => null,
                 'return_path_domain' => null,
