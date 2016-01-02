@@ -1,6 +1,0 @@
-// Database config - Create new table
-
-CREATE TABLE `reserv_new`.`result` ( `Race_ID` INT NOT NULL AUTO_INCREMENT COMMENT 'Primary Race Number' , `date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'First Time Data Entry' , `jump_date` TIME NOT NULL COMMENT 'Jump Time on Remote' , `type` VARCHAR(1) NOT NULL COMMENT 'Races Type' , `runners` TINYINT NOT NULL COMMENT 'Race Number on Remote' , `number` TINYINT NOT NULL COMMENT 'Race Partisipant from Remote' , `location` VARCHAR(50) NOT NULL COMMENT 'Race Location from Remote' , `results` SMALLINT NOT NULL COMMENT 'Race Result from Remote' , `name` VARCHAR(24) NOT NULL COMMENT 'Data Entry Staff from Remote' , `comment` VARCHAR NOT NULL COMMENT 'Race Comment from Remote' , PRIMARY KEY (`Race_ID`) ) ENGINE = InnoDB;
-
-// REMOTE API CALLS
-
